@@ -1,0 +1,950 @@
+{
+  "status": "complete",
+  "completed": [
+    {
+      "case": "parallel_t1_r1",
+      "threads": 1,
+      "repeat": 1,
+      "variant": "baseline",
+      "folder": "./runs/parallel_t1_r1/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "5.6211606",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r1",
+      "threads": 1,
+      "repeat": 1,
+      "variant": "pressure",
+      "folder": "./runs/parallel_t1_r1/pressure",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "5.6201253",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r1",
+      "threads": 1,
+      "repeat": 1,
+      "variant": "tdma",
+      "folder": "./runs/parallel_t1_r1/tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "5.736719",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r1",
+      "threads": 1,
+      "repeat": 1,
+      "variant": "radiation",
+      "folder": "./runs/parallel_t1_r1/radiation",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "5.6801747",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r1",
+      "threads": 1,
+      "repeat": 1,
+      "variant": "scalar_tdma",
+      "folder": "./runs/parallel_t1_r1/scalar_tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "5.5886791",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r2",
+      "threads": 1,
+      "repeat": 2,
+      "variant": "pressure",
+      "folder": "./runs/parallel_t1_r2/pressure",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "5.5378082",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r2",
+      "threads": 1,
+      "repeat": 2,
+      "variant": "tdma",
+      "folder": "./runs/parallel_t1_r2/tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "5.6895939",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r2",
+      "threads": 1,
+      "repeat": 2,
+      "variant": "radiation",
+      "folder": "./runs/parallel_t1_r2/radiation",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "5.6350025",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r2",
+      "threads": 1,
+      "repeat": 2,
+      "variant": "scalar_tdma",
+      "folder": "./runs/parallel_t1_r2/scalar_tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "5.7016957",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r2",
+      "threads": 1,
+      "repeat": 2,
+      "variant": "baseline",
+      "folder": "./runs/parallel_t1_r2/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "5.9801439",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r3",
+      "threads": 1,
+      "repeat": 3,
+      "variant": "tdma",
+      "folder": "./runs/parallel_t1_r3/tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "5.5869946",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r3",
+      "threads": 1,
+      "repeat": 3,
+      "variant": "radiation",
+      "folder": "./runs/parallel_t1_r3/radiation",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "5.8129226",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r3",
+      "threads": 1,
+      "repeat": 3,
+      "variant": "scalar_tdma",
+      "folder": "./runs/parallel_t1_r3/scalar_tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "5.4755083",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r3",
+      "threads": 1,
+      "repeat": 3,
+      "variant": "baseline",
+      "folder": "./runs/parallel_t1_r3/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "5.7859679",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r3",
+      "threads": 1,
+      "repeat": 3,
+      "variant": "pressure",
+      "folder": "./runs/parallel_t1_r3/pressure",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "5.5944998",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r1",
+      "threads": 4,
+      "repeat": 1,
+      "variant": "pressure",
+      "folder": "./runs/parallel_t4_r1/pressure",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.7753985",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r1",
+      "threads": 4,
+      "repeat": 1,
+      "variant": "tdma",
+      "folder": "./runs/parallel_t4_r1/tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.6352255",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r1",
+      "threads": 4,
+      "repeat": 1,
+      "variant": "radiation",
+      "folder": "./runs/parallel_t4_r1/radiation",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.6276307",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r1",
+      "threads": 4,
+      "repeat": 1,
+      "variant": "scalar_tdma",
+      "folder": "./runs/parallel_t4_r1/scalar_tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.5497623",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r1",
+      "threads": 4,
+      "repeat": 1,
+      "variant": "baseline",
+      "folder": "./runs/parallel_t4_r1/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.6673596",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r2",
+      "threads": 4,
+      "repeat": 2,
+      "variant": "tdma",
+      "folder": "./runs/parallel_t4_r2/tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.669519",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r2",
+      "threads": 4,
+      "repeat": 2,
+      "variant": "radiation",
+      "folder": "./runs/parallel_t4_r2/radiation",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.7123753",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r2",
+      "threads": 4,
+      "repeat": 2,
+      "variant": "scalar_tdma",
+      "folder": "./runs/parallel_t4_r2/scalar_tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.5193325",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r2",
+      "threads": 4,
+      "repeat": 2,
+      "variant": "baseline",
+      "folder": "./runs/parallel_t4_r2/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.7001273",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r2",
+      "threads": 4,
+      "repeat": 2,
+      "variant": "pressure",
+      "folder": "./runs/parallel_t4_r2/pressure",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.5349265",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r3",
+      "threads": 4,
+      "repeat": 3,
+      "variant": "radiation",
+      "folder": "./runs/parallel_t4_r3/radiation",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.6332055",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r3",
+      "threads": 4,
+      "repeat": 3,
+      "variant": "scalar_tdma",
+      "folder": "./runs/parallel_t4_r3/scalar_tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.611971",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r3",
+      "threads": 4,
+      "repeat": 3,
+      "variant": "baseline",
+      "folder": "./runs/parallel_t4_r3/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.5793478",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r3",
+      "threads": 4,
+      "repeat": 3,
+      "variant": "pressure",
+      "folder": "./runs/parallel_t4_r3/pressure",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.6322133",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r3",
+      "threads": 4,
+      "repeat": 3,
+      "variant": "tdma",
+      "folder": "./runs/parallel_t4_r3/tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.6556046",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r1",
+      "threads": 8,
+      "repeat": 1,
+      "variant": "tdma",
+      "folder": "./runs/parallel_t8_r1/tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.6515286",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r1",
+      "threads": 8,
+      "repeat": 1,
+      "variant": "radiation",
+      "folder": "./runs/parallel_t8_r1/radiation",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.6061404",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r1",
+      "threads": 8,
+      "repeat": 1,
+      "variant": "scalar_tdma",
+      "folder": "./runs/parallel_t8_r1/scalar_tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.4776572",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r1",
+      "threads": 8,
+      "repeat": 1,
+      "variant": "baseline",
+      "folder": "./runs/parallel_t8_r1/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.8481792",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r1",
+      "threads": 8,
+      "repeat": 1,
+      "variant": "pressure",
+      "folder": "./runs/parallel_t8_r1/pressure",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.5421458",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r2",
+      "threads": 8,
+      "repeat": 2,
+      "variant": "radiation",
+      "folder": "./runs/parallel_t8_r2/radiation",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.4891428",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r2",
+      "threads": 8,
+      "repeat": 2,
+      "variant": "scalar_tdma",
+      "folder": "./runs/parallel_t8_r2/scalar_tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.5059609",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r2",
+      "threads": 8,
+      "repeat": 2,
+      "variant": "baseline",
+      "folder": "./runs/parallel_t8_r2/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.5279849",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r2",
+      "threads": 8,
+      "repeat": 2,
+      "variant": "pressure",
+      "folder": "./runs/parallel_t8_r2/pressure",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.5076462",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r2",
+      "threads": 8,
+      "repeat": 2,
+      "variant": "tdma",
+      "folder": "./runs/parallel_t8_r2/tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.5857957",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r3",
+      "threads": 8,
+      "repeat": 3,
+      "variant": "scalar_tdma",
+      "folder": "./runs/parallel_t8_r3/scalar_tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.4865626",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r3",
+      "threads": 8,
+      "repeat": 3,
+      "variant": "baseline",
+      "folder": "./runs/parallel_t8_r3/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.678631",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r3",
+      "threads": 8,
+      "repeat": 3,
+      "variant": "pressure",
+      "folder": "./runs/parallel_t8_r3/pressure",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.564838",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r3",
+      "threads": 8,
+      "repeat": 3,
+      "variant": "tdma",
+      "folder": "./runs/parallel_t8_r3/tdma",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.5530599",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r3",
+      "threads": 8,
+      "repeat": 3,
+      "variant": "radiation",
+      "folder": "./runs/parallel_t8_r3/radiation",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.6455494",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "status": "pass",
+  "pairs": [
+    {
+      "threads": 1,
+      "repeat": 1,
+      "scl_payloads_identical": true,
+      "steady_state_identical": true
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "scl_payloads_identical": true,
+      "steady_state_identical": true
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "scl_payloads_identical": true,
+      "steady_state_identical": true
+    },
+    {
+      "threads": 4,
+      "repeat": 1,
+      "scl_payloads_identical": true,
+      "steady_state_identical": true
+    },
+    {
+      "threads": 4,
+      "repeat": 2,
+      "scl_payloads_identical": true,
+      "steady_state_identical": true
+    },
+    {
+      "threads": 4,
+      "repeat": 3,
+      "scl_payloads_identical": true,
+      "steady_state_identical": true
+    },
+    {
+      "threads": 8,
+      "repeat": 1,
+      "scl_payloads_identical": true,
+      "steady_state_identical": true
+    },
+    {
+      "threads": 8,
+      "repeat": 2,
+      "scl_payloads_identical": true,
+      "steady_state_identical": true
+    },
+    {
+      "threads": 8,
+      "repeat": 3,
+      "scl_payloads_identical": true,
+      "steady_state_identical": true
+    }
+  ]
+}

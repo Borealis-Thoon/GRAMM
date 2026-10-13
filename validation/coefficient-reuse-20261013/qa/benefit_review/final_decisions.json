@@ -1,0 +1,605 @@
+{
+  "status": "final_review_complete",
+  "native_datasets": [
+    {
+      "dataset": "initial",
+      "records_path": "./qa/native/results.json",
+      "records_sha256": "4ad40976c017fdaad6ba0a98b5c3f435d04f0a5d0384e127f622dd8104f7d880",
+      "summary_sha256": "fcac236ca28eba62dd407a572c37c0cdbe59e0f68f772b019f32dfad065101bb",
+      "runs": 136,
+      "measured": 112,
+      "warmups": 24,
+      "rows": [
+        {
+          "case": "convective_4t",
+          "variant": "pressure",
+          "pairs": 5,
+          "faster_pairs": 2,
+          "median_paired_time_saved_percent": -0.7701523326828053,
+          "median_paired_time_saved_seconds": -0.04821550000000041,
+          "observed_percent_range": [
+            -2.761445969844245,
+            1.218823112291334
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "convective_4t",
+          "variant": "tdma",
+          "pairs": 5,
+          "faster_pairs": 4,
+          "median_paired_time_saved_percent": 0.6006444442731351,
+          "median_paired_time_saved_seconds": 0.0361539999999998,
+          "observed_percent_range": [
+            -0.21308454377804154,
+            4.910040066722054
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "convective_4t",
+          "variant": "radiation",
+          "pairs": 5,
+          "faster_pairs": 1,
+          "median_paired_time_saved_percent": -3.811423044817719,
+          "median_paired_time_saved_seconds": -0.2386147000000003,
+          "observed_percent_range": [
+            -11.793088970470777,
+            3.3430674573613484
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "every_step_radiation_4t",
+          "variant": "pressure",
+          "pairs": 3,
+          "faster_pairs": 3,
+          "median_paired_time_saved_percent": 1.304364252503587,
+          "median_paired_time_saved_seconds": 0.015881299999999987,
+          "observed_percent_range": [
+            0.05875064046971801,
+            5.701831761987952
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "every_step_radiation_4t",
+          "variant": "tdma",
+          "pairs": 3,
+          "faster_pairs": 2,
+          "median_paired_time_saved_percent": 1.9701104922914991,
+          "median_paired_time_saved_seconds": 0.02398710000000004,
+          "observed_percent_range": [
+            -0.747311489627922,
+            3.973224799609165
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "every_step_radiation_4t",
+          "variant": "radiation",
+          "pairs": 3,
+          "faster_pairs": 2,
+          "median_paired_time_saved_percent": 0.7147544538175454,
+          "median_paired_time_saved_seconds": 0.008702500000000057,
+          "observed_percent_range": [
+            -0.1925149009759375,
+            5.573954735163012
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "large_neutral_4t",
+          "variant": "pressure",
+          "pairs": 5,
+          "faster_pairs": 4,
+          "median_paired_time_saved_percent": 0.27100948413931736,
+          "median_paired_time_saved_seconds": 0.07248899999999736,
+          "observed_percent_range": [
+            -0.29592982615149754,
+            1.9609975720037975
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "large_neutral_4t",
+          "variant": "tdma",
+          "pairs": 5,
+          "faster_pairs": 5,
+          "median_paired_time_saved_percent": 0.35016016132751737,
+          "median_paired_time_saved_seconds": 0.09351020000000076,
+          "observed_percent_range": [
+            0.2124169413076027,
+            2.425346979347276
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "large_neutral_4t",
+          "variant": "radiation",
+          "pairs": 5,
+          "faster_pairs": 3,
+          "median_paired_time_saved_percent": 0.02538205864480725,
+          "median_paired_time_saved_seconds": 0.006816900000000459,
+          "observed_percent_range": [
+            -1.665542550477972,
+            1.7414327735496449
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "medium_neutral_1t",
+          "variant": "pressure",
+          "pairs": 5,
+          "faster_pairs": 4,
+          "median_paired_time_saved_percent": 1.8317417058295038,
+          "median_paired_time_saved_seconds": 0.09554829999999992,
+          "observed_percent_range": [
+            -17.060257323920492,
+            7.3561836699857714
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "medium_neutral_1t",
+          "variant": "tdma",
+          "pairs": 5,
+          "faster_pairs": 2,
+          "median_paired_time_saved_percent": -1.9073169793928146,
+          "median_paired_time_saved_seconds": -0.09871690000000033,
+          "observed_percent_range": [
+            -21.487398157700245,
+            0.8799283930575497
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "medium_neutral_1t",
+          "variant": "radiation",
+          "pairs": 5,
+          "faster_pairs": 3,
+          "median_paired_time_saved_percent": 1.47153198474137,
+          "median_paired_time_saved_seconds": 0.07616200000000006,
+          "observed_percent_range": [
+            -5.220740784478672,
+            2.5986712944523482
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "small_neutral_1t",
+          "variant": "pressure",
+          "pairs": 5,
+          "faster_pairs": 2,
+          "median_paired_time_saved_percent": -0.4136183279262573,
+          "median_paired_time_saved_seconds": -0.00562459999999998,
+          "observed_percent_range": [
+            -1.0403788663528424,
+            4.902447702431267
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "small_neutral_1t",
+          "variant": "tdma",
+          "pairs": 5,
+          "faster_pairs": 2,
+          "median_paired_time_saved_percent": -0.8164391286011874,
+          "median_paired_time_saved_seconds": -0.011021399999999959,
+          "observed_percent_range": [
+            -3.33986912816302,
+            3.682214727869182
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "small_neutral_1t",
+          "variant": "radiation",
+          "pairs": 5,
+          "faster_pairs": 3,
+          "median_paired_time_saved_percent": 0.22669234592205267,
+          "median_paired_time_saved_seconds": 0.0030601999999999574,
+          "observed_percent_range": [
+            -2.50517999504134,
+            3.690462452805987
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "stable_coast_8t",
+          "variant": "pressure",
+          "pairs": 5,
+          "faster_pairs": 3,
+          "median_paired_time_saved_percent": 1.402789179868913,
+          "median_paired_time_saved_seconds": 0.1572294999999997,
+          "observed_percent_range": [
+            -1.5899004531446437,
+            4.799999113723485
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "stable_coast_8t",
+          "variant": "tdma",
+          "pairs": 5,
+          "faster_pairs": 3,
+          "median_paired_time_saved_percent": 1.7016512488678637,
+          "median_paired_time_saved_seconds": 0.19188250000000018,
+          "observed_percent_range": [
+            -0.7245203615623863,
+            6.038797290586939
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "stable_coast_8t",
+          "variant": "radiation",
+          "pairs": 5,
+          "faster_pairs": 2,
+          "median_paired_time_saved_percent": -1.1023015567369399,
+          "median_paired_time_saved_seconds": -0.12354980000000104,
+          "observed_percent_range": [
+            -2.3535435174470765,
+            2.7179443287317917
+          ],
+          "raw_summary_reconciled": true
+        }
+      ]
+    },
+    {
+      "dataset": "fixed_dt",
+      "records_path": "./qa/native/fixed_dt_results.json",
+      "records_sha256": "8dbff20fe633952797c4efc78200cadfb3d7a224bf8474616fc0a5f7f235f553",
+      "summary_sha256": "d96f817761794a685c3480ba4d8685d74fc4418c24dc5c3889fcf26320951a16",
+      "runs": 30,
+      "measured": 25,
+      "warmups": 5,
+      "rows": [
+        {
+          "case": "fixed_dt_4t",
+          "variant": "pressure",
+          "pairs": 5,
+          "faster_pairs": 2,
+          "median_paired_time_saved_percent": -0.27958210297160946,
+          "median_paired_time_saved_seconds": -0.03449399999999869,
+          "observed_percent_range": [
+            -4.1913221759984465,
+            3.2848416868844765
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "fixed_dt_4t",
+          "variant": "tdma",
+          "pairs": 5,
+          "faster_pairs": 2,
+          "median_paired_time_saved_percent": -0.7484879265403865,
+          "median_paired_time_saved_seconds": -0.09417570000000097,
+          "observed_percent_range": [
+            -3.7921569561838897,
+            2.6592364893825993
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "fixed_dt_4t",
+          "variant": "radiation",
+          "pairs": 5,
+          "faster_pairs": 4,
+          "median_paired_time_saved_percent": 0.7152694818408523,
+          "median_paired_time_saved_seconds": 0.08824780000000132,
+          "observed_percent_range": [
+            -8.309120934279935,
+            2.4764752581818206
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "fixed_dt_4t",
+          "variant": "scalar_tdma",
+          "pairs": 5,
+          "faster_pairs": 5,
+          "median_paired_time_saved_percent": 1.4102791090812472,
+          "median_paired_time_saved_seconds": 0.1739960000000007,
+          "observed_percent_range": [
+            0.4181586653235647,
+            3.2900415443822273
+          ],
+          "raw_summary_reconciled": true
+        }
+      ]
+    },
+    {
+      "dataset": "scalar",
+      "records_path": "./qa/native/scalar_results.json",
+      "records_sha256": "6b30fc9381307301f904c7acfc70e49e56e469d7c4f05cdfb99a892147f6c49c",
+      "summary_sha256": "d8cdd1734cdf165fa3d2919cb07719e857e297140001a150ee360f11a0e0b3ee",
+      "runs": 36,
+      "measured": 30,
+      "warmups": 6,
+      "rows": [
+        {
+          "case": "scalar_convective_4t",
+          "variant": "scalar_tdma",
+          "pairs": 5,
+          "faster_pairs": 5,
+          "median_paired_time_saved_percent": 2.8291364000895713,
+          "median_paired_time_saved_seconds": 0.1840206000000002,
+          "observed_percent_range": [
+            0.3220726534898244,
+            7.616380044762117
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "scalar_neutral_1t",
+          "variant": "scalar_tdma",
+          "pairs": 5,
+          "faster_pairs": 5,
+          "median_paired_time_saved_percent": 2.026799311073535,
+          "median_paired_time_saved_seconds": 0.12416279999999968,
+          "observed_percent_range": [
+            1.7206772051344466,
+            4.02939631083874
+          ],
+          "raw_summary_reconciled": true
+        },
+        {
+          "case": "scalar_stable_coast_8t",
+          "variant": "scalar_tdma",
+          "pairs": 5,
+          "faster_pairs": 3,
+          "median_paired_time_saved_percent": 3.5774917013577934,
+          "median_paired_time_saved_seconds": 0.4165010999999996,
+          "observed_percent_range": [
+            -0.7910884657089223,
+            4.837779730335745
+          ],
+          "raw_summary_reconciled": true
+        }
+      ]
+    }
+  ],
+  "native_total_runs": 202,
+  "native_measured_runs": 167,
+  "native_warmups": 35,
+  "decisions": {
+    "pressure": {
+      "decision": "defer",
+      "reason_codes": [
+        "benefit_not_consistently_reproduced",
+        "fixed_dt_followup_does_not_resolve_initial_uncertainty",
+        "user_requires_demonstrated_benefit"
+      ],
+      "tested_conditions": 7,
+      "paired_comparisons": 33,
+      "fixed_dt_followup": {
+        "case": "fixed_dt_4t",
+        "variant": "pressure",
+        "pairs": 5,
+        "faster_pairs": 2,
+        "median_paired_time_saved_percent": -0.27958210297160946,
+        "median_paired_time_saved_seconds": -0.03449399999999869,
+        "observed_percent_range": [
+          -4.1913221759984465,
+          3.2848416868844765
+        ],
+        "raw_summary_reconciled": true
+      },
+      "future_reconsideration": "new_independent_evidence_of_practical_benefit_required",
+      "implementation_and_evidence_retained": true
+    },
+    "tdma": {
+      "decision": "defer",
+      "reason_codes": [
+        "benefit_not_consistently_reproduced",
+        "fixed_dt_followup_does_not_resolve_initial_uncertainty",
+        "user_requires_demonstrated_benefit"
+      ],
+      "tested_conditions": 7,
+      "paired_comparisons": 33,
+      "fixed_dt_followup": {
+        "case": "fixed_dt_4t",
+        "variant": "tdma",
+        "pairs": 5,
+        "faster_pairs": 2,
+        "median_paired_time_saved_percent": -0.7484879265403865,
+        "median_paired_time_saved_seconds": -0.09417570000000097,
+        "observed_percent_range": [
+          -3.7921569561838897,
+          2.6592364893825993
+        ],
+        "raw_summary_reconciled": true
+      },
+      "future_reconsideration": "new_independent_evidence_of_practical_benefit_required",
+      "implementation_and_evidence_retained": true
+    },
+    "radiation": {
+      "decision": "defer",
+      "reason_codes": [
+        "benefit_not_consistently_reproduced",
+        "fixed_dt_followup_does_not_resolve_initial_uncertainty",
+        "user_requires_demonstrated_benefit"
+      ],
+      "tested_conditions": 7,
+      "paired_comparisons": 33,
+      "fixed_dt_followup": {
+        "case": "fixed_dt_4t",
+        "variant": "radiation",
+        "pairs": 5,
+        "faster_pairs": 4,
+        "median_paired_time_saved_percent": 0.7152694818408523,
+        "median_paired_time_saved_seconds": 0.08824780000000132,
+        "observed_percent_range": [
+          -8.309120934279935,
+          2.4764752581818206
+        ],
+        "raw_summary_reconciled": true
+      },
+      "future_reconsideration": "new_independent_evidence_of_practical_benefit_required",
+      "implementation_and_evidence_retained": true
+    },
+    "scalar_tdma": {
+      "decision": "submit_draft",
+      "timing_evidence_sufficient_for_modest_scoped_benefit_claim": true,
+      "paired_comparisons": 20,
+      "faster_pairs": 18,
+      "all_four_condition_medians_positive": true,
+      "median_paired_time_saved_percent_range": [
+        1.4102791090812472,
+        3.5774917013577934
+      ],
+      "two_eight_thread_regressions_percent": [
+        0.38486543943421214,
+        0.7910884657089223
+      ],
+      "reason_codes": [
+        "improvement_reproduced_across_four_conditions",
+        "worker_setting_1_condition_five_of_five_improvements",
+        "small_one_array_memory_cost",
+        "actual_solver_and_complete_model_fixed_order_result_preservation_pass"
+      ],
+      "source_commit": "d4c084b97508e16eab808d934d42520f504bcf55",
+      "optimization_diff": {
+        "files": 5,
+        "added_lines": 79,
+        "deleted_lines": 62
+      },
+      "prerequisite": "PREREQUISITE_PR_NUMBER",
+      "prerequisite_commit": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+      "measured_source_commit": "62c8d3e997c3852a309483e19b0726973db35154",
+      "measured_to_final_source_change": "three orphan XML comment lines removed only",
+      "full_pr_file_count_including_shared_warning_cleanup": 8,
+      "human_review_complete": false
+    }
+  },
+  "scalar_validation": {
+    "production_method_checks": {
+      "status": "pass",
+      "cases": 108,
+      "values": 7803432,
+      "serial_partition_replay": true,
+      "configured_threads": [
+        1,
+        4,
+        8
+      ],
+      "modes": [
+        "both_off",
+        "temperature_only",
+        "humidity_only",
+        "both_on"
+      ],
+      "sequential_dt": [
+        1.5,
+        5,
+        2
+      ],
+      "density_changed_at_stage": 1,
+      "actual_methods": [
+        "Define_Arrays",
+        "Max_Proc_File_Read",
+        "TERMIPSterms",
+        "Timp_calculate",
+        "Fimp_calculate"
+      ],
+      "no_copied_solver_equations": true
+    },
+    "complete_model_cases": 9,
+    "weather_situations": 11,
+    "full_precision_field_pairs": 99,
+    "all_field_pairs_bitwise_identical": true,
+    "full_model_comparison_dispatch": "original_partitions_replayed_in_fixed_order",
+    "native_parallel_state_status": "complete_and_finite",
+    "strict_build_warnings": 0,
+    "strict_build_errors": 0,
+    "worker_setting_semantics": "Values 1/4/8 written to Max_Proc.txt; actual simultaneous thread count is not asserted",
+    "native_parallel_review": {
+      "status": "complete",
+      "source": "AUSGABE.cs IOUT==0: int32 -1,NX,NY,NZ,float32 dx then int16 U,V,W, i/j/k order; Convert.ToInt16(value*100), clamped",
+      "quantum_ms": 0.01,
+      "payload_components_per_file": 124416,
+      "read_only_model_output_analysis": true,
+      "runs_read": 18,
+      "pair_count": 18,
+      "all_18_wnd_files_verified_against_final_double_snapshots": true,
+      "native_scalar_pairs": 9,
+      "native_scalar_full_precision_field_pairs": 81,
+      "native_scalar_steps_identical_field_pairs": 81,
+      "native_scalar_hash_identical_field_pairs": 33,
+      "native_scalar_worker_setting_1_fields_all_bitwise_identical": true,
+      "wind_component_max_abs_ms": {
+        "baseline_repeat": 1.7304234364137142e-05,
+        "matched_scalar": 1.8498671796839117e-05
+      },
+      "temperature_max_abs_K": {
+        "baseline_repeat": 3.0176161658346246e-07,
+        "matched_scalar": 3.1469066996692163e-07
+      },
+      "interpretation_codes": [
+        "all_changed_int16_values_explained_by_rounding_final_double_state",
+        "rare_output_quantization_boundary_crossings",
+        "some_patch_metric_maxima_above_observed_baseline_maxima",
+        "no_claim_all_differences_within_baseline_envelope",
+        "no_downstream_dispersion_equivalence_claim"
+      ],
+      "qa_recommendation": "eligible_for_draft_pr_with_exact_fixed_order_validation_and_measured_native_variation"
+    },
+    "native_surface_payloads_and_steady_state_identical_pairs": 9,
+    "native_parallel_equivalence_claim": "fixed-order bitwise preservation; normal parallel variation measured without a universal equivalence claim"
+  },
+  "scalar_cache": [
+    {
+      "grid": [
+        48,
+        36,
+        24
+      ],
+      "value_bytes": 348096,
+      "value_mib": 0.33197021484375,
+      "jagged_array_overhead_included": false
+    },
+    {
+      "grid": [
+        64,
+        48,
+        24
+      ],
+      "value_bytes": 611520,
+      "value_mib": 0.58319091796875,
+      "jagged_array_overhead_included": false
+    }
+  ],
+  "hardware": {
+    "cpu": {
+      "Name": "AMD Ryzen 9 9950X3D 16-Core Processor          ",
+      "NumberOfCores": 16,
+      "NumberOfLogicalProcessors": 32
+    },
+    "memory_bytes": 51156725760,
+    "dotnet_sdk": "10.0.401",
+    "os": "Microsoft Windows NT 10.0.26300.0"
+  },
+  "pr_readiness": {
+    "draft_prepared": true,
+    "ready_for_draft_after_link_replacement": true,
+    "ready_for_review": false,
+    "human_review_complete": false,
+    "pending": [
+      "replace_prerequisite_pr_number",
+      "add_one_combined_public_figure",
+      "add_public_evidence_and_detailed_wnd_csv_link"
+    ],
+    "body_path": "./qa/pr_bodies/scalar_body.md"
+  },
+  "claim_controls": [
+    "paired_median_not_ratio_of_group_medians",
+    "complete_process_runtime_not_solver_only",
+    "all_repeats_retained",
+    "regressing_eight_thread_pairs_disclosed",
+    "no_general_speedup_guarantee",
+    "no_confirmed_native_parallel_result_until_review_complete",
+    "no_percentile_bootstrap_significance_claim",
+    "no_arbitrary_percent_cutoff"
+  ]
+}

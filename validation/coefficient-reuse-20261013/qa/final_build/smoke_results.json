@@ -1,0 +1,85 @@
+{
+  "status": "pass",
+  "config": {
+    "nx": 24,
+    "ny": 20,
+    "nz": 16,
+    "dx": 250,
+    "sc": 2,
+    "wind": 2,
+    "duration": 60,
+    "dt": 5,
+    "threads": 1,
+    "turbulence": true,
+    "coast": true
+  },
+  "instrumented": {
+    "status": "pass",
+    "fields": [
+      {
+        "weather": 1,
+        "field": "U",
+        "count": 8925,
+        "identical": true
+      },
+      {
+        "weather": 1,
+        "field": "V",
+        "count": 8925,
+        "identical": true
+      },
+      {
+        "weather": 1,
+        "field": "W",
+        "count": 8925,
+        "identical": true
+      },
+      {
+        "weather": 1,
+        "field": "T",
+        "count": 8925,
+        "identical": true
+      },
+      {
+        "weather": 1,
+        "field": "QU",
+        "count": 8925,
+        "identical": true
+      },
+      {
+        "weather": 1,
+        "field": "PN",
+        "count": 8925,
+        "identical": true
+      },
+      {
+        "weather": 1,
+        "field": "TE",
+        "count": 8925,
+        "identical": true
+      },
+      {
+        "weather": 1,
+        "field": "DISS",
+        "count": 8925,
+        "identical": true
+      },
+      {
+        "weather": 1,
+        "field": "RADIATION",
+        "count": 8400,
+        "identical": true
+      }
+    ],
+    "payloads_identical": true,
+    "steps_identical": true
+  },
+  "native_payloads_identical": true,
+  "native_assembly_hashes": {
+    "baseline": "7cf244906ee0bd392bf24daa77c82626209e623d37619f80cd7c857c06529034",
+    "scalar_tdma": "f03999e32afe12a82869ebc66450669808a5b89bfdbcfde55263996ea3b60648"
+  },
+  "model_processes": 4,
+  "watchdog_seconds": 300,
+  "purpose": "Reproduction smoke check; excluded from reported performance measurements."
+}

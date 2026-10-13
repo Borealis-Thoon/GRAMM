@@ -1,0 +1,507 @@
+{
+  "status": "pass",
+  "actual_engine_methods": [
+    "TERMIPterms",
+    "INITA",
+    "ClearArrays"
+  ],
+  "cases": 45,
+  "cache_hit_checks": 9,
+  "rows": [
+    {
+      "grid": [
+        12,
+        13,
+        6
+      ],
+      "threads": 1,
+      "stage": "first",
+      "bitwise_equal": true,
+      "sha256": "5fe0f2b4c64a92c3409ba663255fa75e0a32212e99a2dcf8dcaa6a82d13dec83"
+    },
+    {
+      "grid": [
+        12,
+        13,
+        6
+      ],
+      "threads": 1,
+      "stage": "unchanged",
+      "bitwise_equal": true,
+      "sha256": "5fe0f2b4c64a92c3409ba663255fa75e0a32212e99a2dcf8dcaa6a82d13dec83"
+    },
+    {
+      "grid": [
+        12,
+        13,
+        6
+      ],
+      "threads": 1,
+      "stage": "increase_dt",
+      "bitwise_equal": true,
+      "sha256": "5eb5500caf02d83d53a04524ccdfa456f54eb4017b341c868f7fa067f18eb673"
+    },
+    {
+      "grid": [
+        12,
+        13,
+        6
+      ],
+      "threads": 1,
+      "stage": "decrease_dt",
+      "bitwise_equal": true,
+      "sha256": "5fe0f2b4c64a92c3409ba663255fa75e0a32212e99a2dcf8dcaa6a82d13dec83"
+    },
+    {
+      "grid": [
+        12,
+        13,
+        6
+      ],
+      "threads": 1,
+      "stage": "new_situation_same_dt",
+      "bitwise_equal": true,
+      "sha256": "7c8ca5102ccf5c71854acec72c5be6e2bbc84cb92396d60a97ae88d6815095a7"
+    },
+    {
+      "grid": [
+        12,
+        13,
+        6
+      ],
+      "threads": 2,
+      "stage": "first",
+      "bitwise_equal": true,
+      "sha256": "5fe0f2b4c64a92c3409ba663255fa75e0a32212e99a2dcf8dcaa6a82d13dec83"
+    },
+    {
+      "grid": [
+        12,
+        13,
+        6
+      ],
+      "threads": 2,
+      "stage": "unchanged",
+      "bitwise_equal": true,
+      "sha256": "5fe0f2b4c64a92c3409ba663255fa75e0a32212e99a2dcf8dcaa6a82d13dec83"
+    },
+    {
+      "grid": [
+        12,
+        13,
+        6
+      ],
+      "threads": 2,
+      "stage": "increase_dt",
+      "bitwise_equal": true,
+      "sha256": "5eb5500caf02d83d53a04524ccdfa456f54eb4017b341c868f7fa067f18eb673"
+    },
+    {
+      "grid": [
+        12,
+        13,
+        6
+      ],
+      "threads": 2,
+      "stage": "decrease_dt",
+      "bitwise_equal": true,
+      "sha256": "5fe0f2b4c64a92c3409ba663255fa75e0a32212e99a2dcf8dcaa6a82d13dec83"
+    },
+    {
+      "grid": [
+        12,
+        13,
+        6
+      ],
+      "threads": 2,
+      "stage": "new_situation_same_dt",
+      "bitwise_equal": true,
+      "sha256": "7c8ca5102ccf5c71854acec72c5be6e2bbc84cb92396d60a97ae88d6815095a7"
+    },
+    {
+      "grid": [
+        12,
+        13,
+        6
+      ],
+      "threads": 8,
+      "stage": "first",
+      "bitwise_equal": true,
+      "sha256": "5fe0f2b4c64a92c3409ba663255fa75e0a32212e99a2dcf8dcaa6a82d13dec83"
+    },
+    {
+      "grid": [
+        12,
+        13,
+        6
+      ],
+      "threads": 8,
+      "stage": "unchanged",
+      "bitwise_equal": true,
+      "sha256": "5fe0f2b4c64a92c3409ba663255fa75e0a32212e99a2dcf8dcaa6a82d13dec83"
+    },
+    {
+      "grid": [
+        12,
+        13,
+        6
+      ],
+      "threads": 8,
+      "stage": "increase_dt",
+      "bitwise_equal": true,
+      "sha256": "5eb5500caf02d83d53a04524ccdfa456f54eb4017b341c868f7fa067f18eb673"
+    },
+    {
+      "grid": [
+        12,
+        13,
+        6
+      ],
+      "threads": 8,
+      "stage": "decrease_dt",
+      "bitwise_equal": true,
+      "sha256": "5fe0f2b4c64a92c3409ba663255fa75e0a32212e99a2dcf8dcaa6a82d13dec83"
+    },
+    {
+      "grid": [
+        12,
+        13,
+        6
+      ],
+      "threads": 8,
+      "stage": "new_situation_same_dt",
+      "bitwise_equal": true,
+      "sha256": "7c8ca5102ccf5c71854acec72c5be6e2bbc84cb92396d60a97ae88d6815095a7"
+    },
+    {
+      "grid": [
+        31,
+        24,
+        12
+      ],
+      "threads": 1,
+      "stage": "first",
+      "bitwise_equal": true,
+      "sha256": "42aa9ee6b14e73cdb33697faed50b2c0779abcad61fca74e10ed3b285ae4b90c"
+    },
+    {
+      "grid": [
+        31,
+        24,
+        12
+      ],
+      "threads": 1,
+      "stage": "unchanged",
+      "bitwise_equal": true,
+      "sha256": "42aa9ee6b14e73cdb33697faed50b2c0779abcad61fca74e10ed3b285ae4b90c"
+    },
+    {
+      "grid": [
+        31,
+        24,
+        12
+      ],
+      "threads": 1,
+      "stage": "increase_dt",
+      "bitwise_equal": true,
+      "sha256": "6b502bdcaa4ac76ba8e7372862430a07f01aa8787b1f20947fa84aba5a817694"
+    },
+    {
+      "grid": [
+        31,
+        24,
+        12
+      ],
+      "threads": 1,
+      "stage": "decrease_dt",
+      "bitwise_equal": true,
+      "sha256": "42aa9ee6b14e73cdb33697faed50b2c0779abcad61fca74e10ed3b285ae4b90c"
+    },
+    {
+      "grid": [
+        31,
+        24,
+        12
+      ],
+      "threads": 1,
+      "stage": "new_situation_same_dt",
+      "bitwise_equal": true,
+      "sha256": "5511aae737ab815a9004c40d3852208b72a427bb4609bce8e922c5e38df54a42"
+    },
+    {
+      "grid": [
+        31,
+        24,
+        12
+      ],
+      "threads": 2,
+      "stage": "first",
+      "bitwise_equal": true,
+      "sha256": "42aa9ee6b14e73cdb33697faed50b2c0779abcad61fca74e10ed3b285ae4b90c"
+    },
+    {
+      "grid": [
+        31,
+        24,
+        12
+      ],
+      "threads": 2,
+      "stage": "unchanged",
+      "bitwise_equal": true,
+      "sha256": "42aa9ee6b14e73cdb33697faed50b2c0779abcad61fca74e10ed3b285ae4b90c"
+    },
+    {
+      "grid": [
+        31,
+        24,
+        12
+      ],
+      "threads": 2,
+      "stage": "increase_dt",
+      "bitwise_equal": true,
+      "sha256": "6b502bdcaa4ac76ba8e7372862430a07f01aa8787b1f20947fa84aba5a817694"
+    },
+    {
+      "grid": [
+        31,
+        24,
+        12
+      ],
+      "threads": 2,
+      "stage": "decrease_dt",
+      "bitwise_equal": true,
+      "sha256": "42aa9ee6b14e73cdb33697faed50b2c0779abcad61fca74e10ed3b285ae4b90c"
+    },
+    {
+      "grid": [
+        31,
+        24,
+        12
+      ],
+      "threads": 2,
+      "stage": "new_situation_same_dt",
+      "bitwise_equal": true,
+      "sha256": "5511aae737ab815a9004c40d3852208b72a427bb4609bce8e922c5e38df54a42"
+    },
+    {
+      "grid": [
+        31,
+        24,
+        12
+      ],
+      "threads": 8,
+      "stage": "first",
+      "bitwise_equal": true,
+      "sha256": "42aa9ee6b14e73cdb33697faed50b2c0779abcad61fca74e10ed3b285ae4b90c"
+    },
+    {
+      "grid": [
+        31,
+        24,
+        12
+      ],
+      "threads": 8,
+      "stage": "unchanged",
+      "bitwise_equal": true,
+      "sha256": "42aa9ee6b14e73cdb33697faed50b2c0779abcad61fca74e10ed3b285ae4b90c"
+    },
+    {
+      "grid": [
+        31,
+        24,
+        12
+      ],
+      "threads": 8,
+      "stage": "increase_dt",
+      "bitwise_equal": true,
+      "sha256": "6b502bdcaa4ac76ba8e7372862430a07f01aa8787b1f20947fa84aba5a817694"
+    },
+    {
+      "grid": [
+        31,
+        24,
+        12
+      ],
+      "threads": 8,
+      "stage": "decrease_dt",
+      "bitwise_equal": true,
+      "sha256": "42aa9ee6b14e73cdb33697faed50b2c0779abcad61fca74e10ed3b285ae4b90c"
+    },
+    {
+      "grid": [
+        31,
+        24,
+        12
+      ],
+      "threads": 8,
+      "stage": "new_situation_same_dt",
+      "bitwise_equal": true,
+      "sha256": "5511aae737ab815a9004c40d3852208b72a427bb4609bce8e922c5e38df54a42"
+    },
+    {
+      "grid": [
+        64,
+        48,
+        24
+      ],
+      "threads": 1,
+      "stage": "first",
+      "bitwise_equal": true,
+      "sha256": "faf0144dbaa1e1fc797018f24c67e2d7dc84f9e0047281bc1574f794c14e789c"
+    },
+    {
+      "grid": [
+        64,
+        48,
+        24
+      ],
+      "threads": 1,
+      "stage": "unchanged",
+      "bitwise_equal": true,
+      "sha256": "faf0144dbaa1e1fc797018f24c67e2d7dc84f9e0047281bc1574f794c14e789c"
+    },
+    {
+      "grid": [
+        64,
+        48,
+        24
+      ],
+      "threads": 1,
+      "stage": "increase_dt",
+      "bitwise_equal": true,
+      "sha256": "4aa30825609813f4861a02eecf8323738316bf8922590667465f1c81ecc74e3e"
+    },
+    {
+      "grid": [
+        64,
+        48,
+        24
+      ],
+      "threads": 1,
+      "stage": "decrease_dt",
+      "bitwise_equal": true,
+      "sha256": "faf0144dbaa1e1fc797018f24c67e2d7dc84f9e0047281bc1574f794c14e789c"
+    },
+    {
+      "grid": [
+        64,
+        48,
+        24
+      ],
+      "threads": 1,
+      "stage": "new_situation_same_dt",
+      "bitwise_equal": true,
+      "sha256": "3b6a3c17e2f70fa399ec6f1d6990ba744e6f6b24290f881f343fe2b5d1af30ac"
+    },
+    {
+      "grid": [
+        64,
+        48,
+        24
+      ],
+      "threads": 2,
+      "stage": "first",
+      "bitwise_equal": true,
+      "sha256": "faf0144dbaa1e1fc797018f24c67e2d7dc84f9e0047281bc1574f794c14e789c"
+    },
+    {
+      "grid": [
+        64,
+        48,
+        24
+      ],
+      "threads": 2,
+      "stage": "unchanged",
+      "bitwise_equal": true,
+      "sha256": "faf0144dbaa1e1fc797018f24c67e2d7dc84f9e0047281bc1574f794c14e789c"
+    },
+    {
+      "grid": [
+        64,
+        48,
+        24
+      ],
+      "threads": 2,
+      "stage": "increase_dt",
+      "bitwise_equal": true,
+      "sha256": "4aa30825609813f4861a02eecf8323738316bf8922590667465f1c81ecc74e3e"
+    },
+    {
+      "grid": [
+        64,
+        48,
+        24
+      ],
+      "threads": 2,
+      "stage": "decrease_dt",
+      "bitwise_equal": true,
+      "sha256": "faf0144dbaa1e1fc797018f24c67e2d7dc84f9e0047281bc1574f794c14e789c"
+    },
+    {
+      "grid": [
+        64,
+        48,
+        24
+      ],
+      "threads": 2,
+      "stage": "new_situation_same_dt",
+      "bitwise_equal": true,
+      "sha256": "3b6a3c17e2f70fa399ec6f1d6990ba744e6f6b24290f881f343fe2b5d1af30ac"
+    },
+    {
+      "grid": [
+        64,
+        48,
+        24
+      ],
+      "threads": 8,
+      "stage": "first",
+      "bitwise_equal": true,
+      "sha256": "faf0144dbaa1e1fc797018f24c67e2d7dc84f9e0047281bc1574f794c14e789c"
+    },
+    {
+      "grid": [
+        64,
+        48,
+        24
+      ],
+      "threads": 8,
+      "stage": "unchanged",
+      "bitwise_equal": true,
+      "sha256": "faf0144dbaa1e1fc797018f24c67e2d7dc84f9e0047281bc1574f794c14e789c"
+    },
+    {
+      "grid": [
+        64,
+        48,
+        24
+      ],
+      "threads": 8,
+      "stage": "increase_dt",
+      "bitwise_equal": true,
+      "sha256": "4aa30825609813f4861a02eecf8323738316bf8922590667465f1c81ecc74e3e"
+    },
+    {
+      "grid": [
+        64,
+        48,
+        24
+      ],
+      "threads": 8,
+      "stage": "decrease_dt",
+      "bitwise_equal": true,
+      "sha256": "faf0144dbaa1e1fc797018f24c67e2d7dc84f9e0047281bc1574f794c14e789c"
+    },
+    {
+      "grid": [
+        64,
+        48,
+        24
+      ],
+      "threads": 8,
+      "stage": "new_situation_same_dt",
+      "bitwise_equal": true,
+      "sha256": "3b6a3c17e2f70fa399ec6f1d6990ba744e6f6b24290f881f343fe2b5d1af30ac"
+    }
+  ]
+}

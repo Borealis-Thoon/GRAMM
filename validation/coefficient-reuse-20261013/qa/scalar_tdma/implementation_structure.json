@@ -1,0 +1,79 @@
+{
+  "cache_range": "1 <= k < NK",
+  "full_cell_not_half_cell": true,
+  "producer_guard": "ICT || ICQU",
+  "fresh_each_TERMIPS": true,
+  "no_public_toggle": true,
+  "consumer_counts": {
+    "TIMP.cs": {
+      "cached_reciprocal_uses": 16,
+      "unchanged_P_writes": 16
+    },
+    "FIMP.cs": {
+      "cached_reciprocal_uses": 16,
+      "unchanged_P_writes": 16
+    }
+  },
+  "build_pending_root_timing_lock": false,
+  "source_commit": "62c8d3e997c3852a309483e19b0726973db35154",
+  "strict_builds": {
+    "native": {
+      "warnings": 0,
+      "errors": 0,
+      "path": "build/scalar_tdma/GRAMM.dll"
+    },
+    "instrumented": {
+      "warnings": 0,
+      "errors": 0,
+      "path": "build/instrumented_scalar_tdma/GRAMM.dll"
+    },
+    "method_baseline": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "method_patched": {
+      "warnings": 0,
+      "errors": 0
+    }
+  },
+  "actual_method_validation": {
+    "status": "pass",
+    "cases": 108,
+    "values": 7803432,
+    "serial_partition_replay": true,
+    "configured_threads": [
+      1,
+      4,
+      8
+    ],
+    "modes": [
+      "both_off",
+      "temperature_only",
+      "humidity_only",
+      "both_on"
+    ],
+    "sequential_dt": [
+      1.5,
+      5,
+      2
+    ],
+    "density_changed_at_stage": 1,
+    "actual_methods": [
+      "Define_Arrays",
+      "Max_Proc_File_Read",
+      "TERMIPSterms",
+      "Timp_calculate",
+      "Fimp_calculate"
+    ],
+    "no_copied_solver_equations": true
+  },
+  "full_engine_validation": "root coordinated; not part of this method check",
+  "diff": {
+    "files": 5,
+    "added_lines": 79,
+    "deleted_lines": 62,
+    "added_characters_including_lf": 3966,
+    "deleted_characters_including_lf": 3680,
+    "count_method": "Unicode code points in changed lines, including one LF per line, excluding diff headers"
+  }
+}

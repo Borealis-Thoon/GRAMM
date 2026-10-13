@@ -1,0 +1,126 @@
+diff --git a/src/INITA.cs b/src/INITA.cs
+index 84b3f7e206ab0aaec442b155ceaa38e4f3eafbf8..62a027cd4d04ed3c0f00d5e8674414537964a54b 100644
+--- a/src/INITA.cs
++++ b/src/INITA.cs
+@@ -30,6 +30,8 @@ namespace GRAMM_2001
+         /// <param name="NK"></param>
+         public static void INITA(int NI, int NJ, int NK)
+         {
++            RadiationSourceNeedsUpdate = true;
++
+             const double B0 = 38.00699;
+             const double B1 = 6546.307;
+             const double B2 = -3.257572;
+diff --git a/src/RADIAT.cs b/src/RADIAT.cs
+index fa56ef31fc672406e0301377b5914b0e5110aaac..3a1bb94bc81445250a443dc85ab174a17d6ca73d 100644
+--- a/src/RADIAT.cs
++++ b/src/RADIAT.cs
+@@ -305,6 +305,8 @@ namespace GRAMM_2001
+         ///<param name="NK">Number of cells in z direction></param>
+         public void RADIATRAD(bool lGeom, bool lGeomWr, bool lGeomRe, int iTag, int iMon, int iJahr, double Zeit, int NI, int NJ, int NK)
+         {
++            Program.RadiationSourceNeedsUpdate = true;
++
+             /*
+              * This routine computes shortwave incoming solar radiation and longwave terrestrial radiation
+              * as well as atmospheric heating rates
+diff --git a/src/TIMP.cs b/src/TIMP.cs
+index c2f5ba308cd9a5c6a56a871d0dbbc6a18bb821e8..4d692ca5883888aa7eed3634631a04804650b6a6 100644
+--- a/src/TIMP.cs
++++ b/src/TIMP.cs
+@@ -20,52 +20,59 @@ namespace GRAMM_2001
+ {
+     partial class Program
+     {
++        // Density, conversion factors and grid geometry stay fixed within each weather situation.
++        internal static bool RadiationSourceNeedsUpdate = true;
++
+         [MethodImpl(MethodImplOptions.AggressiveOptimization)]
+         public static void Timp_calculate(int NI, int NJ, int NK)
+         {
+-            //computation of radiation terms
+-            int range_parallel = (NI - 2) / Program.pOptions.MaxDegreeOfParallelism;
+-            range_parallel = Math.Min(NI, range_parallel); // if NI < range_parallel
+-            //computation of the new temperature
+-            //Parallel.For(2, NI, Program.pOptions, i =>
+-            Parallel.ForEach(Partitioner.Create(2, NI, range_parallel), range =>
++            if (RadiationSourceNeedsUpdate)
+             {
+-                for (int i = range.Item1; i < range.Item2; ++i)
++                //computation of radiation terms
++                int range_parallel = (NI - 2) / Program.pOptions.MaxDegreeOfParallelism;
++                range_parallel = Math.Min(NI, range_parallel); // if NI < range_parallel
++                //computation of the new temperature
++                //Parallel.For(2, NI, Program.pOptions, i =>
++                Parallel.ForEach(Partitioner.Create(2, NI, range_parallel), range =>
+                 {
+-                    for (int j = 2; j <= NJ - 1; ++j)
++                    for (int i = range.Item1; i < range.Item2; ++i)
+                     {
+-                        ReadOnlySpan<double> DT_SOL_L = Program.DT_SOL[i][j];
+-                        ReadOnlySpan<double> DT_TERR_L = Program.DT_TERR[i][j];
+-                        ReadOnlySpan<float> FAC_L = Program.FAC[i][j];
+-                        ReadOnlySpan<double> NBZKP_L = Program.NBZKP[i][j];
+-                        ReadOnlySpan<double> PNBZKP_L = Program.PNBZKP[i][j];
+-                        double[] RADIATION_L = Program.RADIATION[i][j];
+-                        ReadOnlySpan<float> RHO_L = Program.RHO[i][j];
+-                        ReadOnlySpan<float> VOL_J = Program.VOLImm[i][j].AsSpan();
+-
+-                        for (int k = 1; k < RADIATION_L.Length; ++k)
+-                        {
+-                            int KKAP = (int)(Math.Floor(NBZKP_L[k]));
+-                            int KKAM = KKAP - 1;
+-                            if (KKAP == 1)
++                        for (int j = 2; j <= NJ - 1; ++j)
++                        {
++                            ReadOnlySpan<double> DT_SOL_L = Program.DT_SOL[i][j];
++                            ReadOnlySpan<double> DT_TERR_L = Program.DT_TERR[i][j];
++                            ReadOnlySpan<float> FAC_L = Program.FAC[i][j];
++                            ReadOnlySpan<double> NBZKP_L = Program.NBZKP[i][j];
++                            ReadOnlySpan<double> PNBZKP_L = Program.PNBZKP[i][j];
++                            double[] RADIATION_L = Program.RADIATION[i][j];
++                            ReadOnlySpan<float> RHO_L = Program.RHO[i][j];
++                            ReadOnlySpan<float> VOL_J = Program.VOLImm[i][j].AsSpan();
++
++                            for (int k = 1; k < RADIATION_L.Length; ++k)
+                             {
+-                                KKAM = 1;
+-                            }
+-
+-                            if (Program.ICSTR == true)
+-                            {
+-                                RADIATION_L[k] = ((DT_SOL_L[KKAP] + DT_TERR_L[KKAP]) * PNBZKP_L[k] +
+-                                (DT_SOL_L[KKAM] + DT_TERR_L[KKAM]) * (1 - PNBZKP_L[k])) *
+-                                FAC_L[k] * VOL_J[k] * RHO_L[k];
+-                            }
+-                            else
+-                            {
+-                                RADIATION_L[k] = 0.0;
++                                int KKAP = (int)(Math.Floor(NBZKP_L[k]));
++                                int KKAM = KKAP - 1;
++                                if (KKAP == 1)
++                                {
++                                    KKAM = 1;
++                                }
++
++                                if (Program.ICSTR == true)
++                                {
++                                    RADIATION_L[k] = ((DT_SOL_L[KKAP] + DT_TERR_L[KKAP]) * PNBZKP_L[k] +
++                                    (DT_SOL_L[KKAM] + DT_TERR_L[KKAM]) * (1 - PNBZKP_L[k])) *
++                                    FAC_L[k] * VOL_J[k] * RHO_L[k];
++                                }
++                                else
++                                {
++                                    RADIATION_L[k] = 0.0;
++                                }
+                             }
+                         }
+                     }
+-                }
+-            });
++                });
++                RadiationSourceNeedsUpdate = false;
++            }
+ 
+             //computation of the new temperature
+             //Parallel.For(2, NI, Program.pOptions, i =>

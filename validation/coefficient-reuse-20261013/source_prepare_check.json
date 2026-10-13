@@ -1,0 +1,45 @@
+{
+  "upstream": "03224ce9d3490783c84a8aecd72642fe9df21242",
+  "variants": [
+    {
+      "variant": "baseline",
+      "source_commit": "ebe9dbbb9d6ba726c6aef5ac2d5c9be3cbf3f203",
+      "source_tree": "62617871be72fa0334b310bd8ce8a47b5248ba75",
+      "source_tree_matches_reviewed": true,
+      "output": "work/build/baseline_clean",
+      "build": "pass"
+    },
+    {
+      "variant": "pressure",
+      "source_commit": "252436b01dc32e8d983d7ab2e0b433ed15016be7",
+      "source_tree": "f2c4de6533bdb65cf6721de452cb4ad7b98aaaef",
+      "source_tree_matches_reviewed": true,
+      "output": "build/pressure",
+      "build": "pass"
+    },
+    {
+      "variant": "tdma",
+      "source_commit": "abd7c359242bd9755e80ddb17096e5ee080916c8",
+      "source_tree": "0bfe9b72678acd752b8d3492b684400461a0c393",
+      "source_tree_matches_reviewed": true,
+      "output": "build/tdma",
+      "build": "pass"
+    },
+    {
+      "variant": "radiation",
+      "source_commit": "cec727892d678467b01ca4d89d998ca79f7478d1",
+      "source_tree": "9fad728dfd88e4872434275313d1b9a6046720b9",
+      "source_tree_matches_reviewed": true,
+      "output": "qa/radiation/build",
+      "build": "pass"
+    },
+    {
+      "variant": "scalar_tdma",
+      "source_commit": "675a99cbfed4d685a479a1e1e08b67137debc93a",
+      "source_tree": "fe296f0d25955396296a0ba7c1df887abfc54c51",
+      "source_tree_matches_reviewed": true,
+      "output": "build/scalar_tdma",
+      "build": "pass"
+    }
+  ]
+}

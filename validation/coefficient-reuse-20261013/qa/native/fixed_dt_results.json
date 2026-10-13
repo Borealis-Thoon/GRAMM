@@ -1,0 +1,1772 @@
+[
+  {
+    "case": "fixed_dt_4t",
+    "variant": "baseline",
+    "rep": 0,
+    "measured": false,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.075876,
+    "cpu_seconds": 20.890625,
+    "peak_working_set_bytes": 150077440,
+    "assembly_sha256": "2c7ca29a6a9fd6953c0c35fd49176caf435bf2edcc39c26880f2786299d93f70",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "23e4eb5001f1429b518c8c6cb8761afa782e9286a44dab70711e100efaf9e8a7",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r00_baseline"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "pressure",
+    "rep": 0,
+    "measured": false,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.1918316,
+    "cpu_seconds": 21.71875,
+    "peak_working_set_bytes": 150003712,
+    "assembly_sha256": "c6a276e0d948ebe5a0ee7e4b1d88652b2dfe7959baac1efd699d89521486e708",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "9391da1b3c591de024e0dd32f2f0631c01f1e0125e7fc5361993e1d19e50aa8c",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r00_pressure"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "tdma",
+    "rep": 0,
+    "measured": false,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.3924564,
+    "cpu_seconds": 21.296875,
+    "peak_working_set_bytes": 149831680,
+    "assembly_sha256": "e605b8ed224e824bec256f62b5574fae34f5336b7a3f43b200f80bdef5945ed9",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "1a147581a4ef182c622eddca8230b57a21cddb91a8e87f6e20a23b62fdb1cf89",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r00_tdma"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "radiation",
+    "rep": 0,
+    "measured": false,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.2107227,
+    "cpu_seconds": 20.046875,
+    "peak_working_set_bytes": 149958656,
+    "assembly_sha256": "5b519957e7f8a3a5026739f63a72f33db09bb494af0b72842c9519feca22c44f",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "bba0881badb609349cc9d85fae06d2157829f1a7859e736b1db5fbdaaaaa65ef",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r00_radiation"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "scalar_tdma",
+    "rep": 0,
+    "measured": false,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.2513995,
+    "cpu_seconds": 20.78125,
+    "peak_working_set_bytes": 149979136,
+    "assembly_sha256": "2ef46ffa4243af165a1d39b664963adf1b603b5ef7132de8691bf247c350b316",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "2b52839fb7914bd5aceced65e879ef7438551f93517bade30caa26d7742e208e",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r00_scalar_tdma"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "baseline",
+    "rep": 1,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.0747707,
+    "cpu_seconds": 20.5625,
+    "peak_working_set_bytes": 149778432,
+    "assembly_sha256": "2c7ca29a6a9fd6953c0c35fd49176caf435bf2edcc39c26880f2786299d93f70",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "e6fce4b1900874d310fdf098846fd6f37d37383936532a7f265982b89f286e8b",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r01_baseline"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "scalar_tdma",
+    "rep": 1,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.024279,
+    "cpu_seconds": 21.34375,
+    "peak_working_set_bytes": 150028288,
+    "assembly_sha256": "2ef46ffa4243af165a1d39b664963adf1b603b5ef7132de8691bf247c350b316",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "1ce02c51eb3fed4f038575cb1cf76dd57c0ff0ce9b314386f6c332a4d36db215",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r01_scalar_tdma"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "radiation",
+    "rep": 1,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 13.078078,
+    "cpu_seconds": 21.796875,
+    "peak_working_set_bytes": 149987328,
+    "assembly_sha256": "5b519957e7f8a3a5026739f63a72f33db09bb494af0b72842c9519feca22c44f",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "9391da1b3c591de024e0dd32f2f0631c01f1e0125e7fc5361993e1d19e50aa8c",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r01_radiation"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "tdma",
+    "rep": 1,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.1866675,
+    "cpu_seconds": 21.09375,
+    "peak_working_set_bytes": 150208512,
+    "assembly_sha256": "e605b8ed224e824bec256f62b5574fae34f5336b7a3f43b200f80bdef5945ed9",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "e5773e7d8a3fa4d205f1d212ce2a6a07beb7a3e0a596b93b95acce3c1889b434",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r01_tdma"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "pressure",
+    "rep": 1,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.5395977,
+    "cpu_seconds": 20.875,
+    "peak_working_set_bytes": 150282240,
+    "assembly_sha256": "c6a276e0d948ebe5a0ee7e4b1d88652b2dfe7959baac1efd699d89521486e708",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "f6fbac02f87f81b13bf6d6155d1fb9853d32db35fdb4f4b76a00c92cd21eb698",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r01_pressure"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "tdma",
+    "rep": 2,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.6763025,
+    "cpu_seconds": 22.140625,
+    "peak_working_set_bytes": 150061056,
+    "assembly_sha256": "e605b8ed224e824bec256f62b5574fae34f5336b7a3f43b200f80bdef5945ed9",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "0b3087e5f6fd7b654e3ce102450be9813b0d7e67f3fbf773d85aaa3431c8f9a6",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r02_tdma"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "radiation",
+    "rep": 2,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.5280298,
+    "cpu_seconds": 21.25,
+    "peak_working_set_bytes": 149880832,
+    "assembly_sha256": "5b519957e7f8a3a5026739f63a72f33db09bb494af0b72842c9519feca22c44f",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "571c7f771cdbc5448f0a729eb48cc71e8a2352627ccbe8a5d8bcabf8221fc801",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r02_radiation"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "scalar_tdma",
+    "rep": 2,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.314565,
+    "cpu_seconds": 20.796875,
+    "peak_working_set_bytes": 150102016,
+    "assembly_sha256": "2ef46ffa4243af165a1d39b664963adf1b603b5ef7132de8691bf247c350b316",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "d8721769d51dabbc988d0f40b25860fcc5bfb6db8079f27098edf6185fe6f3ea",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r02_scalar_tdma"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "baseline",
+    "rep": 2,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.5821268,
+    "cpu_seconds": 22.109375,
+    "peak_working_set_bytes": 150011904,
+    "assembly_sha256": "2c7ca29a6a9fd6953c0c35fd49176caf435bf2edcc39c26880f2786299d93f70",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "818be9fa54e22e32129f2f7a8284f64a2513848027a3474865f351e174e03e5d",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r02_baseline"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "pressure",
+    "rep": 2,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.536539,
+    "cpu_seconds": 21.1875,
+    "peak_working_set_bytes": 149970944,
+    "assembly_sha256": "c6a276e0d948ebe5a0ee7e4b1d88652b2dfe7959baac1efd699d89521486e708",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "114d54148b93d9d604eaee1c964640c2315e3e4f4271c0fd0adf9de4da5a27ad",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r02_pressure"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "tdma",
+    "rep": 3,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.8896805,
+    "cpu_seconds": 21.296875,
+    "peak_working_set_bytes": 149860352,
+    "assembly_sha256": "e605b8ed224e824bec256f62b5574fae34f5336b7a3f43b200f80bdef5945ed9",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "9391da1b3c591de024e0dd32f2f0631c01f1e0125e7fc5361993e1d19e50aa8c",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r03_tdma"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "pressure",
+    "rep": 3,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.9392518,
+    "cpu_seconds": 22.203125,
+    "peak_working_set_bytes": 149729280,
+    "assembly_sha256": "c6a276e0d948ebe5a0ee7e4b1d88652b2dfe7959baac1efd699d89521486e708",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "198784360ddd36bcd6a41491b5ac002dfae5d24444cdad20fb95b6263bdec7d2",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r03_pressure"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "baseline",
+    "rep": 3,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.4187423,
+    "cpu_seconds": 21.546875,
+    "peak_working_set_bytes": 150044672,
+    "assembly_sha256": "2c7ca29a6a9fd6953c0c35fd49176caf435bf2edcc39c26880f2786299d93f70",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "a679683a98e677cb440543a353827ea6891a243ea56586a49b2a85508dc850c3",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r03_baseline"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "scalar_tdma",
+    "rep": 3,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.2629358,
+    "cpu_seconds": 21.796875,
+    "peak_working_set_bytes": 150056960,
+    "assembly_sha256": "2ef46ffa4243af165a1d39b664963adf1b603b5ef7132de8691bf247c350b316",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "9391da1b3c591de024e0dd32f2f0631c01f1e0125e7fc5361993e1d19e50aa8c",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r03_scalar_tdma"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "radiation",
+    "rep": 3,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.2500915,
+    "cpu_seconds": 21.015625,
+    "peak_working_set_bytes": 150171648,
+    "assembly_sha256": "5b519957e7f8a3a5026739f63a72f33db09bb494af0b72842c9519feca22c44f",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "e29c35a2f38effe6a514bd481e42484c4953fc1f58864a00b4ecf61992f7f460",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r03_radiation"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "scalar_tdma",
+    "rep": 4,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.1637036,
+    "cpu_seconds": 20.765625,
+    "peak_working_set_bytes": 149872640,
+    "assembly_sha256": "2ef46ffa4243af165a1d39b664963adf1b603b5ef7132de8691bf247c350b316",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "2b52839fb7914bd5aceced65e879ef7438551f93517bade30caa26d7742e208e",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r04_scalar_tdma"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "baseline",
+    "rep": 4,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.3376996,
+    "cpu_seconds": 21.0625,
+    "peak_working_set_bytes": 149893120,
+    "assembly_sha256": "2c7ca29a6a9fd6953c0c35fd49176caf435bf2edcc39c26880f2786299d93f70",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "9391da1b3c591de024e0dd32f2f0631c01f1e0125e7fc5361993e1d19e50aa8c",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r04_baseline"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "pressure",
+    "rep": 4,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.3721936,
+    "cpu_seconds": 20.953125,
+    "peak_working_set_bytes": 150069248,
+    "assembly_sha256": "c6a276e0d948ebe5a0ee7e4b1d88652b2dfe7959baac1efd699d89521486e708",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "e86210ec59fa6ecb22c4710032aaeb4350a16990cb5f69c9a23919ff4aa694c6",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r04_pressure"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "tdma",
+    "rep": 4,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.1847912,
+    "cpu_seconds": 20.484375,
+    "peak_working_set_bytes": 149901312,
+    "assembly_sha256": "e605b8ed224e824bec256f62b5574fae34f5336b7a3f43b200f80bdef5945ed9",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "aa428b130b5b1030043a13685064585467ab9625a8e394b3934728604176e486",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r04_tdma"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "radiation",
+    "rep": 4,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.2494518,
+    "cpu_seconds": 20.578125,
+    "peak_working_set_bytes": 149889024,
+    "assembly_sha256": "5b519957e7f8a3a5026739f63a72f33db09bb494af0b72842c9519feca22c44f",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "9391da1b3c591de024e0dd32f2f0631c01f1e0125e7fc5361993e1d19e50aa8c",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r04_radiation"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "scalar_tdma",
+    "rep": 5,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.0537388,
+    "cpu_seconds": 20.875,
+    "peak_working_set_bytes": 150056960,
+    "assembly_sha256": "2ef46ffa4243af165a1d39b664963adf1b603b5ef7132de8691bf247c350b316",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "11fe06cd07adeb60357adc07dbade577f63bf54fa33adda20279bb2415497d57",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r05_scalar_tdma"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "radiation",
+    "rep": 5,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.1551401,
+    "cpu_seconds": 20.96875,
+    "peak_working_set_bytes": 150061056,
+    "assembly_sha256": "5b519957e7f8a3a5026739f63a72f33db09bb494af0b72842c9519feca22c44f",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "9391da1b3c591de024e0dd32f2f0631c01f1e0125e7fc5361993e1d19e50aa8c",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r05_radiation"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "tdma",
+    "rep": 5,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.1323611,
+    "cpu_seconds": 21.171875,
+    "peak_working_set_bytes": 149975040,
+    "assembly_sha256": "e605b8ed224e824bec256f62b5574fae34f5336b7a3f43b200f80bdef5945ed9",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "9391da1b3c591de024e0dd32f2f0631c01f1e0125e7fc5361993e1d19e50aa8c",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r05_tdma"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "pressure",
+    "rep": 5,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.0543869,
+    "cpu_seconds": 20.125,
+    "peak_working_set_bytes": 149958656,
+    "assembly_sha256": "c6a276e0d948ebe5a0ee7e4b1d88652b2dfe7959baac1efd699d89521486e708",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "22eae44561eb45c72407c8b228b5198d8cc5af01f73c4590441b31bcd89b6d5c",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r05_pressure"
+  },
+  {
+    "case": "fixed_dt_4t",
+    "variant": "baseline",
+    "rep": 5,
+    "measured": true,
+    "config": {
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "threads": 4,
+      "sc": 5,
+      "wind": 2,
+      "duration": 450,
+      "dt": 1.5,
+      "irad": 60,
+      "custom": false,
+      "coast": false,
+      "multi": false,
+      "situations": 1,
+      "radiation": true,
+      "turbulence": true
+    },
+    "lifetime_seconds": 12.4638031,
+    "cpu_seconds": 20.890625,
+    "peak_working_set_bytes": 150396928,
+    "assembly_sha256": "2c7ca29a6a9fd6953c0c35fd49176caf435bf2edcc39c26880f2786299d93f70",
+    "payloads": {
+      "00001.wnd": {
+        "sha256": "1d2af5e04f30093583aded3c33c8f641fc183d78a4e195ab17b5ed0b5e11964c",
+        "size": 248852
+      },
+      "00001.scl/00001.obl": {
+        "sha256": "2bd46f3393d2624ddf34bf269fe7be7932d78f434a7938817a2ddd35f96425d8",
+        "size": 3476
+      },
+      "00001.scl/00001.scl": {
+        "sha256": "b45cbfee60cfff17935fb91a00b8a2db95fb3ea994779b34539e65d698584aa4",
+        "size": 3476
+      },
+      "00001.scl/00001.ust": {
+        "sha256": "a7ab435485efeeea975801fe7d4a5e9121f1190d5f318cf5eed85d6692edeaf7",
+        "size": 3476
+      },
+      "00001_steady_state.txt": {
+        "sha256": "8779e235c29ee84ce24fd710780cca23fca0bf0202bfce9d181497aa705be2f8",
+        "size": 3641
+      }
+    },
+    "folder": "./runs/native/fixed_dt_4t/r05_baseline"
+  }
+]

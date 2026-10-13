@@ -1,0 +1,42 @@
+{
+  "review_date": "2026-10-13",
+  "base_commit": "03224ce9d3490783c84a8aecd72642fe9df21242",
+  "verdict": "No actionable source defect found",
+  "findings": [],
+  "reviewed_commits": {
+    "tdma": "6e9f9f499cc80064d16a528e95f21c1925a4b7c3",
+    "pressure": "9191ac64658a3129e24b12644857ea6f9e0d72ba",
+    "radiation": "fd616cfca3f84d6149e05579a441442b31452027"
+  },
+  "review_independence": {
+    "tdma": "reviewer did not implement",
+    "pressure": "reviewer did not implement",
+    "radiation": "second review by implementing agent"
+  },
+  "code_changed": false,
+  "tests_run": 0,
+  "checks": [
+    "pressure AP0 writer, TERMIV/TERMIP order, RHO writers, DT writers, output coefficient writers, retry/reset paths",
+    "radiation heating, density, conversion-factor, grid and switch writers; call sites and parallel completion",
+    "TDMA first row, lower/upper half-cell recurrence, Q separation, stack initialization, all sweep directions, locks and pool buffers"
+  ],
+  "integration_note": "Retain both INITA reset assignments when combining pressure and radiation",
+  "required_before_submission": [
+    "Measured individual full-engine benefit",
+    "Pressure DT increase/decrease and same-DT new situation",
+    "Radiation actual RADIATRAD refresh, dynamic-sun boundary and second situation",
+    "Multithread baseline-repeat envelope",
+    "Independent reviewer for radiation"
+  ],
+  "prose_revision": {
+    "mode": "Embedded",
+    "automated_style_grade": null,
+    "workflow": [
+      "draft from source evidence",
+      "audit structural tells",
+      "revise for direct technical prose",
+      "check identifiers, commits, numerical conditions and scope against source"
+    ],
+    "skill": "humanize-kit:humanizer"
+  }
+}

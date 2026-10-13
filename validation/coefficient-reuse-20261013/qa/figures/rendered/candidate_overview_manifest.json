@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "summary": "./qa/native/summary.json",
+      "summary_sha256": "d59fe7a6016f1e0d1895c0f00bae85cedc774ddb18561f20e8321053ca9416be",
+      "records": "./qa/native/results.json",
+      "records_sha256": "9533448bbd7475b86abe3913fdf684c388e1a7b410b61fec2c6bff3729773a38",
+      "original_summary_sha256": "fcac236ca28eba62dd407a572c37c0cdbe59e0f68f772b019f32dfad065101bb",
+      "original_records_sha256": "4ad40976c017fdaad6ba0a98b5c3f435d04f0a5d0384e127f622dd8104f7d880"
+    },
+    {
+      "summary": "./qa/native/fixed_dt_summary.json",
+      "summary_sha256": "da62a2e2472d27ba3be6f39cabde29a98f0dea25f78f3b9117d5cae2c8097d8d",
+      "records": "./qa/native/fixed_dt_results.json",
+      "records_sha256": "bb9b23762f29a7ef594d7f4a04b60230dc8a94c22f06aaf25442e22eb4f55dc8",
+      "original_summary_sha256": "d96f817761794a685c3480ba4d8685d74fc4418c24dc5c3889fcf26320951a16",
+      "original_records_sha256": "8dbff20fe633952797c4efc78200cadfb3d7a224bf8474616fc0a5f7f235f553"
+    },
+    {
+      "summary": "./qa/native/scalar_summary.json",
+      "summary_sha256": "d257403985b9e93542c20b58d6dd82dff4b5b330244719e4627f3ccbef2075f4",
+      "records": "./qa/native/scalar_results.json",
+      "records_sha256": "ce58effe6c9e558fa241ced1f115391eb7ade62d1df12df48b6fc20d3ae04763",
+      "original_summary_sha256": "d8cdd1734cdf165fa3d2919cb07719e857e297140001a150ee360f11a0e0b3ee",
+      "original_records_sha256": "6b30fc9381307301f904c7acfc70e49e56e469d7c4f05cdfb99a892147f6c49c"
+    }
+  ],
+  "script_sha256": "827454f238efb4fe863b9d57efd9239dd168bfb87df03aa74a74c04991eca63c",
+  "outputs": [
+    {
+      "file": "candidate_overview.png",
+      "sha256": "74ea3c7e730ad5a8d5a733ade986b3337430a22392f89a88179177bb9a5f0ddd"
+    },
+    {
+      "file": "candidate_overview.svg",
+      "sha256": "1fc05490370e409d972c96afe6b3aa5f809118684260650752aa3fe543826eca"
+    },
+    {
+      "file": "candidate_overview_data.json",
+      "sha256": "75985fe0045f1b8e685706e2542f52e2a20c81e3074628d20f4e4b168e72d446",
+      "original_sha256": "7859cb51f20ef0bf91c573ce62e8853847bbfd4bac7e0151403667b12c747e5e"
+    },
+    {
+      "file": "candidate_overview_data.csv",
+      "sha256": "493ab983f1c94791038d075b0c086b6039c1f2c6c8e2a74033bfa14c6bfa817d"
+    }
+  ]
+}

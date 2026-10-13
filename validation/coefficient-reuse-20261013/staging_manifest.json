@@ -1,0 +1,719 @@
+{
+  "upstream_repository": "https://github.com/GralDispersionModel/GRAMM.git",
+  "upstream_branch": "V2701",
+  "upstream_commit": "03224ce9d3490783c84a8aecd72642fe9df21242",
+  "files": [
+    {
+      "path": "work/fixture.py",
+      "original_sha256": "0f7037d132bce897c085b39b845d7a34fb83c3e90d6e8f45d106e24827e96696",
+      "staged_sha256": "0f7037d132bce897c085b39b845d7a34fb83c3e90d6e8f45d106e24827e96696",
+      "adaptations": []
+    },
+    {
+      "path": "work/geometry_fixture.py",
+      "original_sha256": "e832285584ae1f24dd99fd5ee73c697f47a5118f4bfc1359c20b345524a6087c",
+      "staged_sha256": "e832285584ae1f24dd99fd5ee73c697f47a5118f4bfc1359c20b345524a6087c",
+      "adaptations": []
+    },
+    {
+      "path": "work/full_tests.py",
+      "original_sha256": "b26c8a64d195ca385ba8fb369fa03881c3502b9ce35ee55c670c2db88789dcf4",
+      "staged_sha256": "c06f8a8ff5bca0b9b4e1c263ab678806cb74ce2c7787ae79c11f21b49dfbc0f5",
+      "adaptations": [
+        "Resolve dotnet from GRAMM_TEST_DOTNET or PATH"
+      ]
+    },
+    {
+      "path": "work/fidelity_suite.py",
+      "original_sha256": "1a27d7fdf0b6d462eff6cc2b3d02bbd2cce0370010f372592c19d4c9a1c21ef6",
+      "staged_sha256": "1a27d7fdf0b6d462eff6cc2b3d02bbd2cce0370010f372592c19d4c9a1c21ef6",
+      "adaptations": []
+    },
+    {
+      "path": "work/fidelity_turbulence.py",
+      "original_sha256": "44bd79f54b5246c686afeeb2ac26c3f4992afd3f216ffdeb30ac7f6505a828f1",
+      "staged_sha256": "44bd79f54b5246c686afeeb2ac26c3f4992afd3f216ffdeb30ac7f6505a828f1",
+      "adaptations": []
+    },
+    {
+      "path": "work/native_benchmark.py",
+      "original_sha256": "f9e79cd9823a57090f3b6460845d74c0fbfe6fc516a91571566b0c5be04feac6",
+      "staged_sha256": "f9e79cd9823a57090f3b6460845d74c0fbfe6fc516a91571566b0c5be04feac6",
+      "adaptations": []
+    },
+    {
+      "path": "qa/pressure/native_console_runner.py",
+      "original_sha256": "d8eb6f80679f7110621fd0d51d7e1170a71d4557aa843e4e241e6f2267710efa",
+      "staged_sha256": "bb2fb902f0f51fe6a082601fa5f3fa99568d5302e55a5faed5e3e9d464277eb8",
+      "adaptations": [
+        "Resolve dotnet from GRAMM_TEST_DOTNET or PATH"
+      ]
+    },
+    {
+      "path": "qa/pressure/PressureCheck.csproj",
+      "original_sha256": "dc2c8e6c620ea7e381d4a98c00155b9f077b41901bf16f86657e3d2829607d36",
+      "staged_sha256": "dc2c8e6c620ea7e381d4a98c00155b9f077b41901bf16f86657e3d2829607d36",
+      "adaptations": []
+    },
+    {
+      "path": "qa/pressure/Program.cs",
+      "original_sha256": "bf23dd02a8a206bda3640cc80dad90f82dc5a23d77322862e07cda0de222c988",
+      "staged_sha256": "bf23dd02a8a206bda3640cc80dad90f82dc5a23d77322862e07cda0de222c988",
+      "adaptations": []
+    },
+    {
+      "path": "qa/tdma/baseline.csproj",
+      "original_sha256": "c6d383f9bb5367159c6fc8c680db0dcd18fb0ea8d64eeef13e2004d0fdcc7c58",
+      "staged_sha256": "aa7d60f37b712d9c231cb14f86ae1e7f86a795ceecb1c406b4c41c127115ceff",
+      "adaptations": [
+        "Replace local absolute Compile paths with project-relative paths"
+      ]
+    },
+    {
+      "path": "qa/tdma/patched.csproj",
+      "original_sha256": "7ae357adc8c3889c722bea4b802a458d90df1de032a1ad9188181397b016f033",
+      "staged_sha256": "bf81214dfa6031f1c1337a1d8aaa6d5a7ea63b44a104f9c5a37b6be403a586d0",
+      "adaptations": [
+        "Replace local absolute Compile paths with project-relative paths"
+      ]
+    },
+    {
+      "path": "qa/tdma/TdmaMethodCheck.cs",
+      "original_sha256": "d43fb33f2ad5de5a4f64c7f6f6b0b5225ca98a83bddb8c0e38f7f9ce44e50803",
+      "staged_sha256": "d43fb33f2ad5de5a4f64c7f6f6b0b5225ca98a83bddb8c0e38f7f9ce44e50803",
+      "adaptations": []
+    },
+    {
+      "path": "qa/radiation/harness/RadiationCheck.csproj",
+      "original_sha256": "dc2c8e6c620ea7e381d4a98c00155b9f077b41901bf16f86657e3d2829607d36",
+      "staged_sha256": "dc2c8e6c620ea7e381d4a98c00155b9f077b41901bf16f86657e3d2829607d36",
+      "adaptations": []
+    },
+    {
+      "path": "qa/radiation/harness/Program.cs",
+      "original_sha256": "e7b86e6ad6377a598e52b588d3706c6f630c1d107675a07d32869ed985786aba",
+      "staged_sha256": "e7b86e6ad6377a598e52b588d3706c6f630c1d107675a07d32869ed985786aba",
+      "adaptations": []
+    },
+    {
+      "path": "qa/full_engine_harness/HarnessSupport.cs",
+      "original_sha256": "4fdf6686f0832f03e3d0eb6cf3fe8788b67c4fea4816e01c82fa6bf224a0ae32",
+      "staged_sha256": "4fdf6686f0832f03e3d0eb6cf3fe8788b67c4fea4816e01c82fa6bf224a0ae32",
+      "adaptations": []
+    },
+    {
+      "path": "qa/full_engine_harness/prepare_instrumented.py",
+      "original_sha256": "caf956923602b177d5eb4a1ff876bc1709985e828aa2a0b9ab0e27c4315aef72",
+      "staged_sha256": "c34865ab0322b3e59b677e3c877a46e04b1682646409b9f4c08729904279a4da",
+      "adaptations": [
+        "Resolve dotnet from GRAMM_TEST_DOTNET or PATH"
+      ]
+    },
+    {
+      "path": "qa/scalar_tdma/check_methods.py",
+      "original_sha256": "907ccb26273bd572efa8177dd5e96c9646d17f6e8f22a8ae0e6de9c78c2f6539",
+      "staged_sha256": "ad878c2dc2d2fb66296c534a4e3fd52936881cf62ad9995c125fe6aed77552a3",
+      "adaptations": [
+        "Resolve dotnet from GRAMM_TEST_DOTNET or PATH"
+      ]
+    },
+    {
+      "path": "qa/scalar_tdma/prepare_instrumented_scalar.py",
+      "original_sha256": "a46a3e963e36e999ea1cd4fc70dce680f0bfb3adc8191d0aef450e117f9d5b32",
+      "staged_sha256": "a46a3e963e36e999ea1cd4fc70dce680f0bfb3adc8191d0aef450e117f9d5b32",
+      "adaptations": []
+    },
+    {
+      "path": "qa/scalar_tdma/baseline_method.csproj",
+      "original_sha256": "34d22bc2d2542632317893e580dd990262f34d1815cce16636059f7332124778",
+      "staged_sha256": "6ac6961a9e93b09fb025f17089ee280fcb81b55175f6d27d96bbf23cc803accd",
+      "adaptations": [
+        "Replace local absolute Compile paths with project-relative paths"
+      ]
+    },
+    {
+      "path": "qa/scalar_tdma/patched_method.csproj",
+      "original_sha256": "91c140c4aa6c962e8fcdffcfd511d052f8f73c2e6a88821c81545f5544952f91",
+      "staged_sha256": "419fe2f62e35d74545d1c51b21dd161ab103fe3abfec152751868d585ea376d3",
+      "adaptations": [
+        "Replace local absolute Compile paths with project-relative paths"
+      ]
+    },
+    {
+      "path": "qa/scalar_tdma/ScalarMethodCheck.cs",
+      "original_sha256": "4a8c9726b0c54647153f29a56e2e62f80c444e1ea1592cd6f47cf11fcb13781b",
+      "staged_sha256": "4a8c9726b0c54647153f29a56e2e62f80c444e1ea1592cd6f47cf11fcb13781b",
+      "adaptations": []
+    },
+    {
+      "path": "work/fidelity_scalar.py",
+      "original_sha256": "169e8589148452663a1a982c4cf682676b9e2fa2802afb07c7dae5a207ea97a2",
+      "staged_sha256": "169e8589148452663a1a982c4cf682676b9e2fa2802afb07c7dae5a207ea97a2",
+      "adaptations": []
+    },
+    {
+      "path": "work/fixed_dt_benchmark.py",
+      "original_sha256": "41b127686acc01e3d826a2f160bad9a05e0da139d6bf35576af9923f30a8463f",
+      "staged_sha256": "41b127686acc01e3d826a2f160bad9a05e0da139d6bf35576af9923f30a8463f",
+      "adaptations": []
+    },
+    {
+      "path": "qa/native/plan.json",
+      "original_sha256": "239cc0019e65c863e1072ec082c49e558867b51e24cb8286f4bb86904aba9fa4",
+      "staged_sha256": "3651216d153ec0c7390b7f8c3af19636e90cdf0d56cdcbee9b102007574f9295",
+      "adaptations": []
+    },
+    {
+      "path": "qa/native/results.json",
+      "original_sha256": "4ad40976c017fdaad6ba0a98b5c3f435d04f0a5d0384e127f622dd8104f7d880",
+      "staged_sha256": "9533448bbd7475b86abe3913fdf684c388e1a7b410b61fec2c6bff3729773a38",
+      "adaptations": [
+        "Replace host workspace and dotnet paths with relative paths and the dotnet command"
+      ]
+    },
+    {
+      "path": "qa/native/summary.json",
+      "original_sha256": "fcac236ca28eba62dd407a572c37c0cdbe59e0f68f772b019f32dfad065101bb",
+      "staged_sha256": "d59fe7a6016f1e0d1895c0f00bae85cedc774ddb18561f20e8321053ca9416be",
+      "adaptations": []
+    },
+    {
+      "path": "qa/native/fixed_dt_results.json",
+      "original_sha256": "8dbff20fe633952797c4efc78200cadfb3d7a224bf8474616fc0a5f7f235f553",
+      "staged_sha256": "bb9b23762f29a7ef594d7f4a04b60230dc8a94c22f06aaf25442e22eb4f55dc8",
+      "adaptations": [
+        "Replace host workspace and dotnet paths with relative paths and the dotnet command"
+      ]
+    },
+    {
+      "path": "qa/native/fixed_dt_summary.json",
+      "original_sha256": "d96f817761794a685c3480ba4d8685d74fc4418c24dc5c3889fcf26320951a16",
+      "staged_sha256": "da62a2e2472d27ba3be6f39cabde29a98f0dea25f78f3b9117d5cae2c8097d8d",
+      "adaptations": []
+    },
+    {
+      "path": "qa/native/scalar_plan.json",
+      "original_sha256": "c4f3ad81759dbca5fabc0c883d6857c923b935f6548c697a06123c2197e80734",
+      "staged_sha256": "63ac22388f344938117f5330037e37aa71ddebc56b0e2a3ac88a283c99adb0de",
+      "adaptations": []
+    },
+    {
+      "path": "qa/native/scalar_results.json",
+      "original_sha256": "6b30fc9381307301f904c7acfc70e49e56e469d7c4f05cdfb99a892147f6c49c",
+      "staged_sha256": "ce58effe6c9e558fa241ced1f115391eb7ade62d1df12df48b6fc20d3ae04763",
+      "adaptations": [
+        "Replace host workspace and dotnet paths with relative paths and the dotnet command"
+      ]
+    },
+    {
+      "path": "qa/native/scalar_summary.json",
+      "original_sha256": "d8cdd1734cdf165fa3d2919cb07719e857e297140001a150ee360f11a0e0b3ee",
+      "staged_sha256": "d257403985b9e93542c20b58d6dd82dff4b5b330244719e4627f3ccbef2075f4",
+      "adaptations": []
+    },
+    {
+      "path": "qa/fidelity/cases.json",
+      "original_sha256": "58e6db09500939c373b29219a60b75e02d095c22d93f2f61c4a28e6affcf408b",
+      "staged_sha256": "3cd5f019e1eb67865359b74baef756c288dd2f1ee5749cd9ec19d548fcc2b4db",
+      "adaptations": []
+    },
+    {
+      "path": "qa/fidelity/all_cases.json",
+      "original_sha256": "5b3734a09f68b65f20725b9eae7984f572b3ee811cefd42e9af4722163cce5fb",
+      "staged_sha256": "5ce0f7aaf9ee7bd464c95d2ba6dc37e1b8ecefd2df540bf551f8d84244ec7fd6",
+      "adaptations": []
+    },
+    {
+      "path": "qa/fidelity/results.json",
+      "original_sha256": "b16943b76a7ea59eadb7d4277bdaeb55d799abe01d82f94c2fe0a1e5363e45d9",
+      "staged_sha256": "ad47801e21d4f53908bed22a4f54bf27a3292c7b1cbb05457c17ad82fbeaa572",
+      "adaptations": []
+    },
+    {
+      "path": "qa/fidelity/k_epsilon.json",
+      "original_sha256": "da1e2632ed6c597e2bf2ec09ff0564597c54702f7392c440cb40226ddc4f7a82",
+      "staged_sha256": "1b0311831224b34029d91bbef6aa4d47851e2098ac428ec90bf79ea3551ce39d",
+      "adaptations": []
+    },
+    {
+      "path": "qa/fidelity/scalar_tdma.json",
+      "original_sha256": "abbac1f2ea2e6102a5bedeea78977a5b9596a3264e36def79b9dbfded5dff07a",
+      "staged_sha256": "4fa659ec9ba0627897b250eaa8638db20732637de777ee8508fc98559fe1b588",
+      "adaptations": []
+    },
+    {
+      "path": "qa/test_review/completed_validation.json",
+      "original_sha256": "87b79935f980237f18ea7b12806f7c27529e035eac337072d548b6d61012eca4",
+      "staged_sha256": "eadd7d4e25f56d2cc673dd18677a712211814f9edfc12e193f48383330629472",
+      "adaptations": [
+        "Replace host workspace and dotnet paths with relative paths and the dotnet command"
+      ]
+    },
+    {
+      "path": "qa/hardware.json",
+      "original_sha256": "efd25b42c57fb68175b6a3b5df487163226ab0bd0aa37617b84c389c1b9c2dd2",
+      "staged_sha256": "efd25b42c57fb68175b6a3b5df487163226ab0bd0aa37617b84c389c1b9c2dd2",
+      "adaptations": []
+    },
+    {
+      "path": "qa/pressure/component_checks.json",
+      "original_sha256": "7987d4d1832dca7e6cee7eaede70a51ce116083c4d8585baf4287102a042a80e",
+      "staged_sha256": "45fa3246a0a5f29bbcc71eb75967117fe7291de02ef53998baf057145b54bd7f",
+      "adaptations": []
+    },
+    {
+      "path": "qa/pressure/patch_metrics.json",
+      "original_sha256": "20107f7d91b7529485b5d500d42c1f3c91dbeb4497f018eb9f4e29d02c6fdc66",
+      "staged_sha256": "20107f7d91b7529485b5d500d42c1f3c91dbeb4497f018eb9f4e29d02c6fdc66",
+      "adaptations": []
+    },
+    {
+      "path": "qa/pressure/review.json",
+      "original_sha256": "be06b66c5a2136b0f54631920ebf1f38925bf0a3eca16a5d30055ed690b5b8d9",
+      "staged_sha256": "be06b66c5a2136b0f54631920ebf1f38925bf0a3eca16a5d30055ed690b5b8d9",
+      "adaptations": []
+    },
+    {
+      "path": "qa/pressure/independent_cache_review.json",
+      "original_sha256": "f957b52362d8416cb4e8417067e876241d7bc5f1c49245dc7ff6b8db14bd4eda",
+      "staged_sha256": "f957b52362d8416cb4e8417067e876241d7bc5f1c49245dc7ff6b8db14bd4eda",
+      "adaptations": []
+    },
+    {
+      "path": "qa/tdma/component_results.json",
+      "original_sha256": "0e105b5764a6301487b33db68fddac54fcca953613e9f1cfadc33a2fa625c99e",
+      "staged_sha256": "0e105b5764a6301487b33db68fddac54fcca953613e9f1cfadc33a2fa625c99e",
+      "adaptations": []
+    },
+    {
+      "path": "qa/tdma/implementation_review.json",
+      "original_sha256": "8abc32cc359c96ea1a58b464d523308f8e6ea5b4dc387a7bebd8ecd76e471539",
+      "staged_sha256": "8abc32cc359c96ea1a58b464d523308f8e6ea5b4dc387a7bebd8ecd76e471539",
+      "adaptations": []
+    },
+    {
+      "path": "qa/radiation/actual_method_checks.json",
+      "original_sha256": "ed5f32850d0668c80db9e6c9a7459712428e37cf9cfbf2c464c03a93b0d0c88f",
+      "staged_sha256": "a4b223d5d5dd38edc5b1cee08be335209fc6ab9ad36e89bad66bf2d97416aa38",
+      "adaptations": []
+    },
+    {
+      "path": "qa/radiation/implementation_audit.json",
+      "original_sha256": "63c3a7cabc89f9f3b4f6f8e113b99e9d5f401c6cfffd7e58f911482fd4f9a877",
+      "staged_sha256": "63c3a7cabc89f9f3b4f6f8e113b99e9d5f401c6cfffd7e58f911482fd4f9a877",
+      "adaptations": []
+    },
+    {
+      "path": "qa/scalar_tdma/method_results.json",
+      "original_sha256": "9eece314838e7a8c2f493ad3e164eaf90b4eab347d1cfcb04ea44b7697d87ce0",
+      "staged_sha256": "9eece314838e7a8c2f493ad3e164eaf90b4eab347d1cfcb04ea44b7697d87ce0",
+      "adaptations": []
+    },
+    {
+      "path": "qa/scalar_tdma/implementation_structure.json",
+      "original_sha256": "cc2a5fe0e4990020df973092f2a5e8e630329ef4e8bf6270da426f8bc2923ba5",
+      "staged_sha256": "cc2a5fe0e4990020df973092f2a5e8e630329ef4e8bf6270da426f8bc2923ba5",
+      "adaptations": []
+    },
+    {
+      "path": "qa/scalar_tdma/instrumented_build_summary.json",
+      "original_sha256": "c4a2f2eb82720bae4eb7d165f85114c42ec76d02a56be8af2fcbc39918cf3da7",
+      "staged_sha256": "64cea14cf70cc31d0fe502abd8be50c7eee57518ba50aeb41afa46b879d43ab1",
+      "adaptations": [
+        "Replace host workspace and dotnet paths with relative paths and the dotnet command"
+      ]
+    },
+    {
+      "path": "qa/scalar_tdma_review/source_review.json",
+      "original_sha256": "53884d24192768d24dbe00be4b46c1c4b21f54049c016ed51b7173b3a997a27b",
+      "staged_sha256": "53884d24192768d24dbe00be4b46c1c4b21f54049c016ed51b7173b3a997a27b",
+      "adaptations": []
+    },
+    {
+      "path": "qa/cross_review/source_review.json",
+      "original_sha256": "b018a657e2ec70edf91a020be3cf41ecbb87e287645124fad164183ba68bdfcf",
+      "staged_sha256": "b018a657e2ec70edf91a020be3cf41ecbb87e287645124fad164183ba68bdfcf",
+      "adaptations": []
+    },
+    {
+      "path": "qa/full_engine_harness/build_summary.json",
+      "original_sha256": "ab3487d9026d65b574d380f66c9c1351c3ea5637a1d83a76d35309fe91cda0c9",
+      "staged_sha256": "c3ad7bc6f3332be471fd6b6ba87aecfd76ba16e16077b7f4beb8aea6c8a0f859",
+      "adaptations": [
+        "Replace host workspace and dotnet paths with relative paths and the dotnet command"
+      ]
+    },
+    {
+      "path": "qa/full_engine_harness/baseline_manifest.json",
+      "original_sha256": "2b674c94e7d8a44a923d84324f3a2678d62909acbc17fa0f5bfb9693e207c8a8",
+      "staged_sha256": "2f4b5d7eb13f38eabdbdfafae069015d74d255df3045f7b5009b622776230d45",
+      "adaptations": [
+        "Replace host workspace and dotnet paths with relative paths and the dotnet command"
+      ]
+    },
+    {
+      "path": "qa/full_engine_harness/pressure_manifest.json",
+      "original_sha256": "bd834bbc0f7d9fa6b61c82fbb308fba6f0c61354e0c5082320cfb990f077332a",
+      "staged_sha256": "792cb1a7f3d95a960bb1c1a363e759a34e118782da72afd27c0616eb49d50ce4",
+      "adaptations": [
+        "Replace host workspace and dotnet paths with relative paths and the dotnet command"
+      ]
+    },
+    {
+      "path": "qa/full_engine_harness/tdma_manifest.json",
+      "original_sha256": "f78c4f823b10aac815606ac32507cfe6d6db501c2311b907ecdd28c45fc06709",
+      "staged_sha256": "879a2983b01258ebee2c8fba631881e397e1ec0ee6e9a191afb13d9843e26329",
+      "adaptations": [
+        "Replace host workspace and dotnet paths with relative paths and the dotnet command"
+      ]
+    },
+    {
+      "path": "qa/full_engine_harness/radiation_manifest.json",
+      "original_sha256": "230e31bcadd65df2c3c81098489ca52e6b48326f32798b12956a26d592bdaee1",
+      "staged_sha256": "3327320a2bb5f3b9749e91ff299d5c534497ca4f96e282efe43831761ea670cd",
+      "adaptations": [
+        "Replace host workspace and dotnet paths with relative paths and the dotnet command"
+      ]
+    },
+    {
+      "path": "qa/full_engine_harness/scalar_tdma_manifest.json",
+      "original_sha256": "c4a2f2eb82720bae4eb7d165f85114c42ec76d02a56be8af2fcbc39918cf3da7",
+      "staged_sha256": "64cea14cf70cc31d0fe502abd8be50c7eee57518ba50aeb41afa46b879d43ab1",
+      "adaptations": [
+        "Replace host workspace and dotnet paths with relative paths and the dotnet command"
+      ]
+    },
+    {
+      "path": "work/scalar_benchmark.py",
+      "original_sha256": "a4a8055007d6709971e9b505b4fabf21a11cffc3dcabc07ab26d18616890f2a8",
+      "staged_sha256": "a4a8055007d6709971e9b505b4fabf21a11cffc3dcabc07ab26d18616890f2a8",
+      "adaptations": []
+    },
+    {
+      "path": "work/summarize_benchmarks.py",
+      "original_sha256": "9d8e583ff519a7d8ec2af1dccad81bb1c4fea0ddc964871f5eaf171531f1c34b",
+      "staged_sha256": "9d8e583ff519a7d8ec2af1dccad81bb1c4fea0ddc964871f5eaf171531f1c34b",
+      "adaptations": []
+    },
+    {
+      "path": "work/make_all_cases.py",
+      "original_sha256": "ebea9a833e3ef45e26c86c403a7b110b1d726a16fb2d8d03d296ca7521e948fa",
+      "staged_sha256": "ebea9a833e3ef45e26c86c403a7b110b1d726a16fb2d8d03d296ca7521e948fa",
+      "adaptations": []
+    },
+    {
+      "path": "qa/parallel_state/run_parallel_state.py",
+      "original_sha256": "80831b6b06ffd86fbf53e7c8472e0e0107faa92a003a7212171865fb30b0dd1c",
+      "staged_sha256": "80831b6b06ffd86fbf53e7c8472e0e0107faa92a003a7212171865fb30b0dd1c",
+      "adaptations": []
+    },
+    {
+      "path": "qa/parallel_state/analyze_parallel_state.py",
+      "original_sha256": "a945862192a7851870084c8c180b640dd136ca81015bbc39052af49986d2eddb",
+      "staged_sha256": "a945862192a7851870084c8c180b640dd136ca81015bbc39052af49986d2eddb",
+      "adaptations": []
+    },
+    {
+      "path": "qa/test_review/validate_completed.py",
+      "original_sha256": "1c3e7b13f9577b91a30a0adc6b1af153438bea2271ae43046f35b09d02ce544a",
+      "staged_sha256": "1c3e7b13f9577b91a30a0adc6b1af153438bea2271ae43046f35b09d02ce544a",
+      "adaptations": []
+    },
+    {
+      "path": "qa/parallel_state/analysis.json",
+      "original_sha256": "9fee3954faf519944357ea7a500b0f3b704e7a53ffa6a1374f424a09e83cd12a",
+      "staged_sha256": "9fee3954faf519944357ea7a500b0f3b704e7a53ffa6a1374f424a09e83cd12a",
+      "adaptations": []
+    },
+    {
+      "path": "qa/parallel_state/field_comparisons.csv",
+      "original_sha256": "5bbb8ceb00e9cc39fb626df0aba8512af96ac4250ea8a19a3af2572cdf2d0fc9",
+      "staged_sha256": "5bbb8ceb00e9cc39fb626df0aba8512af96ac4250ea8a19a3af2572cdf2d0fc9",
+      "adaptations": []
+    },
+    {
+      "path": "qa/parallel_state/baseline_variation_comparison.csv",
+      "original_sha256": "fad9ad6871d09e040d9f9b28d55d978fe69d25f396e6b966d5da75bfeac9e62e",
+      "staged_sha256": "fad9ad6871d09e040d9f9b28d55d978fe69d25f396e6b966d5da75bfeac9e62e",
+      "adaptations": []
+    },
+    {
+      "path": "qa/parallel_state/plan.json",
+      "original_sha256": "b42a7d060e971a891c853b21ffa7e853859d29c2327e9ddd2df3f8da4d200628",
+      "staged_sha256": "f2720ef5724850cc003dae5835b4f727b63c23c64b7f2035f740fa41deb8d351",
+      "adaptations": [
+        "Replace host workspace paths with relative paths"
+      ]
+    },
+    {
+      "path": "qa/parallel_state/run_progress.json",
+      "original_sha256": "180e449cb84637c16028e700ccc821b555af85a309cd1d5fa08a32df4e799e2f",
+      "staged_sha256": "5f385b20eb936364773dbc5d91ecfdbf26e36bf809bfb751fa854176096b024c",
+      "adaptations": [
+        "Replace host workspace paths with relative paths"
+      ]
+    },
+    {
+      "path": "qa/figures/rendered/candidate_overview.png",
+      "original_sha256": "74ea3c7e730ad5a8d5a733ade986b3337430a22392f89a88179177bb9a5f0ddd",
+      "staged_sha256": "74ea3c7e730ad5a8d5a733ade986b3337430a22392f89a88179177bb9a5f0ddd",
+      "adaptations": []
+    },
+    {
+      "path": "qa/figures/rendered/candidate_overview.svg",
+      "original_sha256": "1fc05490370e409d972c96afe6b3aa5f809118684260650752aa3fe543826eca",
+      "staged_sha256": "1fc05490370e409d972c96afe6b3aa5f809118684260650752aa3fe543826eca",
+      "adaptations": []
+    },
+    {
+      "path": "qa/figures/rendered/candidate_overview_data.csv",
+      "original_sha256": "493ab983f1c94791038d075b0c086b6039c1f2c6c8e2a74033bfa14c6bfa817d",
+      "staged_sha256": "493ab983f1c94791038d075b0c086b6039c1f2c6c8e2a74033bfa14c6bfa817d",
+      "adaptations": []
+    },
+    {
+      "path": "qa/figures/rendered/candidate_overview_data.json",
+      "original_sha256": "7859cb51f20ef0bf91c573ce62e8853847bbfd4bac7e0151403667b12c747e5e",
+      "staged_sha256": "75985fe0045f1b8e685706e2542f52e2a20c81e3074628d20f4e4b168e72d446",
+      "adaptations": [
+        "Replace host workspace paths with relative paths"
+      ]
+    },
+    {
+      "path": "qa/figures/rendered/candidate_overview_manifest.json",
+      "original_sha256": "4a79d47293de0376fb62c8f94e8631b3ac64c76813df385c8496a9dc05cf3c04",
+      "staged_sha256": "30c97ae8932509817f3d2d48a238450254d4d29a9c60928bc8ac8a16f3ba0fa8",
+      "adaptations": [
+        "Replace host workspace paths with relative paths",
+        "Update referenced hashes after public path sanitization; retain original hashes in original_* fields"
+      ]
+    },
+    {
+      "path": "qa/figures/rendered/figure_input_schema.json",
+      "original_sha256": "edab2752c02f24135eef18425626b965078240311035f661845fc2e9e480f4a9",
+      "staged_sha256": "edab2752c02f24135eef18425626b965078240311035f661845fc2e9e480f4a9",
+      "adaptations": []
+    },
+    {
+      "path": "qa/figures/rendered/figure_manifest.json",
+      "original_sha256": "c465d4d63f107c63c2fbd039218ee68ed037af3579a48948cde67def8eedc761",
+      "staged_sha256": "c465d4d63f107c63c2fbd039218ee68ed037af3579a48948cde67def8eedc761",
+      "adaptations": [
+        "Update referenced hashes after public path sanitization; retain original hashes in original_* fields"
+      ]
+    },
+    {
+      "path": "qa/figures/rendered/make_candidate_overview.py",
+      "original_sha256": "827454f238efb4fe863b9d57efd9239dd168bfb87df03aa74a74c04991eca63c",
+      "staged_sha256": "827454f238efb4fe863b9d57efd9239dd168bfb87df03aa74a74c04991eca63c",
+      "adaptations": []
+    },
+    {
+      "path": "qa/figures/rendered/make_reuse_figures.py",
+      "original_sha256": "fa9a4704b65acffb4ab4bdbc4bf9890a49bb07958eff0b830565aaaafc65c7cd",
+      "staged_sha256": "fa9a4704b65acffb4ab4bdbc4bf9890a49bb07958eff0b830565aaaafc65c7cd",
+      "adaptations": []
+    },
+    {
+      "path": "qa/figures/rendered/scalar_figure_input.json",
+      "original_sha256": "c312eed981c0d59045f1501245ddeef30f3e4d72097c72f56f5e94a436cb6af0",
+      "staged_sha256": "2e75938dd591d8181852d4fa543ec4af99d5ea6edbb7db719f9c4c1cbb1ce92a",
+      "adaptations": [
+        "Replace host workspace paths with relative paths"
+      ]
+    },
+    {
+      "path": "qa/figures/rendered/scalar_tdma_reuse.png",
+      "original_sha256": "475eb0547d387efd99b20c476ca8eebb67bcd41fc625498cb773d9800db17e9d",
+      "staged_sha256": "475eb0547d387efd99b20c476ca8eebb67bcd41fc625498cb773d9800db17e9d",
+      "adaptations": []
+    },
+    {
+      "path": "qa/figures/rendered/scalar_tdma_reuse.svg",
+      "original_sha256": "764b06e63fa0c03e543a12578ef5779fbd34181e64f3a82b88c40eeb34655784",
+      "staged_sha256": "764b06e63fa0c03e543a12578ef5779fbd34181e64f3a82b88c40eeb34655784",
+      "adaptations": []
+    },
+    {
+      "path": "qa/figures/rendered/visual_qa.json",
+      "original_sha256": "016049ff5c92b398c762942076a52c04c2f6af9e8260c2368edbd855214f331f",
+      "staged_sha256": "016049ff5c92b398c762942076a52c04c2f6af9e8260c2368edbd855214f331f",
+      "adaptations": []
+    },
+    {
+      "path": "qa/benefit_review/native_wnd_review.json",
+      "original_sha256": "bc565c68eaf0399ae704457500488ce6de34391133904779fd486c7b4cebf8b5",
+      "staged_sha256": "bc565c68eaf0399ae704457500488ce6de34391133904779fd486c7b4cebf8b5",
+      "adaptations": []
+    },
+    {
+      "path": "qa/benefit_review/native_surface_review.json",
+      "original_sha256": "da8d2c775cd2afd7ebd1f29afee1b6eae8b5cf9c44e643f667d94d2b1730ad2c",
+      "staged_sha256": "da8d2c775cd2afd7ebd1f29afee1b6eae8b5cf9c44e643f667d94d2b1730ad2c",
+      "adaptations": []
+    },
+    {
+      "path": "qa/benefit_review/final_decisions.json",
+      "original_sha256": "05baeaf2406208d296db0a026e2aa14fff029de28d8958a33ba6c2476151ff63",
+      "staged_sha256": "f531feebe676ebfb4bad7570381459603963048f3eaf552b43d86be96074443a",
+      "adaptations": [
+        "Replace host workspace paths with relative paths"
+      ]
+    },
+    {
+      "path": "qa/benefit_review/review_initial_native.py",
+      "original_sha256": "62a43c4072897ffbf6d21bde4f995ae18f1e201cb0dbd4af4445b640721de294",
+      "staged_sha256": "62a43c4072897ffbf6d21bde4f995ae18f1e201cb0dbd4af4445b640721de294",
+      "adaptations": []
+    },
+    {
+      "path": "qa/benefit_review/preliminary_review.json",
+      "original_sha256": "06bd466eba574f9965f61eae70db438ff510c00634ac7f00c45a43e084451022",
+      "staged_sha256": "ed4233ea36508cab8849ab2e5f82782ec96c15d69db88ad0aeb138185d76fa86",
+      "adaptations": [
+        "Replace host workspace paths with relative paths"
+      ]
+    },
+    {
+      "path": "qa/benefit_review/review_native_wnd.py",
+      "original_sha256": "b12b8264db05799d8ccaec521fa5c6c6a76ad1727b0190555a94d683e3921a1f",
+      "staged_sha256": "b12b8264db05799d8ccaec521fa5c6c6a76ad1727b0190555a94d683e3921a1f",
+      "adaptations": []
+    },
+    {
+      "path": "qa/final_patch_sizes.json",
+      "original_sha256": "241535687dc4cbd82b2034230def7ccfad57e99e17b7d6ec288d9329a6e8d459",
+      "staged_sha256": "241535687dc4cbd82b2034230def7ccfad57e99e17b7d6ec288d9329a6e8d459",
+      "adaptations": []
+    },
+    {
+      "path": "qa/benefit_review/native_wnd_changed_locations.csv",
+      "original_sha256": "8af6cfd0dfdd9aca99eeff18eb04762ad274528b9dd9a0d78d022819c6f2528b",
+      "staged_sha256": "8af6cfd0dfdd9aca99eeff18eb04762ad274528b9dd9a0d78d022819c6f2528b",
+      "adaptations": []
+    },
+    {
+      "path": "qa/benefit_review/native_wnd_comparisons.csv",
+      "original_sha256": "f1d88e8961f9105d8804d1d6c06ba01189d589b899a689fbb92e7ffbc41ac90b",
+      "staged_sha256": "f1d88e8961f9105d8804d1d6c06ba01189d589b899a689fbb92e7ffbc41ac90b",
+      "adaptations": []
+    },
+    {
+      "path": "qa/build_warning_comparison.json",
+      "original_sha256": "c9e562cca3961866c97ae46aff3f9a68bfab07847e9c1d21669cb2eba70a81c5",
+      "staged_sha256": "c9e562cca3961866c97ae46aff3f9a68bfab07847e9c1d21669cb2eba70a81c5",
+      "adaptations": [],
+      "origin": "fresh_reproduction/qa/build_warning_comparison.json"
+    },
+    {
+      "path": "qa/final_build/smoke_results.json",
+      "original_sha256": "c47d0083a894062649511f3cdfff0e6ce1ea163109a498e08d1c22fbb76249c9",
+      "staged_sha256": "c47d0083a894062649511f3cdfff0e6ce1ea163109a498e08d1c22fbb76249c9",
+      "adaptations": [],
+      "origin": "fresh_reproduction/qa/final_build/smoke_results.json"
+    },
+    {
+      "path": "qa/final_build/method_il_comparison.json",
+      "original_sha256": "c19d86d7710a9693d28fc6136ef2eb5c158683e6f808b0bd0f217da1ba33a8c6",
+      "staged_sha256": "c19d86d7710a9693d28fc6136ef2eb5c158683e6f808b0bd0f217da1ba33a8c6",
+      "adaptations": [],
+      "origin": "fresh_reproduction/qa/final_build/method_il_comparison.json"
+    },
+    {
+      "path": "qa/final_build/components_pressure.json",
+      "original_sha256": "7987d4d1832dca7e6cee7eaede70a51ce116083c4d8585baf4287102a042a80e",
+      "staged_sha256": "7987d4d1832dca7e6cee7eaede70a51ce116083c4d8585baf4287102a042a80e",
+      "adaptations": [],
+      "origin": "fresh_reproduction/qa/pressure/reproduced_component_checks.json"
+    },
+    {
+      "path": "qa/final_build/components_tdma.json",
+      "original_sha256": "f0f8e902bb264b3c2acc430a77a8a7f0bfda233ce780b1d3b303b2ce53a7f0ea",
+      "staged_sha256": "f0f8e902bb264b3c2acc430a77a8a7f0bfda233ce780b1d3b303b2ce53a7f0ea",
+      "adaptations": [],
+      "origin": "fresh_reproduction/qa/tdma/reproduced_component_results.json"
+    },
+    {
+      "path": "qa/final_build/components_radiation.json",
+      "original_sha256": "ed5f32850d0668c80db9e6c9a7459712428e37cf9cfbf2c464c03a93b0d0c88f",
+      "staged_sha256": "ed5f32850d0668c80db9e6c9a7459712428e37cf9cfbf2c464c03a93b0d0c88f",
+      "adaptations": [],
+      "origin": "fresh_reproduction/qa/radiation/reproduced_actual_method_checks.json"
+    },
+    {
+      "path": "qa/final_build/components_scalar_tdma.json",
+      "original_sha256": "9eece314838e7a8c2f493ad3e164eaf90b4eab347d1cfcb04ea44b7697d87ce0",
+      "staged_sha256": "9eece314838e7a8c2f493ad3e164eaf90b4eab347d1cfcb04ea44b7697d87ce0",
+      "adaptations": [],
+      "origin": "fresh_reproduction/qa/scalar_tdma/method_results.json"
+    },
+    {
+      "path": "source_prepare_check.json",
+      "original_sha256": "95b495bf4dada0ccff623bad50e9b3b41c79bce9fb77d30afb55c15b030bfff7",
+      "staged_sha256": "95b495bf4dada0ccff623bad50e9b3b41c79bce9fb77d30afb55c15b030bfff7",
+      "adaptations": [],
+      "origin": "fresh_reproduction/preparation_result.json"
+    }
+  ],
+  "patches": [
+    {
+      "variant": "warnings",
+      "path": "patches/0001_warnings.patch",
+      "source_commit": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+      "source_parent": "03224ce9d3490783c84a8aecd72642fe9df21242",
+      "sha256": "2d0283b9f147a562af15a42470a4427a8d9092990ef44978a5ab031bee0609b7",
+      "upstream_apply_check": "pass; final source preparation and strict build"
+    },
+    {
+      "variant": "pressure",
+      "path": "patches/0002_pressure.patch",
+      "source_commit": "b5b397fa9db5ef762dc5a2986b168caf54a7849f",
+      "source_parent": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+      "sha256": "3ad8baf298650809bd57a06b80d8956a28cf04fc75b372d5691fb21de42cbcc8",
+      "upstream_apply_check": "pass; final source preparation and strict build"
+    },
+    {
+      "variant": "tdma",
+      "path": "patches/0003_tdma.patch",
+      "source_commit": "3716177279d1c6b66929a0797339c11f39feed4a",
+      "source_parent": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+      "sha256": "477d9ddde4961c6796574957bffb4ec270ee5093db5472a39b13a54a0f66de4d",
+      "upstream_apply_check": "pass; final source preparation and strict build"
+    },
+    {
+      "variant": "radiation",
+      "path": "patches/0004_radiation.patch",
+      "source_commit": "acd14a92f256ed443c8a4209630e218005f94bd9",
+      "source_parent": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+      "sha256": "f1c9c6badf612a2f4aec038526f725770637602d3cfc5c3340b70b2ed84ef18b",
+      "upstream_apply_check": "pass; final source preparation and strict build"
+    },
+    {
+      "variant": "scalar_tdma",
+      "path": "patches/0005_scalar_tdma.patch",
+      "source_commit": "d4c084b97508e16eab808d934d42520f504bcf55",
+      "source_parent": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+      "sha256": "542a18a4dbc61ad9463fa32f6c9021c91823d7a66420bfe65dac278e35e54ada",
+      "upstream_apply_check": "pass; final source preparation and strict build"
+    }
+  ],
+  "models_run_during_staging": false,
+  "source_trees": {
+    "baseline": "62617871be72fa0334b310bd8ce8a47b5248ba75",
+    "pressure": "f2c4de6533bdb65cf6721de452cb4ad7b98aaaef",
+    "tdma": "0bfe9b72678acd752b8d3492b684400461a0c393",
+    "radiation": "9fad728dfd88e4872434275313d1b9a6046720b9",
+    "scalar_tdma": "fe296f0d25955396296a0ba7c1df887abfc54c51"
+  },
+  "result_copy_policy": "Numerical values, source commits and hashes preserved. Host workspace paths are relative to the reproduction root; the host dotnet executable is recorded as dotnet.",
+  "proposed_topics": [
+    "Unused declarations preventing warnings-as-errors builds",
+    "Temperature/humidity TDMA reciprocals"
+  ],
+  "retained_comparison_topics": [
+    "Pressure coefficients",
+    "Velocity TDMA coefficients",
+    "Radiation source"
+  ],
+  "measurement_provenance": "Recorded model runs used the measured_source_commit entries in qa/final_source_provenance.json. Final source commits remove three orphan XML comment lines only; recorded times and assembly hashes are unchanged."
+}

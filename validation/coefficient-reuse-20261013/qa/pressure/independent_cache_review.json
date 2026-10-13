@@ -1,0 +1,61 @@
+{
+  "status": "pass",
+  "review_type": "read-only dependency and invalidation audit",
+  "pressure_commit": "9191ac64658a3129e24b12644857ea6f9e0d72ba",
+  "radiation_commit": "fd616cfca3f84d6149e05579a441442b31452027",
+  "actionable_findings": [],
+  "pressure": {
+    "retry_path": "Program.cs:487 -> NEXTWEATHERSITUATION -> ClearArrays -> INITA",
+    "equation_readers": "PRIMP only reads coefficient arrays",
+    "cache_publish": "After synchronous Parallel.For completes",
+    "reset_inputs": [
+      "RHO",
+      "AP0 through RHO and immutable volume"
+    ],
+    "changing_inputs": [
+      "DT"
+    ],
+    "invalidation": "INITA resets stored time step before density initialization"
+  },
+  "radiation": {
+    "invalidation": [
+      "INITA before initialization",
+      "RADIATRAD at entry"
+    ],
+    "consumers": "TIMP computes cached radiation source before temperature sweeps; temperature solver still runs every call",
+    "first_step": "INITA invalidates zero heating rates; first RADIATRAD invalidates again for next temperature solve",
+    "write_paths": {
+      "NBZKP": "GRID.cs:544-557",
+      "DT_TERR": "INITA reset; RADIATRAD via private Cl_dTdtterr and border copies",
+      "RHO": "INITA.cs:103",
+      "PNBZKP": "GRID.cs:545-558",
+      "ICSTR": "Program.cs:211,346 before weather loop",
+      "DT_SOL": "INITA reset; RADIATRAD via private dTdt_Sol and border copies",
+      "FAC": "INITB.cs:101"
+    },
+    "variable_inputs": [
+      "DT_SOL",
+      "DT_TERR"
+    ],
+    "fixed_inputs": [
+      "FAC",
+      "RHO",
+      "NBZKP",
+      "PNBZKP",
+      "VOLImm",
+      "ICSTR"
+    ],
+    "dynamic_sun": "Program.cs:549 and :575 both call RADIATRAD",
+    "synchronization": "RADIATRAD parallel loops join before returning; main calls TIMP and RADIATRAD sequentially",
+    "disabled_radiation": "Initial cache rebuild writes zeros; ICSTR fixed during run",
+    "custom_init": "INITA invalidates before TEMPINT and INITB update density and FAC"
+  },
+  "coverage_recommendations": [
+    "IRAD=1 exercises no-reuse path and overhead",
+    "IRAD>1 exercises reuse and refresh",
+    "Multiple weather situations or changed custom initialization",
+    "Radiation off",
+    "Day/night and terrain cases",
+    "Multiple thread counts"
+  ]
+}

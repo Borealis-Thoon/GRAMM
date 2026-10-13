@@ -1,0 +1,109 @@
+{
+  "status": "pass",
+  "upstream_commit": "03224ce9d3490783c84a8aecd72642fe9df21242",
+  "cleanup_commit": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+  "strict": true,
+  "before": {
+    "variant": "upstream",
+    "exit_code": 1,
+    "compiler_warnings": 0,
+    "compiler_errors": 8,
+    "warnings_promoted_to_errors": [
+      {
+        "file": "work/upstream/src/INITB.cs",
+        "line": 826,
+        "column": 33,
+        "code": "CS0219",
+        "message": "The variable 'k' is assigned but its value is never used"
+      },
+      {
+        "file": "work/upstream/src/GRID.cs",
+        "line": 228,
+        "column": 29,
+        "code": "CS0219",
+        "message": "The variable 'ix' is assigned but its value is never used"
+      },
+      {
+        "file": "work/upstream/src/GRID.cs",
+        "line": 229,
+        "column": 29,
+        "code": "CS0219",
+        "message": "The variable 'iy' is assigned but its value is never used"
+      },
+      {
+        "file": "work/upstream/src/ProgramDeclarations.cs",
+        "line": 1147,
+        "column": 29,
+        "code": "CS0649",
+        "message": "Field 'Program.MM5IFU' is never assigned to, and will always have its default value 0"
+      },
+      {
+        "file": "work/upstream/src/Program_Write.cs",
+        "line": 21,
+        "column": 28,
+        "code": "CS0414",
+        "message": "The field 'ProgramWriters.day_old' is assigned but its value is never used"
+      },
+      {
+        "file": "work/upstream/src/Program_Write.cs",
+        "line": 23,
+        "column": 28,
+        "code": "CS0414",
+        "message": "The field 'ProgramWriters.minute_old' is assigned but its value is never used"
+      },
+      {
+        "file": "work/upstream/src/Program_Write.cs",
+        "line": 22,
+        "column": 28,
+        "code": "CS0414",
+        "message": "The field 'ProgramWriters.hour_old' is assigned but its value is never used"
+      },
+      {
+        "file": "work/upstream/src/Program_Write.cs",
+        "line": 20,
+        "column": 28,
+        "code": "CS0414",
+        "message": "The field 'ProgramWriters.month_old' is assigned but its value is never used"
+      }
+    ],
+    "diagnostic_codes": {
+      "CS0219": 3,
+      "CS0649": 1,
+      "CS0414": 4
+    },
+    "command": [
+      "dotnet",
+      "build",
+      "./work/upstream/src/GRAMM.csproj",
+      "-c",
+      "Release",
+      "-t:Rebuild",
+      "-p:TreatWarningsAsErrors=true",
+      "-p:BaseIntermediateOutputPath=./build/warning_check_upstream_obj/",
+      "-o",
+      "./build/warning_check_upstream",
+      "--nologo"
+    ]
+  },
+  "after": {
+    "variant": "cleanup",
+    "exit_code": 0,
+    "compiler_warnings": 0,
+    "compiler_errors": 0,
+    "warnings_promoted_to_errors": [],
+    "diagnostic_codes": {},
+    "command": [
+      "dotnet",
+      "build",
+      "./work/warnings/src/GRAMM.csproj",
+      "-c",
+      "Release",
+      "-t:Rebuild",
+      "-p:TreatWarningsAsErrors=true",
+      "-p:BaseIntermediateOutputPath=./build/warning_check_cleanup_obj/",
+      "-o",
+      "./build/warning_check_cleanup",
+      "--nologo"
+    ]
+  }
+}

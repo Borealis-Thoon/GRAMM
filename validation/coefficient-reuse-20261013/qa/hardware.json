@@ -1,0 +1,10 @@
+{
+  "cpu": {
+    "Name": "AMD Ryzen 9 9950X3D 16-Core Processor          ",
+    "NumberOfCores": 16,
+    "NumberOfLogicalProcessors": 32
+  },
+  "memory_bytes": 51156725760,
+  "dotnet_sdk": "10.0.401",
+  "os": "Microsoft Windows NT 10.0.26300.0"
+}

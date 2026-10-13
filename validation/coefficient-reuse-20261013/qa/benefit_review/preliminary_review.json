@@ -1,0 +1,547 @@
+{
+  "status": "preliminary_review_complete",
+  "decision_scope": "initial_six_native_cases_only",
+  "source_files": {
+    "records": "./qa/native/results.json",
+    "records_sha256": "4ad40976c017fdaad6ba0a98b5c3f435d04f0a5d0384e127f622dd8104f7d880",
+    "summary": "./qa/native/summary.json",
+    "summary_sha256": "fcac236ca28eba62dd407a572c37c0cdbe59e0f68f772b019f32dfad065101bb"
+  },
+  "run_counts": {
+    "total": 136,
+    "measured": 112,
+    "warmups_excluded": 24,
+    "cases": 6,
+    "candidate_case_comparisons": 18
+  },
+  "measurement_scope": "native_process_lifetime_including_startup_initialization_integration_and_output",
+  "design_strengths": [
+    "unmodified_native_dispatch",
+    "rotating_variant_order",
+    "warmup_excluded",
+    "all_measured_repeats_retained",
+    "three_grid_scales",
+    "one_four_eight_configured_threads",
+    "neutral_stable_convective_radiation_conditions"
+  ],
+  "interpretation_controls": [
+    "no_cross_case_pooling_for_claims",
+    "no_arbitrary_one_percent_cutoff",
+    "no_lifetime_claim_as_solver_only_time",
+    "no_peak_working_set_noise_claim_as_memory_saving",
+    "no_quantized_output_hash_as_full_precision_fidelity",
+    "no_selection_of_best_case_as_general_speedup",
+    "no_noninferiority_or_equivalence_claim_from_nonsignificance"
+  ],
+  "remaining_evidence_codes": [
+    "independent_fixed_dt_or_confirmed_equal_iteration_work",
+    "planned_scalar_candidate_measured_separately",
+    "paired_runtime_gain_reproducible_under_representative_load",
+    "material_losses_in_tested_conditions_resolved_or_avoided",
+    "full_precision_numerical_validation_linked_separately"
+  ],
+  "small_sample_bootstrap_flag": {
+    "all_reported_intervals_equal_observed_extrema": true,
+    "positive_lower_bound_comparisons": 2,
+    "cannot_treat_nominal_95_percent_as_calibrated_coverage_at_n3_n5": true
+  },
+  "rows": [
+    {
+      "case": "convective_4t",
+      "variant": "pressure",
+      "pairs": 5,
+      "paired_median_time_saved_percent": -0.7701523326828053,
+      "paired_median_time_saved_seconds": -0.04821550000000041,
+      "faster_pairs": 2,
+      "baseline_median_seconds": 6.2605147,
+      "baseline_observed_range_seconds": 0.4966047000000007,
+      "baseline_observed_range_percent_of_median": 7.932330228375643,
+      "observed_percent_range": [
+        -2.761445969844245,
+        1.218823112291334
+      ],
+      "reported_percentile_bootstrap_range": [
+        -2.761445969844245,
+        1.218823112291334
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.9375,
+      "two_sided_exact_sign_p_unadjusted": 1.0,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    },
+    {
+      "case": "convective_4t",
+      "variant": "tdma",
+      "pairs": 5,
+      "paired_median_time_saved_percent": 0.6006444442731351,
+      "paired_median_time_saved_seconds": 0.0361539999999998,
+      "faster_pairs": 4,
+      "baseline_median_seconds": 6.2605147,
+      "baseline_observed_range_seconds": 0.4966047000000007,
+      "baseline_observed_range_percent_of_median": 7.932330228375643,
+      "observed_percent_range": [
+        -0.21308454377804154,
+        4.910040066722054
+      ],
+      "reported_percentile_bootstrap_range": [
+        -0.21308454377804154,
+        4.910040066722054
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.9375,
+      "two_sided_exact_sign_p_unadjusted": 0.375,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    },
+    {
+      "case": "convective_4t",
+      "variant": "radiation",
+      "pairs": 5,
+      "paired_median_time_saved_percent": -3.811423044817719,
+      "paired_median_time_saved_seconds": -0.2386147000000003,
+      "faster_pairs": 1,
+      "baseline_median_seconds": 6.2605147,
+      "baseline_observed_range_seconds": 0.4966047000000007,
+      "baseline_observed_range_percent_of_median": 7.932330228375643,
+      "observed_percent_range": [
+        -11.793088970470777,
+        3.3430674573613484
+      ],
+      "reported_percentile_bootstrap_range": [
+        -11.793088970470777,
+        3.3430674573613484
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.9375,
+      "two_sided_exact_sign_p_unadjusted": 0.375,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    },
+    {
+      "case": "every_step_radiation_4t",
+      "variant": "pressure",
+      "pairs": 3,
+      "paired_median_time_saved_percent": 1.304364252503587,
+      "paired_median_time_saved_seconds": 0.015881299999999987,
+      "faster_pairs": 3,
+      "baseline_median_seconds": 1.217551,
+      "baseline_observed_range_seconds": 0.07596800000000004,
+      "baseline_observed_range_percent_of_median": 6.239410094525817,
+      "observed_percent_range": [
+        0.05875064046971801,
+        5.701831761987952
+      ],
+      "reported_percentile_bootstrap_range": [
+        0.05875064046971801,
+        5.701831761987952
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.75,
+      "two_sided_exact_sign_p_unadjusted": 0.25,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    },
+    {
+      "case": "every_step_radiation_4t",
+      "variant": "tdma",
+      "pairs": 3,
+      "paired_median_time_saved_percent": 1.9701104922914991,
+      "paired_median_time_saved_seconds": 0.02398710000000004,
+      "faster_pairs": 2,
+      "baseline_median_seconds": 1.217551,
+      "baseline_observed_range_seconds": 0.07596800000000004,
+      "baseline_observed_range_percent_of_median": 6.239410094525817,
+      "observed_percent_range": [
+        -0.747311489627922,
+        3.973224799609165
+      ],
+      "reported_percentile_bootstrap_range": [
+        -0.747311489627922,
+        3.973224799609165
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.75,
+      "two_sided_exact_sign_p_unadjusted": 1.0,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    },
+    {
+      "case": "every_step_radiation_4t",
+      "variant": "radiation",
+      "pairs": 3,
+      "paired_median_time_saved_percent": 0.7147544538175454,
+      "paired_median_time_saved_seconds": 0.008702500000000057,
+      "faster_pairs": 2,
+      "baseline_median_seconds": 1.217551,
+      "baseline_observed_range_seconds": 0.07596800000000004,
+      "baseline_observed_range_percent_of_median": 6.239410094525817,
+      "observed_percent_range": [
+        -0.1925149009759375,
+        5.573954735163012
+      ],
+      "reported_percentile_bootstrap_range": [
+        -0.1925149009759375,
+        5.573954735163012
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.75,
+      "two_sided_exact_sign_p_unadjusted": 1.0,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    },
+    {
+      "case": "large_neutral_4t",
+      "variant": "pressure",
+      "pairs": 5,
+      "paired_median_time_saved_percent": 0.27100948413931736,
+      "paired_median_time_saved_seconds": 0.07248899999999736,
+      "faster_pairs": 4,
+      "baseline_median_seconds": 26.8571596,
+      "baseline_observed_range_seconds": 0.43876120000000185,
+      "baseline_observed_range_percent_of_median": 1.6336843007031983,
+      "observed_percent_range": [
+        -0.29592982615149754,
+        1.9609975720037975
+      ],
+      "reported_percentile_bootstrap_range": [
+        -0.29592982615149754,
+        1.9609975720037975
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.9375,
+      "two_sided_exact_sign_p_unadjusted": 0.375,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    },
+    {
+      "case": "large_neutral_4t",
+      "variant": "tdma",
+      "pairs": 5,
+      "paired_median_time_saved_percent": 0.35016016132751737,
+      "paired_median_time_saved_seconds": 0.09351020000000076,
+      "faster_pairs": 5,
+      "baseline_median_seconds": 26.8571596,
+      "baseline_observed_range_seconds": 0.43876120000000185,
+      "baseline_observed_range_percent_of_median": 1.6336843007031983,
+      "observed_percent_range": [
+        0.2124169413076027,
+        2.425346979347276
+      ],
+      "reported_percentile_bootstrap_range": [
+        0.2124169413076027,
+        2.425346979347276
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.9375,
+      "two_sided_exact_sign_p_unadjusted": 0.0625,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    },
+    {
+      "case": "large_neutral_4t",
+      "variant": "radiation",
+      "pairs": 5,
+      "paired_median_time_saved_percent": 0.02538205864480725,
+      "paired_median_time_saved_seconds": 0.006816900000000459,
+      "faster_pairs": 3,
+      "baseline_median_seconds": 26.8571596,
+      "baseline_observed_range_seconds": 0.43876120000000185,
+      "baseline_observed_range_percent_of_median": 1.6336843007031983,
+      "observed_percent_range": [
+        -1.665542550477972,
+        1.7414327735496449
+      ],
+      "reported_percentile_bootstrap_range": [
+        -1.665542550477972,
+        1.7414327735496449
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.9375,
+      "two_sided_exact_sign_p_unadjusted": 1.0,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    },
+    {
+      "case": "medium_neutral_1t",
+      "variant": "pressure",
+      "pairs": 5,
+      "paired_median_time_saved_percent": 1.8317417058295038,
+      "paired_median_time_saved_seconds": 0.09554829999999992,
+      "faster_pairs": 4,
+      "baseline_median_seconds": 5.216254,
+      "baseline_observed_range_seconds": 0.4105932000000001,
+      "baseline_observed_range_percent_of_median": 7.871418838116398,
+      "observed_percent_range": [
+        -17.060257323920492,
+        7.3561836699857714
+      ],
+      "reported_percentile_bootstrap_range": [
+        -17.060257323920492,
+        7.3561836699857714
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.9375,
+      "two_sided_exact_sign_p_unadjusted": 0.375,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    },
+    {
+      "case": "medium_neutral_1t",
+      "variant": "tdma",
+      "pairs": 5,
+      "paired_median_time_saved_percent": -1.9073169793928146,
+      "paired_median_time_saved_seconds": -0.09871690000000033,
+      "faster_pairs": 2,
+      "baseline_median_seconds": 5.216254,
+      "baseline_observed_range_seconds": 0.4105932000000001,
+      "baseline_observed_range_percent_of_median": 7.871418838116398,
+      "observed_percent_range": [
+        -21.487398157700245,
+        0.8799283930575497
+      ],
+      "reported_percentile_bootstrap_range": [
+        -21.487398157700245,
+        0.8799283930575497
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.9375,
+      "two_sided_exact_sign_p_unadjusted": 1.0,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    },
+    {
+      "case": "medium_neutral_1t",
+      "variant": "radiation",
+      "pairs": 5,
+      "paired_median_time_saved_percent": 1.47153198474137,
+      "paired_median_time_saved_seconds": 0.07616200000000006,
+      "faster_pairs": 3,
+      "baseline_median_seconds": 5.216254,
+      "baseline_observed_range_seconds": 0.4105932000000001,
+      "baseline_observed_range_percent_of_median": 7.871418838116398,
+      "observed_percent_range": [
+        -5.220740784478672,
+        2.5986712944523482
+      ],
+      "reported_percentile_bootstrap_range": [
+        -5.220740784478672,
+        2.5986712944523482
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.9375,
+      "two_sided_exact_sign_p_unadjusted": 1.0,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    },
+    {
+      "case": "small_neutral_1t",
+      "variant": "pressure",
+      "pairs": 5,
+      "paired_median_time_saved_percent": -0.4136183279262573,
+      "paired_median_time_saved_seconds": -0.00562459999999998,
+      "faster_pairs": 2,
+      "baseline_median_seconds": 1.3499353,
+      "baseline_observed_range_seconds": 0.05620559999999997,
+      "baseline_observed_range_percent_of_median": 4.163577321076052,
+      "observed_percent_range": [
+        -1.0403788663528424,
+        4.902447702431267
+      ],
+      "reported_percentile_bootstrap_range": [
+        -1.0403788663528424,
+        4.902447702431267
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.9375,
+      "two_sided_exact_sign_p_unadjusted": 1.0,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    },
+    {
+      "case": "small_neutral_1t",
+      "variant": "tdma",
+      "pairs": 5,
+      "paired_median_time_saved_percent": -0.8164391286011874,
+      "paired_median_time_saved_seconds": -0.011021399999999959,
+      "faster_pairs": 2,
+      "baseline_median_seconds": 1.3499353,
+      "baseline_observed_range_seconds": 0.05620559999999997,
+      "baseline_observed_range_percent_of_median": 4.163577321076052,
+      "observed_percent_range": [
+        -3.33986912816302,
+        3.682214727869182
+      ],
+      "reported_percentile_bootstrap_range": [
+        -3.33986912816302,
+        3.682214727869182
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.9375,
+      "two_sided_exact_sign_p_unadjusted": 1.0,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    },
+    {
+      "case": "small_neutral_1t",
+      "variant": "radiation",
+      "pairs": 5,
+      "paired_median_time_saved_percent": 0.22669234592205267,
+      "paired_median_time_saved_seconds": 0.0030601999999999574,
+      "faster_pairs": 3,
+      "baseline_median_seconds": 1.3499353,
+      "baseline_observed_range_seconds": 0.05620559999999997,
+      "baseline_observed_range_percent_of_median": 4.163577321076052,
+      "observed_percent_range": [
+        -2.50517999504134,
+        3.690462452805987
+      ],
+      "reported_percentile_bootstrap_range": [
+        -2.50517999504134,
+        3.690462452805987
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.9375,
+      "two_sided_exact_sign_p_unadjusted": 1.0,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    },
+    {
+      "case": "stable_coast_8t",
+      "variant": "pressure",
+      "pairs": 5,
+      "paired_median_time_saved_percent": 1.402789179868913,
+      "paired_median_time_saved_seconds": 0.1572294999999997,
+      "faster_pairs": 3,
+      "baseline_median_seconds": 11.2083485,
+      "baseline_observed_range_seconds": 0.5608214999999994,
+      "baseline_observed_range_percent_of_median": 5.003605125233208,
+      "observed_percent_range": [
+        -1.5899004531446437,
+        4.799999113723485
+      ],
+      "reported_percentile_bootstrap_range": [
+        -1.5899004531446437,
+        4.799999113723485
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.9375,
+      "two_sided_exact_sign_p_unadjusted": 1.0,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    },
+    {
+      "case": "stable_coast_8t",
+      "variant": "tdma",
+      "pairs": 5,
+      "paired_median_time_saved_percent": 1.7016512488678637,
+      "paired_median_time_saved_seconds": 0.19188250000000018,
+      "faster_pairs": 3,
+      "baseline_median_seconds": 11.2083485,
+      "baseline_observed_range_seconds": 0.5608214999999994,
+      "baseline_observed_range_percent_of_median": 5.003605125233208,
+      "observed_percent_range": [
+        -0.7245203615623863,
+        6.038797290586939
+      ],
+      "reported_percentile_bootstrap_range": [
+        -0.7245203615623863,
+        6.038797290586939
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.9375,
+      "two_sided_exact_sign_p_unadjusted": 1.0,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    },
+    {
+      "case": "stable_coast_8t",
+      "variant": "radiation",
+      "pairs": 5,
+      "paired_median_time_saved_percent": -1.1023015567369399,
+      "paired_median_time_saved_seconds": -0.12354980000000104,
+      "faster_pairs": 2,
+      "baseline_median_seconds": 11.2083485,
+      "baseline_observed_range_seconds": 0.5608214999999994,
+      "baseline_observed_range_percent_of_median": 5.003605125233208,
+      "observed_percent_range": [
+        -2.3535435174470765,
+        2.7179443287317917
+      ],
+      "reported_percentile_bootstrap_range": [
+        -2.3535435174470765,
+        2.7179443287317917
+      ],
+      "bootstrap_endpoints_equal_sample_extrema": true,
+      "sample_min_max_coverage_for_population_median_under_iid_continuous_assumption": 0.9375,
+      "two_sided_exact_sign_p_unadjusted": 1.0,
+      "sign_p_is_diagnostic_not_submission_threshold": true,
+      "raw_summary_reconciled": true
+    }
+  ],
+  "candidates": {
+    "pressure": {
+      "preliminary_submission_recommendation": "hold_pending_independent_work_matched_confirmation",
+      "confirmed_practical_runtime_benefit": false,
+      "pooled_positive_pairs_descriptive_only": 18,
+      "pooled_pairs_descriptive_only": 28,
+      "case_medians_positive": 4,
+      "case_medians_nonpositive": 2,
+      "smallest_case_median_percent": -0.7701523326828053,
+      "largest_case_median_percent": 1.8317417058295038,
+      "pooling_not_used_for_inference": true,
+      "main_rationale_codes": [
+        "benefit_direction_varies_by_case",
+        "five_of_six_bootstrap_ranges_cross_zero",
+        "positive_three_pair_short_case_insufficient_independent_confirmation"
+      ]
+    },
+    "radiation": {
+      "preliminary_submission_recommendation": "hold_pending_independent_work_matched_confirmation",
+      "confirmed_practical_runtime_benefit": false,
+      "pooled_positive_pairs_descriptive_only": 14,
+      "pooled_pairs_descriptive_only": 28,
+      "case_medians_positive": 4,
+      "case_medians_nonpositive": 2,
+      "smallest_case_median_percent": -3.811423044817719,
+      "largest_case_median_percent": 1.47153198474137,
+      "pooling_not_used_for_inference": true,
+      "main_rationale_codes": [
+        "all_six_bootstrap_ranges_cross_zero",
+        "large_case_median_0_025_percent",
+        "convective_case_four_of_five_pairs_slower"
+      ]
+    },
+    "tdma": {
+      "preliminary_submission_recommendation": "hold_pending_independent_work_matched_confirmation",
+      "confirmed_practical_runtime_benefit": false,
+      "pooled_positive_pairs_descriptive_only": 18,
+      "pooled_pairs_descriptive_only": 28,
+      "case_medians_positive": 4,
+      "case_medians_nonpositive": 2,
+      "smallest_case_median_percent": -1.9073169793928146,
+      "largest_case_median_percent": 1.9701104922914991,
+      "pooling_not_used_for_inference": true,
+      "structural_benefit": {
+        "files": 1,
+        "added_lines": 15,
+        "deleted_lines": 26,
+        "removed_stack_arrays": 2,
+        "stack_bytes_saved_per_kernel_invocation": "16 * (2 * NK - 1)",
+        "stack_bytes_saved_at_NK_28": 880,
+        "structural_benefit_does_not_establish_runtime_gain": true
+      },
+      "main_rationale_codes": [
+        "large_case_five_positive_pairs_but_0_350_percent_median",
+        "two_single_thread_case_medians_negative",
+        "simpler_code_and_less_stack_are_real_but_user_requests_demonstrated_benefit"
+      ]
+    }
+  },
+  "future_update": {
+    "retain_current_file": true,
+    "write_final_review_after_fixed_dt_and_scalar_results": true,
+    "evaluate_all_observed_outcomes_without_discarding_unfavorable_repeats": true,
+    "if_benefit_remains_unresolved": "do_not_submit_per_user_policy"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "strict_build": "pass; 0 warnings, 0 errors",
+  "removed_lines": 0,
+  "commit": "9191ac64658a3129e24b12644857ea6f9e0d72ba",
+  "removed_characters_lf": 0,
+  "added_lines": 12,
+  "added_characters_lf": 385,
+  "convention": "Source line contents plus one LF per changed line"
+}

@@ -1,0 +1,91 @@
+{
+  "patches": {
+    "scalar_tdma": {
+      "cases": [
+        {
+          "label": "Fixed time step / Max_Proc = 4\n48 \u00d7 36 \u00d7 24 / 250 m",
+          "case": "fixed_dt_4t",
+          "time_saved_pct": 1.4102791090812472,
+          "low_pct": 0.4181586653235647,
+          "high_pct": 3.2900415443822273,
+          "baseline_s": 12.4187423,
+          "patched_s": 12.1637036,
+          "pairs": 5,
+          "paired_percent": [
+            0.4181586653235647,
+            2.1265228387302493,
+            1.2546077230381147,
+            1.4102791090812472,
+            3.2900415443822273
+          ],
+          "faster_pairs": 5
+        },
+        {
+          "label": "Neutral / Max_Proc = 1\n48 \u00d7 36 \u00d7 24 / 250 m",
+          "case": "scalar_neutral_1t",
+          "time_saved_pct": 2.026799311073535,
+          "low_pct": 1.7206772051344466,
+          "high_pct": 4.02939631083874,
+          "baseline_s": 6.1486087,
+          "patched_s": 6.0231005,
+          "pairs": 5,
+          "paired_percent": [
+            4.02939631083874,
+            3.3634936033733687,
+            2.026799311073535,
+            1.9484781980027344,
+            1.7206772051344466
+          ],
+          "faster_pairs": 5
+        },
+        {
+          "label": "Convective / Max_Proc = 4\n48 \u00d7 36 \u00d7 24 / 250 m",
+          "case": "scalar_convective_4t",
+          "time_saved_pct": 2.8291364000895713,
+          "low_pct": 0.3220726534898244,
+          "high_pct": 7.616380044762117,
+          "baseline_s": 6.5044796,
+          "patched_s": 6.3942274,
+          "pairs": 5,
+          "paired_percent": [
+            7.616380044762117,
+            3.1201445909255887,
+            0.3220726534898244,
+            2.0539446183434062,
+            2.8291364000895713
+          ],
+          "faster_pairs": 5
+        },
+        {
+          "label": "Stable coast / Max_Proc = 8\n64 \u00d7 48 \u00d7 24 / 500 m\nFaster in 3 of 5 pairs",
+          "case": "scalar_stable_coast_8t",
+          "time_saved_pct": 3.5774917013577934,
+          "low_pct": -0.7910884657089223,
+          "high_pct": 4.837779730335745,
+          "baseline_s": 11.642266,
+          "patched_s": 11.3506896,
+          "pairs": 5,
+          "paired_percent": [
+            4.188486448331197,
+            4.837779730335745,
+            -0.38486543943421214,
+            3.5774917013577934,
+            -0.7910884657089223
+          ],
+          "faster_pairs": 3
+        }
+      ],
+      "interval_label": "Diamonds: median paired reduction. Lines: observed range of 5 pairs. Dots: individual pairs. Times: separate medians.",
+      "timing_context": "Native whole-model time; warm-up excluded. 16-to-1 counts inverse-pivot chains. Max_Proc is the Max_Proc.txt setting.",
+      "verification": [
+        "108 method cases:\n7,803,432 exact,\nfinite values",
+        "9 full-model cases:\n11 weather situations",
+        "99 serial field pairs:\nbitwise identical"
+      ]
+    }
+  },
+  "sources": [
+    "./qa/native/fixed_dt_summary.json",
+    "./qa/native/scalar_summary.json"
+  ]
+}

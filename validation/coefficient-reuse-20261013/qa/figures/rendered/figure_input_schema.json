@@ -1,0 +1,21 @@
+{
+  "required_root": ["patches"],
+  "patch_keys": ["pressure", "tdma", "radiation", "scalar_tdma"],
+  "patch_fields": {
+    "cases": "1 to 10 rows, in desired plot order",
+    "interval_label": "Exact statistical meaning of low_pct and high_pct, supplied by the timing analysis",
+    "timing_context": "Short English description of the measured run interval and conditions",
+    "verification": "1 to 5 short English facts supported by completed checks"
+  },
+  "case_fields": {
+    "label": "Short English case label, ideally grid / meteorology / Max_Proc setting",
+    "time_saved_pct": "Measured central estimate of run time saved; positive means faster",
+    "low_pct": "Lower interval endpoint; negative values are retained",
+    "high_pct": "Upper interval endpoint",
+    "baseline_s": "Measured reference time in seconds",
+    "patched_s": "Measured patched time in seconds",
+    "pairs": "Number of paired runs"
+  },
+  "numeric_policy": "No sample performance values are included; all plotted values must come from completed tests.",
+  "render_status": "Script prepared only; rendering awaits release of the timing window and measured input."
+}

@@ -1,0 +1,95 @@
+{
+  "source_delta_status": "comment_only_verified",
+  "variants": [
+    {
+      "variant": "baseline",
+      "measured_source_commit": "7b8b5a377e785d138fc384f55624e91c8282429f",
+      "final_source_commit": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+      "final_source_tree": "62617871be72fa0334b310bd8ce8a47b5248ba75",
+      "changed_files": [
+        "src/ProgramDeclarations.cs"
+      ],
+      "added_lines": 0,
+      "deleted_lines": 3,
+      "deleted_comment_lines": [
+        "        ///NON-STEADYSTATE/FORCING W. IFU-MM5 DATA YES=1 -> not yet implemented in this version",
+        "        ///</summary>",
+        "        ///<summary>"
+      ]
+    },
+    {
+      "variant": "pressure",
+      "measured_source_commit": "9191ac64658a3129e24b12644857ea6f9e0d72ba",
+      "final_source_commit": "b5b397fa9db5ef762dc5a2986b168caf54a7849f",
+      "final_source_tree": "f2c4de6533bdb65cf6721de452cb4ad7b98aaaef",
+      "changed_files": [
+        "src/ProgramDeclarations.cs"
+      ],
+      "added_lines": 0,
+      "deleted_lines": 3,
+      "deleted_comment_lines": [
+        "        ///NON-STEADYSTATE/FORCING W. IFU-MM5 DATA YES=1 -> not yet implemented in this version",
+        "        ///</summary>",
+        "        ///<summary>"
+      ]
+    },
+    {
+      "variant": "tdma",
+      "measured_source_commit": "6e9f9f499cc80064d16a528e95f21c1925a4b7c3",
+      "final_source_commit": "3716177279d1c6b66929a0797339c11f39feed4a",
+      "final_source_tree": "0bfe9b72678acd752b8d3492b684400461a0c393",
+      "changed_files": [
+        "src/ProgramDeclarations.cs"
+      ],
+      "added_lines": 0,
+      "deleted_lines": 3,
+      "deleted_comment_lines": [
+        "        ///NON-STEADYSTATE/FORCING W. IFU-MM5 DATA YES=1 -> not yet implemented in this version",
+        "        ///</summary>",
+        "        ///<summary>"
+      ]
+    },
+    {
+      "variant": "radiation",
+      "measured_source_commit": "fd616cfca3f84d6149e05579a441442b31452027",
+      "final_source_commit": "acd14a92f256ed443c8a4209630e218005f94bd9",
+      "final_source_tree": "9fad728dfd88e4872434275313d1b9a6046720b9",
+      "changed_files": [
+        "src/ProgramDeclarations.cs"
+      ],
+      "added_lines": 0,
+      "deleted_lines": 3,
+      "deleted_comment_lines": [
+        "        ///NON-STEADYSTATE/FORCING W. IFU-MM5 DATA YES=1 -> not yet implemented in this version",
+        "        ///</summary>",
+        "        ///<summary>"
+      ]
+    },
+    {
+      "variant": "scalar_tdma",
+      "measured_source_commit": "62c8d3e997c3852a309483e19b0726973db35154",
+      "final_source_commit": "d4c084b97508e16eab808d934d42520f504bcf55",
+      "final_source_tree": "fe296f0d25955396296a0ba7c1df887abfc54c51",
+      "changed_files": [
+        "src/ProgramDeclarations.cs"
+      ],
+      "added_lines": 0,
+      "deleted_lines": 3,
+      "deleted_comment_lines": [
+        "        ///NON-STEADYSTATE/FORCING W. IFU-MM5 DATA YES=1 -> not yet implemented in this version",
+        "        ///</summary>",
+        "        ///<summary>"
+      ]
+    }
+  ],
+  "recorded_measurements_preserved": true,
+  "fresh_build_and_il_check": "pass",
+  "method_il_comparison": "qa/final_build/method_il_comparison.json",
+  "fresh_component_results": [
+    "qa/final_build/components_pressure.json",
+    "qa/final_build/components_tdma.json",
+    "qa/final_build/components_radiation.json",
+    "qa/final_build/components_scalar_tdma.json"
+  ],
+  "fresh_smoke_results": "qa/final_build/smoke_results.json"
+}

@@ -1,0 +1,584 @@
+diff --git a/src/FIMP.cs b/src/FIMP.cs
+index 71ab968fed3686cc9c281f0a4d25e3994ab32b2d..02487ac2d7d9cd85e7095f02fd9286bbeab6e3d9 100644
+--- a/src/FIMP.cs
++++ b/src/FIMP.cs
+@@ -50,7 +50,7 @@ namespace GRAMM_2001
+                 ReadOnlySpan<float> AP0_PS_L;
+                 ReadOnlySpan<double> QUNjM_L;
+                 ReadOnlySpan<double> QUNjP_L;
+-                ReadOnlySpan<double> A_PS_L;
++                ReadOnlySpan<double> H_PS_L;
+                 ReadOnlySpan<double> B_PS_L;
+                 ReadOnlySpan<double> C_PS_L;
+                 ReadOnlySpan<float> RHO_L;
+@@ -67,7 +67,7 @@ namespace GRAMM_2001
+                         ANORTH_PS_L = Program.ANORTH_PS[i][j];
+                         AP0_PS_L    = Program.AP0_PS[i][j];
+                         ReadOnlySpan<double> QU_L = Program.QU[i][j];
+-                        A_PS_L = Program.A_PS[i][j];
++                        H_PS_L = Program.H_PS[i][j];
+                         B_PS_L = Program.B_PS[i][j];
+                         C_PS_L = Program.C_PS[i][j];
+                         RHO_L = Program.RHO[i][j];
+@@ -107,13 +107,13 @@ namespace GRAMM_2001
+                             //Recurrence formula
+                             if (k > 1)
+                             {
+-                                help = 1 / (A_PS_L[k] - C_PS_L[k] * PIM[k - 1]);
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = (DIM + C_PS_L[k] * QIM[k - 1]) * help;
+                             }
+                             else
+                             {
+-                                help = 1 / A_PS_L[k];
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = DIM * help;
+                             }
+@@ -157,7 +157,7 @@ namespace GRAMM_2001
+                 ReadOnlySpan<float> AP0_PS_L;
+                 ReadOnlySpan<double> QUNjM_L;
+                 ReadOnlySpan<double> QUNjP_L;
+-                ReadOnlySpan<double> A_PS_L;
++                ReadOnlySpan<double> H_PS_L;
+                 ReadOnlySpan<double> B_PS_L;
+                 ReadOnlySpan<double> C_PS_L;
+                 ReadOnlySpan<float> RHO_L;
+@@ -192,7 +192,7 @@ namespace GRAMM_2001
+                         QUNjM_L = Program.QUN[i][j - 1];
+                         QUNjP_L = Program.QUN[i][j + 1];
+                         double[] QU_L = Program.QU[i][j];
+-                        A_PS_L = Program.A_PS[i][j];
++                        H_PS_L = Program.H_PS[i][j];
+                         B_PS_L = Program.B_PS[i][j];
+                         C_PS_L = Program.C_PS[i][j];
+                         RHO_L = Program.RHO[i][j];
+@@ -214,13 +214,13 @@ namespace GRAMM_2001
+                             //Recurrence formula
+                             if (k > 1)
+                             {
+-                                help = 1 / (A_PS_L[k] - C_PS_L[k] * PIM[k - 1]);
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = (DIM + C_PS_L[k] * QIM[k - 1]) * help;
+                             }
+                             else
+                             {
+-                                help = 1 / A_PS_L[k];
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = DIM * help;
+                             }
+@@ -264,7 +264,7 @@ namespace GRAMM_2001
+                 ReadOnlySpan<float> AP0_PS_L;
+                 ReadOnlySpan<double> QUNiM_L;
+                 ReadOnlySpan<double> QUNiP_L;
+-                ReadOnlySpan<double> A_PS_L;
++                ReadOnlySpan<double> H_PS_L;
+                 ReadOnlySpan<double> B_PS_L;
+                 ReadOnlySpan<double> C_PS_L;
+                 ReadOnlySpan<float> RHO_L;
+@@ -298,7 +298,7 @@ namespace GRAMM_2001
+                         }
+                         QUNiM_L = Program.QUN[i - 1][j];
+                         QUNiP_L = Program.QUN[i + 1][j];
+-                        A_PS_L = Program.A_PS[i][j];
++                        H_PS_L = Program.H_PS[i][j];
+                         B_PS_L = Program.B_PS[i][j];
+                         C_PS_L = Program.C_PS[i][j];
+                         RHO_L = Program.RHO[i][j];
+@@ -320,13 +320,13 @@ namespace GRAMM_2001
+                             //Recurrence formula
+                             if (k > 1)
+                             {
+-                                help = 1 / (A_PS_L[k] - C_PS_L[k] * PIM[k - 1]);
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = (DIM + C_PS_L[k] * QIM[k - 1]) * help;
+                             }
+                             else
+                             {
+-                                help = 1 / A_PS_L[k];
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = DIM * help;
+                             }
+@@ -370,7 +370,7 @@ namespace GRAMM_2001
+                 ReadOnlySpan<float> AP0_PS_L;
+                 ReadOnlySpan<double> QUNiM_L;
+                 ReadOnlySpan<double> QUNiP_L;
+-                ReadOnlySpan<double> A_PS_L;
++                ReadOnlySpan<double> H_PS_L;
+                 ReadOnlySpan<double> B_PS_L;
+                 ReadOnlySpan<double> C_PS_L;
+                 ReadOnlySpan<float> RHO_L;
+@@ -405,7 +405,7 @@ namespace GRAMM_2001
+ 
+                         QUNiM_L = Program.QUN[i - 1][j];
+                         QUNiP_L = Program.QUN[i + 1][j];
+-                        A_PS_L = Program.A_PS[i][j];
++                        H_PS_L = Program.H_PS[i][j];
+                         B_PS_L = Program.B_PS[i][j];
+                         C_PS_L = Program.C_PS[i][j];
+                         RHO_L = Program.RHO[i][j];
+@@ -427,13 +427,13 @@ namespace GRAMM_2001
+                             //Recurrence formula
+                             if (k > 1)
+                             {
+-                                help = 1 / (A_PS_L[k] - C_PS_L[k] * PIM[k - 1]);
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = (DIM + C_PS_L[k] * QIM[k - 1]) * help;
+                             }
+                             else
+                             {
+-                                help = 1 / A_PS_L[k];
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = DIM * help;
+                             }
+@@ -477,7 +477,7 @@ namespace GRAMM_2001
+                 ReadOnlySpan<float> AP0_PS_L;
+                 ReadOnlySpan<double> QUNjM_L;
+                 ReadOnlySpan<double> QUNjP_L;
+-                ReadOnlySpan<double> A_PS_L;
++                ReadOnlySpan<double> H_PS_L;
+                 ReadOnlySpan<double> B_PS_L;
+                 ReadOnlySpan<double> C_PS_L;
+                 ReadOnlySpan<float> RHO_L;
+@@ -512,7 +512,7 @@ namespace GRAMM_2001
+ 
+                         QUNjM_L = Program.QUN[i][j - 1];
+                         QUNjP_L = Program.QUN[i][j + 1];
+-                        A_PS_L = Program.A_PS[i][j];
++                        H_PS_L = Program.H_PS[i][j];
+                         B_PS_L = Program.B_PS[i][j];
+                         C_PS_L = Program.C_PS[i][j];
+                         RHO_L = Program.RHO[i][j];
+@@ -534,13 +534,13 @@ namespace GRAMM_2001
+                             //Recurrence formula
+                             if (k > 1)
+                             {
+-                                help = 1 / (A_PS_L[k] - C_PS_L[k] * PIM[k - 1]);
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = (DIM + C_PS_L[k] * QIM[k - 1]) * help;
+                             }
+                             else
+                             {
+-                                help = 1 / A_PS_L[k];
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = DIM * help;
+                             }
+@@ -584,7 +584,7 @@ namespace GRAMM_2001
+                 ReadOnlySpan<float> AP0_PS_L;
+                 ReadOnlySpan<double> QUNjM_L;
+                 ReadOnlySpan<double> QUNjP_L;
+-                ReadOnlySpan<double> A_PS_L;
++                ReadOnlySpan<double> H_PS_L;
+                 ReadOnlySpan<double> B_PS_L;
+                 ReadOnlySpan<double> C_PS_L;
+                 ReadOnlySpan<float> RHO_L;
+@@ -619,7 +619,7 @@ namespace GRAMM_2001
+ 
+                         QUNjM_L = Program.QUN[i][j - 1];
+                         QUNjP_L = Program.QUN[i][j + 1];
+-                        A_PS_L = Program.A_PS[i][j];
++                        H_PS_L = Program.H_PS[i][j];
+                         B_PS_L = Program.B_PS[i][j];
+                         C_PS_L = Program.C_PS[i][j];
+                         RHO_L = Program.RHO[i][j];
+@@ -641,13 +641,13 @@ namespace GRAMM_2001
+                             //Recurrence formula
+                             if (k > 1)
+                             {
+-                                help = 1 / (A_PS_L[k] - C_PS_L[k] * PIM[k - 1]);
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = (DIM + C_PS_L[k] * QIM[k - 1]) * help;
+                             }
+                             else
+                             {
+-                                help = 1 / A_PS_L[k];
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = DIM * help;
+                             }
+@@ -718,7 +718,7 @@ namespace GRAMM_2001
+                         }
+                         ReadOnlySpan<double> QUNiM_L = Program.QUN[i - 1][j];
+                         ReadOnlySpan<double> QUNiP_L = Program.QUN[i + 1][j];
+-                        ReadOnlySpan<double> A_PS_L = Program.A_PS[i][j];
++                        ReadOnlySpan<double> H_PS_L = Program.H_PS[i][j];
+                         ReadOnlySpan<double> B_PS_L = Program.B_PS[i][j];
+                         ReadOnlySpan<double> C_PS_L = Program.C_PS[i][j];
+                         ReadOnlySpan<float> RHO_L = Program.RHO[i][j];
+@@ -740,13 +740,13 @@ namespace GRAMM_2001
+                             //Recurrence formula
+                             if (k > 1)
+                             {
+-                                help = 1 / (A_PS_L[k] - C_PS_L[k] * PIM[k - 1]);
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = (DIM + C_PS_L[k] * QIM[k - 1]) * help;
+                             }
+                             else
+                             {
+-                                help = 1 / A_PS_L[k];
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = DIM * help;
+                             }
+@@ -817,7 +817,7 @@ namespace GRAMM_2001
+                         }
+                         ReadOnlySpan<double> QUNiM_L = Program.QUN[i - 1][j];
+                         ReadOnlySpan<double> QUNiP_L = Program.QUN[i + 1][j];
+-                        ReadOnlySpan<double> A_PS_L = Program.A_PS[i][j];
++                        ReadOnlySpan<double> H_PS_L = Program.H_PS[i][j];
+                         ReadOnlySpan<double> B_PS_L = Program.B_PS[i][j];
+                         ReadOnlySpan<double> C_PS_L = Program.C_PS[i][j];
+                         ReadOnlySpan<float> RHO_L = Program.RHO[i][j];
+@@ -839,13 +839,13 @@ namespace GRAMM_2001
+                             //Recurrence formula
+                             if (k > 1)
+                             {
+-                                help = 1 / (A_PS_L[k] - C_PS_L[k] * PIM[k - 1]);
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = (DIM + C_PS_L[k] * QIM[k - 1]) * help;
+                             }
+                             else
+                             {
+-                                help = 1 / A_PS_L[k];
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = DIM * help;
+                             }
+diff --git a/src/ProgramDeclarations.cs b/src/ProgramDeclarations.cs
+index 93e4da306072192ffc1f1ce0225d85ed1e211316..fb0acd86e0b4f079513a49878a27bd93702c3efd 100644
+--- a/src/ProgramDeclarations.cs
++++ b/src/ProgramDeclarations.cs
+@@ -684,6 +684,10 @@ namespace GRAMM_2001
+         ///</summary>
+         public static double[][][] C_PS = CreateArray<double[][]>(1, () => CreateArray<double[]>(1, () => new double[1]));
+         ///<summary>
++        /// Reciprocal TDMA pivots shared by temperature and humidity
++        ///</summary>
++        public static double[][][] H_PS = CreateArray<double[][]>(1, () => CreateArray<double[]>(1, () => new double[1]));
++        ///<summary>
+         /// Temporary array used in the TDMA solver for passive scalars
+         ///</summary>
+         public static float[][][] AWEST_PS = CreateArray<float[][]>(1, () => CreateArray<float[]>(1, () => new float[1]));
+diff --git a/src/Read_Ini_Files.cs b/src/Read_Ini_Files.cs
+index f0348d4c3d77b8b9fecc9fcab2e493f1562e7582..5cec78889f61ecc155185179c024aeb204894f69 100644
+--- a/src/Read_Ini_Files.cs
++++ b/src/Read_Ini_Files.cs
+@@ -279,6 +279,7 @@ namespace GRAMM_2001
+             A_PS = CreateArray<double[][]>(NX1, () => CreateArray<double[]>(NY1, () => new double[NZ1]));
+             B_PS = CreateArray<double[][]>(NX1, () => CreateArray<double[]>(NY1, () => new double[NZ1]));
+             C_PS = CreateArray<double[][]>(NX1, () => CreateArray<double[]>(NY1, () => new double[NZ1]));
++            H_PS = CreateArray<double[][]>(NX1, () => CreateArray<double[]>(NY1, () => new double[NZ]));
+             ASOUTH_PS = CreateArray<float[][]>(NX1, () => CreateArray<float[]>(NY1, () => new float[NZ1]));
+             AWEST_PS = CreateArray<float[][]>(NX1, () => CreateArray<float[]>(NY1, () => new float[NZ1]));
+             ANORTH_PS = CreateArray<float[][]>(NX1, () => CreateArray<float[]>(NY1, () => new float[NZ1]));
+diff --git a/src/TERMI_PS.cs b/src/TERMI_PS.cs
+index 3a849370fefb7539e5b9d14f514a5c7f27e56aed..ab272e5bf35b16dba77dcaf5788f867a9f06b6a2 100644
+--- a/src/TERMI_PS.cs
++++ b/src/TERMI_PS.cs
+@@ -158,6 +158,18 @@ namespace GRAMM_2001
+                         A_PS_L[k] = B_PS_L[k] + C_PS_L[k] + AWEST_PS_L[k] + ASOUTH_PS_L[k]
+                           + ANORTH_PS_L[k] + AEAST_PS_L[k] + AP0_PS_L[k];  // -SP;
+                     }
++
++                    if (Program.ICT || Program.ICQU)
++                    {
++                        double[] H_PS_L = Program.H_PS[i][j];
++                        double pim = 0;
++                        for (int k = 1; k < NK; k++)
++                        {
++                            double help = k == 1 ? 1 / A_PS_L[k] : 1 / (A_PS_L[k] - C_PS_L[k] * pim);
++                            H_PS_L[k] = help;
++                            pim = B_PS_L[k] * help;
++                        }
++                    }
+                 }
+             });
+         }
+diff --git a/src/TIMP.cs b/src/TIMP.cs
+index c2f5ba308cd9a5c6a56a871d0dbbc6a18bb821e8..bfde63c97b6e96554911cd37a94583afcac81076 100644
+--- a/src/TIMP.cs
++++ b/src/TIMP.cs
+@@ -81,7 +81,7 @@ namespace GRAMM_2001
+                 double[] TN_L;
+                 double[] TNiM_L;
+                 double[] TNiP_L;
+-                ReadOnlySpan<double> A_PS_L;
++                ReadOnlySpan<double> H_PS_L;
+                 ReadOnlySpan<float> AWEST_PS_L;
+                 ReadOnlySpan<float> ASOUTH_PS_L;
+                 ReadOnlySpan<float> AEAST_PS_L;
+@@ -99,7 +99,7 @@ namespace GRAMM_2001
+                     int border = Math.Min(i - range.Item1, range.Item2 - 1 - i);
+                     for (int j = 2; j <= NJ - 1; ++j)
+                     {
+-                        A_PS_L = Program.A_PS[i][j];
++                        H_PS_L = Program.H_PS[i][j];
+                         AEAST_PS_L = Program.AEAST_PS[i][j];
+                         ANORTH_PS_L = Program.ANORTH_PS[i][j];
+                         ASOUTH_PS_L = Program.ASOUTH_PS[i][j];
+@@ -143,13 +143,13 @@ namespace GRAMM_2001
+                             //Recurrence formula
+                             if (k > 1)
+                             {
+-                                help = 1 / (A_PS_L[k] - C_PS_L[k] * PIM[k - 1]);
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = (DIM + C_PS_L[k] * QIM[k - 1]) * help;
+                             }
+                             else
+                             {
+-                                help = 1 / A_PS_L[k];
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = DIM * help;
+                             }
+@@ -186,7 +186,7 @@ namespace GRAMM_2001
+                 double[] TN_L;
+                 double[] TNiM_L;
+                 double[] TNiP_L;
+-                ReadOnlySpan<double> A_PS_L;
++                ReadOnlySpan<double> H_PS_L;
+                 ReadOnlySpan<float> AWEST_PS_L;
+                 ReadOnlySpan<float> ASOUTH_PS_L;
+                 ReadOnlySpan<float> AEAST_PS_L;
+@@ -204,7 +204,7 @@ namespace GRAMM_2001
+                     int border = Math.Min(i - range.Item1, range.Item2 - 1 - i);
+                     for (int j = NJ - 1; j >= 2; --j)
+                     {
+-                        A_PS_L = Program.A_PS[i][j];
++                        H_PS_L = Program.H_PS[i][j];
+                         AEAST_PS_L = Program.AEAST_PS[i][j];
+                         ANORTH_PS_L = Program.ANORTH_PS[i][j];
+                         ASOUTH_PS_L = Program.ASOUTH_PS[i][j];
+@@ -248,13 +248,13 @@ namespace GRAMM_2001
+                             //Recurrence formula
+                             if (k > 1)
+                             {
+-                                help = 1 / (A_PS_L[k] - C_PS_L[k] * PIM[k - 1]);
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = (DIM + C_PS_L[k] * QIM[k - 1]) * help;
+                             }
+                             else
+                             {
+-                                help = 1 / A_PS_L[k];
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = DIM * help;
+                             }
+@@ -292,7 +292,7 @@ namespace GRAMM_2001
+                 double[] TN_L;
+                 double[] TNjM_L;
+                 double[] TNjP_L;
+-                ReadOnlySpan<double> A_PS_L;
++                ReadOnlySpan<double> H_PS_L;
+                 ReadOnlySpan<float> AWEST_PS_L;
+                 ReadOnlySpan<float> ASOUTH_PS_L;
+                 ReadOnlySpan<float> AEAST_PS_L;
+@@ -310,7 +310,7 @@ namespace GRAMM_2001
+                     int border = Math.Min(j - range.Item1, range.Item2 - 1 - j);
+                     for (int i = 2; i <= NI - 1; ++i)
+                     {
+-                        A_PS_L = Program.A_PS[i][j];
++                        H_PS_L = Program.H_PS[i][j];
+                         AEAST_PS_L = Program.AEAST_PS[i][j];
+                         ANORTH_PS_L = Program.ANORTH_PS[i][j];
+                         ASOUTH_PS_L = Program.ASOUTH_PS[i][j];
+@@ -354,13 +354,13 @@ namespace GRAMM_2001
+                             //Recurrence formula
+                             if (k > 1)
+                             {
+-                                help = 1 / (A_PS_L[k] - C_PS_L[k] * PIM[k - 1]);
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = (DIM + C_PS_L[k] * QIM[k - 1]) * help;
+                             }
+                             else
+                             {
+-                                help = 1 / A_PS_L[k];
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = DIM * help;
+                             }
+@@ -398,7 +398,7 @@ namespace GRAMM_2001
+                 double[] TN_L;
+                 double[] TNjM_L;
+                 double[] TNjP_L;
+-                ReadOnlySpan<double> A_PS_L;
++                ReadOnlySpan<double> H_PS_L;
+                 ReadOnlySpan<float> AWEST_PS_L;
+                 ReadOnlySpan<float> ASOUTH_PS_L;
+                 ReadOnlySpan<float> AEAST_PS_L;
+@@ -416,7 +416,7 @@ namespace GRAMM_2001
+                     int border = Math.Min(j - range.Item1, range.Item2 - 1 - j);
+                     for (int i = NI - 1; i >= 2; --i)
+                     {
+-                        A_PS_L = Program.A_PS[i][j];
++                        H_PS_L = Program.H_PS[i][j];
+                         AEAST_PS_L = Program.AEAST_PS[i][j];
+                         ANORTH_PS_L = Program.ANORTH_PS[i][j];
+                         ASOUTH_PS_L = Program.ASOUTH_PS[i][j];
+@@ -460,13 +460,13 @@ namespace GRAMM_2001
+                             //Recurrence formula
+                             if (k > 1)
+                             {
+-                                help = 1 / (A_PS_L[k] - C_PS_L[k] * PIM[k - 1]);
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = (DIM + C_PS_L[k] * QIM[k - 1]) * help;
+                             }
+                             else
+                             {
+-                                help = 1 / A_PS_L[k];
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = DIM * help;
+                             }
+@@ -504,7 +504,7 @@ namespace GRAMM_2001
+                 double[] TN_L;
+                 double[] TNiM_L;
+                 double[] TNiP_L;
+-                ReadOnlySpan<double> A_PS_L;
++                ReadOnlySpan<double> H_PS_L;
+                 ReadOnlySpan<float> AWEST_PS_L;
+                 ReadOnlySpan<float> ASOUTH_PS_L;
+                 ReadOnlySpan<float> AEAST_PS_L;
+@@ -522,7 +522,7 @@ namespace GRAMM_2001
+                     int border = Math.Min(i - range.Item1, range.Item2 - 1 - i);
+                     for (int j = 2; j <= NJ - 1; ++j)
+                     {
+-                        A_PS_L = Program.A_PS[i][j];
++                        H_PS_L = Program.H_PS[i][j];
+                         AEAST_PS_L = Program.AEAST_PS[i][j];
+                         ANORTH_PS_L = Program.ANORTH_PS[i][j];
+                         ASOUTH_PS_L = Program.ASOUTH_PS[i][j];
+@@ -566,13 +566,13 @@ namespace GRAMM_2001
+                             //Recurrence formula
+                             if (k > 1)
+                             {
+-                                help = 1 / (A_PS_L[k] - C_PS_L[k] * PIM[k - 1]);
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = (DIM + C_PS_L[k] * QIM[k - 1]) * help;
+                             }
+                             else
+                             {
+-                                help = 1 / A_PS_L[k];
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = DIM * help;
+                             }
+@@ -610,7 +610,7 @@ namespace GRAMM_2001
+                 double[] TN_L;
+                 double[] TNiM_L;
+                 double[] TNiP_L;
+-                ReadOnlySpan<double> A_PS_L;
++                ReadOnlySpan<double> H_PS_L;
+                 ReadOnlySpan<float> AWEST_PS_L;
+                 ReadOnlySpan<float> ASOUTH_PS_L;
+                 ReadOnlySpan<float> AEAST_PS_L;
+@@ -628,7 +628,7 @@ namespace GRAMM_2001
+                     int border = Math.Min(i - range.Item1, range.Item2 - 1 - i);
+                     for (int j = NJ - 1; j >= 2; --j)
+                     {
+-                        A_PS_L = Program.A_PS[i][j];
++                        H_PS_L = Program.H_PS[i][j];
+                         AEAST_PS_L = Program.AEAST_PS[i][j];
+                         ANORTH_PS_L = Program.ANORTH_PS[i][j];
+                         ASOUTH_PS_L = Program.ASOUTH_PS[i][j];
+@@ -672,13 +672,13 @@ namespace GRAMM_2001
+                             //Recurrence formula
+                             if (k > 1)
+                             {
+-                                help = 1 / (A_PS_L[k] - C_PS_L[k] * PIM[k - 1]);
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = (DIM + C_PS_L[k] * QIM[k - 1]) * help;
+                             }
+                             else
+                             {
+-                                help = 1 / A_PS_L[k];
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = DIM * help;
+                             }
+@@ -716,7 +716,7 @@ namespace GRAMM_2001
+                 double[] TN_L;
+                 double[] TNjM_L;
+                 double[] TNjP_L;
+-                ReadOnlySpan<double> A_PS_L;
++                ReadOnlySpan<double> H_PS_L;
+                 ReadOnlySpan<float> AWEST_PS_L;
+                 ReadOnlySpan<float> ASOUTH_PS_L;
+                 ReadOnlySpan<float> AEAST_PS_L;
+@@ -734,7 +734,7 @@ namespace GRAMM_2001
+                     int border = Math.Min(j - range.Item1, range.Item2 - 1 - j);
+                     for (int i = NI - 1; i >= 2; --i)
+                     {
+-                        A_PS_L = Program.A_PS[i][j];
++                        H_PS_L = Program.H_PS[i][j];
+                         AEAST_PS_L = Program.AEAST_PS[i][j];
+                         ANORTH_PS_L = Program.ANORTH_PS[i][j];
+                         ASOUTH_PS_L = Program.ASOUTH_PS[i][j];
+@@ -778,13 +778,13 @@ namespace GRAMM_2001
+                             //Recurrence formula
+                             if (k > 1)
+                             {
+-                                help = 1 / (A_PS_L[k] - C_PS_L[k] * PIM[k - 1]);
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = (DIM + C_PS_L[k] * QIM[k - 1]) * help;
+                             }
+                             else
+                             {
+-                                help = 1 / A_PS_L[k];
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = DIM * help;
+                             }
+@@ -822,7 +822,7 @@ namespace GRAMM_2001
+                 double[] TN_L;
+                 double[] TNjM_L;
+                 double[] TNjP_L;
+-                ReadOnlySpan<double> A_PS_L;
++                ReadOnlySpan<double> H_PS_L;
+                 ReadOnlySpan<float> AWEST_PS_L;
+                 ReadOnlySpan<float> ASOUTH_PS_L;
+                 ReadOnlySpan<float> AEAST_PS_L;
+@@ -840,7 +840,7 @@ namespace GRAMM_2001
+                     int border = Math.Min(j - range.Item1, range.Item2 - 1 - j);
+                     for (int i = 2; i <= NI - 1; ++i)
+                     {
+-                        A_PS_L = Program.A_PS[i][j];
++                        H_PS_L = Program.H_PS[i][j];
+                         AEAST_PS_L = Program.AEAST_PS[i][j];
+                         ANORTH_PS_L = Program.ANORTH_PS[i][j];
+                         ASOUTH_PS_L = Program.ASOUTH_PS[i][j];
+@@ -884,13 +884,13 @@ namespace GRAMM_2001
+                             //Recurrence formula
+                             if (k > 1)
+                             {
+-                                help = 1 / (A_PS_L[k] - C_PS_L[k] * PIM[k - 1]);
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = (DIM + C_PS_L[k] * QIM[k - 1]) * help;
+                             }
+                             else
+                             {
+-                                help = 1 / A_PS_L[k];
++                                help = H_PS_L[k];
+                                 PIM[k] = B_PS_L[k] * help;
+                                 QIM[k] = DIM * help;
+                             }

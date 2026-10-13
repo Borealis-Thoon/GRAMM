@@ -1,0 +1,106 @@
+diff --git a/src/UVWIMP.cs b/src/UVWIMP.cs
+index 6ffb8e94695c098e5fd73093d83120f0a105d4c8..82c8a4cc5b88ac0b432b770350b67c5d3a2d76d2 100644
+--- a/src/UVWIMP.cs
++++ b/src/UVWIMP.cs
+@@ -198,11 +198,10 @@ namespace GRAMM_2001
+             Unsafe.SkipInit(out double ae2);
+             Unsafe.SkipInit(out double an2);
+             int knmax = 2 * (NK_P - 1) + 1;
+-            Span<double> PIMU = stackalloc double[knmax];
++            // U, V and W share AIM, BIM and CIM, so their forward P coefficients are identical.
++            Span<double> PIM = stackalloc double[knmax];
+             Span<double> QIMU = stackalloc double[knmax];
+-            Span<double> PIMV = stackalloc double[knmax];
+             Span<double> QIMV = stackalloc double[knmax];
+-            Span<double> PIMW = stackalloc double[knmax];
+             Span<double> QIMW = stackalloc double[knmax];
+             double[] U1N_LRR = Program.GrammArrayPool.Rent(Program.U1N[1][1].Length);
+             double[] U2N_LRR = Program.GrammArrayPool.Rent(Program.U2N[1][1].Length);
+@@ -342,7 +341,7 @@ namespace GRAMM_2001
+                     Unsafe.SkipInit(out double cim);
+ 
+                     int m = 2;
+-                    for (int kn = 1; kn < PIMU.Length; ++kn)
++                    for (int kn = 1; kn < PIM.Length; ++kn)
+                     {
+                         int k = 1 + kn >> 1;  // (int) (kn * 0.5F + 0.5F)
+                         int knM1 = kn - 1;
+@@ -390,30 +389,24 @@ namespace GRAMM_2001
+                             {
+                                 help = 1 / aim; 
+                                 DIMU -= U1N_LR[k] * USTxUSTV;
+-                                PIMU[kn] = bim * help;
++                                PIM[kn] = bim * help;
+                                 QIMU[kn] = DIMU * help;
+ 
+                                 DIMV -= V1N_LR[k] * USTxUSTV;
+-                                PIMV[kn] = bim * help;
+                                 QIMV[kn] = DIMV * help;
+ 
+                                 DIMW -= W1N_LR[k] * USTxUSTVW * MathF.Sqrt(Pow2(AREAZX_L[k]) + Pow2(AREAZY_L[k]));
+-                                PIMW[kn] = bim * help;
+                                 QIMW[kn] = DIMW * help;
+                             }
+                             else
+                             {
+                                 cim = CIM_L[kn];
+-                                help = 1 / (aim - cim * PIMU[knM1]);
+-                                PIMU[kn] = bim * help;
++                                help = 1 / (aim - cim * PIM[knM1]);
++                                PIM[kn] = bim * help;
+                                 QIMU[kn] = (DIMU + cim * QIMU[knM1]) * help;
+ 
+-                                help = 1 / (aim - cim * PIMV[knM1]);
+-                                PIMV[kn] = bim * help;
+                                 QIMV[kn] = (DIMV + cim * QIMV[knM1]) * help;
+ 
+-                                help = 1 / (aim - cim * PIMW[knM1]);
+-                                PIMW[kn] = bim * help;
+                                 QIMW[kn] = (DIMW + cim * QIMW[knM1]) * help;
+                             }
+                             m--;
+@@ -440,35 +433,31 @@ namespace GRAMM_2001
+                             }
+                             //Recurrence formula
+                             cim = CIM_L[kn];
+-                            help = 1 / (aim - cim * PIMU[knM1]);
+-                            PIMU[kn] = bim * help;
++                            help = 1 / (aim - cim * PIM[knM1]);
++                            PIM[kn] = bim * help;
+                             QIMU[kn] = (DIMU + cim * QIMU[knM1]) * help;
+ 
+-                            help = 1 / (aim - cim * PIMV[knM1]);
+-                            PIMV[kn] = bim * help;
+                             QIMV[kn] = (DIMV + cim * QIMV[knM1]) * help;
+ 
+-                            help = 1 / (aim - cim * PIMW[knM1]);
+-                            PIMW[kn] = bim * help;
+                             QIMW[kn] = (DIMW + cim * QIMW[knM1]) * help;
+                             m = 2;
+                         }
+                     }
+ 
+                     //Obtain new UVW-components
+-                    for (int kn = PIMU.Length - 1; kn > 1; --kn)
++                    for (int kn = PIM.Length - 1; kn > 1; --kn)
+                     {
+                         int k = 1 + kn >> 1;  // (int) (kn * 0.5F + 0.5F)
+                         int kP1 = k + 1;
+-                        U2N_LR[k] += (relaxv * (PIMU[kn] * U1N_LR[kP1] + QIMU[kn] - U2N_LR[k]));
+-                        V2N_LR[k] += (relaxv * (PIMV[kn] * V1N_LR[kP1] + QIMV[kn] - V2N_LR[k]));
+-                        W2N_LR[k] += (relaxv * (PIMW[kn] * W1N_LR[kP1] + QIMW[kn] - W2N_LR[k]));
++                        U2N_LR[k] += (relaxv * (PIM[kn] * U1N_LR[kP1] + QIMU[kn] - U2N_LR[k]));
++                        V2N_LR[k] += (relaxv * (PIM[kn] * V1N_LR[kP1] + QIMV[kn] - V2N_LR[k]));
++                        W2N_LR[k] += (relaxv * (PIM[kn] * W1N_LR[kP1] + QIMW[kn] - W2N_LR[k]));
+ 
+                         --kn;
+                         k = 1 + kn >> 1;
+-                        U1N_LR[k] += (relaxv * (PIMU[kn] * U2N_LR[k] + QIMU[kn] - U1N_LR[k]));
+-                        V1N_LR[k] += (relaxv * (PIMV[kn] * V2N_LR[k] + QIMV[kn] - V1N_LR[k]));
+-                        W1N_LR[k] += (relaxv * (PIMW[kn] * W2N_LR[k] + QIMW[kn] - W1N_LR[k]));
++                        U1N_LR[k] += (relaxv * (PIM[kn] * U2N_LR[k] + QIMU[kn] - U1N_LR[k]));
++                        V1N_LR[k] += (relaxv * (PIM[kn] * V2N_LR[k] + QIMV[kn] - V1N_LR[k]));
++                        W1N_LR[k] += (relaxv * (PIM[kn] * W2N_LR[k] + QIMW[kn] - W1N_LR[k]));
+                     }
+                     //Avoid race conditions at the border cells of the sequential calculated stripes
+                     if (border < 1)

@@ -1,0 +1,50 @@
+{
+  "definition": "Sum of characters in added and removed line bodies, with one LF per changed line; Git diff headers excluded.",
+  "rows": [
+    {
+      "variant": "warnings",
+      "commit": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+      "added_lines": 0,
+      "removed_lines": 11,
+      "added_line_characters_including_lf": 0,
+      "removed_line_characters_including_lf": 452,
+      "changed_line_characters_including_lf": 452
+    },
+    {
+      "variant": "pressure",
+      "commit": "b5b397fa9db5ef762dc5a2986b168caf54a7849f",
+      "added_lines": 12,
+      "removed_lines": 0,
+      "added_line_characters_including_lf": 385,
+      "removed_line_characters_including_lf": 0,
+      "changed_line_characters_including_lf": 385
+    },
+    {
+      "variant": "tdma",
+      "commit": "3716177279d1c6b66929a0797339c11f39feed4a",
+      "added_lines": 15,
+      "removed_lines": 26,
+      "added_line_characters_including_lf": 1138,
+      "removed_line_characters_including_lf": 1761,
+      "changed_line_characters_including_lf": 2899
+    },
+    {
+      "variant": "radiation",
+      "commit": "acd14a92f256ed443c8a4209630e218005f94bd9",
+      "added_lines": 45,
+      "removed_lines": 34,
+      "added_line_characters_including_lf": 2510,
+      "removed_line_characters_including_lf": 1954,
+      "changed_line_characters_including_lf": 4464
+    },
+    {
+      "variant": "scalar_tdma",
+      "commit": "d4c084b97508e16eab808d934d42520f504bcf55",
+      "added_lines": 79,
+      "removed_lines": 62,
+      "added_line_characters_including_lf": 3966,
+      "removed_line_characters_including_lf": 3680,
+      "changed_line_characters_including_lf": 7646
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "base_commit": "03224ce9d3490783c84a8aecd72642fe9df21242",
+  "files": [
+    "src/UVWIMP.cs"
+  ],
+  "line_diff": {
+    "added": 15,
+    "deleted": 26
+  },
+  "character_diff_lf_normalized": {
+    "added_chars": 97,
+    "deleted_chars": 720,
+    "changed_chars": 817
+  },
+  "strict_build": {
+    "status": "pass",
+    "warnings": 0,
+    "errors": 0,
+    "cleanup_commit": "7b8b5a377e785d138fc384f55624e91c8282429f",
+    "branch_cleanup_commit": "1ffb861"
+  },
+  "source_proof": [
+    "All eight scheduled sweep calls use UIMPKernel; sweep order, partitions and stripe counter are unchanged.",
+    "At kn=1, all three old P chains equal bim*(1/aim). At every later kn they each equal bim/(aim-cim*P[kn-1]), with the same aim,bim,cim locals. Induction makes all three P chains identical.",
+    "P is initialized at kn=1 before its first read at kn=2. Q remains separate for U,V,W.",
+    "First lower half-cell friction, first upper half-cell friction, upper boundary k+1 values, relaxv arithmetic, locks, array-pool returns and copying are unchanged.",
+    "P arrays are local to each kernel call; no new shared state or cross-step cache is introduced."
+  ],
+  "work_saved_per_column_per_sweep": {
+    "division_count_removed": "4 * NK - 6",
+    "P_multiplication_count_removed": "4 * NK - 4",
+    "stack_bytes_removed": "16 * (2 * NK - 1)"
+  },
+  "test_plan": [
+    "Run baseline and patch on actual engine methods, not rewritten recurrence.",
+    "Single-thread reference: flat/rising terrain, shallow/deep NK, calm and windy meteorology, stable/unstable cases; compare raw internal arrays where instrumented plus final wnd outputs.",
+    "Repeat baseline-baseline and baseline-patch in 2,4,8 thread runs; preserve native partition scheduling and report repeatability envelope.",
+    "Cover all outer-I/J and forward/reverse directions, partition border/interior columns, first lower/upper half cells and top back-substitution.",
+    "Use alternating baseline/patch process order, warmup, same steps per pair and root-owned exclusive timing lock."
+  ],
+  "future_scalar_candidate": {
+    "actual_targets": [
+      "TERMI_PS.cs",
+      "TIMP.cs",
+      "FIMP.cs",
+      "Read_Ini_Files.cs",
+      "ProgramDeclarations.cs"
+    ],
+    "scope": "A_PS/B_PS/C_PS forward P and reciprocal chain reused by temperature and specific humidity; old G8 does not change WATVAP_IMP.",
+    "cost": "Two double jagged volume arrays, updated on coefficient assembly; eight sweeps in each scalar solver need replacement.",
+    "recommendation": "Independent future candidate; measure memory bandwidth and CPU gain before submitting."
+  },
+  "component_check": {
+    "test": "Actual production UIMPKernel invoked through reflection; no copied solver equations",
+    "cases": 80,
+    "values": 2277024,
+    "all_equal": true
+  }
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "variant": "baseline",
+    "source_commit": "7b8b5a377e785d138fc384f55624e91c8282429f",
+    "source_path": "./work/warnings",
+    "instrumented_path": "./work/instrumented_baseline",
+    "build_command": [
+      "dotnet",
+      "build",
+      "./work/instrumented_baseline/src/GRAMM.csproj",
+      "-c",
+      "Release",
+      "-p:TreatWarningsAsErrors=true",
+      "-p:BaseIntermediateOutputPath=./build/instrumented_baseline_obj/",
+      "-o",
+      "./build/instrumented_baseline",
+      "--nologo"
+    ],
+    "build_exit_code": 0,
+    "support_sha256": "4fdf6686f0832f03e3d0eb6cf3fe8788b67c4fea4816e01c82fa6bf224a0ae32",
+    "replacement_counts": {
+      "parallel_for": 155,
+      "parallel_foreach": 110,
+      "console_top": 7,
+      "console_set": 7,
+      "timing_loop": 1
+    },
+    "integration_csv": "harness_integration.csv",
+    "snapshot_json": "harness_snapshot_{weather_start:05d}.json",
+    "snapshot_enable": "GRAMM_TEST_SNAPSHOT=1",
+    "binary_enable": "GRAMM_TEST_BINARY=1",
+    "models_run": false
+  },
+  {
+    "variant": "pressure",
+    "source_commit": "9191ac64658a3129e24b12644857ea6f9e0d72ba",
+    "source_path": "./work/pressure",
+    "instrumented_path": "./work/instrumented_pressure",
+    "build_command": [
+      "dotnet",
+      "build",
+      "./work/instrumented_pressure/src/GRAMM.csproj",
+      "-c",
+      "Release",
+      "-p:TreatWarningsAsErrors=true",
+      "-p:BaseIntermediateOutputPath=./build/instrumented_pressure_obj/",
+      "-o",
+      "./build/instrumented_pressure",
+      "--nologo"
+    ],
+    "build_exit_code": 0,
+    "support_sha256": "4fdf6686f0832f03e3d0eb6cf3fe8788b67c4fea4816e01c82fa6bf224a0ae32",
+    "replacement_counts": {
+      "parallel_for": 155,
+      "parallel_foreach": 110,
+      "console_top": 7,
+      "console_set": 7,
+      "timing_loop": 1
+    },
+    "integration_csv": "harness_integration.csv",
+    "snapshot_json": "harness_snapshot_{weather_start:05d}.json",
+    "snapshot_enable": "GRAMM_TEST_SNAPSHOT=1",
+    "binary_enable": "GRAMM_TEST_BINARY=1",
+    "models_run": false
+  },
+  {
+    "variant": "tdma",
+    "source_commit": "6e9f9f499cc80064d16a528e95f21c1925a4b7c3",
+    "source_path": "./work/tdma",
+    "instrumented_path": "./work/instrumented_tdma",
+    "build_command": [
+      "dotnet",
+      "build",
+      "./work/instrumented_tdma/src/GRAMM.csproj",
+      "-c",
+      "Release",
+      "-p:TreatWarningsAsErrors=true",
+      "-p:BaseIntermediateOutputPath=./build/instrumented_tdma_obj/",
+      "-o",
+      "./build/instrumented_tdma",
+      "--nologo"
+    ],
+    "build_exit_code": 0,
+    "support_sha256": "4fdf6686f0832f03e3d0eb6cf3fe8788b67c4fea4816e01c82fa6bf224a0ae32",
+    "replacement_counts": {
+      "parallel_for": 155,
+      "parallel_foreach": 110,
+      "console_top": 7,
+      "console_set": 7,
+      "timing_loop": 1
+    },
+    "integration_csv": "harness_integration.csv",
+    "snapshot_json": "harness_snapshot_{weather_start:05d}.json",
+    "snapshot_enable": "GRAMM_TEST_SNAPSHOT=1",
+    "binary_enable": "GRAMM_TEST_BINARY=1",
+    "models_run": false
+  },
+  {
+    "variant": "radiation",
+    "source_commit": "fd616cfca3f84d6149e05579a441442b31452027",
+    "source_path": "./work/radiation",
+    "instrumented_path": "./work/instrumented_radiation",
+    "build_command": [
+      "dotnet",
+      "build",
+      "./work/instrumented_radiation/src/GRAMM.csproj",
+      "-c",
+      "Release",
+      "-p:TreatWarningsAsErrors=true",
+      "-p:BaseIntermediateOutputPath=./build/instrumented_radiation_obj/",
+      "-o",
+      "./build/instrumented_radiation",
+      "--nologo"
+    ],
+    "build_exit_code": 0,
+    "support_sha256": "4fdf6686f0832f03e3d0eb6cf3fe8788b67c4fea4816e01c82fa6bf224a0ae32",
+    "replacement_counts": {
+      "parallel_for": 155,
+      "parallel_foreach": 110,
+      "console_top": 7,
+      "console_set": 7,
+      "timing_loop": 1
+    },
+    "integration_csv": "harness_integration.csv",
+    "snapshot_json": "harness_snapshot_{weather_start:05d}.json",
+    "snapshot_enable": "GRAMM_TEST_SNAPSHOT=1",
+    "binary_enable": "GRAMM_TEST_BINARY=1",
+    "models_run": false
+  }
+]

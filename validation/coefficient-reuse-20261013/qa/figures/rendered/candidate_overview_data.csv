@@ -1,0 +1,126 @@
+case,variant,pairs,paired_time_saved_pct,low_pct,high_pct,min_pct,max_pct,baseline_median_s,patched_median_s,condition,interval_method
+convective_4t,pressure,5,-0.7701523326828053,-2.761445969844245,1.218823112291334,-2.761445969844245,1.218823112291334,6.2605147,6.2029318,"Convective
+48 × 36 × 24; dx/dy 250/250 m
+SC 2; wind 2 m/s; Max_Proc = 4
+Configured 600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence on; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+convective_4t,tdma,5,0.6006444442731351,-0.21308454377804154,4.910040066722054,-0.21308454377804154,4.910040066722054,6.2605147,6.1958776,"Convective
+48 × 36 × 24; dx/dy 250/250 m
+SC 2; wind 2 m/s; Max_Proc = 4
+Configured 600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence on; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+convective_4t,radiation,5,-3.811423044817719,-11.793088970470777,3.3430674573613484,-11.793088970470777,3.3430674573613484,6.2605147,6.3335331,"Convective
+48 × 36 × 24; dx/dy 250/250 m
+SC 2; wind 2 m/s; Max_Proc = 4
+Configured 600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence on; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+every_step_radiation_4t,pressure,3,1.304364252503587,0.05875064046971801,5.701831761987952,0.05875064046971801,5.701831761987952,1.217551,1.199992,"Radiation at every step
+24 × 20 × 16; dx/dy 100/100 m
+SC 3; wind 2 m/s; Max_Proc = 4
+Configured 300 s; max dt 5 s; IRAD 1
+Radiation on; turbulence off; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+every_step_radiation_4t,tdma,3,1.9701104922914991,-0.747311489627922,3.973224799609165,-0.747311489627922,3.973224799609165,1.217551,1.2055249,"Radiation at every step
+24 × 20 × 16; dx/dy 100/100 m
+SC 3; wind 2 m/s; Max_Proc = 4
+Configured 300 s; max dt 5 s; IRAD 1
+Radiation on; turbulence off; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+every_step_radiation_4t,radiation,3,0.7147544538175454,-0.1925149009759375,5.573954735163012,-0.1925149009759375,5.573954735163012,1.217551,1.2016193,"Radiation at every step
+24 × 20 × 16; dx/dy 100/100 m
+SC 3; wind 2 m/s; Max_Proc = 4
+Configured 300 s; max dt 5 s; IRAD 1
+Radiation on; turbulence off; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+large_neutral_4t,pressure,5,0.27100948413931736,-0.29592982615149754,1.9609975720037975,-0.29592982615149754,1.9609975720037975,26.8571596,26.6752834,"Large neutral
+96 × 64 × 28; dx/dy 500/500 m
+SC 4; wind 2 m/s; Max_Proc = 4
+Configured 3600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence on; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+large_neutral_4t,tdma,5,0.35016016132751737,0.2124169413076027,2.425346979347276,0.2124169413076027,2.425346979347276,26.8571596,26.6114695,"Large neutral
+96 × 64 × 28; dx/dy 500/500 m
+SC 4; wind 2 m/s; Max_Proc = 4
+Configured 3600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence on; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+large_neutral_4t,radiation,5,0.02538205864480725,-1.665542550477972,1.7414327735496449,-1.665542550477972,1.7414327735496449,26.8571596,26.8503427,"Large neutral
+96 × 64 × 28; dx/dy 500/500 m
+SC 4; wind 2 m/s; Max_Proc = 4
+Configured 3600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence on; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+medium_neutral_1t,pressure,5,1.8317417058295038,-17.060257323920492,7.3561836699857714,-17.060257323920492,7.3561836699857714,5.216254,5.0939505,"Medium neutral
+48 × 36 × 24; dx/dy 250/250 m
+SC 4; wind 2 m/s; Max_Proc = 1
+Configured 3600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence off; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+medium_neutral_1t,tdma,5,-1.9073169793928146,-21.487398157700245,0.8799283930575497,-21.487398157700245,0.8799283930575497,5.216254,5.4891983,"Medium neutral
+48 × 36 × 24; dx/dy 250/250 m
+SC 4; wind 2 m/s; Max_Proc = 1
+Configured 3600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence off; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+medium_neutral_1t,radiation,5,1.47153198474137,-5.220740784478672,2.5986712944523482,-5.220740784478672,2.5986712944523482,5.216254,5.2486825,"Medium neutral
+48 × 36 × 24; dx/dy 250/250 m
+SC 4; wind 2 m/s; Max_Proc = 1
+Configured 3600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence off; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+small_neutral_1t,pressure,5,-0.4136183279262573,-1.0403788663528424,4.902447702431267,-1.0403788663528424,4.902447702431267,1.3499353,1.3520398,"Small neutral
+24 × 20 × 16; dx/dy 100/100 m
+SC 4; wind 2 m/s; Max_Proc = 1
+Configured 3600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence off; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+small_neutral_1t,tdma,5,-0.8164391286011874,-3.33986912816302,3.682214727869182,-3.33986912816302,3.682214727869182,1.3499353,1.3609567,"Small neutral
+24 × 20 × 16; dx/dy 100/100 m
+SC 4; wind 2 m/s; Max_Proc = 1
+Configured 3600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence off; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+small_neutral_1t,radiation,5,0.22669234592205267,-2.50517999504134,3.690462452805987,-2.50517999504134,3.690462452805987,1.3499353,1.3491794,"Small neutral
+24 × 20 × 16; dx/dy 100/100 m
+SC 4; wind 2 m/s; Max_Proc = 1
+Configured 3600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence off; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+stable_coast_8t,pressure,5,1.402789179868913,-1.5899004531446437,4.799999113723485,-1.5899004531446437,4.799999113723485,11.2083485,11.059854,"Stable coast
+64 × 48 × 24; dx/dy 500/500 m
+SC 7; wind 1 m/s; Max_Proc = 8
+Configured 600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence on; coast yes","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+stable_coast_8t,tdma,5,1.7016512488678637,-0.7245203615623863,6.038797290586939,-0.7245203615623863,6.038797290586939,11.2083485,11.0727823,"Stable coast
+64 × 48 × 24; dx/dy 500/500 m
+SC 7; wind 1 m/s; Max_Proc = 8
+Configured 600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence on; coast yes","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+stable_coast_8t,radiation,5,-1.1023015567369399,-2.3535435174470765,2.7179443287317917,-2.3535435174470765,2.7179443287317917,11.2083485,11.2399262,"Stable coast
+64 × 48 × 24; dx/dy 500/500 m
+SC 7; wind 1 m/s; Max_Proc = 8
+Configured 600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence on; coast yes","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+fixed_dt_4t,pressure,5,-0.27958210297160946,-4.1913221759984465,3.2848416868844765,-4.1913221759984465,3.2848416868844765,12.4187423,12.536539,"Fixed time step
+48 × 36 × 24; dx/dy 250/250 m
+SC 5; wind 2 m/s; Max_Proc = 4
+Configured 450 s; max dt 1.5 s; IRAD 60
+Radiation on; turbulence on; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+fixed_dt_4t,tdma,5,-0.7484879265403865,-3.7921569561838897,2.6592364893825993,-3.7921569561838897,2.6592364893825993,12.4187423,12.1866675,"Fixed time step
+48 × 36 × 24; dx/dy 250/250 m
+SC 5; wind 2 m/s; Max_Proc = 4
+Configured 450 s; max dt 1.5 s; IRAD 60
+Radiation on; turbulence on; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+fixed_dt_4t,radiation,5,0.7152694818408523,-8.309120934279935,2.4764752581818206,-8.309120934279935,2.4764752581818206,12.4187423,12.2500915,"Fixed time step
+48 × 36 × 24; dx/dy 250/250 m
+SC 5; wind 2 m/s; Max_Proc = 4
+Configured 450 s; max dt 1.5 s; IRAD 60
+Radiation on; turbulence on; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+fixed_dt_4t,scalar_tdma,5,1.4102791090812472,0.4181586653235647,3.2900415443822273,0.4181586653235647,3.2900415443822273,12.4187423,12.1637036,"Fixed time step
+48 × 36 × 24; dx/dy 250/250 m
+SC 5; wind 2 m/s; Max_Proc = 4
+Configured 450 s; max dt 1.5 s; IRAD 60
+Radiation on; turbulence on; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+convective_4t,scalar_tdma,5,2.8291364000895713,0.3220726534898244,7.616380044762117,0.3220726534898244,7.616380044762117,6.5044796,6.3942274,"Convective
+48 × 36 × 24; dx/dy 250/250 m
+SC 2; wind 2 m/s; Max_Proc = 4
+Configured 600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence on; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+medium_neutral_1t,scalar_tdma,5,2.026799311073535,1.7206772051344466,4.02939631083874,1.7206772051344466,4.02939631083874,6.1486087,6.0231005,"Medium neutral
+48 × 36 × 24; dx/dy 250/250 m
+SC 4; wind 2 m/s; Max_Proc = 1
+Configured 3600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence off; coast no","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."
+stable_coast_8t,scalar_tdma,5,3.5774917013577934,-0.7910884657089223,4.837779730335745,-0.7910884657089223,4.837779730335745,11.642266,11.3506896,"Stable coast
+64 × 48 × 24; dx/dy 500/500 m
+SC 7; wind 1 m/s; Max_Proc = 8
+Configured 600 s; max dt 5 s; IRAD 30
+Radiation on; turbulence on; coast yes","Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained."

@@ -1,0 +1,51 @@
+{
+  "status": "pass",
+  "scope": "Method IL bytes, signatures, implementation flags, local signatures, exception regions, and member/type reference records; build paths and assembly informational version are excluded.",
+  "variants": [
+    {
+      "variant": "baseline",
+      "old_sha256": "2c7ca29a6a9fd6953c0c35fd49176caf435bf2edcc39c26880f2786299d93f70",
+      "new_sha256": "7cf244906ee0bd392bf24daa77c82626209e623d37619f80cd7c857c06529034",
+      "method_count": 976,
+      "compared_metadata_records": 1354,
+      "identical": true,
+      "mismatches": []
+    },
+    {
+      "variant": "pressure",
+      "old_sha256": "c6a276e0d948ebe5a0ee7e4b1d88652b2dfe7959baac1efd699d89521486e708",
+      "new_sha256": "bbea80631d0aedaf7e67b411bb46af52ed0426facc9e78ded4740d108e7c9a47",
+      "method_count": 976,
+      "compared_metadata_records": 1354,
+      "identical": true,
+      "mismatches": []
+    },
+    {
+      "variant": "tdma",
+      "old_sha256": "e605b8ed224e824bec256f62b5574fae34f5336b7a3f43b200f80bdef5945ed9",
+      "new_sha256": "9e9cc5ff630e596b8c63d93e6fb1896ecab034da67325f0cabcc773f683992d5",
+      "method_count": 976,
+      "compared_metadata_records": 1354,
+      "identical": true,
+      "mismatches": []
+    },
+    {
+      "variant": "radiation",
+      "old_sha256": "5b519957e7f8a3a5026739f63a72f33db09bb494af0b72842c9519feca22c44f",
+      "new_sha256": "81e9905cf600d732ee36a2458143b6791e876dcdbf5d9246f4f1d2dba54a2a3d",
+      "method_count": 976,
+      "compared_metadata_records": 1354,
+      "identical": true,
+      "mismatches": []
+    },
+    {
+      "variant": "scalar_tdma",
+      "old_sha256": "2ef46ffa4243af165a1d39b664963adf1b603b5ef7132de8691bf247c350b316",
+      "new_sha256": "f03999e32afe12a82869ebc66450669808a5b89bfdbcfde55263996ea3b60648",
+      "method_count": 980,
+      "compared_metadata_records": 1358,
+      "identical": true,
+      "mismatches": []
+    }
+  ]
+}

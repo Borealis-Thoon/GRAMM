@@ -1,0 +1,14 @@
+{
+  "input_sha256": "c312eed981c0d59045f1501245ddeef30f3e4d72097c72f56f5e94a436cb6af0",
+  "script_sha256": "fa9a4704b65acffb4ab4bdbc4bf9890a49bb07958eff0b830565aaaafc65c7cd",
+  "outputs": [
+    {
+      "file": "scalar_tdma_reuse.png",
+      "sha256": "475eb0547d387efd99b20c476ca8eebb67bcd41fc625498cb773d9800db17e9d"
+    },
+    {
+      "file": "scalar_tdma_reuse.svg",
+      "sha256": "764b06e63fa0c03e543a12578ef5779fbd34181e64f3a82b88c40eeb34655784"
+    }
+  ]
+}

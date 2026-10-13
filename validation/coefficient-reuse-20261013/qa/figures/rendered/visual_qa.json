@@ -1,0 +1,79 @@
+{
+  "status": "pass",
+  "scope": "Figure data checks and direct PNG visual inspection",
+  "scalar_cases": [
+    {
+      "case": "fixed_dt_4t",
+      "paired_median_pct": 1.4102791090812472,
+      "observed_min_pct": 0.4181586653235647,
+      "observed_max_pct": 3.2900415443822273,
+      "faster_pairs": 5,
+      "pairs": 5
+    },
+    {
+      "case": "scalar_neutral_1t",
+      "paired_median_pct": 2.026799311073535,
+      "observed_min_pct": 1.7206772051344466,
+      "observed_max_pct": 4.02939631083874,
+      "faster_pairs": 5,
+      "pairs": 5
+    },
+    {
+      "case": "scalar_convective_4t",
+      "paired_median_pct": 2.8291364000895713,
+      "observed_min_pct": 0.3220726534898244,
+      "observed_max_pct": 7.616380044762117,
+      "faster_pairs": 5,
+      "pairs": 5
+    },
+    {
+      "case": "scalar_stable_coast_8t",
+      "paired_median_pct": 3.5774917013577934,
+      "observed_min_pct": -0.7910884657089223,
+      "observed_max_pct": 4.837779730335745,
+      "faster_pairs": 3,
+      "pairs": 5
+    }
+  ],
+  "overview_conditions": 7,
+  "overview_measured_cells": 25,
+  "overview_missing_cells": 3,
+  "scalar_serial_full_model_cases": 9,
+  "scalar_serial_exact_field_pairs": 99.0,
+  "displayed_interval": "Observed paired measurement range",
+  "visual_checks": [
+    "Both final PNGs opened and inspected",
+    "Diagram arrows and text legible",
+    "No caption overlap after final spacing repair",
+    "Two negative Max_Proc=8 paired observations visible in orange",
+    "Operation-count reduction distinguished from whole-model timing",
+    "Serial field equality identified as serial",
+    "Both final PNGs reopened after setting-label correction",
+    "Max_Proc labels identified as Max_Proc.txt settings in both figure footers",
+    "All plotted medians and observed ranges unchanged"
+  ],
+  "files": [
+    {
+      "file": "candidate_overview.png",
+      "bytes": 575117,
+      "sha256": "74ea3c7e730ad5a8d5a733ade986b3337430a22392f89a88179177bb9a5f0ddd"
+    },
+    {
+      "file": "candidate_overview.svg",
+      "bytes": 63048,
+      "sha256": "1fc05490370e409d972c96afe6b3aa5f809118684260650752aa3fe543826eca"
+    },
+    {
+      "file": "scalar_tdma_reuse.png",
+      "bytes": 310423,
+      "sha256": "475eb0547d387efd99b20c476ca8eebb67bcd41fc625498cb773d9800db17e9d"
+    },
+    {
+      "file": "scalar_tdma_reuse.svg",
+      "bytes": 31499,
+      "sha256": "764b06e63fa0c03e543a12578ef5779fbd34181e64f3a82b88c40eeb34655784"
+    }
+  ],
+  "model_execution_performed": false,
+  "build_performed": false
+}

@@ -1,0 +1,49 @@
+{
+  "commit": "62c8d3e997c3852a309483e19b0726973db35154",
+  "review_type": "Independent read-only source review",
+  "findings": [],
+  "status": "No source defect found",
+  "files_sha256": {
+    "FIMP.cs": "f65e88b3a7d78ec5b6646d8259d71efa187119bbe57fff261412f32d108a0e2f",
+    "Read_Ini_Files.cs": "af09dfbdf725c77d5bf95e21f6448365d483631a2315ce01776b2fb249e14918",
+    "ProgramDeclarations.cs": "9794aaf0bd09cadd472b8416397b8bc92211aa97dc1aacad82ea04a764a70f5a",
+    "TERMI_PS.cs": "d561046e02ec4ee10ce89b7e66dc81a98aab8708484a92efb84ad211bf1df8d5",
+    "TIMP.cs": "d5dbf6113e1ab9e11eefc0f6572e9032ea716b56b03381b7cf14de74961ea9d3"
+  },
+  "proofs": {
+    "coverage": "TIMP has 8 cache aliases and 16 help replacements; FIMP has 8 aliases and 16 replacements. No scalar sweep retains the original reciprocal expression.",
+    "coefficient_writes": "A_PS/B_PS/C_PS are assigned only in TERMIPSterms. Prandtl, Calctb, UVW, Bords and CALCPR do not write them. TKE/EPS/PSIMP/WATVAP retain read-only use.",
+    "range": "H_PS column length NZ, producer k=1..NK-1 and consumers k=1..NK-1. Cache slot zero is unused. Upper back-substitution still uses the original field[NK].",
+    "reset": "Each new SOLUTION coefficients pass overwrites the needed cache region. Current new-weather and retry paths call TERMIPS before scalar consumers.",
+    "thread_safety": "A single producer writes each interior column before read-only consumer sweeps. No new concurrent mutation is introduced.",
+    "types": "A/B/C, H_PS, help and pim are double. Horizontal transport and AP0 float values remain in their original coefficient assembly.",
+    "flags": "ICT||ICQU guards cache computation. Both consumers are called only under their corresponding enabled flags in SIMPLE.",
+    "ordering": "SIMPLE assembles TERMIPS before either scalar. Its Parallel.For completes before consumers. DT updates occur after scalar solves.",
+    "other_consumers": "Original A/B/C are retained unchanged for WATVAP, TKE, EPS and PSIMP.",
+    "recurrence": "At k=1, cached h=1/A. At every later k, previous pim=B*help is computed in double and used as the original PIM[k-1]. Existing consumer P and Q multiplication/addition order is unchanged."
+  },
+  "nonblocking_observations": [
+    {
+      "topic": "Disabled scalar memory",
+      "detail": "Both scalars disabled skips reciprocal computation but still allocates the cache in Define_Arrays. This matches the central allocation scheme; include the added memory in evidence."
+    }
+  ],
+  "scope": {
+    "model_runs": 0,
+    "render_runs": 0,
+    "source_changed": false,
+    "builds_run": 0
+  },
+  "remaining_validation": [
+    "Real TERMIPS+TIMP/FIMP exact outputs across all four ICT/ICQU combinations",
+    "Bottom heat/moisture terms and top boundary with multiple NZ",
+    "ISTAT!=0 WATVAP follow-up and enabled turbulence",
+    "DT changes and consecutive weather situations",
+    "Measured full-engine timing and added memory"
+  ],
+  "humanizer": {
+    "mode": "Embedded",
+    "skill": "humanize-kit:humanizer",
+    "supported_claims_checked": true
+  }
+}

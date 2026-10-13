@@ -1,0 +1,280 @@
+{
+  "variant": "baseline",
+  "source_commit": "7b8b5a377e785d138fc384f55624e91c8282429f",
+  "source_path": "./work/warnings",
+  "instrumented_path": "./work/instrumented_baseline",
+  "build_command": [
+    "dotnet",
+    "build",
+    "./work/instrumented_baseline/src/GRAMM.csproj",
+    "-c",
+    "Release",
+    "-p:TreatWarningsAsErrors=true",
+    "-p:BaseIntermediateOutputPath=./build/instrumented_baseline_obj/",
+    "-o",
+    "./build/instrumented_baseline",
+    "--nologo"
+  ],
+  "build_exit_code": 0,
+  "support_sha256": "4fdf6686f0832f03e3d0eb6cf3fe8788b67c4fea4816e01c82fa6bf224a0ae32",
+  "replacement_counts": {
+    "parallel_for": 155,
+    "parallel_foreach": 110,
+    "console_top": 7,
+    "console_set": 7,
+    "timing_loop": 1
+  },
+  "files": [
+    {
+      "path": "src/.vscode/launch.json",
+      "source_sha256": "3e36da1113ae6f5caca2083f2281d594e028b3a164c37b0a6f48e94d79ab0abc",
+      "instrumented_sha256": "3e36da1113ae6f5caca2083f2281d594e028b3a164c37b0a6f48e94d79ab0abc",
+      "modified": false
+    },
+    {
+      "path": "src/.vscode/tasks.json",
+      "source_sha256": "7845af752944b1e1ca235b11a74e3c4aba0eaf0ac96b5ce962ecdc18e0df3196",
+      "instrumented_sha256": "7845af752944b1e1ca235b11a74e3c4aba0eaf0ac96b5ce962ecdc18e0df3196",
+      "modified": false
+    },
+    {
+      "path": "src/AUSGABE.cs",
+      "source_sha256": "7c267e3f896b8b57b55cabdd51257394c8e673695ba93a56a36a04c4357225da",
+      "instrumented_sha256": "7c267e3f896b8b57b55cabdd51257394c8e673695ba93a56a36a04c4357225da",
+      "modified": false
+    },
+    {
+      "path": "src/BORDS.cs",
+      "source_sha256": "a3a83a15813e1934aeee4493dd92e6a5dfa0a670201ac38ee8d6f3b6ffbe25a2",
+      "instrumented_sha256": "81e146c0ac1384c3a9f7748969e18f508d83adf33b7ea0beb1a0e6e531ea8b8b",
+      "modified": true
+    },
+    {
+      "path": "src/CALCPR.cs",
+      "source_sha256": "c40679b097c55b0e48e9b1cf00f1a8aabd466c00d2d8e7612ca2140eba76ecfd",
+      "instrumented_sha256": "3dc8739e7bceb9a9985e7325ba100efd530d8d0c569c062868daaa3edbcec703",
+      "modified": true
+    },
+    {
+      "path": "src/CALCTB.cs",
+      "source_sha256": "3078f745f520c0c979f3dcc44f281d66e6b29156a787b77d484c78af4319427b",
+      "instrumented_sha256": "4bd02689dabea662af670583a2c1a7d41f9b021511d1f9f7b135b8a799cd435b",
+      "modified": true
+    },
+    {
+      "path": "src/CopyArrayIntrinsics.cs",
+      "source_sha256": "e7b6df2be58bcfb13beae100eba456c104ae28083fe79063a6d6d5fce88123ec",
+      "instrumented_sha256": "e7b6df2be58bcfb13beae100eba456c104ae28083fe79063a6d6d5fce88123ec",
+      "modified": false
+    },
+    {
+      "path": "src/CustomInit.cs",
+      "source_sha256": "1cd7ec7943f8fea611cb298a645c1ef4dc09be25e638d9af91d55aa23e867aa7",
+      "instrumented_sha256": "1cd7ec7943f8fea611cb298a645c1ef4dc09be25e638d9af91d55aa23e867aa7",
+      "modified": false
+    },
+    {
+      "path": "src/EPSIMP.cs",
+      "source_sha256": "ea7c47efcba5ac062d647eacc1aea1b89dd4cc5cf2bf3c2d4f581bd512a62118",
+      "instrumented_sha256": "a9dd517fb76c287fa32bc28ae3b2272edac49426d402bd3af9b54e2579095066",
+      "modified": true
+    },
+    {
+      "path": "src/FIMP.cs",
+      "source_sha256": "44fa44508d451eb92debe06a0bd8d0854b0065e17cf2e7414b22ffc1601f683f",
+      "instrumented_sha256": "4b53c4142803d7118c5893bd51237a85a0d714a7b29f5c571f6630729009b340",
+      "modified": true
+    },
+    {
+      "path": "src/GRAMM.csproj",
+      "source_sha256": "c4bf96af9969d8e389f515eb559f9b6c978f757cae4638cc7bbeaa79d4b5e7c7",
+      "instrumented_sha256": "c4bf96af9969d8e389f515eb559f9b6c978f757cae4638cc7bbeaa79d4b5e7c7",
+      "modified": false
+    },
+    {
+      "path": "src/GRID.cs",
+      "source_sha256": "744254f2ec9c6e054962b6e860fe386c498d04093b1d77802065f5c005374866",
+      "instrumented_sha256": "bbfaf2d50c22fcad3a9d76149ea2d9c2262f82e60bef58f26d61822be5519797",
+      "modified": true
+    },
+    {
+      "path": "src/GrammOnline.cs",
+      "source_sha256": "ab743fd6862ea85258cbdac30467cc9ae8a3d84b8eca1f71e51c055dd673e026",
+      "instrumented_sha256": "ab743fd6862ea85258cbdac30467cc9ae8a3d84b8eca1f71e51c055dd673e026",
+      "modified": false
+    },
+    {
+      "path": "src/INITA.cs",
+      "source_sha256": "fd00326010002d7d93746e246b3d8c6dd9b18e89f0084921e14168248bf0efed",
+      "instrumented_sha256": "9d766496e99eb605fe092eb367471e3ee06195b32ee61788850fe681852de78c",
+      "modified": true
+    },
+    {
+      "path": "src/INITB.cs",
+      "source_sha256": "b64a9700f4427a3874cbb4426f1c4c52b648314d5d776c67f07e70e828e4dfab",
+      "instrumented_sha256": "044667aee63028a4714f088abd43da46f593e3025ccedefc92e2f34b3464e81c",
+      "modified": true
+    },
+    {
+      "path": "src/INIT_Radiation.cs",
+      "source_sha256": "1ac3411e7929ed1630bb7f326bd3078d2a7f57f0ade9e55298561ca715cfe77c",
+      "instrumented_sha256": "a7e3c81e432e78920db4fc097e67b7d526c5d19a603ad86779c525361a0b9686",
+      "modified": true
+    },
+    {
+      "path": "src/Meteopgtall.cs",
+      "source_sha256": "cba1a7353c1bb2e226a2f09ce6714f438926c633863cc7092b50b255ad77360b",
+      "instrumented_sha256": "cba1a7353c1bb2e226a2f09ce6714f438926c633863cc7092b50b255ad77360b",
+      "modified": false
+    },
+    {
+      "path": "src/PRANDTL.cs",
+      "source_sha256": "71092ca73f325f1ec36f885f0d727b55b9a0f08197737e157b4fe0a213ce572f",
+      "instrumented_sha256": "8d11ea728bd47c0851e8028ac79d7cf59c3229e3292216bf1c8f58f8126277a7",
+      "modified": true
+    },
+    {
+      "path": "src/PRIMP.cs",
+      "source_sha256": "e457fc29fedbbf2e3f0559bfcaf670f89b563d83c2a2e08f1d336f06105614ff",
+      "instrumented_sha256": "5565df8bef5ba52ab7abb5f525862e9bd532212c1450811b89a7bbec9154d4a3",
+      "modified": true
+    },
+    {
+      "path": "src/PSIMP.cs",
+      "source_sha256": "60e038cfb1d9de3f661f4715d57d1177a03de232e4772fa56ea069779c6c3a3a",
+      "instrumented_sha256": "dc5edf9f4b09c82884a78b51059452c98481b4d08ade8910fe878bacb23c15dd",
+      "modified": true
+    },
+    {
+      "path": "src/Program.cs",
+      "source_sha256": "6a90d1a78a9b5fe52ee8eb197a4ccbb1f36789c35043838afb2f7136f552de22",
+      "instrumented_sha256": "b95cb27de2180ebf7da83779dc708021afa8095820d4f8b5054ff13719d3c10a",
+      "modified": true
+    },
+    {
+      "path": "src/ProgramDeclarations.cs",
+      "source_sha256": "850e15f22813c06172cda9a6d86169d53ed7be75a449cbeb650cc0550b5a58f6",
+      "instrumented_sha256": "850e15f22813c06172cda9a6d86169d53ed7be75a449cbeb650cc0550b5a58f6",
+      "modified": false
+    },
+    {
+      "path": "src/Program_Write.cs",
+      "source_sha256": "1142f537dbe592a19703b583ca799e2c360b6da615d3184f5c74bb1738d7740f",
+      "instrumented_sha256": "1142f537dbe592a19703b583ca799e2c360b6da615d3184f5c74bb1738d7740f",
+      "modified": false
+    },
+    {
+      "path": "src/Properties/launchSettings.json",
+      "source_sha256": "27ac011417b82ffe0a4ec27bc55ebd9bb58941f203d6bffb8c1e67c929e1085f",
+      "instrumented_sha256": "27ac011417b82ffe0a4ec27bc55ebd9bb58941f203d6bffb8c1e67c929e1085f",
+      "modified": false
+    },
+    {
+      "path": "src/RADIAT.cs",
+      "source_sha256": "a1008c79d4ae7f40c149a43022f4cd8a3d7dc16d18fd322802cd0702dea1ab34",
+      "instrumented_sha256": "f4aaee8e97a37f11a5ac284afc148a5c74cf830444862627eaef2ce0529c637c",
+      "modified": true
+    },
+    {
+      "path": "src/Read_Ini_Files.cs",
+      "source_sha256": "64d3629df7961083478091a426366c904b75743759c07d2aaa52d21070a74ed6",
+      "instrumented_sha256": "64d3629df7961083478091a426366c904b75743759c07d2aaa52d21070a74ed6",
+      "modified": false
+    },
+    {
+      "path": "src/SIMPLE.cs",
+      "source_sha256": "7766e77ada1d501f65c6920b55a208c5c4fbd926535bb627fa023bb5583ea986",
+      "instrumented_sha256": "7766e77ada1d501f65c6920b55a208c5c4fbd926535bb627fa023bb5583ea986",
+      "modified": false
+    },
+    {
+      "path": "src/STORE.cs",
+      "source_sha256": "64dc4b224ecbcb16b08105b72a7362e69a626ac4baec2ecfe5170e07c10222d0",
+      "instrumented_sha256": "aea31f6e32aff27c2abff954a537c3f41f4e5795cb60deecf020cecb03c28b6f",
+      "modified": true
+    },
+    {
+      "path": "src/TEMPINT.cs",
+      "source_sha256": "9b8f2ed353b0fd26f9e700a27685e4a19f4331ca447b9f47a7c7d01637453a69",
+      "instrumented_sha256": "4bbbc79d0aa83dd97d26ecd7eed41327ffa570f054d8688159d666de3637fc64",
+      "modified": true
+    },
+    {
+      "path": "src/TERMIP.cs",
+      "source_sha256": "7626946ea2059c7ecef957e3564463f71a78fbb7e999a74de060db25b8d3eaa6",
+      "instrumented_sha256": "dd6531ec1dc409075ae0a5f338f125b5dd7139624fc9e9061d8eb69c075130ab",
+      "modified": true
+    },
+    {
+      "path": "src/TERMIV.cs",
+      "source_sha256": "45e4cb33f2b1d66d807d63b64075d941235408406682a9be1134eac7e51bfc7f",
+      "instrumented_sha256": "b31255250fa668be7d56b3dc2366d4d72fcaf97f9299367057a6988acf8bfd1b",
+      "modified": true
+    },
+    {
+      "path": "src/TERMI_PS.cs",
+      "source_sha256": "4698b395c5c872d65f8645009491300df938d101957b1dbe58b284ba377b3ac0",
+      "instrumented_sha256": "c3c4843ab97e62a26af913c4735a17cb3b333ae01df7b35ba72ab02101720fb9",
+      "modified": true
+    },
+    {
+      "path": "src/TIMP.cs",
+      "source_sha256": "29816889503a7f31d2c8ba45aba23b0d707b9ad05c0bb17552893a1db891aa2e",
+      "instrumented_sha256": "53b63029e9618521e6548b5502f50f47c0f672c79d6d48faaed9772ddc4502ae",
+      "modified": true
+    },
+    {
+      "path": "src/TKEIMP.cs",
+      "source_sha256": "bee8c5f8ddfc6b262da5e07a3f212fe6c0bc96239f76a14323c3ec4a4eef20e8",
+      "instrumented_sha256": "b5dac924cb61d80a6e278432d0c9270dfb58e2bf4a6d056e5ac59c59e88aa3ba",
+      "modified": true
+    },
+    {
+      "path": "src/UIMP.cs",
+      "source_sha256": "a260343bd5ee4ed5264e3ce9e1569105176194ae4a653318026fd034d285e39a",
+      "instrumented_sha256": "b47ca47609bfc417731b5479028af2be0b0a9ee7c305e9eb24a25a92317eff91",
+      "modified": true
+    },
+    {
+      "path": "src/UVWIMP.cs",
+      "source_sha256": "18a44bd24f65b86957d08f8c5cc11d016edacf0a65a0619b901a68b1cef05162",
+      "instrumented_sha256": "ee9a8138623a6c1250528bfe11e0689ac2dfad4f345ab2af9b68579fc7bc48b3",
+      "modified": true
+    },
+    {
+      "path": "src/VIMP.cs",
+      "source_sha256": "0bd6d51dbf7b8dec99139ed24617957f56c5156961bd66c58c0c193557112c88",
+      "instrumented_sha256": "1fc5bf881a582e693124e00e4d5219c371551e8a1dfc38fe671d8745067aa2b2",
+      "modified": true
+    },
+    {
+      "path": "src/WATVAP_IMP.cs",
+      "source_sha256": "7f931fe5711a68d03f2586d974847c2dbf317582382a8f0803dc65384276c402",
+      "instrumented_sha256": "cf0d7c2e1f076cd94178dc383c1eeeb11a711ca3245a0652430a1e229848515e",
+      "modified": true
+    },
+    {
+      "path": "src/WIMP.cs",
+      "source_sha256": "6f65f350b2539213270c9284112a2fbbe0d0c682a7aa35b6e482e21f9cad05ba",
+      "instrumented_sha256": "dc03e863262501c3d1912c82879d15e5047e50cab98485336b930218181c42d3",
+      "modified": true
+    },
+    {
+      "path": "src/aenderungen_GRAMM.txt",
+      "source_sha256": "1ae47586eaae6340141e18d3c90bcfedae5942ec953810b10f2bd535bb4c4bbe",
+      "instrumented_sha256": "1ae47586eaae6340141e18d3c90bcfedae5942ec953810b10f2bd535bb4c4bbe",
+      "modified": false
+    },
+    {
+      "path": "src/global.json",
+      "source_sha256": "cd24e0e78f8c6f2e647e04d4f1a54e6284bc80a5a1f50ce1565c4131c232663d",
+      "instrumented_sha256": "cd24e0e78f8c6f2e647e04d4f1a54e6284bc80a5a1f50ce1565c4131c232663d",
+      "modified": false
+    }
+  ],
+  "integration_csv": "harness_integration.csv",
+  "snapshot_json": "harness_snapshot_{weather_start:05d}.json",
+  "snapshot_enable": "GRAMM_TEST_SNAPSHOT=1",
+  "binary_enable": "GRAMM_TEST_BINARY=1",
+  "models_run": false
+}

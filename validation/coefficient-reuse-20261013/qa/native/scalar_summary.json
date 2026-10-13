@@ -1,0 +1,83 @@
+{
+  "method": "Median of paired 100*(1 - patched/baseline), 95% percentile bootstrap interval, 20000 resamples, seed 20261013; warm-up excluded; all observed repeats retained.",
+  "rows": [
+    {
+      "case": "scalar_convective_4t",
+      "variant": "scalar_tdma",
+      "pairs": 5,
+      "baseline_median_s": 6.5044796,
+      "patched_median_s": 6.3942274,
+      "paired_time_saved_pct": 2.8291364000895713,
+      "low_pct": 0.3220726534898244,
+      "high_pct": 7.616380044762117,
+      "min_pct": 0.3220726534898244,
+      "max_pct": 7.616380044762117,
+      "faster_pairs": 5,
+      "baseline_min_s": 6.3680977,
+      "baseline_max_s": 6.9255,
+      "patched_min_s": 6.2373005,
+      "patched_max_s": 6.4623321,
+      "baseline_peak_mib": 130.98828125,
+      "patched_peak_mib": 131.51171875,
+      "paired_percent": [
+        7.616380044762117,
+        3.1201445909255887,
+        0.3220726534898244,
+        2.0539446183434062,
+        2.8291364000895713
+      ]
+    },
+    {
+      "case": "scalar_neutral_1t",
+      "variant": "scalar_tdma",
+      "pairs": 5,
+      "baseline_median_s": 6.1486087,
+      "patched_median_s": 6.0231005,
+      "paired_time_saved_pct": 2.026799311073535,
+      "low_pct": 1.7206772051344466,
+      "high_pct": 4.02939631083874,
+      "min_pct": 1.7206772051344466,
+      "max_pct": 4.02939631083874,
+      "faster_pairs": 5,
+      "baseline_min_s": 6.126053,
+      "baseline_max_s": 6.2759848,
+      "patched_min_s": 5.9697714,
+      "patched_max_s": 6.038641,
+      "baseline_peak_mib": 120.0703125,
+      "patched_peak_mib": 120.51171875,
+      "paired_percent": [
+        4.02939631083874,
+        3.3634936033733687,
+        2.026799311073535,
+        1.9484781980027344,
+        1.7206772051344466
+      ]
+    },
+    {
+      "case": "scalar_stable_coast_8t",
+      "variant": "scalar_tdma",
+      "pairs": 5,
+      "baseline_median_s": 11.642266,
+      "patched_median_s": 11.3506896,
+      "paired_time_saved_pct": 3.5774917013577934,
+      "low_pct": -0.7910884657089223,
+      "high_pct": 4.837779730335745,
+      "min_pct": -0.7910884657089223,
+      "max_pct": 4.837779730335745,
+      "faster_pairs": 3,
+      "baseline_min_s": 11.3257624,
+      "baseline_max_s": 11.8874263,
+      "patched_min_s": 11.2257649,
+      "patched_max_s": 11.5133183,
+      "baseline_peak_mib": 164.95703125,
+      "patched_peak_mib": 165.640625,
+      "paired_percent": [
+        4.188486448331197,
+        4.837779730335745,
+        -0.38486543943421214,
+        3.5774917013577934,
+        -0.7910884657089223
+      ]
+    }
+  ]
+}

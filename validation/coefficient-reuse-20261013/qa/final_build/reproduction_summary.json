@@ -1,0 +1,49 @@
+{
+  "status": "pass",
+  "source_preparation": "source_prepare_check.json",
+  "native_strict_builds": [
+    {
+      "variant": "baseline",
+      "source_tree": "62617871be72fa0334b310bd8ce8a47b5248ba75",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "variant": "pressure",
+      "source_tree": "f2c4de6533bdb65cf6721de452cb4ad7b98aaaef",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "variant": "tdma",
+      "source_tree": "0bfe9b72678acd752b8d3492b684400461a0c393",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "variant": "radiation",
+      "source_tree": "9fad728dfd88e4872434275313d1b9a6046720b9",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "variant": "scalar_tdma",
+      "source_tree": "fe296f0d25955396296a0ba7c1df887abfc54c51",
+      "warnings": 0,
+      "errors": 0
+    }
+  ],
+  "component_conditions": {
+    "pressure": 45,
+    "velocity_tdma": 80,
+    "radiation": 108,
+    "scalar_tdma": 108
+  },
+  "component_total": 341,
+  "smoke_model_processes": 4,
+  "smoke_status": "pass",
+  "old_and_final_method_il_identical": true,
+  "recorded_performance_runs_unchanged": 202,
+  "watchdog_seconds": 300,
+  "raw_logs_included": false
+}

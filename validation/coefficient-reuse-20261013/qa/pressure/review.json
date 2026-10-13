@@ -1,0 +1,93 @@
+{
+  "baseline": "03224ce9",
+  "branch": "codex/reuse-pressure-coefficients",
+  "commit": "9191ac64658a3129e24b12644857ea6f9e0d72ba",
+  "files": [
+    "src/TERMIP.cs",
+    "src/INITA.cs"
+  ],
+  "implementation": {
+    "state": "One private double initialized to NaN",
+    "cache_hit": "PressureCoefficientTimeStep == Program.DT returns before Parallel.For",
+    "publish_state": "Update cached DT only after Parallel.For completes",
+    "additional_persistent_bytes": 8,
+    "invalidation": "INITA always resets cached DT to NaN",
+    "added_arrays": 0
+  },
+  "dependency_evidence": [
+    {
+      "fact": "Coefficient writers use AP0, RHO and immutable face areas only; arithmetic unchanged",
+      "source": "src/TERMIP.cs:37-138"
+    },
+    {
+      "fact": "Only AP0 writer: float(VOL * 0.5 / DT * RHO)",
+      "source": "src/TERMIV.cs:302"
+    },
+    {
+      "fact": "Density assignment in INITA; the new reset precedes all initialization paths",
+      "source": "src/INITA.cs:103"
+    },
+    {
+      "fact": "GEOM is called once before weather loop",
+      "source": "src/Program.cs:351"
+    },
+    {
+      "fact": "Each weather situation clears arrays and calls INITA",
+      "source": "src/Program.cs:376-382"
+    },
+    {
+      "fact": "Numerical retry returns through NEXTWEATHERSITUATION and INITA",
+      "source": "src/Program.cs:480-490"
+    },
+    {
+      "fact": "Pressure coefficient arrays are read without in-place modification",
+      "source": "src/PRIMP.cs"
+    }
+  ],
+  "component_validation": {
+    "hash": "SHA256 over IEEE754 doubles",
+    "methods": [
+      "TERMIPterms",
+      "INITA",
+      "ClearArrays"
+    ],
+    "stages": [
+      "first",
+      "unchanged",
+      "increase_dt",
+      "decrease_dt",
+      "new_situation_same_dt"
+    ],
+    "note": "Synthetic positive input arrays exercise engine methods; ISTAT=2 selects real INITA without meteorological file reads. Full model output and timing validation are root-owned.",
+    "cases": 45,
+    "grids": [
+      "12x13x6",
+      "31x24x12",
+      "64x48x24"
+    ],
+    "output": "component_checks.json",
+    "exact_arrays": [
+      "AP",
+      "AB",
+      "AT",
+      "AE",
+      "AN",
+      "AW",
+      "AS"
+    ],
+    "cache_hit_assertions": 9,
+    "threads": [
+      1,
+      2,
+      8
+    ]
+  },
+  "recommended_model_cases": [
+    "Successive weather situations with different density initialization",
+    "Adaptive DT increase and decrease",
+    "Steady-state and transient cases",
+    "Flat and non-flat terrain at multiple resolutions",
+    "1, 2 and several worker threads"
+  ],
+  "remaining": "Root full-engine output-preservation and benefit gate before PR"
+}

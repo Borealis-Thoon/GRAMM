@@ -1,0 +1,48 @@
+diff --git a/src/INITA.cs b/src/INITA.cs
+index 84b3f7e206ab0aaec442b155ceaa38e4f3eafbf8..af51d12f10dd7948117266703940426ca4337112 100644
+--- a/src/INITA.cs
++++ b/src/INITA.cs
+@@ -30,6 +30,8 @@ namespace GRAMM_2001
+         /// <param name="NK"></param>
+         public static void INITA(int NI, int NJ, int NK)
+         {
++            PressureCoefficientTimeStep = double.NaN;
++
+             const double B0 = 38.00699;
+             const double B1 = 6546.307;
+             const double B2 = -3.257572;
+diff --git a/src/TERMIP.cs b/src/TERMIP.cs
+index 7f43c1d2d73975158fe372ada7376eca226d7055..bbb1db8a88a22d6e02c90e13232ec9c0f41cec94 100644
+--- a/src/TERMIP.cs
++++ b/src/TERMIP.cs
+@@ -17,6 +17,8 @@ namespace GRAMM_2001
+ {
+     partial class Program
+     {
++        private static double PressureCoefficientTimeStep = double.NaN;
++
+         /// <summary>
+         /// Procedure calculating the terms for the non-hydrostatic pressure equation
+         /// </summary>
+@@ -26,6 +28,12 @@ namespace GRAMM_2001
+         [MethodImpl(MethodImplOptions.AggressiveOptimization)]
+         public static void TERMIPterms(int NI, int NJ, int NK)
+         {
++            // Geometry and density are fixed until INITA; AP0 then changes only with DT.
++            if (PressureCoefficientTimeStep == Program.DT)
++            {
++                return;
++            }
++
+             Parallel.For(2, NI, Program.pOptions, i =>
+             {
+                 double AIM_Rez = 0, RHO = 0, RHO_AIM = 0, AIM_RezM1 = 0, RHOM1 = 0, RHOM1_AIMM1 = 0;
+@@ -127,6 +135,8 @@ namespace GRAMM_2001
+                     }
+                 }
+             });
++
++            PressureCoefficientTimeStep = Program.DT;
+         }
+     }
+ }

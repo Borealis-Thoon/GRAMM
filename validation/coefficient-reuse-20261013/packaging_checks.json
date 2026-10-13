@@ -1,0 +1,150 @@
+{
+  "status": "pass",
+  "python_syntax_files": 27,
+  "project_xml_files": 7,
+  "private_absolute_paths": 0,
+  "excluded_outputs": 0,
+  "builds_or_models_run": true,
+  "source_copies": [
+    {
+      "path": "work/fixture.py",
+      "check": "byte-identical"
+    },
+    {
+      "path": "work/geometry_fixture.py",
+      "check": "byte-identical"
+    },
+    {
+      "path": "work/full_tests.py",
+      "check": "AST-identical except runtime path/imports"
+    },
+    {
+      "path": "work/fidelity_suite.py",
+      "check": "byte-identical"
+    },
+    {
+      "path": "work/fidelity_turbulence.py",
+      "check": "byte-identical"
+    },
+    {
+      "path": "work/native_benchmark.py",
+      "check": "byte-identical"
+    },
+    {
+      "path": "qa/pressure/native_console_runner.py",
+      "check": "AST-identical except runtime path/imports"
+    },
+    {
+      "path": "qa/pressure/PressureCheck.csproj",
+      "check": "byte-identical"
+    },
+    {
+      "path": "qa/pressure/Program.cs",
+      "check": "byte-identical"
+    },
+    {
+      "path": "qa/tdma/baseline.csproj",
+      "check": "XML-identical except Compile paths"
+    },
+    {
+      "path": "qa/tdma/patched.csproj",
+      "check": "XML-identical except Compile paths"
+    },
+    {
+      "path": "qa/tdma/TdmaMethodCheck.cs",
+      "check": "byte-identical"
+    },
+    {
+      "path": "qa/radiation/harness/RadiationCheck.csproj",
+      "check": "byte-identical"
+    },
+    {
+      "path": "qa/radiation/harness/Program.cs",
+      "check": "byte-identical"
+    },
+    {
+      "path": "qa/full_engine_harness/HarnessSupport.cs",
+      "check": "byte-identical"
+    },
+    {
+      "path": "qa/full_engine_harness/prepare_instrumented.py",
+      "check": "AST-identical except runtime path/imports"
+    },
+    {
+      "path": "qa/scalar_tdma/check_methods.py",
+      "check": "AST-identical except runtime path/imports"
+    },
+    {
+      "path": "qa/scalar_tdma/prepare_instrumented_scalar.py",
+      "check": "byte-identical"
+    },
+    {
+      "path": "qa/scalar_tdma/baseline_method.csproj",
+      "check": "XML-identical except Compile paths"
+    },
+    {
+      "path": "qa/scalar_tdma/patched_method.csproj",
+      "check": "XML-identical except Compile paths"
+    },
+    {
+      "path": "qa/scalar_tdma/ScalarMethodCheck.cs",
+      "check": "byte-identical"
+    },
+    {
+      "path": "work/fidelity_scalar.py",
+      "check": "byte-identical"
+    },
+    {
+      "path": "work/fixed_dt_benchmark.py",
+      "check": "byte-identical"
+    },
+    {
+      "path": "work/scalar_benchmark.py",
+      "check": "byte-identical"
+    },
+    {
+      "path": "work/summarize_benchmarks.py",
+      "check": "byte-identical"
+    },
+    {
+      "path": "work/make_all_cases.py",
+      "check": "byte-identical"
+    },
+    {
+      "path": "qa/parallel_state/run_parallel_state.py",
+      "check": "byte-identical"
+    },
+    {
+      "path": "qa/parallel_state/analyze_parallel_state.py",
+      "check": "byte-identical"
+    },
+    {
+      "path": "qa/test_review/validate_completed.py",
+      "check": "byte-identical"
+    }
+  ],
+  "source_drift_files": 0,
+  "patch_apply_checks": 5,
+  "prepare_cli_help": "pass",
+  "fresh_source_preparation": "pass; local public-source mirror; final source trees and strict builds",
+  "source_trees_verified": 5,
+  "pending_checks": [],
+  "result_json_copies": 34,
+  "results_preserved_except_paths": true,
+  "credential_pattern_matches": 0,
+  "fresh_reproduction_summary": "qa/final_build/reproduction_summary.json",
+  "native_measurement_records_preserved": 202,
+  "serial_model_cases": 9,
+  "serial_model_runs": 45,
+  "serial_field_pairs": 396,
+  "native_parallel_state_runs": 45,
+  "fresh_smoke_model_processes": 4,
+  "component_conditions": 341,
+  "figure_output_hash_checks": "pass; latest rendered outputs",
+  "humanizer": {
+    "skill": "humanize-kit:humanizer",
+    "mode": "Embedded",
+    "document": "README.md",
+    "claims_rechecked": true
+  }
+}
