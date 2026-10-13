@@ -737,8 +737,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9678,
-      "sha256": "4a09a1dac44869a0a29fccfeaf250c18318c5d5427b3e4b21e299a1c65489ff8"
+      "bytes": 9576,
+      "sha256": "adc1d189f80c894da61c52776dd9dae60f8202dc53715e9b54f35d784497841e"
     },
     {
       "path": "reproduce.py",
