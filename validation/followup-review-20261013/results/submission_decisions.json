@@ -1,0 +1,12 @@
+{
+  "radiation_column": {
+    "decision": "submit",
+    "reason": "One file +7/-2 lines; five positive whole-process medians; no added array/cache lifetime; exact controlled result preservation",
+    "faster_pairs": 22
+  },
+  "uvw_sources": {
+    "decision": "defer",
+    "reason": "Variable benefit with slowdowns in stable coastal and large-grid conditions; branch complexity not justified by whole-model measurements",
+    "faster_pairs": 12
+  }
+}

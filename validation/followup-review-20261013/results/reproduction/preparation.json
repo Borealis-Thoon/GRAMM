@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "upstream_commit": "03224ce9d3490783c84a8aecd72642fe9df21242",
+  "source_files_checked": 205,
+  "variants": [
+    "baseline",
+    "scalar_tdma",
+    "radiation_column",
+    "uvw_sources",
+    "combined"
+  ],
+  "models_run": false
+}

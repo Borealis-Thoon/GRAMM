@@ -1,0 +1,18 @@
+{
+  "variant": "baseline",
+  "commit": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+  "exit_code": 0,
+  "command": [
+    "dotnet",
+    "build",
+    "${WORKDIR}/work/warnings/src/GRAMM.csproj",
+    "-c",
+    "Release",
+    "-p:TreatWarningsAsErrors=true",
+    "-p:BaseIntermediateOutputPath=${WORKDIR}/build/baseline_obj/",
+    "-o",
+    "${WORKDIR}/build/baseline",
+    "--nologo"
+  ],
+  "assembly_sha256": "b5d11d1de810087136dd61c76f13c0102c38b52b1f801598bbd479f1b31e9a38"
+}

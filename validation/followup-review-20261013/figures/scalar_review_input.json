@@ -1,0 +1,235 @@
+{
+  "measurement_origin": "Existing public measurements from the coefficient-reuse review; this revision changes the figure only. No new scalar benchmark is claimed.",
+  "public_evidence_commit": "7e95104b8c3bb9c8eecf89c8f2d93b1d7f758c51",
+  "source_files": [
+    {
+      "path": "qa/native/fixed_dt_results.json",
+      "sha256": "bb9b23762f29a7ef594d7f4a04b60230dc8a94c22f06aaf25442e22eb4f55dc8",
+      "url": "https://github.com/Borealis-Thoon/GRAMM/blob/7e95104b8c3bb9c8eecf89c8f2d93b1d7f758c51/validation/coefficient-reuse-20261013/qa/native/fixed_dt_results.json",
+      "raw_url": "https://raw.githubusercontent.com/Borealis-Thoon/GRAMM/7e95104b8c3bb9c8eecf89c8f2d93b1d7f758c51/validation/coefficient-reuse-20261013/qa/native/fixed_dt_results.json"
+    },
+    {
+      "path": "qa/native/scalar_results.json",
+      "sha256": "ce58effe6c9e558fa241ced1f115391eb7ade62d1df12df48b6fc20d3ae04763",
+      "url": "https://github.com/Borealis-Thoon/GRAMM/blob/7e95104b8c3bb9c8eecf89c8f2d93b1d7f758c51/validation/coefficient-reuse-20261013/qa/native/scalar_results.json",
+      "raw_url": "https://raw.githubusercontent.com/Borealis-Thoon/GRAMM/7e95104b8c3bb9c8eecf89c8f2d93b1d7f758c51/validation/coefficient-reuse-20261013/qa/native/scalar_results.json"
+    },
+    {
+      "path": "qa/figures/rendered/scalar_figure_input.json",
+      "sha256": "2e75938dd591d8181852d4fa543ec4af99d5ea6edbb7db719f9c4c1cbb1ce92a",
+      "url": "https://github.com/Borealis-Thoon/GRAMM/blob/7e95104b8c3bb9c8eecf89c8f2d93b1d7f758c51/validation/coefficient-reuse-20261013/qa/figures/rendered/scalar_figure_input.json",
+      "raw_url": "https://raw.githubusercontent.com/Borealis-Thoon/GRAMM/7e95104b8c3bb9c8eecf89c8f2d93b1d7f758c51/validation/coefficient-reuse-20261013/qa/figures/rendered/scalar_figure_input.json"
+    }
+  ],
+  "validation": "Original raw paired timings match the old public figure input to 1e-10 percentage points.",
+  "rows": [
+    {
+      "case": "fixed_dt_4t",
+      "pairs": [
+        {
+          "rep": 1,
+          "baseline_seconds": 12.0747707,
+          "patched_seconds": 12.024279,
+          "saved_percent": 0.4181586653235647
+        },
+        {
+          "rep": 2,
+          "baseline_seconds": 12.5821268,
+          "patched_seconds": 12.314565,
+          "saved_percent": 2.1265228387302493
+        },
+        {
+          "rep": 3,
+          "baseline_seconds": 12.4187423,
+          "patched_seconds": 12.2629358,
+          "saved_percent": 1.2546077230381147
+        },
+        {
+          "rep": 4,
+          "baseline_seconds": 12.3376996,
+          "patched_seconds": 12.1637036,
+          "saved_percent": 1.4102791090812472
+        },
+        {
+          "rep": 5,
+          "baseline_seconds": 12.4638031,
+          "patched_seconds": 12.0537388,
+          "saved_percent": 3.2900415443822273
+        }
+      ],
+      "median_saved_percent": 1.4102791090812472,
+      "faster_pairs": 5,
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "worker_setting": 4
+    },
+    {
+      "case": "scalar_neutral_1t",
+      "pairs": [
+        {
+          "rep": 1,
+          "baseline_seconds": 6.2759848,
+          "patched_seconds": 6.0231005,
+          "saved_percent": 4.02939631083874
+        },
+        {
+          "rep": 2,
+          "baseline_seconds": 6.177553,
+          "patched_seconds": 5.9697714,
+          "saved_percent": 3.3634936033733687
+        },
+        {
+          "rep": 3,
+          "baseline_seconds": 6.126053,
+          "patched_seconds": 6.0018902,
+          "saved_percent": 2.026799311073535
+        },
+        {
+          "rep": 4,
+          "baseline_seconds": 6.1486087,
+          "patched_seconds": 6.0288044,
+          "saved_percent": 1.9484781980027344
+        },
+        {
+          "rep": 5,
+          "baseline_seconds": 6.1443657,
+          "patched_seconds": 6.038641,
+          "saved_percent": 1.7206772051344466
+        }
+      ],
+      "median_saved_percent": 2.026799311073535,
+      "faster_pairs": 5,
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "worker_setting": 1
+    },
+    {
+      "case": "scalar_convective_4t",
+      "pairs": [
+        {
+          "rep": 1,
+          "baseline_seconds": 6.9255,
+          "patched_seconds": 6.3980276,
+          "saved_percent": 7.616380044762117
+        },
+        {
+          "rep": 2,
+          "baseline_seconds": 6.6704601,
+          "patched_seconds": 6.4623321,
+          "saved_percent": 3.1201445909255887
+        },
+        {
+          "rep": 3,
+          "baseline_seconds": 6.414888,
+          "patched_seconds": 6.3942274,
+          "saved_percent": 0.3220726534898244
+        },
+        {
+          "rep": 4,
+          "baseline_seconds": 6.3680977,
+          "patched_seconds": 6.2373005,
+          "saved_percent": 2.0539446183434062
+        },
+        {
+          "rep": 5,
+          "baseline_seconds": 6.5044796,
+          "patched_seconds": 6.320459,
+          "saved_percent": 2.8291364000895713
+        }
+      ],
+      "median_saved_percent": 2.8291364000895713,
+      "faster_pairs": 5,
+      "grid": {
+        "nx": 48,
+        "ny": 36,
+        "nz": 24,
+        "dx_m": 250,
+        "dy_m": 250,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "worker_setting": 4
+    },
+    {
+      "case": "scalar_stable_coast_8t",
+      "pairs": [
+        {
+          "rep": 1,
+          "baseline_seconds": 11.8468952,
+          "patched_seconds": 11.3506896,
+          "saved_percent": 4.188486448331197
+        },
+        {
+          "rep": 2,
+          "baseline_seconds": 11.8874263,
+          "patched_seconds": 11.3123388,
+          "saved_percent": 4.837779730335745
+        },
+        {
+          "rep": 3,
+          "baseline_seconds": 11.4691774,
+          "patched_seconds": 11.5133183,
+          "saved_percent": -0.38486543943421214
+        },
+        {
+          "rep": 4,
+          "baseline_seconds": 11.642266,
+          "patched_seconds": 11.2257649,
+          "saved_percent": 3.5774917013577934
+        },
+        {
+          "rep": 5,
+          "baseline_seconds": 11.3257624,
+          "patched_seconds": 11.4153592,
+          "saved_percent": -0.7910884657089223
+        }
+      ],
+      "median_saved_percent": 3.5774917013577934,
+      "faster_pairs": 3,
+      "grid": {
+        "nx": 64,
+        "ny": 48,
+        "nz": 24,
+        "dx_m": 500,
+        "dy_m": 500,
+        "first_dz_m": 20.0,
+        "vertical_stretch": 1.2,
+        "terrain_height_m": 0.0,
+        "west_m": 0,
+        "south_m": 0
+      },
+      "worker_setting": 8
+    }
+  ],
+  "memory_mib": [
+    0.332,
+    0.583
+  ],
+  "memory_note": "Stored double values for the measured grids; jagged-array overhead is additional.",
+  "method_cases": 108,
+  "finite_bitwise_values": 7803432,
+  "full_field_pairs": 99
+}

@@ -1,0 +1,75 @@
+{
+  "status": "pass",
+  "cases": 720,
+  "bit_identical_state_values": 20493216,
+  "bit_identical_consumed_source_values": 4999104,
+  "unused_values_untouched": 14997312,
+  "failed_cases": [],
+  "actual_methods": "UVWIMPcalculate including prepass and all eight UIMPKernel sweeps",
+  "grids": [
+    [
+      3,
+      4,
+      2
+    ],
+    [
+      4,
+      5,
+      3
+    ],
+    [
+      7,
+      9,
+      8
+    ],
+    [
+      11,
+      13,
+      28
+    ],
+    [
+      17,
+      11,
+      65
+    ]
+  ],
+  "worker_settings": [
+    1,
+    4,
+    8
+  ],
+  "dt_stages": [
+    1.5,
+    5,
+    2
+  ],
+  "conditions": [
+    "terrain projection zero/nonzero",
+    "surface friction zero/nonzero",
+    "ICPSI off/on",
+    "ICU off/on",
+    "nonzero Coriolis/buoyancy/DIM",
+    "NaN and finite poison in all F arrays before each call"
+  ],
+  "order": "one range per sweep for exact state comparison; source prepass obeys parallel worker setting",
+  "bit_identity": "six full double fields and all used float source entries",
+  "strict_builds": {
+    "baseline": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "patched": {
+      "warnings": 0,
+      "errors": 0
+    }
+  },
+  "baseline_commit": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+  "patch_commit": "93176909c6412115de5ec9b99663981bde81df3b",
+  "artifacts": {
+    "HalfCellMethodCheck.cs": "ef5aabb7829cd21a34289566dd712b99d154ae00273b5b381bb88125b629721f",
+    "output_baseline\\cases.json": "fd34b1781a53f19fd7d3861dee6067e3614d7f1753046bf41f207a5776748c56",
+    "output_patched\\cases.json": "a0a7f5da5ac37e89c999804fec093b5d338a5edc638d2b07ef75a7b08f911a09",
+    "bin_baseline\\baseline.dll": "cbfbf26323bf91da11fa8ed2b401c3b783c7c05b6eaef7f39bd263d3dff18aa6",
+    "bin_patched\\patched.dll": "f2dce9d0d9f23e9d9ee902c1cf109e82c170da6c5044cf496f3cbcadfff70c1e"
+  }
+}

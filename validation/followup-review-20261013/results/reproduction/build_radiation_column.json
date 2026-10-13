@@ -1,0 +1,18 @@
+{
+  "variant": "radiation_column",
+  "commit": "56d396b3d18a9034c30c2c36bdb678882cf4553d",
+  "exit_code": 0,
+  "command": [
+    "dotnet",
+    "build",
+    "${WORKDIR}/work/radiation_column/src/GRAMM.csproj",
+    "-c",
+    "Release",
+    "-p:TreatWarningsAsErrors=true",
+    "-p:BaseIntermediateOutputPath=${WORKDIR}/build/radiation_column_obj/",
+    "-o",
+    "${WORKDIR}/build/radiation_column",
+    "--nologo"
+  ],
+  "assembly_sha256": "b087636e6d77d284e56a59fb1759d93a955e49e568e02b56eff608858afa6df2"
+}

@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-06",
+  "comparison": "previous local reference engine versus the complete default optimization bundle",
+  "grid": [
+    248,
+    119,
+    28
+  ],
+  "horizontal_resolution_m": 500,
+  "hardware": "Ryzen 9 9950X3D, 16 cores / 32 threads, 48 GB",
+  "worker_setting_per_process": 14,
+  "concurrent_cases": 2,
+  "rounds": 2,
+  "window_steps": [
+    204,
+    1200
+  ],
+  "reference_s_per_step": [
+    0.24219,
+    0.24216,
+    0.24215,
+    0.24167
+  ],
+  "bundle_s_per_step": [
+    0.19805,
+    0.19829,
+    0.19157,
+    0.19049
+  ],
+  "reference_mean_s_per_step": 0.2420425,
+  "bundle_mean_s_per_step": 0.1946,
+  "time_saved_percent": 19.600896536765234,
+  "speedup_factor": 1.2437949640287769,
+  "attribution": "The complete bundle was measured together. The records do not isolate a speed benefit for each individual change.",
+  "measurement_scope": "Elapsed integration time between steps 204 and 1200; the later 120-hour estimate was an extrapolation.",
+  "optional_order_changing_modes": false,
+  "deterministic_mode": false,
+  "section_profile": {
+    "separate_run": true,
+    "conditions": "Stable 600-second profile run, 162 steps, worker setting 14, one execution per variant",
+    "rows": [
+      {
+        "section": "STEP_total",
+        "reference_seconds": 26.358,
+        "bundle_seconds": 19.717,
+        "note": ""
+      },
+      {
+        "section": "UVWIMPcalculate",
+        "reference_seconds": 7.949,
+        "bundle_seconds": 4.503,
+        "note": ""
+      },
+      {
+        "section": "CALCPR_calculate",
+        "reference_seconds": 8.751,
+        "bundle_seconds": 7.506,
+        "note": ""
+      },
+      {
+        "section": "Primp",
+        "reference_seconds": 7.278,
+        "bundle_seconds": 6.128,
+        "note": "nested within CALCPR; do not add twice"
+      },
+      {
+        "section": "Timp_calculate",
+        "reference_seconds": 2.296,
+        "bundle_seconds": 1.832,
+        "note": ""
+      },
+      {
+        "section": "Fimp_calculate",
+        "reference_seconds": 1.898,
+        "bundle_seconds": 1.542,
+        "note": ""
+      },
+      {
+        "section": "RADIATRAD",
+        "reference_seconds": 0.773,
+        "bundle_seconds": 0.115,
+        "note": ""
+      },
+      {
+        "section": "TERMIPterms",
+        "reference_seconds": 0.52,
+        "bundle_seconds": 0.046,
+        "note": ""
+      },
+      {
+        "section": "STORE",
+        "reference_seconds": 1.338,
+        "bundle_seconds": 0.932,
+        "note": ""
+      },
+      {
+        "section": "TERMIVterms",
+        "reference_seconds": 1.722,
+        "bundle_seconds": 2.707,
+        "note": "merged into TERMIV; includes relocated UVW prepass"
+      },
+      {
+        "section": "TERMIPSterms",
+        "reference_seconds": 0.475,
+        "bundle_seconds": null,
+        "note": "merged into TERMIV; includes relocated UVW prepass"
+      }
+    ],
+    "interpretation": "The momentum section showed the largest time reduction. Some work moved into coefficient assembly, so section differences cannot be assigned to individual patches. Pressure correction includes the nested pressure solver."
+  },
+  "source_measurements_sha256": {
+    "timing_json": "06459d597ad5064c8587c5a5dacff4a32577072b65b6d7c05ecb90348addaf82",
+    "profile_json": "1c706d5b336424a4ee1e6c32fcced2df0d4a767388db2b5d3332fb317fa6d349"
+  },
+  "build_context": {
+    "historical_publish": "Release win-x64 self-contained uncompressed single file; PublishTrimmed=false; IncludeNativeLibrariesForSelfExtract=true",
+    "aot_setting": "PublishAot entry is commented out in both archived csproj files",
+    "ready_to_run_setting": "PublishReadyToRun is absent from both archived projects and build_engine.sh flags",
+    "tiered_jit_settings": {
+      "TieredCompilation": true,
+      "TieredCompilationQuickJit": false,
+      "TieredPGO": true
+    },
+    "historical_server_gc": true,
+    "current_v2701_server_gc": false,
+    "current_validation": "Release dotnet build, framework-dependent GRAMM.dll, strict warnings, no publish step",
+    "comparison_interpretation": "Historical reference and bundle use matching publish flags and server GC; current upstream uses workstation GC. Neither packaging nor GC alone was ablated in the 19.6% measurement."
+  }
+}

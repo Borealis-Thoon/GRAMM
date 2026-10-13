@@ -1,0 +1,62 @@
+{
+  "cases": {
+    "neutral_1": {
+      "nx": 48,
+      "ny": 36,
+      "nz": 24,
+      "dx": 250,
+      "duration": 3600,
+      "threads": 1
+    },
+    "convective_4": {
+      "nx": 48,
+      "ny": 36,
+      "nz": 24,
+      "dx": 250,
+      "sc": 2,
+      "wind": 2,
+      "duration": 600,
+      "threads": 4,
+      "turbulence": true
+    },
+    "stable_coast_8": {
+      "nx": 64,
+      "ny": 48,
+      "nz": 24,
+      "dx": 500,
+      "sc": 7,
+      "wind": 1,
+      "duration": 600,
+      "threads": 8,
+      "coast": true,
+      "turbulence": true
+    },
+    "large_neutral_14": {
+      "nx": 96,
+      "ny": 64,
+      "nz": 28,
+      "dx": 500,
+      "duration": 3600,
+      "threads": 14
+    },
+    "frequent_radiation_4": {
+      "nx": 24,
+      "ny": 20,
+      "nz": 16,
+      "dx": 100,
+      "sc": 3,
+      "wind": 2,
+      "duration": 180,
+      "threads": 4,
+      "irad": 1
+    }
+  },
+  "variants": [
+    "baseline",
+    "radiation_column",
+    "uvw_sources"
+  ],
+  "measured_pairs": 5,
+  "warmups": 1,
+  "order": "rotated by replicate"
+}

@@ -1,0 +1,126 @@
+{
+  "status": "pass",
+  "source_files_verified_before_and_after": 205,
+  "native_builds": 5,
+  "instrumented_builds": 5,
+  "method_harness_builds": 3,
+  "strict_builds": 13,
+  "build_warnings": 0,
+  "build_errors": 0,
+  "radiation_method_cases": 135,
+  "momentum_method_cases": 720,
+  "total_method_cases": 855,
+  "smoke_model_processes": 5,
+  "smoke_weather_runs": 5,
+  "smoke_field_pairs": 36,
+  "smoke_state_values_checked": 167620,
+  "model_source_changed": false,
+  "smoke_fixture_correction": "The first fixture used ny=12, leaving no interior beyond the six-cell border. Geometry validation rejected it before model execution. The final fixture uses nx=ny=16 and nz=12. The failed initial input was retained locally.",
+  "completed_steps": [
+    {
+      "command": "python prepare_sources.py --upstream-checkout gramm-upstream --work-dir gramm-recheck",
+      "exit_code": 0
+    },
+    {
+      "command": "python run_validation.py --work-dir gramm-recheck --mode build-native",
+      "exit_code": 0
+    },
+    {
+      "command": "python run_validation.py --work-dir gramm-recheck --mode build-instrumented",
+      "exit_code": 0
+    },
+    {
+      "command": "python run_validation.py --work-dir gramm-recheck --mode components",
+      "exit_code": 0
+    },
+    {
+      "command": "python run_validation.py --work-dir gramm-recheck --mode smoke",
+      "exit_code": 0
+    },
+    {
+      "command": "python prepare_sources.py --work-dir gramm-recheck --verify-only",
+      "exit_code": 0
+    }
+  ],
+  "build_logs": [
+    {
+      "path": "logs/build_baseline.log",
+      "sha256": "cce84bcd2dad66b6ea4800ab0daeeef9eb97a5a898f9926d0503267f8730f4d8",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "path": "logs/build_combined.log",
+      "sha256": "0850540fedfb3949922f4d1fe3a5988996a6bb6fea58430785a2cacda1ea1e2d",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "path": "logs/build_radiation_column.log",
+      "sha256": "7f470686d34770fb035a9bf3092d7f7a87e16707c8524ac96bd2e2a1d1178bb8",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "path": "logs/build_scalar_tdma.log",
+      "sha256": "3920d332bda04b1304d7e052bd88a43e42f513893538efccb9b608de88dba86d",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "path": "logs/build_uvw_sources.log",
+      "sha256": "019c543a1a5a482fa546bf14d253ca7846ccf044146d6a5eb0b15e3afb9bcf4f",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "path": "logs/component_radiation_build.log",
+      "sha256": "066afa7b6375dd0b62d359aef66ad9c6a4624a0f8fb983ceac6dd9b49d6ab65c",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "path": "logs/component_uvw_baseline_build.log",
+      "sha256": "7390a8df1360cafd746cd1b2ae9d7b7191232f47baed2912151af5a04db50cdf",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "path": "logs/component_uvw_patched_build.log",
+      "sha256": "98d56f9884c8e6bf5997d080ebfe84d01748c768fc10ef5a8a6a20987b2eac2d",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "path": "qa/full_engine_harness/baseline_build.log",
+      "sha256": "d92706c407e56c2c0f5b7376b93afda57bf01c75a9b7ee624c8006ae3162ac72",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "path": "qa/full_engine_harness/combined_build.log",
+      "sha256": "93be42b0d7adc7418e6394b0c9723627e7e941a6c559c4148f5b9dcedf0e249c",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "path": "qa/full_engine_harness/radiation_column_build.log",
+      "sha256": "e46d73bbec9f38012f979781c7f875524d7c8728831bad202a9559e0b78fbb97",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "path": "qa/full_engine_harness/scalar_tdma_build.log",
+      "sha256": "880e5098307e9ee5a40c560230bcf7e7fd6d4e8a9c37337da473171f5a2f1ff3",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "path": "qa/full_engine_harness/uvw_sources_build.log",
+      "sha256": "2828c2715c188f1a9a9022cae9ad7bdfcc9b3bf1aa645d4018ac8fe41babf332",
+      "warnings": 0,
+      "errors": 0
+    }
+  ],
+  "timing_claimed_from_smoke": false
+}

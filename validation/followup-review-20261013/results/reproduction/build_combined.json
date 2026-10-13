@@ -1,0 +1,18 @@
+{
+  "variant": "combined",
+  "commit": "cab0260a67e6073fc7461d1251e66bf187d93e41",
+  "exit_code": 0,
+  "command": [
+    "dotnet",
+    "build",
+    "${WORKDIR}/work/combined/src/GRAMM.csproj",
+    "-c",
+    "Release",
+    "-p:TreatWarningsAsErrors=true",
+    "-p:BaseIntermediateOutputPath=${WORKDIR}/build/combined_obj/",
+    "-o",
+    "${WORKDIR}/build/combined",
+    "--nologo"
+  ],
+  "assembly_sha256": "8ecb40cb82e5cc436820728de8763efef3588c40bd86827aeb6276b69e2ff39b"
+}

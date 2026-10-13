@@ -1,0 +1,91 @@
+{
+  "status": "rendered",
+  "summary_sha256": "08293f0cf6f45cfe124a4cab6e0b8d96520be2a18c780ae145a8228b7565cede",
+  "rows": [
+    {
+      "case": "neutral_1",
+      "variant": "radiation_column",
+      "pairs": 5,
+      "saved_percent": [
+        0.9597308107238911,
+        9.132520595717498,
+        0.24253266244836924,
+        1.0077905752186478,
+        2.5877853210592328
+      ],
+      "median_saved_percent": 1.0077905752186478,
+      "faster_pairs": 5,
+      "baseline_seconds": 5.0676104,
+      "patched_seconds": 5.0165395
+    },
+    {
+      "case": "convective_4",
+      "variant": "radiation_column",
+      "pairs": 5,
+      "saved_percent": [
+        1.9854626932441,
+        0.9520564011369914,
+        1.5585341015084464,
+        1.1579256358326906,
+        -1.1337446403734353
+      ],
+      "median_saved_percent": 1.1579256358326906,
+      "faster_pairs": 4,
+      "baseline_seconds": 5.5975215,
+      "patched_seconds": 5.5222721
+    },
+    {
+      "case": "stable_coast_8",
+      "variant": "radiation_column",
+      "pairs": 5,
+      "saved_percent": [
+        5.8074168017502314,
+        4.643317411011749,
+        0.4314257597715976,
+        4.337363796543869,
+        -0.5710355516881593
+      ],
+      "median_saved_percent": 4.337363796543869,
+      "faster_pairs": 4,
+      "baseline_seconds": 9.4116719,
+      "patched_seconds": 8.9662357
+    },
+    {
+      "case": "large_neutral_14",
+      "variant": "radiation_column",
+      "pairs": 5,
+      "saved_percent": [
+        0.24778404023849676,
+        -1.051775300325053,
+        0.4609007492216377,
+        0.9129833106049756,
+        1.7857046396080212
+      ],
+      "median_saved_percent": 0.4609007492216377,
+      "faster_pairs": 4,
+      "baseline_seconds": 12.2254042,
+      "patched_seconds": 12.1853887
+    },
+    {
+      "case": "frequent_radiation_4",
+      "variant": "radiation_column",
+      "pairs": 5,
+      "saved_percent": [
+        3.945965911434479,
+        4.653928384105477,
+        4.6485035034564355,
+        2.2422361705020655,
+        3.5365720112888965
+      ],
+      "median_saved_percent": 3.945965911434479,
+      "faster_pairs": 5,
+      "baseline_seconds": 0.9673449,
+      "patched_seconds": 0.9303658
+    }
+  ],
+  "percent_method": "Median of five paired values 100*(1-candidate_seconds/baseline_seconds).",
+  "files": {
+    "radiation_column_reuse.png": "63920c4ec29b94ff2e26cf9099605628ec40eeb2c194a8e7a1c9dafb7943d265",
+    "radiation_column_reuse.svg": "43fabf512dd999764f24542d00c18fcf64835995718ef804787d4698fa53ce94"
+  }
+}

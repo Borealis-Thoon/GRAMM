@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "figure": "radiation_column_reuse.png",
+  "all_measured_pairs_drawn": 25,
+  "observed_ranges": true,
+  "median_recomputed": true,
+  "negative_observations_retained": true,
+  "different_call_count_and_elapsed_time_panels": true,
+  "direct_visual_review": [
+    "No clipped titles, labels, markers, or percentage values.",
+    "Five case labels and legends remain readable at rendered size.",
+    "Outlier at 9.13% remains on the shared axis."
+  ],
+  "png_sha256": "63920c4ec29b94ff2e26cf9099605628ec40eeb2c194a8e7a1c9dafb7943d265",
+  "scalar_review": {
+    "status": "pass",
+    "figure": "scalar_review.png",
+    "all_pairs_shown": 20,
+    "faster_pairs": 18,
+    "negative_pairs_shown": 2,
+    "source_hashes_verified_against_original_manifest": true,
+    "raw_pair_percentages_match_original_figure": true,
+    "new_scalar_timing_claimed": false,
+    "time_medians_removed_from_visual": true,
+    "memory_note_preserved": true,
+    "fixed_partition_order_qualifier": true,
+    "direct_visual_review": [
+      "No clipped title or labels.",
+      "Mechanism and measured percentage remain separate.",
+      "Negative observations have an explicit negative axis tick."
+    ],
+    "png_sha256": "91b4342555689089bc03d572bec9df4f2cb4bf115500118bb54bce9407c202c9"
+  },
+  "independent_visual_review": "No clipping or numeric mismatch in either PNG. The scalar-time median ambiguity is resolved.",
+  "review_fix": "Removed Four from the output-field caption so the four drawn horizontal columns cannot be mistaken for four different fields."
+}

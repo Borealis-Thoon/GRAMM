@@ -1,0 +1,122 @@
+{
+  "reviewer": "gramm_pr_adversarial",
+  "status": "code_fidelity_native_and_editorial_pass",
+  "code_blockers": [],
+  "source_heads": {
+    "radiation_column": "56d396b3d18a9034c30c2c36bdb678882cf4553d",
+    "uvw_sources": "93176909c6412115de5ec9b99663981bde81df3b"
+  },
+  "source_sha256": {
+    "RADIAT.cs": "a45e9b1382683b386d06d6587af8451ba9a903f0b37fac20a0f8db5fb3fcd490",
+    "UVWIMP.cs": "ae46995628c451c8ab0e10d7a686632cfa802b7e0a74d787fc4f470e4c8e5fdb"
+  },
+  "radiation_column": {
+    "static_verdict": "pass",
+    "changed_files": 1,
+    "added_lines": 7,
+    "removed_lines": 2,
+    "dependency_check": "Cl_EpsA never reads i or j. Its input arrays Wrad, CGp, Rp, Dz1, Dz2 and Program.ZZ depend only on k. Its temperature input is explicitly Program.TABS[1][1][kk-1]. Wcrit, EpsTop and TTop are constants.",
+    "side_effect_check": "Cl_EpsA writes only its four ref outputs and returns Tabi. Cl_Eps calculates from its other inputs and overwrites Epsi before returning; the old ref values cannot affect the answer. New locals initialized to zero are safe.",
+    "lifetime_check": "Every RADIATRAD invocation recomputes the values, so no cache invalidation state is introduced. The existing k loop still writes exactly levels 2 through NK, including original halo columns 1 through NI/NJ.",
+    "parallel_check": "The changed loop is serial and runs after the solar Parallel.For has completed. It adds no parallel state or ordering change.",
+    "minimality": "The patch retains existing arrays and method signature. Removing unused method parameters or changing the arrays to one-dimensional storage would widen scope without being required for this benefit.",
+    "component_checks": 135,
+    "finite_bitwise_equal_values": 10102620,
+    "component_scope": "Actual source loop and actual Cl_EpsA/Cl_Eps bodies extracted without arithmetic edits. Five cloud profiles include both sides of Wcrit; tests include nonuniform previous output cells, NaN prior ref values, and NZ=25 with NK=3 followed by NK=25."
+  },
+  "uvw_sources": {
+    "static_verdict": "pass",
+    "changed_files": 1,
+    "added_lines": 26,
+    "removed_lines": 6,
+    "consumer_check": "UIMPKernel initializes m=2 before kn=1. Its lower-half branch reads only F1U/F1V/F1W and sets m=1; its upper-half branch reads only F2U/F2V/F2W and resets m=2. Therefore F1 is consumed only for odd kn and F2 only for even kn across all eight kernel calls.",
+    "external_consumer_check": "All references were searched across src. The separate UIMP/VIMP/WIMP implementations initialize their own corresponding source arrays before consuming them. No other routine reads skipped entries.",
+    "bounds_and_flags": "The source-loop bounds and k mapping are unchanged. The whole method remains under ICU. ICPSI branches, buoyancy, Coriolis terms and every arithmetic expression for consumed entries are unchanged.",
+    "parallel_check": "Source workers write distinct i columns, and the prepass completes before solver sweeps begin. The patch adds only a local parity boolean and conditional writes.",
+    "minimality": "Keeps source-array layout, producer ordering and all solver sweeps. Further combining source calculations would change more expressions and is unnecessary.",
+    "component_checks": 720,
+    "finite_state_values": 20493216,
+    "identical_consumed_source_values": 4999104,
+    "component_scope": "Actual UVWIMPcalculate with five grids (NZ 2,3,8,28,65), terrain terms off/on, ICPSI off/on, ICU off/on, worker settings 1/4/8, two unused-slot sentinels and three sequential coefficient stages. A single sweep partition fixes recurrence order while retaining native parallel source prepasses."
+  },
+  "resolved_review_actions": [
+    {
+      "id": "RAD-TEST-01",
+      "concern": "Initialization can pass NK=3 while Program.NZ is larger. The original method fixture only set them equal.",
+      "resolution": "Candidate owner added 15 same-object partial-to-full calls at NZ=25, bringing the fixture to 135 checks. Independent row and value totals match."
+    },
+    {
+      "id": "HARNESS-01",
+      "concern": "The lightweight comparison helper uses zip and does not itself verify all declared cases, snapshot identities and expected field counts.",
+      "resolution": "Copied the previous strict post-validator, added the radiation_column, uvw_sources and combined variants, and independently validated all 40 completed processes. No model files were changed."
+    }
+  ],
+  "strict_completed_validation": {
+    "status": "pass",
+    "case_count": 8,
+    "expected_runs": 40,
+    "run_count": 40,
+    "expected_weather_runs": 50,
+    "weather_runs": 50,
+    "passed_runs": 40,
+    "field_values_checked": 11927320,
+    "comparison_count": 32,
+    "full_precision_field_pairs": 360,
+    "errors": [],
+    "report": "test_review/completed_validation_with_combined.json"
+  },
+  "strict_command": [
+    "python",
+    "qa/test_review/validate_completed.py",
+    "--cases",
+    "qa/fidelity/plan.json",
+    "--variants",
+    "baseline",
+    "radiation_column",
+    "uvw_sources",
+    "scalar_tdma",
+    "combined",
+    "--expected-cases",
+    "8",
+    "--expected-runs",
+    "40",
+    "--expected-weather-runs",
+    "50"
+  ],
+  "remaining_parent_checks": [
+    "Replace public evidence placeholders and verify packaged link targets."
+  ],
+  "heavy_tests_run_by_reviewer": false,
+  "editorial_workflow": {
+    "skill": "humanize-kit:humanizer",
+    "mode": "Embedded",
+    "passes": [
+      "draft",
+      "style audit",
+      "final rewrite",
+      "numeric and claim fidelity check"
+    ]
+  },
+  "native_review": "new_code_review_native.json",
+  "submission_assessment": {
+    "radiation_column": "submit_after_final_PR_checks",
+    "uvw_sources": "defer_inconsistent_measured_benefit"
+  },
+  "native_parallel_output_review": "parallel_state/output_review.json",
+  "native_parallel_output_review_script": "parallel_state/review_outputs.py",
+  "native_parallel_output_verdict": {
+    "status": "pass",
+    "processes": 27,
+    "comparison_pairs": 27,
+    "wind_component_rounding_checks": 3359232,
+    "all_surface_payloads_identical": true,
+    "all_steady_state_and_steps_identical": true,
+    "numerical_retries": 0,
+    "maximum_changed_wind_components_in_any_pair": 3,
+    "wind_components_per_file": 124416,
+    "maximum_wind_tick_difference": 1,
+    "wind_quantum_ms": 0.01,
+    "scope_note": "Baseline repeats and both candidate comparisons share the same maximum saved-wind difference. Native worker setting 1 is not always bitwise identical in this new experiment."
+  },
+  "final_editorial_review": "new_code_review_figures.json"
+}

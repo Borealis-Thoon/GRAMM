@@ -1,0 +1,572 @@
+{
+  "status": "complete",
+  "completed": [
+    {
+      "case": "parallel_t1_r1",
+      "threads": 1,
+      "repeat": 1,
+      "variant": "baseline",
+      "folder": "${WORKDIR}/runs/parallel_t1_r1/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "4.6887708",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r1",
+      "threads": 1,
+      "repeat": 1,
+      "variant": "radiation_column",
+      "folder": "${WORKDIR}/runs/parallel_t1_r1/radiation_column",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "4.7292659",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r1",
+      "threads": 1,
+      "repeat": 1,
+      "variant": "combined",
+      "folder": "${WORKDIR}/runs/parallel_t1_r1/combined",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "4.5753244",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r2",
+      "threads": 1,
+      "repeat": 2,
+      "variant": "radiation_column",
+      "folder": "${WORKDIR}/runs/parallel_t1_r2/radiation_column",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "4.6734975",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r2",
+      "threads": 1,
+      "repeat": 2,
+      "variant": "combined",
+      "folder": "${WORKDIR}/runs/parallel_t1_r2/combined",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "4.6452035",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r2",
+      "threads": 1,
+      "repeat": 2,
+      "variant": "baseline",
+      "folder": "${WORKDIR}/runs/parallel_t1_r2/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "4.7030987",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r3",
+      "threads": 1,
+      "repeat": 3,
+      "variant": "combined",
+      "folder": "${WORKDIR}/runs/parallel_t1_r3/combined",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "4.670339",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r3",
+      "threads": 1,
+      "repeat": 3,
+      "variant": "baseline",
+      "folder": "${WORKDIR}/runs/parallel_t1_r3/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "4.6398241",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t1_r3",
+      "threads": 1,
+      "repeat": 3,
+      "variant": "radiation_column",
+      "folder": "${WORKDIR}/runs/parallel_t1_r3/radiation_column",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "4.651967",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "1",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r1",
+      "threads": 4,
+      "repeat": 1,
+      "variant": "radiation_column",
+      "folder": "${WORKDIR}/runs/parallel_t4_r1/radiation_column",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.0102684",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r1",
+      "threads": 4,
+      "repeat": 1,
+      "variant": "combined",
+      "folder": "${WORKDIR}/runs/parallel_t4_r1/combined",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "2.9819546",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r1",
+      "threads": 4,
+      "repeat": 1,
+      "variant": "baseline",
+      "folder": "${WORKDIR}/runs/parallel_t4_r1/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.0299143",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r2",
+      "threads": 4,
+      "repeat": 2,
+      "variant": "combined",
+      "folder": "${WORKDIR}/runs/parallel_t4_r2/combined",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "2.9012347",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r2",
+      "threads": 4,
+      "repeat": 2,
+      "variant": "baseline",
+      "folder": "${WORKDIR}/runs/parallel_t4_r2/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.0474152",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r2",
+      "threads": 4,
+      "repeat": 2,
+      "variant": "radiation_column",
+      "folder": "${WORKDIR}/runs/parallel_t4_r2/radiation_column",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.0752024",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r3",
+      "threads": 4,
+      "repeat": 3,
+      "variant": "baseline",
+      "folder": "${WORKDIR}/runs/parallel_t4_r3/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.0576095",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r3",
+      "threads": 4,
+      "repeat": 3,
+      "variant": "radiation_column",
+      "folder": "${WORKDIR}/runs/parallel_t4_r3/radiation_column",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.2247983",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t4_r3",
+      "threads": 4,
+      "repeat": 3,
+      "variant": "combined",
+      "folder": "${WORKDIR}/runs/parallel_t4_r3/combined",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "2.9664814",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "4",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r1",
+      "threads": 8,
+      "repeat": 1,
+      "variant": "combined",
+      "folder": "${WORKDIR}/runs/parallel_t8_r1/combined",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "2.9659337",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r1",
+      "threads": 8,
+      "repeat": 1,
+      "variant": "baseline",
+      "folder": "${WORKDIR}/runs/parallel_t8_r1/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.0305813",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r1",
+      "threads": 8,
+      "repeat": 1,
+      "variant": "radiation_column",
+      "folder": "${WORKDIR}/runs/parallel_t8_r1/radiation_column",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "2.9734672",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r2",
+      "threads": 8,
+      "repeat": 2,
+      "variant": "baseline",
+      "folder": "${WORKDIR}/runs/parallel_t8_r2/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.0485913",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r2",
+      "threads": 8,
+      "repeat": 2,
+      "variant": "radiation_column",
+      "folder": "${WORKDIR}/runs/parallel_t8_r2/radiation_column",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "2.9760119",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r2",
+      "threads": 8,
+      "repeat": 2,
+      "variant": "combined",
+      "folder": "${WORKDIR}/runs/parallel_t8_r2/combined",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "2.912624",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r3",
+      "threads": 8,
+      "repeat": 3,
+      "variant": "radiation_column",
+      "folder": "${WORKDIR}/runs/parallel_t8_r3/radiation_column",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.1275377",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r3",
+      "threads": 8,
+      "repeat": 3,
+      "variant": "combined",
+      "folder": "${WORKDIR}/runs/parallel_t8_r3/combined",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.04811",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    },
+    {
+      "case": "parallel_t8_r3",
+      "threads": 8,
+      "repeat": 3,
+      "variant": "baseline",
+      "folder": "${WORKDIR}/runs/parallel_t8_r3/baseline",
+      "integration": [
+        {
+          "weather_start": "1",
+          "weather_end": "1",
+          "elapsed_seconds": "3.1267306",
+          "itime": "96",
+          "dt": "4",
+          "realtime": "301.5",
+          "tlimit": "300",
+          "retries": "0",
+          "configured_threads": "8",
+          "serial": "0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "variant": "combined",
+    "source_commit": "cab0260a67e6073fc7461d1251e66bf187d93e41",
+    "source_path": "${WORKDIR}/work/combined",
+    "instrumented_path": "${WORKDIR}/work/instrumented_combined",
+    "build_command": [
+      "dotnet",
+      "build",
+      "${WORKDIR}/work/instrumented_combined/src/GRAMM.csproj",
+      "-c",
+      "Release",
+      "-p:TreatWarningsAsErrors=true",
+      "-p:BaseIntermediateOutputPath=${WORKDIR}/build/instrumented_combined_obj/",
+      "-o",
+      "${WORKDIR}/build/instrumented_combined",
+      "--nologo"
+    ],
+    "build_exit_code": 0,
+    "support_sha256": "4fdf6686f0832f03e3d0eb6cf3fe8788b67c4fea4816e01c82fa6bf224a0ae32",
+    "replacement_counts": {
+      "parallel_for": 155,
+      "parallel_foreach": 110,
+      "console_top": 7,
+      "console_set": 7,
+      "timing_loop": 1
+    },
+    "integration_csv": "harness_integration.csv",
+    "snapshot_json": "harness_snapshot_{weather_start:05d}.json",
+    "snapshot_enable": "GRAMM_TEST_SNAPSHOT=1",
+    "binary_enable": "GRAMM_TEST_BINARY=1",
+    "models_run": false
+  }
+]

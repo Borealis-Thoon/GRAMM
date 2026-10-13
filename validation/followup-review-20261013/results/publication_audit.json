@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "files_scanned": 86,
+  "allowed_extensions": [
+    ".py",
+    ".cs",
+    ".json",
+    ".csv",
+    ".md",
+    ".patch",
+    ".png",
+    ".svg"
+  ],
+  "private_absolute_paths": 0,
+  "credential_patterns": 0,
+  "internal_optimization_labels": 0,
+  "raw_model_output_files": 0,
+  "engine_binaries": 0,
+  "checkpoints": 0,
+  "figure_hashes_match": true,
+  "source_restore_files_checked": 205,
+  "audit_stage": "content checks completed before manifest generation"
+}

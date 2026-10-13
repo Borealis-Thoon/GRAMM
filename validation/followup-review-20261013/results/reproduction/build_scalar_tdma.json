@@ -1,0 +1,18 @@
+{
+  "variant": "scalar_tdma",
+  "commit": "d4c084b97508e16eab808d934d42520f504bcf55",
+  "exit_code": 0,
+  "command": [
+    "dotnet",
+    "build",
+    "${WORKDIR}/work/scalar_tdma/src/GRAMM.csproj",
+    "-c",
+    "Release",
+    "-p:TreatWarningsAsErrors=true",
+    "-p:BaseIntermediateOutputPath=${WORKDIR}/build/scalar_tdma_obj/",
+    "-o",
+    "${WORKDIR}/build/scalar_tdma",
+    "--nologo"
+  ],
+  "assembly_sha256": "a368121a4115f433dbb2252c0f8f715e97c633a4661dfa627c0aa17c66bc60e8"
+}

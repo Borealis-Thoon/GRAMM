@@ -1,0 +1,162 @@
+[
+  {
+    "variant": "baseline",
+    "source_commit": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+    "source_path": "${WORKDIR}/work/warnings",
+    "instrumented_path": "${WORKDIR}/work/instrumented_baseline",
+    "build_command": [
+      "dotnet",
+      "build",
+      "${WORKDIR}/work/instrumented_baseline/src/GRAMM.csproj",
+      "-c",
+      "Release",
+      "-p:TreatWarningsAsErrors=true",
+      "-p:BaseIntermediateOutputPath=${WORKDIR}/build/instrumented_baseline_obj/",
+      "-o",
+      "${WORKDIR}/build/instrumented_baseline",
+      "--nologo"
+    ],
+    "build_exit_code": 0,
+    "support_sha256": "4fdf6686f0832f03e3d0eb6cf3fe8788b67c4fea4816e01c82fa6bf224a0ae32",
+    "replacement_counts": {
+      "parallel_for": 155,
+      "parallel_foreach": 110,
+      "console_top": 7,
+      "console_set": 7,
+      "timing_loop": 1
+    },
+    "integration_csv": "harness_integration.csv",
+    "snapshot_json": "harness_snapshot_{weather_start:05d}.json",
+    "snapshot_enable": "GRAMM_TEST_SNAPSHOT=1",
+    "binary_enable": "GRAMM_TEST_BINARY=1",
+    "models_run": false
+  },
+  {
+    "variant": "scalar_tdma",
+    "source_commit": "d4c084b97508e16eab808d934d42520f504bcf55",
+    "source_path": "${WORKDIR}/work/scalar_tdma",
+    "instrumented_path": "${WORKDIR}/work/instrumented_scalar_tdma",
+    "build_command": [
+      "dotnet",
+      "build",
+      "${WORKDIR}/work/instrumented_scalar_tdma/src/GRAMM.csproj",
+      "-c",
+      "Release",
+      "-p:TreatWarningsAsErrors=true",
+      "-p:BaseIntermediateOutputPath=${WORKDIR}/build/instrumented_scalar_tdma_obj/",
+      "-o",
+      "${WORKDIR}/build/instrumented_scalar_tdma",
+      "--nologo"
+    ],
+    "build_exit_code": 0,
+    "support_sha256": "4fdf6686f0832f03e3d0eb6cf3fe8788b67c4fea4816e01c82fa6bf224a0ae32",
+    "replacement_counts": {
+      "parallel_for": 155,
+      "parallel_foreach": 110,
+      "console_top": 7,
+      "console_set": 7,
+      "timing_loop": 1
+    },
+    "integration_csv": "harness_integration.csv",
+    "snapshot_json": "harness_snapshot_{weather_start:05d}.json",
+    "snapshot_enable": "GRAMM_TEST_SNAPSHOT=1",
+    "binary_enable": "GRAMM_TEST_BINARY=1",
+    "models_run": false
+  },
+  {
+    "variant": "radiation_column",
+    "source_commit": "56d396b3d18a9034c30c2c36bdb678882cf4553d",
+    "source_path": "${WORKDIR}/work/radiation_column",
+    "instrumented_path": "${WORKDIR}/work/instrumented_radiation_column",
+    "build_command": [
+      "dotnet",
+      "build",
+      "${WORKDIR}/work/instrumented_radiation_column/src/GRAMM.csproj",
+      "-c",
+      "Release",
+      "-p:TreatWarningsAsErrors=true",
+      "-p:BaseIntermediateOutputPath=${WORKDIR}/build/instrumented_radiation_column_obj/",
+      "-o",
+      "${WORKDIR}/build/instrumented_radiation_column",
+      "--nologo"
+    ],
+    "build_exit_code": 0,
+    "support_sha256": "4fdf6686f0832f03e3d0eb6cf3fe8788b67c4fea4816e01c82fa6bf224a0ae32",
+    "replacement_counts": {
+      "parallel_for": 155,
+      "parallel_foreach": 110,
+      "console_top": 7,
+      "console_set": 7,
+      "timing_loop": 1
+    },
+    "integration_csv": "harness_integration.csv",
+    "snapshot_json": "harness_snapshot_{weather_start:05d}.json",
+    "snapshot_enable": "GRAMM_TEST_SNAPSHOT=1",
+    "binary_enable": "GRAMM_TEST_BINARY=1",
+    "models_run": false
+  },
+  {
+    "variant": "uvw_sources",
+    "source_commit": "93176909c6412115de5ec9b99663981bde81df3b",
+    "source_path": "${WORKDIR}/work/uvw_sources",
+    "instrumented_path": "${WORKDIR}/work/instrumented_uvw_sources",
+    "build_command": [
+      "dotnet",
+      "build",
+      "${WORKDIR}/work/instrumented_uvw_sources/src/GRAMM.csproj",
+      "-c",
+      "Release",
+      "-p:TreatWarningsAsErrors=true",
+      "-p:BaseIntermediateOutputPath=${WORKDIR}/build/instrumented_uvw_sources_obj/",
+      "-o",
+      "${WORKDIR}/build/instrumented_uvw_sources",
+      "--nologo"
+    ],
+    "build_exit_code": 0,
+    "support_sha256": "4fdf6686f0832f03e3d0eb6cf3fe8788b67c4fea4816e01c82fa6bf224a0ae32",
+    "replacement_counts": {
+      "parallel_for": 155,
+      "parallel_foreach": 110,
+      "console_top": 7,
+      "console_set": 7,
+      "timing_loop": 1
+    },
+    "integration_csv": "harness_integration.csv",
+    "snapshot_json": "harness_snapshot_{weather_start:05d}.json",
+    "snapshot_enable": "GRAMM_TEST_SNAPSHOT=1",
+    "binary_enable": "GRAMM_TEST_BINARY=1",
+    "models_run": false
+  },
+  {
+    "variant": "combined",
+    "source_commit": "cab0260a67e6073fc7461d1251e66bf187d93e41",
+    "source_path": "${WORKDIR}/work/combined",
+    "instrumented_path": "${WORKDIR}/work/instrumented_combined",
+    "build_command": [
+      "dotnet",
+      "build",
+      "${WORKDIR}/work/instrumented_combined/src/GRAMM.csproj",
+      "-c",
+      "Release",
+      "-p:TreatWarningsAsErrors=true",
+      "-p:BaseIntermediateOutputPath=${WORKDIR}/build/instrumented_combined_obj/",
+      "-o",
+      "${WORKDIR}/build/instrumented_combined",
+      "--nologo"
+    ],
+    "build_exit_code": 0,
+    "support_sha256": "4fdf6686f0832f03e3d0eb6cf3fe8788b67c4fea4816e01c82fa6bf224a0ae32",
+    "replacement_counts": {
+      "parallel_for": 155,
+      "parallel_foreach": 110,
+      "console_top": 7,
+      "console_set": 7,
+      "timing_loop": 1
+    },
+    "integration_csv": "harness_integration.csv",
+    "snapshot_json": "harness_snapshot_{weather_start:05d}.json",
+    "snapshot_enable": "GRAMM_TEST_SNAPSHOT=1",
+    "binary_enable": "GRAMM_TEST_BINARY=1",
+    "models_run": false
+  }
+]

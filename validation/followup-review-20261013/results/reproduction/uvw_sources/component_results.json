@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "cases": 720,
+  "failed_cases": [],
+  "bit_identical_state_values": 20493216,
+  "bit_identical_consumed_source_values": 4999104,
+  "unused_values_untouched": 14997312
+}

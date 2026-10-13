@@ -1,0 +1,12 @@
+{
+  "status": "rendered",
+  "input_sha256": "ee689f215c8fc6c416e113aa298697631ae0432cd11fbe5bd489e3806e656f79",
+  "measurement_origin": "Existing public measurements from the coefficient-reuse review; this revision changes the figure only. No new scalar benchmark is claimed.",
+  "public_evidence_commit": "7e95104b8c3bb9c8eecf89c8f2d93b1d7f758c51",
+  "points": 20,
+  "percent_method": "Median of paired 100*(1-candidate_seconds/baseline_seconds) values.",
+  "files": {
+    "scalar_review.png": "91b4342555689089bc03d572bec9df4f2cb4bf115500118bb54bce9407c202c9",
+    "scalar_review.svg": "f9b12f8da81d3402803c82b3b46882b4a588b51f63575a8e6c4a2969ce478407"
+  }
+}

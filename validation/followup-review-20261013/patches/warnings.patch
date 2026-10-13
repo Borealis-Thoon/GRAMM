@@ -1,0 +1,55 @@
+diff --git a/src/GRID.cs b/src/GRID.cs
+index cfab1d3f4b0559cd8b5b0fdbd2fad1e780e5217b..288d4b3be4a87f1445031b2d94156aa2df15c9ec 100644
+--- a/src/GRID.cs
++++ b/src/GRID.cs
+@@ -225,8 +225,6 @@ namespace GRAMM_2001
+                             Program.Z[n] = Convert.ToSingle(Is_Binary[i].Replace(".", Program.decsep));
+                         }
+ 
+-                        int ix = 0;
+-                        int iy = 1;
+                         //obtain surface heights
+                         n = 0;
+                         Is_Binary = reader.ReadLine().Split(new char[] { ' ', ',', '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+diff --git a/src/INITB.cs b/src/INITB.cs
+index 6811a0975e7ee9dd97566c55dd16a686ac08f710..0371b62ec4162b221831baf7212ddf22c9c6da95 100644
+--- a/src/INITB.cs
++++ b/src/INITB.cs
+@@ -823,7 +823,6 @@ namespace GRAMM_2001
+                     {
+                         if (Program.FW[i][j] > 0.99)
+                         {
+-                            int k = 1;
+                             double DUMMY = 1;
+                             for (int kb = 1; kb <= Program.NZB; kb++)
+                             {
+diff --git a/src/ProgramDeclarations.cs b/src/ProgramDeclarations.cs
+index b457624cbe0faad32b8b4bf3fab3511e8fbe8680..93e4da306072192ffc1f1ce0225d85ed1e211316 100644
+--- a/src/ProgramDeclarations.cs
++++ b/src/ProgramDeclarations.cs
+@@ -1142,10 +1142,6 @@ namespace GRAMM_2001
+         ///</summary>
+         public static Int32 ISTAT;
+         ///<summary>
+-        ///NON-STEADYSTATE/FORCING W. IFU-MM5 DATA YES=1 -> not yet implemented in this version
+-        ///</summary>
+-        public static Int32 MM5IFU;
+-        ///<summary>
+         ///GRAMM IN GRAMM NESTING YES=1 -> not yet implemented in this version
+         ///</summary>
+         public static Int32 NESTGRAMM;
+diff --git a/src/Program_Write.cs b/src/Program_Write.cs
+index 2746ca960359962c4ad2606e863ede999d5066ea..71cb25c5309d480611b521f9bbbb49107ee2fb08 100644
+--- a/src/Program_Write.cs
++++ b/src/Program_Write.cs
+@@ -17,10 +17,6 @@ namespace GRAMM_2001
+ {
+     public class ProgramWriters
+     {
+-        private static int month_old = 0;
+-        private static int day_old = 0;
+-        private static int hour_old = 0;
+-        private static int minute_old = 0;
+ 
+ 
+         /// <summary>

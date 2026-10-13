@@ -1,0 +1,87 @@
+{
+  "neutral_1": {
+    "nx": 48,
+    "ny": 36,
+    "nz": 24,
+    "dx": 250,
+    "duration": 600,
+    "threads": 1
+  },
+  "convective_4": {
+    "nx": 48,
+    "ny": 36,
+    "nz": 24,
+    "dx": 250,
+    "sc": 2,
+    "wind": 2,
+    "duration": 600,
+    "threads": 4,
+    "turbulence": true
+  },
+  "stable_coast_8": {
+    "nx": 64,
+    "ny": 48,
+    "nz": 24,
+    "dx": 500,
+    "sc": 7,
+    "wind": 1,
+    "duration": 600,
+    "threads": 8,
+    "coast": true,
+    "turbulence": true
+  },
+  "frequent_radiation_4": {
+    "nx": 24,
+    "ny": 20,
+    "nz": 16,
+    "dx": 100,
+    "sc": 3,
+    "wind": 2,
+    "duration": 180,
+    "threads": 4,
+    "irad": 1
+  },
+  "sequential_custom_4": {
+    "nx": 32,
+    "ny": 24,
+    "nz": 20,
+    "dx": 250,
+    "duration": 360,
+    "threads": 4,
+    "coast": true,
+    "multi": true,
+    "custom": true
+  },
+  "calm_convective_8": {
+    "nx": 32,
+    "ny": 24,
+    "nz": 20,
+    "dx": 500,
+    "sc": 2,
+    "wind": 0.4,
+    "duration": 180,
+    "dt": 10,
+    "threads": 8,
+    "coast": true
+  },
+  "radiation_off_1": {
+    "nx": 24,
+    "ny": 20,
+    "nz": 16,
+    "dx": 250,
+    "sc": 6,
+    "wind": 1,
+    "duration": 180,
+    "threads": 1,
+    "radiation": false
+  },
+  "radiation_refresh_1": {
+    "nx": 24,
+    "ny": 20,
+    "nz": 16,
+    "dx": 250,
+    "sc": 2,
+    "duration": 2100,
+    "threads": 1
+  }
+}

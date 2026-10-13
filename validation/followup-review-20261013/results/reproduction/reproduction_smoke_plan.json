@@ -1,0 +1,11 @@
+{
+  "reproduction_smoke_16x16": {
+    "nx": 16,
+    "ny": 16,
+    "nz": 12,
+    "dx": 100,
+    "duration": 60,
+    "sc": 5,
+    "threads": 1
+  }
+}

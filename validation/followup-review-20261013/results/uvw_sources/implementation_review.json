@@ -1,0 +1,39 @@
+{
+  "patch_commit": "93176909c6412115de5ec9b99663981bde81df3b",
+  "parent_commit": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+  "diff_check": "pass",
+  "counts": {
+    "files": 1,
+    "added_lines": 26,
+    "deleted_lines": 6,
+    "added_chars_with_LF": 1248,
+    "deleted_chars_with_LF": 480,
+    "changed_chars_with_LF": 1728
+  },
+  "scope": [
+    "UVWIMPcalculate prepass only",
+    "six original arithmetic expressions and float casts unchanged",
+    "no global array removal",
+    "no UIMPKernel or sweep/partition/lock changes"
+  ],
+  "consumer_review": {
+    "src/UVWIMP.cs": "UIMPKernel reads F1 only when m starts2/oddkn; F2 only when m1/evenkn. m alternates in every sweep.",
+    "src/UIMP.cs": "own prepass fills F1U/F2U before consumption; not dependent on UVW prepass",
+    "src/VIMP.cs": "own prepass fills F1V/F2V before consumption",
+    "src/WIMP.cs": "own prepass fills F1W/F2W before consumption",
+    "src/ProgramDeclarations.cs": "allocations retained",
+    "src/Read_Ini_Files.cs": "allocations retained",
+    "src/SIMPLE.cs": "UVWIMPcalculate primary caller"
+  },
+  "operation_count": "Per interior column and call, final source expressions/stores fall from12*(NK-1) to6*(NK-1). Common Coriolis/buoyancy and DIM computation retained. This is not a claim of50% runtime gain.",
+  "safety": {
+    "ICUfalse": "prepass and sweeps still skipped",
+    "ICPSItrue": "same TPDX/TPDY order; F2 adds f2 exactly as before",
+    "ICPSIfalse": "same buoyancy and Coriolis order",
+    "timevarying": "all consumed entries overwritten everycall; no persistent cache",
+    "sourcearrayunused": "unconsumed entries retain oldvalues, covered with NaN/finite sentinels"
+  },
+  "component": "component_results.json",
+  "runtime_benefit": "pending parent isolated full-engine benchmarks",
+  "byte_conventions": "original BOM and line endings preserved"
+}

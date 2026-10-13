@@ -1,0 +1,64 @@
+diff --git a/src/UVWIMP.cs b/src/UVWIMP.cs
+index 6ffb8e94695c098e5fd73093d83120f0a105d4c8..2b751765339e9f60c431c6e25cde8f5302aea2ea 100644
+--- a/src/UVWIMP.cs
++++ b/src/UVWIMP.cs
+@@ -78,6 +78,8 @@ namespace GRAMM_2001
+                             float rho = RHO_L[k];
+                             float vol = VOL_L[k];
+                             float ap0 = AP0_L[k];
++                            // The solver reads F1 on odd half-cells and F2 on even half-cells.
++                            bool lowerHalf = (kn & 1) == 1;
+ 
+                             f1 = rho * (Program.FN * (V1N_LR[k] - VG_L[k]) - Program.FH * W1N_LR[k]) * 0.5F * vol;
+                             f1 += DIMU_L[kn];
+@@ -87,8 +89,14 @@ namespace GRAMM_2001
+                                 f1 += TPDX_M_L[k]; 
+                                 f2 = TPDX_L[k];
+                             }
+-                            F1U_L[kn] = (float)(ap0 * U1_L[k] + f1); // Temp array
+-                            F2U_L[kn] = (float)(ap0 * U2_L[k] + f1 + f2); // Temp array
++                            if (lowerHalf)
++                            {
++                                F1U_L[kn] = (float)(ap0 * U1_L[k] + f1); // Temp array
++                            }
++                            else
++                            {
++                                F2U_L[kn] = (float)(ap0 * U2_L[k] + f1 + f2); // Temp array
++                            }
+                         
+                             f1 = -rho * Program.FN * (U1N_LR[k] - UG_L[k]) * 0.5F * vol;
+                             f1 += DIMV_L[kn];
+@@ -98,8 +106,14 @@ namespace GRAMM_2001
+                                 f1 += TPDY_M_L[k];
+                                 f2 = TPDY_L[k];
+                             }
+-                            F1V_L[kn] = (float)(ap0 * V1_L[k] + f1); // Temp array
+-                            F2V_L[kn] = (float)(ap0 * V2_L[k] + f1 + f2); // Temp array
++                            if (lowerHalf)
++                            {
++                                F1V_L[kn] = (float)(ap0 * V1_L[k] + f1); // Temp array
++                            }
++                            else
++                            {
++                                F2V_L[kn] = (float)(ap0 * V2_L[k] + f1 + f2); // Temp array
++                            }
+                         
+                             f1 = rho * Program.FH * U1N_LR[k] * 0.5F * vol;
+                             f2 = 0;
+@@ -118,8 +132,14 @@ namespace GRAMM_2001
+                             */
+                             f1 += f2;
+                             f1 += DIMW_L[kn];
+-                            F1W_L[kn] = (float)(ap0 * W1_L[k] + f1);
+-                            F2W_L[kn] = (float)(ap0 * W2_L[k] + f1);
++                            if (lowerHalf)
++                            {
++                                F1W_L[kn] = (float)(ap0 * W1_L[k] + f1);
++                            }
++                            else
++                            {
++                                F2W_L[kn] = (float)(ap0 * W2_L[k] + f1);
++                            }
+                         }
+                     }
+                 });

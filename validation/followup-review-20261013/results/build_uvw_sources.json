@@ -1,0 +1,18 @@
+{
+  "variant": "uvw_sources",
+  "commit": "93176909c6412115de5ec9b99663981bde81df3b",
+  "exit_code": 0,
+  "command": [
+    "dotnet",
+    "build",
+    "${WORKDIR}/work/uvw_sources/src/GRAMM.csproj",
+    "-c",
+    "Release",
+    "-p:TreatWarningsAsErrors=true",
+    "-p:BaseIntermediateOutputPath=${WORKDIR}/build/uvw_sources_obj/",
+    "-o",
+    "${WORKDIR}/build/uvw_sources",
+    "--nologo"
+  ],
+  "assembly_sha256": "5e8654a9e1bc51f631cf7e237eb9746c374a2bddcb72a45498d0719f990fd951"
+}

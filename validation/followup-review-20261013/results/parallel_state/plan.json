@@ -1,0 +1,195 @@
+{
+  "job": "${WORKDIR}",
+  "config": {
+    "nx": 48,
+    "ny": 36,
+    "nz": 24,
+    "dx": 250,
+    "sc": 2,
+    "wind": 2,
+    "duration": 300,
+    "dt": 5,
+    "irad": 30,
+    "coast": true,
+    "turbulence": true
+  },
+  "threads": [
+    1,
+    4,
+    8
+  ],
+  "repeats": 3,
+  "variants": [
+    "baseline",
+    "radiation_column",
+    "combined"
+  ],
+  "serial": false,
+  "snapshot": true,
+  "binary": true,
+  "expected_runs": 27,
+  "run_order": [
+    {
+      "case": "parallel_t1_r1",
+      "threads": 1,
+      "repeat": 1,
+      "variant": "baseline"
+    },
+    {
+      "case": "parallel_t1_r1",
+      "threads": 1,
+      "repeat": 1,
+      "variant": "radiation_column"
+    },
+    {
+      "case": "parallel_t1_r1",
+      "threads": 1,
+      "repeat": 1,
+      "variant": "combined"
+    },
+    {
+      "case": "parallel_t1_r2",
+      "threads": 1,
+      "repeat": 2,
+      "variant": "radiation_column"
+    },
+    {
+      "case": "parallel_t1_r2",
+      "threads": 1,
+      "repeat": 2,
+      "variant": "combined"
+    },
+    {
+      "case": "parallel_t1_r2",
+      "threads": 1,
+      "repeat": 2,
+      "variant": "baseline"
+    },
+    {
+      "case": "parallel_t1_r3",
+      "threads": 1,
+      "repeat": 3,
+      "variant": "combined"
+    },
+    {
+      "case": "parallel_t1_r3",
+      "threads": 1,
+      "repeat": 3,
+      "variant": "baseline"
+    },
+    {
+      "case": "parallel_t1_r3",
+      "threads": 1,
+      "repeat": 3,
+      "variant": "radiation_column"
+    },
+    {
+      "case": "parallel_t4_r1",
+      "threads": 4,
+      "repeat": 1,
+      "variant": "radiation_column"
+    },
+    {
+      "case": "parallel_t4_r1",
+      "threads": 4,
+      "repeat": 1,
+      "variant": "combined"
+    },
+    {
+      "case": "parallel_t4_r1",
+      "threads": 4,
+      "repeat": 1,
+      "variant": "baseline"
+    },
+    {
+      "case": "parallel_t4_r2",
+      "threads": 4,
+      "repeat": 2,
+      "variant": "combined"
+    },
+    {
+      "case": "parallel_t4_r2",
+      "threads": 4,
+      "repeat": 2,
+      "variant": "baseline"
+    },
+    {
+      "case": "parallel_t4_r2",
+      "threads": 4,
+      "repeat": 2,
+      "variant": "radiation_column"
+    },
+    {
+      "case": "parallel_t4_r3",
+      "threads": 4,
+      "repeat": 3,
+      "variant": "baseline"
+    },
+    {
+      "case": "parallel_t4_r3",
+      "threads": 4,
+      "repeat": 3,
+      "variant": "radiation_column"
+    },
+    {
+      "case": "parallel_t4_r3",
+      "threads": 4,
+      "repeat": 3,
+      "variant": "combined"
+    },
+    {
+      "case": "parallel_t8_r1",
+      "threads": 8,
+      "repeat": 1,
+      "variant": "combined"
+    },
+    {
+      "case": "parallel_t8_r1",
+      "threads": 8,
+      "repeat": 1,
+      "variant": "baseline"
+    },
+    {
+      "case": "parallel_t8_r1",
+      "threads": 8,
+      "repeat": 1,
+      "variant": "radiation_column"
+    },
+    {
+      "case": "parallel_t8_r2",
+      "threads": 8,
+      "repeat": 2,
+      "variant": "baseline"
+    },
+    {
+      "case": "parallel_t8_r2",
+      "threads": 8,
+      "repeat": 2,
+      "variant": "radiation_column"
+    },
+    {
+      "case": "parallel_t8_r2",
+      "threads": 8,
+      "repeat": 2,
+      "variant": "combined"
+    },
+    {
+      "case": "parallel_t8_r3",
+      "threads": 8,
+      "repeat": 3,
+      "variant": "radiation_column"
+    },
+    {
+      "case": "parallel_t8_r3",
+      "threads": 8,
+      "repeat": 3,
+      "variant": "combined"
+    },
+    {
+      "case": "parallel_t8_r3",
+      "threads": 8,
+      "repeat": 3,
+      "variant": "baseline"
+    }
+  ]
+}
