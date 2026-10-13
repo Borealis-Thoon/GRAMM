@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/Borealis-Thoon/GRAMM",
+  "upstream_repository": "https://github.com/GralDispersionModel/GRAMM",
+  "baseline": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+  "candidate": "44df730514c6ea9af235a5abd0c66a03ce62dded",
+  "branch": "codex/reuse-pressure-recurrence",
+  "patch": "pressure_recurrence.patch",
+  "source_hashes": {
+    "baseline": {
+      "src/TERMIP.cs": "bd19d277cfcbe5bc33dde6621567d1c39780d94f207423d57f495e00cb0d6734",
+      "src/PRIMP.cs": "2dd582de8348cdefde08d1e3ab4c34d3346fb25a63c5f16ef6a4d6c18a460bbe",
+      "src/GRAMM.csproj": "337de162b907efd0dec9e6bc6bb3b3b8a7e854748de33d671f00bea2ea4176dc"
+    },
+    "candidate": {
+      "src/TERMIP.cs": "9ed0f5665415b94e012e18173d0308589aa1fbb7ebc7d10bad4dd1da2da30f40",
+      "src/PRIMP.cs": "d5c166826649f7819ee7d6f8351771a66b4393d7c685864427c8a7437d0247b8",
+      "src/GRAMM.csproj": "337de162b907efd0dec9e6bc6bb3b3b8a7e854748de33d671f00bea2ea4176dc"
+    }
+  },
+  "hash_convention": "UTF-8 source text; BOM removed and CRLF normalized to LF",
+  "scope": "Pressure recurrence coefficients only; no ratio cache, DT skip or source-product patch."
+}

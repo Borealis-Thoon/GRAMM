@@ -1,0 +1,359 @@
+{
+  "status": "pass",
+  "scope": "Audit-only fixed-order model execution; no performance claim",
+  "variants": [
+    "baseline",
+    "pressure_products"
+  ],
+  "cases": [
+    {
+      "case": "neutral_pressure_on",
+      "status": "pass",
+      "pressure": true,
+      "weather_count": 1,
+      "completed_calls": 13,
+      "audit_records": 14,
+      "raw_restoration_values_per_variant": 154440,
+      "float_divergence_values_compared": 249900,
+      "all_field_values_compared": 1499400,
+      "return_and_weather_rows_exact": true,
+      "full_model": {
+        "status": "pass",
+        "fields": [
+          {
+            "weather": 1,
+            "field": "U",
+            "count": 8925,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "V",
+            "count": 8925,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "W",
+            "count": 8925,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "T",
+            "count": 8925,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "QU",
+            "count": 8925,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "PN",
+            "count": 8925,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "TE",
+            "count": 8925,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "DISS",
+            "count": 8925,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "RADIATION",
+            "count": 8400,
+            "identical": true
+          }
+        ],
+        "payloads_identical": true,
+        "steps_identical": true
+      }
+    },
+    {
+      "case": "neutral_pressure_off",
+      "status": "pass",
+      "pressure": false,
+      "weather_count": 1,
+      "completed_calls": 0,
+      "audit_records": 1,
+      "raw_restoration_values_per_variant": 0,
+      "float_divergence_values_compared": 17850,
+      "all_field_values_compared": 107100,
+      "return_and_weather_rows_exact": true,
+      "full_model": {
+        "status": "pass",
+        "fields": [
+          {
+            "weather": 1,
+            "field": "U",
+            "count": 8925,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "V",
+            "count": 8925,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "W",
+            "count": 8925,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "T",
+            "count": 8925,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "QU",
+            "count": 8925,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "PN",
+            "count": 8925,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "TE",
+            "count": 8925,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "DISS",
+            "count": 8925,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "RADIATION",
+            "count": 8400,
+            "identical": true
+          }
+        ],
+        "payloads_identical": true,
+        "steps_identical": true
+      }
+    },
+    {
+      "case": "coast_custom_sequence",
+      "status": "pass",
+      "pressure": true,
+      "weather_count": 3,
+      "completed_calls": 91,
+      "audit_records": 94,
+      "raw_restoration_values_per_variant": 2282280,
+      "float_divergence_values_compared": 3257100,
+      "all_field_values_compared": 19542600,
+      "return_and_weather_rows_exact": true,
+      "full_model": {
+        "status": "pass",
+        "fields": [
+          {
+            "weather": 1,
+            "field": "U",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "V",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "W",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "T",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "QU",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "PN",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "TE",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "DISS",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 1,
+            "field": "RADIATION",
+            "count": 16500,
+            "identical": true
+          },
+          {
+            "weather": 2,
+            "field": "U",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 2,
+            "field": "V",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 2,
+            "field": "W",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 2,
+            "field": "T",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 2,
+            "field": "QU",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 2,
+            "field": "PN",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 2,
+            "field": "TE",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 2,
+            "field": "DISS",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 2,
+            "field": "RADIATION",
+            "count": 16500,
+            "identical": true
+          },
+          {
+            "weather": 3,
+            "field": "U",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 3,
+            "field": "V",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 3,
+            "field": "W",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 3,
+            "field": "T",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 3,
+            "field": "QU",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 3,
+            "field": "PN",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 3,
+            "field": "TE",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 3,
+            "field": "DISS",
+            "count": 17325,
+            "identical": true
+          },
+          {
+            "weather": 3,
+            "field": "RADIATION",
+            "count": 16500,
+            "identical": true
+          }
+        ],
+        "payloads_identical": true,
+        "steps_identical": true
+      }
+    }
+  ],
+  "model_runs": 6,
+  "completed_call_pairs": 104,
+  "audit_record_pairs": 109,
+  "raw_restoration_values_per_variant": 2436720,
+  "float_divergence_values_compared": 3524850,
+  "all_field_values_compared": 21149100,
+  "source_mutations": false,
+  "instrumentation_integrity": [
+    {
+      "variant": "baseline",
+      "source_commit": "e73b61523c8898231730a30bb0f718fdca112249",
+      "tracked_files_verified": 41,
+      "reversing_only_declared_hooks_restores_all_source": true
+    },
+    {
+      "variant": "pressure_products",
+      "source_commit": "f5fddb02f1f98212f020ad82307368222a2b6b53",
+      "tracked_files_verified": 41,
+      "reversing_only_declared_hooks_restores_all_source": true
+    }
+  ],
+  "matches_recorded_results": true
+}

@@ -1,0 +1,9 @@
+  Determining projects to restore...
+  Restored <WORK>\work\gramm_surface_radiation\src\GRAMM.csproj (in 62 ms).
+  GRAMM -> <WORK>\gramm_validation\build\surface_radiation\GRAMM.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.82

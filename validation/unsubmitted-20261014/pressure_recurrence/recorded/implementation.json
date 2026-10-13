@@ -1,0 +1,22 @@
+{
+  "baseline": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+  "head": "44df730514c6ea9af235a5abd0c66a03ce62dded",
+  "branch": "codex/reuse-pressure-recurrence",
+  "files": [
+    "src/TERMIP.cs",
+    "src/PRIMP.cs"
+  ],
+  "added_lines": 46,
+  "removed_lines": 32,
+  "added_characters_lf": 2596,
+  "removed_characters_lf": 2576,
+  "character_convention": "Changed source line contents plus one LF; diff metadata excluded.",
+  "new_grid_arrays": 0,
+  "new_parallel_phases": 0,
+  "new_cross_step_validity_state": 0,
+  "strict_build": "pass; 0 warnings and 0 errors",
+  "direct_tests": "pass; see validation.json",
+  "full_model": "Maintained separately from the direct-check bundle.",
+  "native_benefit": "Maintained separately from the direct-check bundle.",
+  "changed_characters_lf": 5172
+}

@@ -1,0 +1,74 @@
+{
+  "status": "ready_for_parent_review",
+  "files": [
+    {
+      "path": "direct_checks.py",
+      "bytes": 10737
+    },
+    {
+      "path": "pressure_products.patch",
+      "bytes": 19672
+    },
+    {
+      "path": "README.md",
+      "bytes": 2646
+    },
+    {
+      "path": "recorded/baseline_build.log",
+      "bytes": 311
+    },
+    {
+      "path": "recorded/candidate_build.log",
+      "bytes": 329
+    },
+    {
+      "path": "recorded/direct_build.log",
+      "bytes": 347
+    },
+    {
+      "path": "recorded/direct_result.json",
+      "bytes": 552
+    },
+    {
+      "path": "recorded/implementation.json",
+      "bytes": 838
+    },
+    {
+      "path": "recorded/reproduced_baseline_build.log",
+      "bytes": 285
+    },
+    {
+      "path": "recorded/reproduced_candidate_build.log",
+      "bytes": 287
+    },
+    {
+      "path": "recorded/reproduced_direct_build.log",
+      "bytes": 306
+    },
+    {
+      "path": "recorded/reproduction.json",
+      "bytes": 2427
+    },
+    {
+      "path": "recorded/source_extraction.json",
+      "bytes": 1658
+    },
+    {
+      "path": "recorded/validation.json",
+      "bytes": 1415
+    },
+    {
+      "path": "reproduce.py",
+      "bytes": 4670
+    },
+    {
+      "path": "source_lock.json",
+      "bytes": 1137
+    }
+  ],
+  "private_absolute_path_hits": [],
+  "binary_or_raw_output_files": [],
+  "prose_workflow": "humanize-kit:humanizer Embedded mode; draft audited and revised with source identifiers, figures and scope preserved.",
+  "reproduction": "recorded/reproduction.json",
+  "runtime_scope": "Source-extracted component checks and strict builds only; no performance measurement."
+}

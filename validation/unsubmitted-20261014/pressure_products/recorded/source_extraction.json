@@ -1,0 +1,45 @@
+{
+  "baseline": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+  "head": "947cb27ae810ddd9fde3ce545aa5112bd494e330",
+  "expressions": 16,
+  "fields": {
+    "SUZ_L": "float",
+    "AW_L": "double",
+    "SUXYZ_L": "float",
+    "DPXi_L": "double",
+    "DPYj_L": "double",
+    "AREAZ_L": "float",
+    "DPY_L": "double",
+    "AREAXYZ_L": "float",
+    "DPX_L": "double",
+    "AN_L": "double",
+    "AE_L": "double",
+    "AS_L": "double"
+  },
+  "sources": {
+    "base": {
+      "CALCPR.cs": "7963d6e7f0dce6865131114512886e48443ed67e0d8a34a1fe7e0df38a12106a",
+      "PRIMP.cs": "2dd582de8348cdefde08d1e3ab4c34d3346fb25a63c5f16ef6a4d6c18a460bbe"
+    },
+    "candidate": {
+      "CALCPR.cs": "98fc0e6085ad7c76913319dcde95bcb621016b28b02613d127d9b7ae6d56ab36",
+      "PRIMP.cs": "d04ddcaf991b1bbafab4a092382bdf62e670c1f4433a3bd6eb01a6738fda342d"
+    }
+  },
+  "hash_convention": "UTF-8 source text, BOM removed and universal LF line endings",
+  "harness_sha256": "0aef49b2fad5fabaefc8ee2961dae93f5befa2197da33df458da46402b269062",
+  "tests_run": true,
+  "result": {
+    "status": "pass",
+    "expressionCases": 334112,
+    "finiteCases": 285712,
+    "nonfiniteCases": 48400,
+    "expressionMismatches": 0,
+    "floatCases": 142564,
+    "floatMismatches": 0,
+    "guardCases": 6300,
+    "failures": [],
+    "coverage": "16 extracted DIM expressions; source cutoff boundary; signed zero; finite random bit patterns; NaN and infinities; positive/negative/zero face areas; pressure off; lateral/level-zero/top sentinels",
+    "scope": "Component checks only. Full CALCPR restoration and model outputs are validated separately."
+  }
+}

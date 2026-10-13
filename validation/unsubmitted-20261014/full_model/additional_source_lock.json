@@ -1,0 +1,45 @@
+{
+  "combined": {
+    "source_commit": "feadc3dd11ec81863f29d0c5060854ecf8a4efc3",
+    "parent": "gramm_surface_radiation",
+    "parent_commit": "75698818c148ef1487adaf5377c932382ccdf6fe",
+    "patch": "full_model/patches/longwave_after_surface.patch",
+    "patch_sha256": "6b1c72ddd120f5f388b64e0ef4796b74bb68df7bce140bbb0f94f9b6059eb16f",
+    "files": {
+      "src/RADIAT.cs": "663802a6632a139902911e8f4ed76c53af1a382115e787178895f308a41d053c"
+    },
+    "description": "Surface-column parallelism plus the existing longwave-emissivity reuse patch (#29)."
+  },
+  "pressure_products": {
+    "parent": "gramm_baseline",
+    "source_lock": "pressure_products/source_lock.json",
+    "patch": "pressure_products/pressure_products.patch"
+  },
+  "hash_convention": "UTF-8 source text, BOM removed and CRLF normalized to LF",
+  "pressure_recurrence": {
+    "source_commit": "44df730514c6ea9af235a5abd0c66a03ce62dded",
+    "parent": "gramm_baseline",
+    "parent_commit": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+    "patch": "full_model/patches/pressure_recurrence.patch",
+    "patch_sha256": "81e11d0bdb80e3e27dd015cce7d8252fb2bed96073a4f73438bb33a47aaa137d",
+    "files": {
+      "src/TERMIP.cs": "9ed0f5665415b94e012e18173d0308589aa1fbb7ebc7d10bad4dd1da2da30f40",
+      "src/PRIMP.cs": "d5c166826649f7819ee7d6f8351771a66b4393d7c685864427c8a7437d0247b8",
+      "src/GRAMM.csproj": "337de162b907efd0dec9e6bc6bb3b3b8a7e854748de33d671f00bea2ea4176dc"
+    },
+    "description": "Reuse double recurrence reciprocals and P coefficients in AP/AB; preserve AT and Q expressions."
+  },
+  "selected_combined": {
+    "source_commit": "9f99015a182eedc4820130dec46332f92876d05b",
+    "parent": "gramm_baseline",
+    "parent_commit": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+    "patch": "full_model/patches/selected_combined.patch",
+    "patch_sha256": "6a262d1174070b889f99f69d49abb8c2eecd008cbc94129682e010ff1abee6df",
+    "files": {
+      "src/RADIAT.cs": "663802a6632a139902911e8f4ed76c53af1a382115e787178895f308a41d053c",
+      "src/TERMIP.cs": "9ed0f5665415b94e012e18173d0308589aa1fbb7ebc7d10bad4dd1da2da30f40",
+      "src/PRIMP.cs": "d5c166826649f7819ee7d6f8351771a66b4393d7c685864427c8a7437d0247b8"
+    },
+    "description": "Surface-column parallelism, pressure recurrence reuse and longwave-emissivity reuse from #29."
+  }
+}

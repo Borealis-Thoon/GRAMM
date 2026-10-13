@@ -1,0 +1,44 @@
+{
+  "status": "component_validation_passed_full_model_pending",
+  "head": "947cb27ae810ddd9fde3ce545aa5112bd494e330",
+  "baseline": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+  "strict_builds": [
+    {
+      "name": "baseline",
+      "warnings": 0,
+      "errors": 0,
+      "log": "baseline_build.log",
+      "status": "pass"
+    },
+    {
+      "name": "candidate",
+      "warnings": 0,
+      "errors": 0,
+      "log": "candidate_build.log",
+      "status": "pass"
+    },
+    {
+      "name": "direct_harness",
+      "warnings": 0,
+      "errors": 0,
+      "log": "direct_build.log",
+      "status": "pass"
+    }
+  ],
+  "direct": {
+    "status": "pass",
+    "expressionCases": 334112,
+    "finiteCases": 285712,
+    "nonfiniteCases": 48400,
+    "expressionMismatches": 0,
+    "floatCases": 142564,
+    "floatMismatches": 0,
+    "guardCases": 6300,
+    "failures": [],
+    "coverage": "16 extracted DIM expressions; source cutoff boundary; signed zero; finite random bit patterns; NaN and infinities; positive/negative/zero face areas; pressure off; lateral/level-zero/top sentinels",
+    "scope": "Component checks only. Full CALCPR restoration and model outputs are validated separately."
+  },
+  "source_extraction": "source_extraction.json",
+  "performance_measured": false,
+  "full_model": "Full-model fidelity and execution-time results are maintained separately."
+}

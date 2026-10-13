@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/Borealis-Thoon/GRAMM",
+  "upstream_repository": "https://github.com/GralDispersionModel/GRAMM",
+  "baseline": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+  "candidate": "947cb27ae810ddd9fde3ce545aa5112bd494e330",
+  "branch": "codex/reuse-pressure-source-products",
+  "patch": "pressure_products.patch",
+  "source_hashes": {
+    "baseline": {
+      "src/CALCPR.cs": "7963d6e7f0dce6865131114512886e48443ed67e0d8a34a1fe7e0df38a12106a",
+      "src/PRIMP.cs": "2dd582de8348cdefde08d1e3ab4c34d3346fb25a63c5f16ef6a4d6c18a460bbe",
+      "src/GRAMM.csproj": "337de162b907efd0dec9e6bc6bb3b3b8a7e854748de33d671f00bea2ea4176dc"
+    },
+    "candidate": {
+      "src/CALCPR.cs": "98fc0e6085ad7c76913319dcde95bcb621016b28b02613d127d9b7ae6d56ab36",
+      "src/PRIMP.cs": "d04ddcaf991b1bbafab4a092382bdf62e670c1f4433a3bd6eb01a6738fda342d",
+      "src/GRAMM.csproj": "337de162b907efd0dec9e6bc6bb3b3b8a7e854748de33d671f00bea2ea4176dc"
+    }
+  },
+  "hash_convention": "UTF-8 source text, BOM removed and CRLF normalized to LF",
+  "scope": "Pressure-source product reuse only; two source files."
+}

@@ -1,0 +1,55 @@
+diff --git a/src/GRID.cs b/src/GRID.cs
+index cfab1d3..288d4b3 100644
+--- a/src/GRID.cs
++++ b/src/GRID.cs
+@@ -225,8 +225,6 @@ namespace GRAMM_2001
+                             Program.Z[n] = Convert.ToSingle(Is_Binary[i].Replace(".", Program.decsep));
+                         }
+ 
+-                        int ix = 0;
+-                        int iy = 1;
+                         //obtain surface heights
+                         n = 0;
+                         Is_Binary = reader.ReadLine().Split(new char[] { ' ', ',', '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+diff --git a/src/INITB.cs b/src/INITB.cs
+index 6811a09..0371b62 100644
+--- a/src/INITB.cs
++++ b/src/INITB.cs
+@@ -823,7 +823,6 @@ namespace GRAMM_2001
+                     {
+                         if (Program.FW[i][j] > 0.99)
+                         {
+-                            int k = 1;
+                             double DUMMY = 1;
+                             for (int kb = 1; kb <= Program.NZB; kb++)
+                             {
+diff --git a/src/ProgramDeclarations.cs b/src/ProgramDeclarations.cs
+index b457624..93e4da3 100644
+--- a/src/ProgramDeclarations.cs
++++ b/src/ProgramDeclarations.cs
+@@ -1142,10 +1142,6 @@ namespace GRAMM_2001
+         ///</summary>
+         public static Int32 ISTAT;
+         ///<summary>
+-        ///NON-STEADYSTATE/FORCING W. IFU-MM5 DATA YES=1 -> not yet implemented in this version
+-        ///</summary>
+-        public static Int32 MM5IFU;
+-        ///<summary>
+         ///GRAMM IN GRAMM NESTING YES=1 -> not yet implemented in this version
+         ///</summary>
+         public static Int32 NESTGRAMM;
+diff --git a/src/Program_Write.cs b/src/Program_Write.cs
+index 2746ca9..71cb25c 100644
+--- a/src/Program_Write.cs
++++ b/src/Program_Write.cs
+@@ -17,10 +17,6 @@ namespace GRAMM_2001
+ {
+     public class ProgramWriters
+     {
+-        private static int month_old = 0;
+-        private static int day_old = 0;
+-        private static int hour_old = 0;
+-        private static int minute_old = 0;
+ 
+ 
+         /// <summary>

@@ -1,0 +1,430 @@
+{
+  "candidate": "surface_radiation",
+  "aggregation": "Median of matched per-repetition lifetime reductions",
+  "included_cases": 7,
+  "included_pairs": 45,
+  "all_supplied_measured_conditions_shown": true,
+  "source_files": [
+    {
+      "file": "native_records.json",
+      "sha256": "abc32d8374ba464da0504b151c94d32d300dd06d0fa24e1ebed917084f189166"
+    }
+  ],
+  "conditions": [
+    {
+      "case": "medium_neutral_4",
+      "condition": "48 \u00d7 36 \u00d7 24 \u00b7 250 m \u00b7 worker setting 4",
+      "pairs": [
+        {
+          "source_case": "medium_neutral_4",
+          "rep": 1,
+          "baseline_seconds": 3.9772029,
+          "candidate_seconds": 3.8066535,
+          "saved_percent": 4.288174485641657
+        },
+        {
+          "source_case": "medium_neutral_4",
+          "rep": 2,
+          "baseline_seconds": 3.8998392,
+          "candidate_seconds": 3.7300981,
+          "saved_percent": 4.352515354992072
+        },
+        {
+          "source_case": "medium_neutral_4",
+          "rep": 3,
+          "baseline_seconds": 3.7703071,
+          "candidate_seconds": 3.7236007,
+          "saved_percent": 1.2387956408113319
+        },
+        {
+          "source_case": "medium_neutral_4",
+          "rep": 4,
+          "baseline_seconds": 4.01602,
+          "candidate_seconds": 3.7924222,
+          "saved_percent": 5.567646575465269
+        },
+        {
+          "source_case": "medium_neutral_4",
+          "rep": 5,
+          "baseline_seconds": 4.0074044,
+          "candidate_seconds": 3.9398142,
+          "saved_percent": 1.6866328738871623
+        },
+        {
+          "source_case": "confirmation_neutral_4",
+          "rep": 1,
+          "baseline_seconds": 4.3475325,
+          "candidate_seconds": 4.297824,
+          "saved_percent": 1.1433727062419774
+        },
+        {
+          "source_case": "confirmation_neutral_4",
+          "rep": 2,
+          "baseline_seconds": 4.3316909,
+          "candidate_seconds": 4.151127,
+          "saved_percent": 4.168439165407673
+        },
+        {
+          "source_case": "confirmation_neutral_4",
+          "rep": 3,
+          "baseline_seconds": 4.2709196,
+          "candidate_seconds": 4.0720283,
+          "saved_percent": 4.656872960099733
+        },
+        {
+          "source_case": "confirmation_neutral_4",
+          "rep": 4,
+          "baseline_seconds": 4.2639501,
+          "candidate_seconds": 4.0794323,
+          "saved_percent": 4.327391167171494
+        },
+        {
+          "source_case": "confirmation_neutral_4",
+          "rep": 5,
+          "baseline_seconds": 4.2766271,
+          "candidate_seconds": 4.0338349,
+          "saved_percent": 5.677188923018335
+        }
+      ],
+      "source_cases": {
+        "medium_neutral_4": 5,
+        "confirmation_neutral_4": 5
+      },
+      "label": "Medium neutral",
+      "median_saved_percent": 4.307782826406576,
+      "faster_pairs": 10,
+      "pair_count": 10,
+      "secondary": false
+    },
+    {
+      "case": "stable_coast_8",
+      "condition": "64 \u00d7 48 \u00d7 24 \u00b7 500 m \u00b7 worker setting 8",
+      "pairs": [
+        {
+          "source_case": "stable_coast_8",
+          "rep": 1,
+          "baseline_seconds": 7.0136038,
+          "candidate_seconds": 6.8500872,
+          "saved_percent": 2.3314205458825654
+        },
+        {
+          "source_case": "stable_coast_8",
+          "rep": 2,
+          "baseline_seconds": 6.6987117,
+          "candidate_seconds": 6.2169019,
+          "saved_percent": 7.192574058680564
+        },
+        {
+          "source_case": "stable_coast_8",
+          "rep": 3,
+          "baseline_seconds": 6.5232043,
+          "candidate_seconds": 6.6037628,
+          "saved_percent": -1.2349528896404551
+        },
+        {
+          "source_case": "stable_coast_8",
+          "rep": 4,
+          "baseline_seconds": 7.2459204,
+          "candidate_seconds": 6.7816572,
+          "saved_percent": 6.407235718460286
+        },
+        {
+          "source_case": "stable_coast_8",
+          "rep": 5,
+          "baseline_seconds": 7.339871,
+          "candidate_seconds": 6.6462862,
+          "saved_percent": 9.449550271387604
+        },
+        {
+          "source_case": "confirmation_stable_8",
+          "rep": 1,
+          "baseline_seconds": 6.3422084,
+          "candidate_seconds": 6.4754717,
+          "saved_percent": -2.101212883512316
+        },
+        {
+          "source_case": "confirmation_stable_8",
+          "rep": 2,
+          "baseline_seconds": 6.522895,
+          "candidate_seconds": 6.5861703,
+          "saved_percent": -0.970049341588358
+        },
+        {
+          "source_case": "confirmation_stable_8",
+          "rep": 3,
+          "baseline_seconds": 6.1255525,
+          "candidate_seconds": 6.0469225,
+          "saved_percent": 1.2836393125354884
+        },
+        {
+          "source_case": "confirmation_stable_8",
+          "rep": 4,
+          "baseline_seconds": 6.2385891,
+          "candidate_seconds": 6.1019808,
+          "saved_percent": 2.1897306876646305
+        },
+        {
+          "source_case": "confirmation_stable_8",
+          "rep": 5,
+          "baseline_seconds": 6.2990383,
+          "candidate_seconds": 6.2047264,
+          "saved_percent": 1.4972428410222576
+        }
+      ],
+      "source_cases": {
+        "stable_coast_8": 5,
+        "confirmation_stable_8": 5
+      },
+      "label": "Stable coastal",
+      "median_saved_percent": 1.843486764343444,
+      "faster_pairs": 7,
+      "pair_count": 10,
+      "secondary": false
+    },
+    {
+      "case": "frequent_radiation_4",
+      "condition": "24 \u00d7 20 \u00d7 16 \u00b7 100 m \u00b7 worker setting 4",
+      "pairs": [
+        {
+          "source_case": "frequent_radiation_4",
+          "rep": 1,
+          "baseline_seconds": 1.0747137,
+          "candidate_seconds": 1.1037817,
+          "saved_percent": -2.7047203362160634
+        },
+        {
+          "source_case": "frequent_radiation_4",
+          "rep": 2,
+          "baseline_seconds": 1.0929125,
+          "candidate_seconds": 1.0819967,
+          "saved_percent": 0.998780780712091
+        },
+        {
+          "source_case": "frequent_radiation_4",
+          "rep": 3,
+          "baseline_seconds": 1.1055587,
+          "candidate_seconds": 1.0313429,
+          "saved_percent": 6.712967841508546
+        },
+        {
+          "source_case": "frequent_radiation_4",
+          "rep": 4,
+          "baseline_seconds": 1.0635252,
+          "candidate_seconds": 1.0287515,
+          "saved_percent": 3.2696639440231325
+        },
+        {
+          "source_case": "frequent_radiation_4",
+          "rep": 5,
+          "baseline_seconds": 1.049354,
+          "candidate_seconds": 1.0087878,
+          "saved_percent": 3.8658260224862153
+        }
+      ],
+      "source_cases": {
+        "frequent_radiation_4": 5
+      },
+      "label": "Frequent radiation updates",
+      "median_saved_percent": 3.2696639440231325,
+      "faster_pairs": 4,
+      "pair_count": 5,
+      "secondary": false
+    },
+    {
+      "case": "radiation_medium_4",
+      "condition": "48 \u00d7 36 \u00d7 24 \u00b7 250 m \u00b7 worker setting 4",
+      "pairs": [
+        {
+          "source_case": "radiation_medium_4",
+          "rep": 1,
+          "baseline_seconds": 5.8593912,
+          "candidate_seconds": 4.9600217,
+          "saved_percent": 15.349197029206714
+        },
+        {
+          "source_case": "radiation_medium_4",
+          "rep": 2,
+          "baseline_seconds": 5.8582585,
+          "candidate_seconds": 4.9799519,
+          "saved_percent": 14.992622807614246
+        },
+        {
+          "source_case": "radiation_medium_4",
+          "rep": 3,
+          "baseline_seconds": 5.7832086,
+          "candidate_seconds": 4.9730904,
+          "saved_percent": 14.008109615828136
+        },
+        {
+          "source_case": "radiation_medium_4",
+          "rep": 4,
+          "baseline_seconds": 5.8081571,
+          "candidate_seconds": 4.9531444,
+          "saved_percent": 14.720894860092535
+        },
+        {
+          "source_case": "radiation_medium_4",
+          "rep": 5,
+          "baseline_seconds": 5.8027047,
+          "candidate_seconds": 5.1082093,
+          "saved_percent": 11.968477389518018
+        }
+      ],
+      "source_cases": {
+        "radiation_medium_4": 5
+      },
+      "label": "Medium grid, frequent radiation",
+      "median_saved_percent": 14.720894860092535,
+      "faster_pairs": 5,
+      "pair_count": 5,
+      "secondary": false
+    },
+    {
+      "case": "small_neutral_1",
+      "condition": "24 \u00d7 20 \u00d7 16 \u00b7 100 m \u00b7 worker setting 1",
+      "pairs": [
+        {
+          "source_case": "small_neutral_1",
+          "rep": 1,
+          "baseline_seconds": 1.4210129,
+          "candidate_seconds": 1.4318094,
+          "saved_percent": -0.7597749464484014
+        },
+        {
+          "source_case": "small_neutral_1",
+          "rep": 2,
+          "baseline_seconds": 1.4273013,
+          "candidate_seconds": 1.4112132,
+          "saved_percent": 1.1271691548238736
+        },
+        {
+          "source_case": "small_neutral_1",
+          "rep": 3,
+          "baseline_seconds": 1.4045049,
+          "candidate_seconds": 1.4054967,
+          "saved_percent": -0.07061563117366035
+        },
+        {
+          "source_case": "small_neutral_1",
+          "rep": 4,
+          "baseline_seconds": 1.4550148,
+          "candidate_seconds": 1.4378415,
+          "saved_percent": 1.180283527012925
+        },
+        {
+          "source_case": "small_neutral_1",
+          "rep": 5,
+          "baseline_seconds": 1.5151114,
+          "candidate_seconds": 1.4268526,
+          "saved_percent": 5.825235028922638
+        }
+      ],
+      "source_cases": {
+        "small_neutral_1": 5
+      },
+      "label": "Small neutral",
+      "median_saved_percent": 1.1271691548238736,
+      "faster_pairs": 3,
+      "pair_count": 5,
+      "secondary": true
+    },
+    {
+      "case": "convective_tke_4",
+      "condition": "48 \u00d7 36 \u00d7 24 \u00b7 250 m \u00b7 worker setting 4",
+      "pairs": [
+        {
+          "source_case": "convective_tke_4",
+          "rep": 1,
+          "baseline_seconds": 6.1380416,
+          "candidate_seconds": 6.3541735,
+          "saved_percent": -3.5211866273438046
+        },
+        {
+          "source_case": "convective_tke_4",
+          "rep": 2,
+          "baseline_seconds": 6.0824649,
+          "candidate_seconds": 6.0603101,
+          "saved_percent": 0.3642404907260547
+        },
+        {
+          "source_case": "convective_tke_4",
+          "rep": 3,
+          "baseline_seconds": 6.0768004,
+          "candidate_seconds": 6.0702825,
+          "saved_percent": 0.10725874754746793
+        },
+        {
+          "source_case": "convective_tke_4",
+          "rep": 4,
+          "baseline_seconds": 5.9743071,
+          "candidate_seconds": 5.9981175,
+          "saved_percent": -0.398546636479406
+        },
+        {
+          "source_case": "convective_tke_4",
+          "rep": 5,
+          "baseline_seconds": 6.7994278,
+          "candidate_seconds": 6.5507451,
+          "saved_percent": 3.657406289393937
+        }
+      ],
+      "source_cases": {
+        "convective_tke_4": 5
+      },
+      "label": "Convective, TKE enabled",
+      "median_saved_percent": 0.10725874754746793,
+      "faster_pairs": 3,
+      "pair_count": 5,
+      "secondary": true
+    },
+    {
+      "case": "large_neutral_14",
+      "condition": "96 \u00d7 64 \u00d7 28 \u00b7 500 m \u00b7 worker setting 14",
+      "pairs": [
+        {
+          "source_case": "large_neutral_14",
+          "rep": 1,
+          "baseline_seconds": 12.6580763,
+          "candidate_seconds": 13.1154271,
+          "saved_percent": -3.613114577291657
+        },
+        {
+          "source_case": "large_neutral_14",
+          "rep": 2,
+          "baseline_seconds": 12.7385489,
+          "candidate_seconds": 13.2641939,
+          "saved_percent": -4.126411918079624
+        },
+        {
+          "source_case": "large_neutral_14",
+          "rep": 3,
+          "baseline_seconds": 13.1740259,
+          "candidate_seconds": 13.2077654,
+          "saved_percent": -0.25610622186494536
+        },
+        {
+          "source_case": "large_neutral_14",
+          "rep": 4,
+          "baseline_seconds": 13.1924984,
+          "candidate_seconds": 13.0580948,
+          "saved_percent": 1.0187880712572277
+        },
+        {
+          "source_case": "large_neutral_14",
+          "rep": 5,
+          "baseline_seconds": 13.2896698,
+          "candidate_seconds": 12.4989145,
+          "saved_percent": 5.950150093270193
+        }
+      ],
+      "source_cases": {
+        "large_neutral_14": 5
+      },
+      "label": "Large neutral",
+      "median_saved_percent": -0.25610622186494536,
+      "faster_pairs": 2,
+      "pair_count": 5,
+      "secondary": true
+    }
+  ]
+}

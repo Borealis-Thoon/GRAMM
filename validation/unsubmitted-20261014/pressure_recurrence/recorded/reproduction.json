@@ -1,0 +1,103 @@
+{
+  "status": "pass",
+  "baseline": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+  "candidate": "44df730514c6ea9af235a5abd0c66a03ce62dded",
+  "source_hashes_checked": [
+    {
+      "variant": "baseline",
+      "file": "src/TERMIP.cs",
+      "sha256": "bd19d277cfcbe5bc33dde6621567d1c39780d94f207423d57f495e00cb0d6734"
+    },
+    {
+      "variant": "baseline",
+      "file": "src/PRIMP.cs",
+      "sha256": "2dd582de8348cdefde08d1e3ab4c34d3346fb25a63c5f16ef6a4d6c18a460bbe"
+    },
+    {
+      "variant": "baseline",
+      "file": "src/GRAMM.csproj",
+      "sha256": "337de162b907efd0dec9e6bc6bb3b3b8a7e854748de33d671f00bea2ea4176dc"
+    },
+    {
+      "variant": "candidate",
+      "file": "src/TERMIP.cs",
+      "sha256": "9ed0f5665415b94e012e18173d0308589aa1fbb7ebc7d10bad4dd1da2da30f40"
+    },
+    {
+      "variant": "candidate",
+      "file": "src/PRIMP.cs",
+      "sha256": "d5c166826649f7819ee7d6f8351771a66b4393d7c685864427c8a7437d0247b8"
+    },
+    {
+      "variant": "candidate",
+      "file": "src/GRAMM.csproj",
+      "sha256": "337de162b907efd0dec9e6bc6bb3b3b8a7e854748de33d671f00bea2ea4176dc"
+    }
+  ],
+  "engine_builds": [
+    {
+      "variant": "baseline",
+      "status": "pass",
+      "warnings_as_errors": true,
+      "log": "logs/baseline_build.log"
+    },
+    {
+      "variant": "candidate",
+      "status": "pass",
+      "warnings_as_errors": true,
+      "log": "logs/candidate_build.log"
+    }
+  ],
+  "direct_harness_build": "pass; warnings treated as errors",
+  "generated_harness_matches_recorded": true,
+  "direct_result_matches_recorded": true,
+  "direct_result": {
+    "status": "pass",
+    "recurrenceCases": 73728,
+    "comparisons": 3207168,
+    "finiteComparisons": 1860608,
+    "nonfiniteComparisons": 1346560,
+    "mismatches": 0,
+    "boundaryCases": 18432,
+    "pressureOffCases": 4608,
+    "baselinePressureLambdas": 8,
+    "baselineInitLocals": true,
+    "lambdaBodies": [
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__0",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__1",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__2",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__3",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__4",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__5",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__6",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__7",
+        "initLocals": true
+      }
+    ],
+    "failures": [],
+    "scope": "16 source-extracted recurrence blocks, actual guarded TERMIP transform, P/Q bits, pressure-off arrays, AT preservation and top coefficient boundaries; compiled baseline locals and stackalloc +0 top checks"
+  },
+  "performance_measured": false
+}

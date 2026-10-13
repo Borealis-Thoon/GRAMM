@@ -1,0 +1,253 @@
+diff --git a/src/PRIMP.cs b/src/PRIMP.cs
+index 0456666..b6b4ffa 100644
+--- a/src/PRIMP.cs
++++ b/src/PRIMP.cs
+@@ -29,6 +29,7 @@ namespace GRAMM_2001
+         [MethodImpl(MethodImplOptions.AggressiveOptimization)]
+         public static int Primp_calculate(int NI, int NJ, int NK)
+         {
++            // TERMIP stores recurrence reciprocals in AP and P coefficients in AB.
+             // define the prsssure solver iteration number
+             int iteration = 0;
+             
+@@ -174,8 +175,8 @@ namespace GRAMM_2001
+                                             AS_L[kn] * DPY_L[k];
+ 
+                                         //Recurrence formula
+-                                        TERMP = 1 / (AP_L[kn] - AT_L[kn] * PIM[kn + 1]);
+-                                        PIM[kn] = AB_L[kn] * TERMP;
++                                        TERMP = AP_L[kn];
++                                        PIM[kn] = AB_L[kn];
+                                         QIM[kn] = (DIM + AT_L[kn] * QIM[kn + 1]) * TERMP;
+                                         m--;
+                                     }
+@@ -189,8 +190,8 @@ namespace GRAMM_2001
+                                                 AN_L[kn] * DPYj_L[k];
+ 
+                                             //Recurrence formula
+-                                            TERMP = 1 / (AP_L[kn] - AT_L[kn] * PIM[kn + 1]);
+-                                            PIM[kn] = AB_L[kn] * TERMP;
++                                            TERMP = AP_L[kn];
++                                            PIM[kn] = AB_L[kn];
+                                             QIM[kn] = (DIM + AT_L[kn] * QIM[kn + 1]) * TERMP;
+                                         }
+ 
+@@ -401,8 +402,8 @@ namespace GRAMM_2001
+                                             AN_L[kn] * DPYj_L[k - 1] - AW_L[kn] * DPX_L[k] -
+                                             AS_L[kn] * DPY_L[k];
+                                         //Recurrence formula
+-                                        TERMP = 1 / (AP_L[kn] - AT_L[kn] * PIM[kn + 1]);
+-                                        PIM[kn] = AB_L[kn] * TERMP;
++                                        TERMP = AP_L[kn];
++                                        PIM[kn] = AB_L[kn];
+                                         QIM[kn] = (DIM + AT_L[kn] * QIM[kn + 1]) * TERMP;
+                                         m--;
+                                     }
+@@ -416,8 +417,8 @@ namespace GRAMM_2001
+                                                 AN_L[kn] * DPYj_L[k];
+ 
+                                             //Recurrence formula
+-                                            TERMP = 1 / (AP_L[kn] - AT_L[kn] * PIM[kn + 1]);
+-                                            PIM[kn] = AB_L[kn] * TERMP;
++                                            TERMP = AP_L[kn];
++                                            PIM[kn] = AB_L[kn];
+                                             QIM[kn] = (DIM + AT_L[kn] * QIM[kn + 1]) * TERMP;
+                                         }
+                                         m = 2;
+@@ -617,8 +618,8 @@ namespace GRAMM_2001
+                                             AS_L[kn] * DPY_L[k];
+ 
+                                         //Recurrence formula
+-                                        TERMP = 1 / (AP_L[kn] - AT_L[kn] * PIM[kn + 1]);
+-                                        PIM[kn] = AB_L[kn] * TERMP;
++                                        TERMP = AP_L[kn];
++                                        PIM[kn] = AB_L[kn];
+                                         QIM[kn] = (DIM + AT_L[kn] * QIM[kn + 1]) * TERMP;
+                                         m--;
+                                     }
+@@ -631,8 +632,8 @@ namespace GRAMM_2001
+                                                 AS_L[kn] * DPY_L[k] + AE_L[kn] * DPXi_L[k] +
+                                                 AN_L[kn] * DPYj_L[k];
+                                             //Recurrence formula
+-                                            TERMP = 1 / (AP_L[kn] - AT_L[kn] * PIM[kn + 1]);
+-                                            PIM[kn] = AB_L[kn] * TERMP;
++                                            TERMP = AP_L[kn];
++                                            PIM[kn] = AB_L[kn];
+                                             QIM[kn] = (DIM + AT_L[kn] * QIM[kn + 1]) * TERMP;
+                                         }
+                                         m = 2;
+@@ -828,8 +829,8 @@ namespace GRAMM_2001
+                                             AS_L[kn] * DPY_L[k];
+ 
+                                         //Recurrence formula
+-                                        TERMP = 1 / (AP_L[kn] - AT_L[kn] * PIM[kn + 1]);
+-                                        PIM[kn] = AB_L[kn] * TERMP;
++                                        TERMP = AP_L[kn];
++                                        PIM[kn] = AB_L[kn];
+                                         QIM[kn] = (DIM + AT_L[kn] * QIM[kn + 1]) * TERMP;
+                                         m--;
+                                     }
+@@ -843,8 +844,8 @@ namespace GRAMM_2001
+                                                 AN_L[kn] * DPYj_L[k];
+ 
+                                             //Recurrence formula
+-                                            TERMP = 1 / (AP_L[kn] - AT_L[kn] * PIM[kn + 1]);
+-                                            PIM[kn] = AB_L[kn] * TERMP;
++                                            TERMP = AP_L[kn];
++                                            PIM[kn] = AB_L[kn];
+                                             QIM[kn] = (DIM + AT_L[kn] * QIM[kn + 1]) * TERMP;
+                                         }
+                                         m = 2;
+@@ -1048,8 +1049,8 @@ namespace GRAMM_2001
+                                             AS_L[kn] * DPY_L[k];
+ 
+                                         //Recurrence formula
+-                                        TERMP = 1 / (AP_L[kn] - AT_L[kn] * PIM[kn + 1]);
+-                                        PIM[kn] = AB_L[kn] * TERMP;
++                                        TERMP = AP_L[kn];
++                                        PIM[kn] = AB_L[kn];
+                                         QIM[kn] = (DIM + AT_L[kn] * QIM[kn + 1]) * TERMP;
+                                         m--;
+                                     }
+@@ -1063,8 +1064,8 @@ namespace GRAMM_2001
+                                                 AN_L[kn] * DPYj_L[k];
+ 
+                                             //Recurrence formula
+-                                            TERMP = 1 / (AP_L[kn] - AT_L[kn] * PIM[kn + 1]);
+-                                            PIM[kn] = AB_L[kn] * TERMP;
++                                            TERMP = AP_L[kn];
++                                            PIM[kn] = AB_L[kn];
+                                             QIM[kn] = (DIM + AT_L[kn] * QIM[kn + 1]) * TERMP;
+                                         }
+                                         m = 2;
+@@ -1270,8 +1271,8 @@ namespace GRAMM_2001
+                                             AN_L[kn] * DPYj_L[k - 1] - AW_L[kn] * DPX_L[k] -
+                                             AS_L[kn] * DPY_L[k];
+                                         //Recurrence formula
+-                                        TERMP = 1 / (AP_L[kn] - AT_L[kn] * PIM[kn + 1]);
+-                                        PIM[kn] = AB_L[kn] * TERMP;
++                                        TERMP = AP_L[kn];
++                                        PIM[kn] = AB_L[kn];
+                                         QIM[kn] = (DIM + AT_L[kn] * QIM[kn + 1]) * TERMP;
+                                         m--;
+                                     }
+@@ -1285,8 +1286,8 @@ namespace GRAMM_2001
+                                                 AN_L[kn] * DPYj_L[k];
+ 
+                                             //Recurrence formula
+-                                            TERMP = 1 / (AP_L[kn] - AT_L[kn] * PIM[kn + 1]);
+-                                            PIM[kn] = AB_L[kn] * TERMP;
++                                            TERMP = AP_L[kn];
++                                            PIM[kn] = AB_L[kn];
+                                             QIM[kn] = (DIM + AT_L[kn] * QIM[kn + 1]) * TERMP;
+                                         }
+                                         m = 2;
+@@ -1482,8 +1483,8 @@ namespace GRAMM_2001
+                                             AN_L[kn] * DPYj_L[k - 1] - AW_L[kn] * DPX_L[k] -
+                                             AS_L[kn] * DPY_L[k];
+                                         //Recurrence formula
+-                                        TERMP = 1 / (AP_L[kn] - AT_L[kn] * PIM[kn + 1]);
+-                                        PIM[kn] = AB_L[kn] * TERMP;
++                                        TERMP = AP_L[kn];
++                                        PIM[kn] = AB_L[kn];
+                                         QIM[kn] = (DIM + AT_L[kn] * QIM[kn + 1]) * TERMP;
+                                         m--;
+                                     }
+@@ -1496,8 +1497,8 @@ namespace GRAMM_2001
+                                                 AS_L[kn] * DPY_L[k] + AE_L[kn] * DPXi_L[k] +
+                                                 AN_L[kn] * DPYj_L[k];
+                                             //Recurrence formula
+-                                            TERMP = 1 / (AP_L[kn] - AT_L[kn] * PIM[kn + 1]);
+-                                            PIM[kn] = AB_L[kn] * TERMP;
++                                            TERMP = AP_L[kn];
++                                            PIM[kn] = AB_L[kn];
+                                             QIM[kn] = (DIM + AT_L[kn] * QIM[kn + 1]) * TERMP;
+                                         }
+                                         m = 2;
+@@ -1693,8 +1694,8 @@ namespace GRAMM_2001
+                                             AS_L[kn] * DPY_L[k];
+ 
+                                         //Recurrence formula
+-                                        TERMP = 1 / (AP_L[kn] - AT_L[kn] * PIM[kn + 1]);
+-                                        PIM[kn] = AB_L[kn] * TERMP;
++                                        TERMP = AP_L[kn];
++                                        PIM[kn] = AB_L[kn];
+                                         QIM[kn] = (DIM + AT_L[kn] * QIM[kn + 1]) * TERMP;
+                                         m--;
+                                     }
+@@ -1708,8 +1709,8 @@ namespace GRAMM_2001
+                                                 AN_L[kn] * DPYj_L[k];
+ 
+                                             //Recurrence formula
+-                                            TERMP = 1 / (AP_L[kn] - AT_L[kn] * PIM[kn + 1]);
+-                                            PIM[kn] = AB_L[kn] * TERMP;
++                                            TERMP = AP_L[kn];
++                                            PIM[kn] = AB_L[kn];
+                                             QIM[kn] = (DIM + AT_L[kn] * QIM[kn + 1]) * TERMP;
+                                         }
+                                         m = 2;
+diff --git a/src/RADIAT.cs b/src/RADIAT.cs
+index fa56ef3..81f8022 100644
+--- a/src/RADIAT.cs
++++ b/src/RADIAT.cs
+@@ -553,27 +553,32 @@ namespace GRAMM_2001
+             //terrestrial downward longwave radiation
+             Cl_LStrich();
+ 
+-            //Epsilon Above
++            //Epsilon Above: the reference atmospheric profile is shared by all columns.
+             for (int k = 2; k <= NK; k++)
+             {
++                double epsAp = 0, epsAm = 0, eab = 0, tab = 0;
++                Cl_EpsA(1, 1, k, ref epsAp, ref epsAm, ref eab, ref tab);
+                 for (int i = 1; i <= NI; i++)
+                 {
+                     for (int j = 1; j <= NJ; j++)
+                     {
+-                        Cl_EpsA(i, j, k, ref EpsAp[i][j][k], ref EpsAm[i][j][k], ref Eab[i][j][k], ref Tab[i][j][k]);
++                        EpsAp[i][j][k] = epsAp;
++                        EpsAm[i][j][k] = epsAm;
++                        Eab[i][j][k] = eab;
++                        Tab[i][j][k] = tab;
+                     }
+                 }
+             }
+ 
+             //Terrestrial radiation
+-            for (int i = 1; i <= NI; i++)
++            Parallel.For(1, NI + 1, Program.pOptions, i =>
+             {
+                 for (int j = 1; j <= NJ; j++)
+                 {
+                     Cl_RterrG(i, j);
+                     Cl_dTdtterr(i, j);
+                 }
+-            }
++            });
+ 
+             //border values          
+             for (int k = 1; k <= NK; k++)
+diff --git a/src/TERMIP.cs b/src/TERMIP.cs
+index 7f43c1d..8879882 100644
+--- a/src/TERMIP.cs
++++ b/src/TERMIP.cs
+@@ -125,6 +125,19 @@ namespace GRAMM_2001
+                             AN_L[kn] = Program.AREAYImm[i][j + 1][k] * AREASUMY_LL * RHO_AIM;
+                         }
+                     }
++
++                    if (Program.ICPN)
++                    {
++                        // Reuse AP and AB for the pressure recurrence in all eight sweeps.
++                        double pNext = 0;
++                        for (int kn = 2 * (NK - 1); kn >= 1; --kn)
++                        {
++                            double termp = 1 / (AP_L[kn] - AT_L[kn] * pNext);
++                            pNext = AB_L[kn] * termp;
++                            AP_L[kn] = termp;
++                            AB_L[kn] = pNext;
++                        }
++                    }
+                 }
+             });
+         }

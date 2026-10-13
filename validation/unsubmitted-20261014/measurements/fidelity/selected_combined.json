@@ -1,0 +1,1718 @@
+{
+  "status": "pass",
+  "cases_path": "<workspace>\\gramm_validation\\qa\\selected_combined_cases.json",
+  "case_prefix": "fidelity_",
+  "variants": [
+    "baseline",
+    "selected_combined"
+  ],
+  "case_count": 3,
+  "expected_runs": 6,
+  "run_count": 6,
+  "expected_weather_runs": 10,
+  "weather_runs": 10,
+  "passed_runs": 6,
+  "field_values_checked": 1249800,
+  "expected_comparison_count": 3,
+  "comparison_count": 3,
+  "expected_full_precision_field_pairs": 45,
+  "full_precision_field_pairs": 45,
+  "errors": [],
+  "runs": {
+    "small_neutral_1/baseline": {
+      "status": "pass",
+      "situations": 1,
+      "field_values": 79800,
+      "integration": [
+        {
+          "weather": 1,
+          "itime": 148,
+          "dt": 5.0,
+          "realtime": 603.5,
+          "tlimit": 600.0,
+          "elapsed_seconds": 0.9747196
+        }
+      ],
+      "snapshots": {
+        "1": {
+          "U": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 4.622119595936627,
+            "sha256": "08183f6218f7e77d1465645406faa1ad4ff7e36fbd0bbb939c4f7ae6b26b0971"
+          },
+          "V": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": -0.021160040448148305,
+            "max": 0.1252458577304653,
+            "sha256": "8b235c2a05e3536324e35aeedb989fd9bb414044b77e994a69c5692cdffc23f7"
+          },
+          "W": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": -0.05554754990836694,
+            "max": 0.023688666861258867,
+            "sha256": "8750f32ff8908226072de2111ac73a60ed06b16a000549310a69d3b5033f9163"
+          },
+          "T": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 9.595881763696696,
+            "sha256": "41c253bc2473499be59fb0d2f9952ba50043c405ddfc7fd3a3ee6f51768ebe31"
+          },
+          "QU": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 3.733260508021119,
+            "sha256": "44aa0b6f6c102d59bbc24d183db91f82ea6ab51fb529f204909100353707befb"
+          },
+          "PN": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 0,
+            "sha256": "b5601f066729f74877631e6a1dec7dc8e61f2abd4d681f5d6dea4c0793057473"
+          },
+          "TE": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 0.01,
+            "sha256": "d55390897eb986c262086af38114186426791c72d40f668fca2105fb29592cd1"
+          },
+          "DISS": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 9.999999747378752e-05,
+            "sha256": "d0a8aa56b85f4ebe3c8b525c6d71fdeb96995ef21dfc9362afe0ea6e97723320"
+          },
+          "RADIATION": {
+            "count": 8400,
+            "finite_count": 8400,
+            "finite": true,
+            "min": -1.1205536912597496,
+            "max": 1.7799846919809643,
+            "sha256": "4c05e6c8013776d0f312898ebdb86bc7ad413d6d1a2bff7db3cc5a67a73b0916"
+          }
+        }
+      },
+      "payloads": {
+        "00001.wnd": {
+          "sha256": "9ad3f970e88e8911ad2775f87a7983002ab4c2cefa538ed7a0c43fce22f1eb9f",
+          "bytes": 46100,
+          "values": 23040,
+          "min": -6,
+          "max": 462
+        },
+        "00001.scl/00001.obl": {
+          "sha256": "68507354f1e0cb25cfcb39dbc19a689a5cf8d7f752ec504e8ff0480b2a7aa8f0",
+          "bytes": 980,
+          "values": 480,
+          "min": -486,
+          "max": 100
+        },
+        "00001.scl/00001.scl": {
+          "sha256": "ad8ee231f0a7032e1f0710bcd3542ac7fae377c02b206add7dcc475d39dfbd01",
+          "bytes": 980,
+          "values": 480,
+          "min": 4,
+          "max": 4
+        },
+        "00001.scl/00001.ust": {
+          "sha256": "36247794ccfa660ad67d46037e9eeb6184191ee3c21a1917900447102f31b82a",
+          "bytes": 980,
+          "values": 480,
+          "min": 150,
+          "max": 156
+        },
+        "00001_steady_state.txt": {
+          "sha256": "a56eaae49e3f2ae8203f3f904a6af9e6b5a945e9b31d51c6ac11c69c8887220d",
+          "bytes": 1113
+        }
+      },
+      "solar_timestamps": [
+        "7.3 - 11:00",
+        "7.3 - 11:00",
+        "7.3 - 11:00",
+        "7.3 - 11:02",
+        "7.3 - 11:05",
+        "7.3 - 11:07"
+      ],
+      "dynamic_1800_boundary": false,
+      "turbulence_equations_enabled": false
+    },
+    "small_neutral_1/selected_combined": {
+      "status": "pass",
+      "situations": 1,
+      "field_values": 79800,
+      "integration": [
+        {
+          "weather": 1,
+          "itime": 148,
+          "dt": 5.0,
+          "realtime": 603.5,
+          "tlimit": 600.0,
+          "elapsed_seconds": 1.0219176
+        }
+      ],
+      "snapshots": {
+        "1": {
+          "U": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 4.622119595936627,
+            "sha256": "08183f6218f7e77d1465645406faa1ad4ff7e36fbd0bbb939c4f7ae6b26b0971"
+          },
+          "V": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": -0.021160040448148305,
+            "max": 0.1252458577304653,
+            "sha256": "8b235c2a05e3536324e35aeedb989fd9bb414044b77e994a69c5692cdffc23f7"
+          },
+          "W": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": -0.05554754990836694,
+            "max": 0.023688666861258867,
+            "sha256": "8750f32ff8908226072de2111ac73a60ed06b16a000549310a69d3b5033f9163"
+          },
+          "T": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 9.595881763696696,
+            "sha256": "41c253bc2473499be59fb0d2f9952ba50043c405ddfc7fd3a3ee6f51768ebe31"
+          },
+          "QU": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 3.733260508021119,
+            "sha256": "44aa0b6f6c102d59bbc24d183db91f82ea6ab51fb529f204909100353707befb"
+          },
+          "PN": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 0,
+            "sha256": "b5601f066729f74877631e6a1dec7dc8e61f2abd4d681f5d6dea4c0793057473"
+          },
+          "TE": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 0.01,
+            "sha256": "d55390897eb986c262086af38114186426791c72d40f668fca2105fb29592cd1"
+          },
+          "DISS": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 9.999999747378752e-05,
+            "sha256": "d0a8aa56b85f4ebe3c8b525c6d71fdeb96995ef21dfc9362afe0ea6e97723320"
+          },
+          "RADIATION": {
+            "count": 8400,
+            "finite_count": 8400,
+            "finite": true,
+            "min": -1.1205536912597496,
+            "max": 1.7799846919809643,
+            "sha256": "4c05e6c8013776d0f312898ebdb86bc7ad413d6d1a2bff7db3cc5a67a73b0916"
+          }
+        }
+      },
+      "payloads": {
+        "00001.wnd": {
+          "sha256": "9ad3f970e88e8911ad2775f87a7983002ab4c2cefa538ed7a0c43fce22f1eb9f",
+          "bytes": 46100,
+          "values": 23040,
+          "min": -6,
+          "max": 462
+        },
+        "00001.scl/00001.obl": {
+          "sha256": "68507354f1e0cb25cfcb39dbc19a689a5cf8d7f752ec504e8ff0480b2a7aa8f0",
+          "bytes": 980,
+          "values": 480,
+          "min": -486,
+          "max": 100
+        },
+        "00001.scl/00001.scl": {
+          "sha256": "ad8ee231f0a7032e1f0710bcd3542ac7fae377c02b206add7dcc475d39dfbd01",
+          "bytes": 980,
+          "values": 480,
+          "min": 4,
+          "max": 4
+        },
+        "00001.scl/00001.ust": {
+          "sha256": "36247794ccfa660ad67d46037e9eeb6184191ee3c21a1917900447102f31b82a",
+          "bytes": 980,
+          "values": 480,
+          "min": 150,
+          "max": 156
+        },
+        "00001_steady_state.txt": {
+          "sha256": "a56eaae49e3f2ae8203f3f904a6af9e6b5a945e9b31d51c6ac11c69c8887220d",
+          "bytes": 1113
+        }
+      },
+      "solar_timestamps": [
+        "7.3 - 11:00",
+        "7.3 - 11:00",
+        "7.3 - 11:00",
+        "7.3 - 11:02",
+        "7.3 - 11:05",
+        "7.3 - 11:07"
+      ],
+      "dynamic_1800_boundary": false,
+      "turbulence_equations_enabled": false
+    },
+    "sequential_custom_4/baseline": {
+      "status": "pass",
+      "situations": 3,
+      "field_values": 465300,
+      "integration": [
+        {
+          "weather": 1,
+          "itime": 31,
+          "dt": 2.5,
+          "realtime": 63.5,
+          "tlimit": 61.2,
+          "elapsed_seconds": 0.5509112
+        },
+        {
+          "weather": 2,
+          "itime": 100,
+          "dt": 5.0,
+          "realtime": 363.5,
+          "tlimit": 360.0,
+          "elapsed_seconds": 1.1905065
+        },
+        {
+          "weather": 3,
+          "itime": 66,
+          "dt": 3.5,
+          "realtime": 183.0,
+          "tlimit": 180.0,
+          "elapsed_seconds": 0.8129094
+        }
+      ],
+      "snapshots": {
+        "1": {
+          "U": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 4.543426284202708,
+            "sha256": "d681ba83f12f1f97b67b2eacf10f8fc6729feae0f9e5857064ca009085b2ee85"
+          },
+          "V": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": -0.004477971973162448,
+            "max": 0.013725384097686814,
+            "sha256": "67fdf0969027f8172291f089c0292200db3cd18adf7017b03b54292e327d5aaf"
+          },
+          "W": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": -0.0035464937156688744,
+            "max": 0.003885360792107645,
+            "sha256": "2727c331eba5ce980367352cd054b8eff5426a493d0894ecf5a11529a33f59a4"
+          },
+          "T": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 8.431440176963747,
+            "sha256": "70eaff8c72be24a2c09abafa64772c0e0be84f9c738bbb1b343aeaa81bf96016"
+          },
+          "QU": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 7.563237834454299,
+            "sha256": "506cd4f05fc25104badb494c1edc21f314067066b909e9f6386178d23c87f8f2"
+          },
+          "PN": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 0,
+            "sha256": "cb9e206205a3b3f3664d4ef31cc24482e39f4d6541c58e0f1a07f50db859eb01"
+          },
+          "TE": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 0.01,
+            "sha256": "80a1ba42155bca51724ce6e17e45acec3089f4f2880c8869c1e8421cb3e4dd39"
+          },
+          "DISS": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 9.999999747378752e-05,
+            "sha256": "662fe63e75bfe2b6e1971d36ca10236969a20c47bd5f6a9fca808d0fa20b4ffd"
+          },
+          "RADIATION": {
+            "count": 16500,
+            "finite_count": 16500,
+            "finite": true,
+            "min": -9.457521607947827,
+            "max": 29.10112933894966,
+            "sha256": "d5766b591875485a03c07aa0197d6a7b60649bcae1ec41119fd8b29de002cb65"
+          }
+        },
+        "2": {
+          "U": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": -7.419082272300995,
+            "max": 0,
+            "sha256": "309a2fc3db8d9677bff0b7846b16f10bb9ca9bfc256f32be241a94e554a396d3"
+          },
+          "V": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": -0.17420959577156758,
+            "max": 0.04286229137144624,
+            "sha256": "614b0d80abd6e54685a5676c7cff935858fea191ce4c1156b54db71412cb761d"
+          },
+          "W": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": -0.020207181959583976,
+            "max": 0.020259867535015953,
+            "sha256": "3503d05aa6233ff0a3c1d3858d7f8875b3801f0484259019192d1e2e0182d5c7"
+          },
+          "T": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 27.92227335453032,
+            "sha256": "50629589589ac537d4e391a313794915c00c6dd43a2f4edb9ef3fb2bef1a719c"
+          },
+          "QU": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 25.455025725970966,
+            "sha256": "3fabb58c404613eae7cab839cd872ee8a7f869135dd09318b9cad3fa5b626dc9"
+          },
+          "PN": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 0,
+            "sha256": "cb9e206205a3b3f3664d4ef31cc24482e39f4d6541c58e0f1a07f50db859eb01"
+          },
+          "TE": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 0.01,
+            "sha256": "80a1ba42155bca51724ce6e17e45acec3089f4f2880c8869c1e8421cb3e4dd39"
+          },
+          "DISS": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 9.999999747378752e-05,
+            "sha256": "662fe63e75bfe2b6e1971d36ca10236969a20c47bd5f6a9fca808d0fa20b4ffd"
+          },
+          "RADIATION": {
+            "count": 16500,
+            "finite_count": 16500,
+            "finite": true,
+            "min": -52.71028241219288,
+            "max": 87.13733811697205,
+            "sha256": "752994a8352509f321bba3cc906c5df54462baf2055a3028d677200d61c8b065"
+          }
+        },
+        "3": {
+          "U": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": -0.06329662181654465,
+            "max": 0.011000247532158485,
+            "sha256": "2409f9e612445ca3d5a87c64dd446525cda23d054dadc3fcc6f06009117dd75b"
+          },
+          "V": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 5.954830169677734,
+            "sha256": "4154f24b5ac1884e5bfacb30c58041ea2b2ae082fab79568d6eb713f59c09afc"
+          },
+          "W": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": -0.010996925274348,
+            "max": 0.03067099007132293,
+            "sha256": "46d1da364a1307c71761bcc5564f018424ffc78d693c46abcb22e6c84ef3eefd"
+          },
+          "T": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": -0.1180260462667994,
+            "max": 8.42644045352938,
+            "sha256": "f9c741202037d6cf07e3fa3dfcefd0b0ea999f0925f4a8ce80803385ce67672c"
+          },
+          "QU": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 9.939582505106051,
+            "sha256": "eeab6941dbb825216f17459b8cd1a64279951c3f0c491d758dd23ff80e71bb58"
+          },
+          "PN": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 0,
+            "sha256": "cb9e206205a3b3f3664d4ef31cc24482e39f4d6541c58e0f1a07f50db859eb01"
+          },
+          "TE": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 0.01,
+            "sha256": "80a1ba42155bca51724ce6e17e45acec3089f4f2880c8869c1e8421cb3e4dd39"
+          },
+          "DISS": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 9.999999747378752e-05,
+            "sha256": "662fe63e75bfe2b6e1971d36ca10236969a20c47bd5f6a9fca808d0fa20b4ffd"
+          },
+          "RADIATION": {
+            "count": 16500,
+            "finite_count": 16500,
+            "finite": true,
+            "min": 0,
+            "max": 2233.8777453513185,
+            "sha256": "0c35f616d99de0854e4d281fa571187e72abb516d79cb5d2086d128f86c40cac"
+          }
+        }
+      },
+      "payloads": {
+        "00001.wnd": {
+          "sha256": "d368b112ec6bc3d0ba6bd306f39228d348678d595cc96b99de546c3649ebdd27",
+          "bytes": 92180,
+          "values": 46080,
+          "min": 0,
+          "max": 454
+        },
+        "00001.scl/00001.obl": {
+          "sha256": "f42f8a298f5b5b8a1c24fce8fd22bdf87843ed68543b3b4d3af7f676cc5f7f1a",
+          "bytes": 1556,
+          "values": 768,
+          "min": 100,
+          "max": 1079
+        },
+        "00001.scl/00001.scl": {
+          "sha256": "9a0c2b95b9372bca71138c051f9dc72ef969ebdddfc3ba24c5ba1dd73952a03b",
+          "bytes": 1556,
+          "values": 768,
+          "min": 4,
+          "max": 4
+        },
+        "00001.scl/00001.ust": {
+          "sha256": "2f555b1a52a6617a55c58ee9d02fe9968e771f5a77241215ef479eebf8270b30",
+          "bytes": 1556,
+          "values": 768,
+          "min": 150,
+          "max": 150
+        },
+        "00001_steady_state.txt": {
+          "sha256": "e4c0a325b9edbedd76a9edb2c795f66f6776db85224af5b187e8fa1c1e4085a9",
+          "bytes": 1697
+        },
+        "00002.wnd": {
+          "sha256": "c9eb6e6a6da4f3084a2b4c75d8d39c82f5f58ca4447f3e3ce1c4fa67be4d71a3",
+          "bytes": 92180,
+          "values": 46080,
+          "min": -742,
+          "max": 4
+        },
+        "00002.scl/00002.obl": {
+          "sha256": "6242781f180b636585f80471d1f76a9a79a261538f36797a9df6661a97083ad0",
+          "bytes": 1556,
+          "values": 768,
+          "min": 100,
+          "max": 130
+        },
+        "00002.scl/00002.scl": {
+          "sha256": "5db086bc6989cc62ca5c9bc14723b38b51d78cad535a0d0a5ae664bc1646cbf3",
+          "bytes": 1556,
+          "values": 768,
+          "min": 7,
+          "max": 7
+        },
+        "00002.scl/00002.ust": {
+          "sha256": "2f555b1a52a6617a55c58ee9d02fe9968e771f5a77241215ef479eebf8270b30",
+          "bytes": 1556,
+          "values": 768,
+          "min": 150,
+          "max": 150
+        },
+        "00002_steady_state.txt": {
+          "sha256": "e4c0a325b9edbedd76a9edb2c795f66f6776db85224af5b187e8fa1c1e4085a9",
+          "bytes": 1697
+        },
+        "00003.wnd": {
+          "sha256": "b901e7e250a9f247a0fe298df40140925341580f3d5f74be16c2b1f28b217ffa",
+          "bytes": 92180,
+          "values": 46080,
+          "min": -6,
+          "max": 595
+        },
+        "00003.scl/00003.obl": {
+          "sha256": "7bbb085e6f89d7aaea045b84563cb12a23fd696444b05394984072ba5aeff36e",
+          "bytes": 1556,
+          "values": 768,
+          "min": 100,
+          "max": 150
+        },
+        "00003.scl/00003.scl": {
+          "sha256": "a80a999fc813f86da99cb21d39ac19708cf4e5b3681c9ad88d9ace22f25b40f3",
+          "bytes": 1556,
+          "values": 768,
+          "min": 2,
+          "max": 3
+        },
+        "00003.scl/00003.ust": {
+          "sha256": "2f555b1a52a6617a55c58ee9d02fe9968e771f5a77241215ef479eebf8270b30",
+          "bytes": 1556,
+          "values": 768,
+          "min": 150,
+          "max": 150
+        },
+        "00003_steady_state.txt": {
+          "sha256": "e4c0a325b9edbedd76a9edb2c795f66f6776db85224af5b187e8fa1c1e4085a9",
+          "bytes": 1697
+        }
+      },
+      "solar_timestamps": [
+        "5.3 - 11:00",
+        "5.3 - 11:00",
+        "5.3 - 11:00",
+        "21.12 - 18:00",
+        "21.12 - 18:00",
+        "21.12 - 18:00",
+        "21.12 - 18:02",
+        "21.12 - 18:05",
+        "21.3 - 12:00",
+        "21.3 - 12:00",
+        "21.3 - 12:00",
+        "21.3 - 12:02"
+      ],
+      "dynamic_1800_boundary": false,
+      "turbulence_equations_enabled": false
+    },
+    "sequential_custom_4/selected_combined": {
+      "status": "pass",
+      "situations": 3,
+      "field_values": 465300,
+      "integration": [
+        {
+          "weather": 1,
+          "itime": 31,
+          "dt": 2.5,
+          "realtime": 63.5,
+          "tlimit": 61.2,
+          "elapsed_seconds": 0.5608767
+        },
+        {
+          "weather": 2,
+          "itime": 100,
+          "dt": 5.0,
+          "realtime": 363.5,
+          "tlimit": 360.0,
+          "elapsed_seconds": 1.1784707
+        },
+        {
+          "weather": 3,
+          "itime": 66,
+          "dt": 3.5,
+          "realtime": 183.0,
+          "tlimit": 180.0,
+          "elapsed_seconds": 0.8105147
+        }
+      ],
+      "snapshots": {
+        "1": {
+          "U": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 4.543426284202708,
+            "sha256": "d681ba83f12f1f97b67b2eacf10f8fc6729feae0f9e5857064ca009085b2ee85"
+          },
+          "V": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": -0.004477971973162448,
+            "max": 0.013725384097686814,
+            "sha256": "67fdf0969027f8172291f089c0292200db3cd18adf7017b03b54292e327d5aaf"
+          },
+          "W": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": -0.0035464937156688744,
+            "max": 0.003885360792107645,
+            "sha256": "2727c331eba5ce980367352cd054b8eff5426a493d0894ecf5a11529a33f59a4"
+          },
+          "T": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 8.431440176963747,
+            "sha256": "70eaff8c72be24a2c09abafa64772c0e0be84f9c738bbb1b343aeaa81bf96016"
+          },
+          "QU": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 7.563237834454299,
+            "sha256": "506cd4f05fc25104badb494c1edc21f314067066b909e9f6386178d23c87f8f2"
+          },
+          "PN": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 0,
+            "sha256": "cb9e206205a3b3f3664d4ef31cc24482e39f4d6541c58e0f1a07f50db859eb01"
+          },
+          "TE": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 0.01,
+            "sha256": "80a1ba42155bca51724ce6e17e45acec3089f4f2880c8869c1e8421cb3e4dd39"
+          },
+          "DISS": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 9.999999747378752e-05,
+            "sha256": "662fe63e75bfe2b6e1971d36ca10236969a20c47bd5f6a9fca808d0fa20b4ffd"
+          },
+          "RADIATION": {
+            "count": 16500,
+            "finite_count": 16500,
+            "finite": true,
+            "min": -9.457521607947827,
+            "max": 29.10112933894966,
+            "sha256": "d5766b591875485a03c07aa0197d6a7b60649bcae1ec41119fd8b29de002cb65"
+          }
+        },
+        "2": {
+          "U": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": -7.419082272300995,
+            "max": 0,
+            "sha256": "309a2fc3db8d9677bff0b7846b16f10bb9ca9bfc256f32be241a94e554a396d3"
+          },
+          "V": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": -0.17420959577156758,
+            "max": 0.04286229137144624,
+            "sha256": "614b0d80abd6e54685a5676c7cff935858fea191ce4c1156b54db71412cb761d"
+          },
+          "W": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": -0.020207181959583976,
+            "max": 0.020259867535015953,
+            "sha256": "3503d05aa6233ff0a3c1d3858d7f8875b3801f0484259019192d1e2e0182d5c7"
+          },
+          "T": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 27.92227335453032,
+            "sha256": "50629589589ac537d4e391a313794915c00c6dd43a2f4edb9ef3fb2bef1a719c"
+          },
+          "QU": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 25.455025725970966,
+            "sha256": "3fabb58c404613eae7cab839cd872ee8a7f869135dd09318b9cad3fa5b626dc9"
+          },
+          "PN": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 0,
+            "sha256": "cb9e206205a3b3f3664d4ef31cc24482e39f4d6541c58e0f1a07f50db859eb01"
+          },
+          "TE": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 0.01,
+            "sha256": "80a1ba42155bca51724ce6e17e45acec3089f4f2880c8869c1e8421cb3e4dd39"
+          },
+          "DISS": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 9.999999747378752e-05,
+            "sha256": "662fe63e75bfe2b6e1971d36ca10236969a20c47bd5f6a9fca808d0fa20b4ffd"
+          },
+          "RADIATION": {
+            "count": 16500,
+            "finite_count": 16500,
+            "finite": true,
+            "min": -52.71028241219288,
+            "max": 87.13733811697205,
+            "sha256": "752994a8352509f321bba3cc906c5df54462baf2055a3028d677200d61c8b065"
+          }
+        },
+        "3": {
+          "U": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": -0.06329662181654465,
+            "max": 0.011000247532158485,
+            "sha256": "2409f9e612445ca3d5a87c64dd446525cda23d054dadc3fcc6f06009117dd75b"
+          },
+          "V": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 5.954830169677734,
+            "sha256": "4154f24b5ac1884e5bfacb30c58041ea2b2ae082fab79568d6eb713f59c09afc"
+          },
+          "W": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": -0.010996925274348,
+            "max": 0.03067099007132293,
+            "sha256": "46d1da364a1307c71761bcc5564f018424ffc78d693c46abcb22e6c84ef3eefd"
+          },
+          "T": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": -0.1180260462667994,
+            "max": 8.42644045352938,
+            "sha256": "f9c741202037d6cf07e3fa3dfcefd0b0ea999f0925f4a8ce80803385ce67672c"
+          },
+          "QU": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 9.939582505106051,
+            "sha256": "eeab6941dbb825216f17459b8cd1a64279951c3f0c491d758dd23ff80e71bb58"
+          },
+          "PN": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 0,
+            "sha256": "cb9e206205a3b3f3664d4ef31cc24482e39f4d6541c58e0f1a07f50db859eb01"
+          },
+          "TE": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 0.01,
+            "sha256": "80a1ba42155bca51724ce6e17e45acec3089f4f2880c8869c1e8421cb3e4dd39"
+          },
+          "DISS": {
+            "count": 17325,
+            "finite_count": 17325,
+            "finite": true,
+            "min": 0,
+            "max": 9.999999747378752e-05,
+            "sha256": "662fe63e75bfe2b6e1971d36ca10236969a20c47bd5f6a9fca808d0fa20b4ffd"
+          },
+          "RADIATION": {
+            "count": 16500,
+            "finite_count": 16500,
+            "finite": true,
+            "min": 0,
+            "max": 2233.8777453513185,
+            "sha256": "0c35f616d99de0854e4d281fa571187e72abb516d79cb5d2086d128f86c40cac"
+          }
+        }
+      },
+      "payloads": {
+        "00001.wnd": {
+          "sha256": "d368b112ec6bc3d0ba6bd306f39228d348678d595cc96b99de546c3649ebdd27",
+          "bytes": 92180,
+          "values": 46080,
+          "min": 0,
+          "max": 454
+        },
+        "00001.scl/00001.obl": {
+          "sha256": "f42f8a298f5b5b8a1c24fce8fd22bdf87843ed68543b3b4d3af7f676cc5f7f1a",
+          "bytes": 1556,
+          "values": 768,
+          "min": 100,
+          "max": 1079
+        },
+        "00001.scl/00001.scl": {
+          "sha256": "9a0c2b95b9372bca71138c051f9dc72ef969ebdddfc3ba24c5ba1dd73952a03b",
+          "bytes": 1556,
+          "values": 768,
+          "min": 4,
+          "max": 4
+        },
+        "00001.scl/00001.ust": {
+          "sha256": "2f555b1a52a6617a55c58ee9d02fe9968e771f5a77241215ef479eebf8270b30",
+          "bytes": 1556,
+          "values": 768,
+          "min": 150,
+          "max": 150
+        },
+        "00001_steady_state.txt": {
+          "sha256": "e4c0a325b9edbedd76a9edb2c795f66f6776db85224af5b187e8fa1c1e4085a9",
+          "bytes": 1697
+        },
+        "00002.wnd": {
+          "sha256": "c9eb6e6a6da4f3084a2b4c75d8d39c82f5f58ca4447f3e3ce1c4fa67be4d71a3",
+          "bytes": 92180,
+          "values": 46080,
+          "min": -742,
+          "max": 4
+        },
+        "00002.scl/00002.obl": {
+          "sha256": "6242781f180b636585f80471d1f76a9a79a261538f36797a9df6661a97083ad0",
+          "bytes": 1556,
+          "values": 768,
+          "min": 100,
+          "max": 130
+        },
+        "00002.scl/00002.scl": {
+          "sha256": "5db086bc6989cc62ca5c9bc14723b38b51d78cad535a0d0a5ae664bc1646cbf3",
+          "bytes": 1556,
+          "values": 768,
+          "min": 7,
+          "max": 7
+        },
+        "00002.scl/00002.ust": {
+          "sha256": "2f555b1a52a6617a55c58ee9d02fe9968e771f5a77241215ef479eebf8270b30",
+          "bytes": 1556,
+          "values": 768,
+          "min": 150,
+          "max": 150
+        },
+        "00002_steady_state.txt": {
+          "sha256": "e4c0a325b9edbedd76a9edb2c795f66f6776db85224af5b187e8fa1c1e4085a9",
+          "bytes": 1697
+        },
+        "00003.wnd": {
+          "sha256": "b901e7e250a9f247a0fe298df40140925341580f3d5f74be16c2b1f28b217ffa",
+          "bytes": 92180,
+          "values": 46080,
+          "min": -6,
+          "max": 595
+        },
+        "00003.scl/00003.obl": {
+          "sha256": "7bbb085e6f89d7aaea045b84563cb12a23fd696444b05394984072ba5aeff36e",
+          "bytes": 1556,
+          "values": 768,
+          "min": 100,
+          "max": 150
+        },
+        "00003.scl/00003.scl": {
+          "sha256": "a80a999fc813f86da99cb21d39ac19708cf4e5b3681c9ad88d9ace22f25b40f3",
+          "bytes": 1556,
+          "values": 768,
+          "min": 2,
+          "max": 3
+        },
+        "00003.scl/00003.ust": {
+          "sha256": "2f555b1a52a6617a55c58ee9d02fe9968e771f5a77241215ef479eebf8270b30",
+          "bytes": 1556,
+          "values": 768,
+          "min": 150,
+          "max": 150
+        },
+        "00003_steady_state.txt": {
+          "sha256": "e4c0a325b9edbedd76a9edb2c795f66f6776db85224af5b187e8fa1c1e4085a9",
+          "bytes": 1697
+        }
+      },
+      "solar_timestamps": [
+        "5.3 - 11:00",
+        "5.3 - 11:00",
+        "5.3 - 11:00",
+        "21.12 - 18:00",
+        "21.12 - 18:00",
+        "21.12 - 18:00",
+        "21.12 - 18:02",
+        "21.12 - 18:05",
+        "21.3 - 12:00",
+        "21.3 - 12:00",
+        "21.3 - 12:00",
+        "21.3 - 12:02"
+      ],
+      "dynamic_1800_boundary": false,
+      "turbulence_equations_enabled": false
+    },
+    "frequent_radiation_4/baseline": {
+      "status": "pass",
+      "situations": 1,
+      "field_values": 79800,
+      "integration": [
+        {
+          "weather": 1,
+          "itime": 64,
+          "dt": 4.0,
+          "realtime": 183.5,
+          "tlimit": 180.0,
+          "elapsed_seconds": 0.6941753
+        }
+      ],
+      "snapshots": {
+        "1": {
+          "U": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 4.677263012121946,
+            "sha256": "3f2e933e216f5413289c00756c3dd01412bb8aedfb56dbf6037d1c1cab720ec0"
+          },
+          "V": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": -0.019741710053548987,
+            "max": 0.044382631632600256,
+            "sha256": "a47d3b9c21cae0bece7b9da5572ba5812c973d52532e3f93b84f819b75f096df"
+          },
+          "W": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": -0.017899677601574987,
+            "max": 0.014259145514935036,
+            "sha256": "f8370fd72bb2bb4f5659cf6410b06f29b964691b75d1bbf31f9d2fbac1541bce"
+          },
+          "T": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 9.584998418092766,
+            "sha256": "074762ad26cb8a7c24d9e0c501cd6d62753102d1f3b7607b88cc8de01752cace"
+          },
+          "QU": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 5.1250950142250575,
+            "sha256": "3e07dc29493572a9892033087034478a0e9ca8634e8e6b9c22c12aa69b237f0d"
+          },
+          "PN": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 0,
+            "sha256": "b5601f066729f74877631e6a1dec7dc8e61f2abd4d681f5d6dea4c0793057473"
+          },
+          "TE": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 0.01,
+            "sha256": "d55390897eb986c262086af38114186426791c72d40f668fca2105fb29592cd1"
+          },
+          "DISS": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 9.999999747378752e-05,
+            "sha256": "d0a8aa56b85f4ebe3c8b525c6d71fdeb96995ef21dfc9362afe0ea6e97723320"
+          },
+          "RADIATION": {
+            "count": 8400,
+            "finite_count": 8400,
+            "finite": true,
+            "min": 0,
+            "max": 63.35657767252219,
+            "sha256": "a888d14a01b80656968b79e740ee3aa79c0ab66c7f9ea1ccda26ec9f12c87d9c"
+          }
+        }
+      },
+      "payloads": {
+        "00001.wnd": {
+          "sha256": "a44ada2e613f9c2421bc085bf5754e039431e4d1c08dc402b10d54804dd04918",
+          "bytes": 46100,
+          "values": 23040,
+          "min": -2,
+          "max": 468
+        },
+        "00001.scl/00001.obl": {
+          "sha256": "4541b0b53f89ee3baae32c0afb09fa6770730e8a4ae0d748dc9aa4d8e2cc76d9",
+          "bytes": 980,
+          "values": 480,
+          "min": -1702,
+          "max": 100
+        },
+        "00001.scl/00001.scl": {
+          "sha256": "98baffd12c56d7ae6bf7f02abfbdc940610b5f519b3b5b3e53c540605c387d93",
+          "bytes": 980,
+          "values": 480,
+          "min": 2,
+          "max": 3
+        },
+        "00001.scl/00001.ust": {
+          "sha256": "2121ab1a281a7f764e68fe1bf1f193dc0faf73b2c7b237bb59aeac2be6b640ac",
+          "bytes": 980,
+          "values": 480,
+          "min": 150,
+          "max": 163
+        },
+        "00001_steady_state.txt": {
+          "sha256": "a56eaae49e3f2ae8203f3f904a6af9e6b5a945e9b31d51c6ac11c69c8887220d",
+          "bytes": 1113
+        }
+      },
+      "solar_timestamps": [
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02"
+      ],
+      "dynamic_1800_boundary": false,
+      "turbulence_equations_enabled": false
+    },
+    "frequent_radiation_4/selected_combined": {
+      "status": "pass",
+      "situations": 1,
+      "field_values": 79800,
+      "integration": [
+        {
+          "weather": 1,
+          "itime": 64,
+          "dt": 4.0,
+          "realtime": 183.5,
+          "tlimit": 180.0,
+          "elapsed_seconds": 0.6502578
+        }
+      ],
+      "snapshots": {
+        "1": {
+          "U": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 4.677263012121946,
+            "sha256": "3f2e933e216f5413289c00756c3dd01412bb8aedfb56dbf6037d1c1cab720ec0"
+          },
+          "V": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": -0.019741710053548987,
+            "max": 0.044382631632600256,
+            "sha256": "a47d3b9c21cae0bece7b9da5572ba5812c973d52532e3f93b84f819b75f096df"
+          },
+          "W": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": -0.017899677601574987,
+            "max": 0.014259145514935036,
+            "sha256": "f8370fd72bb2bb4f5659cf6410b06f29b964691b75d1bbf31f9d2fbac1541bce"
+          },
+          "T": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 9.584998418092766,
+            "sha256": "074762ad26cb8a7c24d9e0c501cd6d62753102d1f3b7607b88cc8de01752cace"
+          },
+          "QU": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 5.1250950142250575,
+            "sha256": "3e07dc29493572a9892033087034478a0e9ca8634e8e6b9c22c12aa69b237f0d"
+          },
+          "PN": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 0,
+            "sha256": "b5601f066729f74877631e6a1dec7dc8e61f2abd4d681f5d6dea4c0793057473"
+          },
+          "TE": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 0.01,
+            "sha256": "d55390897eb986c262086af38114186426791c72d40f668fca2105fb29592cd1"
+          },
+          "DISS": {
+            "count": 8925,
+            "finite_count": 8925,
+            "finite": true,
+            "min": 0,
+            "max": 9.999999747378752e-05,
+            "sha256": "d0a8aa56b85f4ebe3c8b525c6d71fdeb96995ef21dfc9362afe0ea6e97723320"
+          },
+          "RADIATION": {
+            "count": 8400,
+            "finite_count": 8400,
+            "finite": true,
+            "min": 0,
+            "max": 63.35657767252219,
+            "sha256": "a888d14a01b80656968b79e740ee3aa79c0ab66c7f9ea1ccda26ec9f12c87d9c"
+          }
+        }
+      },
+      "payloads": {
+        "00001.wnd": {
+          "sha256": "a44ada2e613f9c2421bc085bf5754e039431e4d1c08dc402b10d54804dd04918",
+          "bytes": 46100,
+          "values": 23040,
+          "min": -2,
+          "max": 468
+        },
+        "00001.scl/00001.obl": {
+          "sha256": "4541b0b53f89ee3baae32c0afb09fa6770730e8a4ae0d748dc9aa4d8e2cc76d9",
+          "bytes": 980,
+          "values": 480,
+          "min": -1702,
+          "max": 100
+        },
+        "00001.scl/00001.scl": {
+          "sha256": "98baffd12c56d7ae6bf7f02abfbdc940610b5f519b3b5b3e53c540605c387d93",
+          "bytes": 980,
+          "values": 480,
+          "min": 2,
+          "max": 3
+        },
+        "00001.scl/00001.ust": {
+          "sha256": "2121ab1a281a7f764e68fe1bf1f193dc0faf73b2c7b237bb59aeac2be6b640ac",
+          "bytes": 980,
+          "values": 480,
+          "min": 150,
+          "max": 163
+        },
+        "00001_steady_state.txt": {
+          "sha256": "a56eaae49e3f2ae8203f3f904a6af9e6b5a945e9b31d51c6ac11c69c8887220d",
+          "bytes": 1113
+        }
+      },
+      "solar_timestamps": [
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:00",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:01",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02",
+        "1.3 - 8:02"
+      ],
+      "dynamic_1800_boundary": false,
+      "turbulence_equations_enabled": false
+    }
+  },
+  "comparisons": [
+    {
+      "case": "small_neutral_1",
+      "variant": "selected_combined",
+      "status": "pass",
+      "fields": [
+        {
+          "weather": 1,
+          "field": "DISS",
+          "count": 8925,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "PN",
+          "count": 8925,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "QU",
+          "count": 8925,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "RADIATION",
+          "count": 8400,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "T",
+          "count": 8925,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "TE",
+          "count": 8925,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "U",
+          "count": 8925,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "V",
+          "count": 8925,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "W",
+          "count": 8925,
+          "identical": true
+        }
+      ],
+      "steps_identical": true,
+      "payloads_identical": true
+    },
+    {
+      "case": "sequential_custom_4",
+      "variant": "selected_combined",
+      "status": "pass",
+      "fields": [
+        {
+          "weather": 1,
+          "field": "DISS",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "PN",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "QU",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "RADIATION",
+          "count": 16500,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "T",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "TE",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "U",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "V",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "W",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 2,
+          "field": "DISS",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 2,
+          "field": "PN",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 2,
+          "field": "QU",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 2,
+          "field": "RADIATION",
+          "count": 16500,
+          "identical": true
+        },
+        {
+          "weather": 2,
+          "field": "T",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 2,
+          "field": "TE",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 2,
+          "field": "U",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 2,
+          "field": "V",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 2,
+          "field": "W",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 3,
+          "field": "DISS",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 3,
+          "field": "PN",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 3,
+          "field": "QU",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 3,
+          "field": "RADIATION",
+          "count": 16500,
+          "identical": true
+        },
+        {
+          "weather": 3,
+          "field": "T",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 3,
+          "field": "TE",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 3,
+          "field": "U",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 3,
+          "field": "V",
+          "count": 17325,
+          "identical": true
+        },
+        {
+          "weather": 3,
+          "field": "W",
+          "count": 17325,
+          "identical": true
+        }
+      ],
+      "steps_identical": true,
+      "payloads_identical": true
+    },
+    {
+      "case": "frequent_radiation_4",
+      "variant": "selected_combined",
+      "status": "pass",
+      "fields": [
+        {
+          "weather": 1,
+          "field": "DISS",
+          "count": 8925,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "PN",
+          "count": 8925,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "QU",
+          "count": 8925,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "RADIATION",
+          "count": 8400,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "T",
+          "count": 8925,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "TE",
+          "count": 8925,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "U",
+          "count": 8925,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "V",
+          "count": 8925,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "W",
+          "count": 8925,
+          "identical": true
+        }
+      ],
+      "steps_identical": true,
+      "payloads_identical": true
+    }
+  ]
+}

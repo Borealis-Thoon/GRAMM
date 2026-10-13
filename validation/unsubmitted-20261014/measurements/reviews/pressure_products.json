@@ -1,0 +1,123 @@
+{
+  "status": "no_source_blocker_validation_pending",
+  "review_kind": "independent_adversarial_read_only",
+  "reviewed_commit": "947cb27ae810ddd9fde3ce545aa5112bd494e330",
+  "requested_commit": "a6a59a87f6defe068149aacfeb50c95405b05db7",
+  "scope": [
+    "src/CALCPR.cs",
+    "src/PRIMP.cs",
+    "src/SIMPLE.cs",
+    "src/Program.cs",
+    "src/Read_Ini_Files.cs",
+    "src/ProgramDeclarations.cs"
+  ],
+  "source_sha256": {
+    "CALCPR.cs": "16549d0032767f0be95dd93d101ed6bf201ac1031be3b8494a634074ed66c1f2",
+    "PRIMP.cs": "c00b2ab9aaddf6a0ecc375fd7faafdab0beeda73d78a499d06ed830f67b3f5f8"
+  },
+  "findings": [],
+  "checks": [
+    {
+      "topic": "Float multiplication and threshold order",
+      "result": "pass_read_review",
+      "evidence": [
+        "CALCPR.cs:128-142",
+        "CALCPR.cs:157-172",
+        "PRIMP.cs:169-186",
+        "ProgramDeclarations.cs:444-448"
+      ],
+      "detail": "SUZ, SUXYZ, AREAZ and AREAXYZ have float elements. The original source term multiplies two floats before joining the double pressure terms. The cached value is also a float product. The divergence division and 0.00001 cutoff still happen before multiplication. No cancellation, reassociation or double pre-multiplication was introduced."
+    },
+    {
+      "topic": "All consumers and sweeps",
+      "result": "pass_read_review",
+      "evidence": [
+        "PRIMP.cs:169,184,393,407,604,619,811,826,1027,1042,1246,1260,1454,1468,1660,1675",
+        "CALCPR.cs:428"
+      ],
+      "detail": "All sixteen source terms in the eight pressure sweeps use the cached product. Repository-wide reads of SUZ/SUXYZ outside the producer are confined to PRIMP and the final CALCPR sum. The earlier debug sum in CALCPR is commented out. Declarations, allocation and clearing are the other references."
+    },
+    {
+      "topic": "Horizontal and vertical bounds",
+      "result": "pass_read_review",
+      "evidence": [
+        "CALCPR.cs:85-111",
+        "CALCPR.cs:169-172",
+        "PRIMP.cs:84-97",
+        "PRIMP.cs:162-164",
+        "Read_Ini_Files.cs:841-856"
+      ],
+      "detail": "The cache covers i=2..NI-1, j=2..NJ-1 and k=1..NK-1. All pressure sweeps consume precisely these cells. Their kn range is 1..2*(NK-1), yielding k=1..NK-1. i=1, i=NI, j=NJ and k=NK are not reweighted. k=0 is never a source-term read. A single vertical level leaves both the cached set and pressure source loops empty."
+    },
+    {
+      "topic": "Final divergence restoration",
+      "result": "pass_read_review",
+      "evidence": [
+        "CALCPR.cs:345-407",
+        "CALCPR.cs:409-437"
+      ],
+      "detail": "The final pass runs i=2..NI, j=2..NJ, k=1..NK-1, and recalculates both arrays where i<NI and j<NJ. This overwrites every cached cell with the original raw-divergence expression before SUMG is evaluated. SUMG also reads k=NK, but that level was never reweighted."
+    },
+    {
+      "topic": "ICPN and supported call paths",
+      "result": "pass_read_review",
+      "evidence": [
+        "Program.cs:204-250",
+        "SIMPLE.cs:105-108",
+        "CALCPR.cs:201-203"
+      ],
+      "detail": "SOLUTION calls CALCPR only when ICPN is true. CALCPR is the sole active caller of Primp_calculate, and both its cache and pressure call use ICPN. ICPN is set during option initialization, with no asynchronous setter found. A direct CALCPR call with ICPN=false leaves source arrays unweighted as before."
+    },
+    {
+      "topic": "Parallel lifetime",
+      "result": "pass_read_review",
+      "evidence": [
+        "CALCPR.cs:85-177",
+        "CALCPR.cs:203",
+        "PRIMP.cs:41-256",
+        "CALCPR.cs:346-407"
+      ],
+      "detail": "The producer Parallel.ForEach completes before PRIMP starts. Each producer owns a distinct i column. PRIMP reads SUZ/SUXYZ without writing them; the immutable face-area arrays are also read-only. The final restore starts after PRIMP returns. No added shared writer or allocation was found."
+    },
+    {
+      "topic": "Subdomains and retries",
+      "result": "pass_read_review",
+      "evidence": [
+        "Program.cs:479-489",
+        "SIMPLE.cs:28-54",
+        "SIMPLE.cs:107",
+        "Read_Ini_Files.cs:851-856"
+      ],
+      "detail": "The only SOLUTION call supplies NX, NY and NZ. Partitioners cover the same NX/NY interior; no SUBDOM entry point or smaller-domain call was found. Numerical retries are decided at the beginning of SOLUTION using the previous completed mass-divergence calculation. Each new CALCPR call overwrites the full cached interior before pressure reads, so products cannot compound across calls or weather restarts."
+    },
+    {
+      "topic": "Patch size and maintainability",
+      "result": "pass_read_review",
+      "evidence": [
+        "CALCPR.cs:167-172",
+        "PRIMP.cs:32"
+      ],
+      "detail": "The patch reuses existing temporary arrays and removes the now-unused face-area spans in all eight sweeps. The two short producer comments and the PRIMP entry comment explain the temporary change in array units. Retaining these comments is warranted because the shared field names still describe unweighted divergence outside the pressure phase."
+    }
+  ],
+  "required_validation_before_submission": [
+    "Strict Release build with zero warnings and errors, plus diff whitespace check.",
+    "Compare actual CALCPR/PRIMP execution with fixed traversal order, including all DP/DPX/DPY/DPZ fields, velocity corrections, complete SUZ/SUXYZ arrays after return, SUMG, MASSOURCE and iteration counts.",
+    "Exercise at least two consecutive calls after changing velocities, and ICPN=false in an actual CALCPR wrapper, to detect stale products and accidental reweighting.",
+    "Include nonuniform face areas, slopes, positive and negative divergence, values on both sides of the cutoff, shallow and ordinary vertical grids, and all boundary planes. Keep the original float field types.",
+    "For native parallel runs, compare field differences with baseline repeat variability; timing changes can alter the existing stripe-solver scheduling.",
+    "Use isolated paired whole-model timing across small and larger grids, several worker settings and meteorological conditions. The new cache adds a condition and two stores to the producer; submit only if the full-model benefit is repeatable."
+  ],
+  "important_test_contract": "A harness that invokes candidate Primp_calculate directly must supply the weighted arrays expected from candidate CALCPR. Prefer testing the actual caller and callee together so the precondition cannot be accidentally omitted.",
+  "execution": {
+    "build_run": false,
+    "model_run": false,
+    "benchmark_run": false,
+    "plot_rendered": false
+  },
+  "wording_review": {
+    "skill": "humanize-kit:humanizer",
+    "mode": "Embedded",
+    "claims_strengthened": false
+  }
+}

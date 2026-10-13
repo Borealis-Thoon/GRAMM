@@ -1,0 +1,71 @@
+{
+  "baseline": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+  "candidates": [
+    {
+      "id": "surface_radiation",
+      "branch": "codex/parallel-surface-radiation",
+      "base": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+      "head": "75698818c148ef1487adaf5377c932382ccdf6fe",
+      "file": "src/RADIAT.cs",
+      "lines_added": 2,
+      "lines_deleted": 2,
+      "characters_added": 75,
+      "characters_deleted": 56,
+      "characters_total": 131,
+      "character_definition": "Changed line bodies including one LF each, excluding diff markers and headers",
+      "strict_build": {
+        "command": "dotnet build src/GRAMM.csproj -c Release --nologo -warnaserror",
+        "configuration": "Release",
+        "exit_code": 0,
+        "warnings": 0,
+        "errors": 0
+      },
+      "diff_check_exit_code": 0,
+      "source_hash_policy": "See source_lock.json for portable UTF-8/LF hashes."
+    },
+    {
+      "id": "store_height",
+      "branch": "codex/hoist-mixing-length-column-term",
+      "base": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+      "head": "52eb6b69bf43f46978e13802e3d5e9c3a94e8b34",
+      "file": "src/STORE.cs",
+      "lines_added": 6,
+      "lines_deleted": 7,
+      "characters_added": 360,
+      "characters_deleted": 381,
+      "characters_total": 741,
+      "character_definition": "Changed line bodies including one LF each, excluding diff markers and headers",
+      "strict_build": {
+        "command": "dotnet build src/GRAMM.csproj -c Release --nologo -warnaserror",
+        "configuration": "Release",
+        "exit_code": 0,
+        "warnings": 0,
+        "errors": 0
+      },
+      "diff_check_exit_code": 0,
+      "source_hash_policy": "See source_lock.json for portable UTF-8/LF hashes."
+    },
+    {
+      "id": "terminal_diagnostics",
+      "branch": "codex/skip-silent-surface-diagnostics",
+      "base": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+      "head": "66e986ca47e6bee589c4a9e2a800dacd2910d051",
+      "file": "src/CALCTB.cs",
+      "lines_added": 2,
+      "lines_deleted": 2,
+      "characters_added": 157,
+      "characters_deleted": 95,
+      "characters_total": 252,
+      "character_definition": "Changed line bodies including one LF each, excluding diff markers and headers",
+      "strict_build": {
+        "command": "dotnet build src/GRAMM.csproj -c Release --nologo -warnaserror",
+        "configuration": "Release",
+        "exit_code": 0,
+        "warnings": 0,
+        "errors": 0
+      },
+      "diff_check_exit_code": 0,
+      "source_hash_policy": "See source_lock.json for portable UTF-8/LF hashes."
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+threads,kind,candidate_variant,reference_repeat,candidate_repeat,i,j,k,component,baseline_tick,candidate_tick,difference_ticks,baseline_full_precision_ms,candidate_full_precision_ms,full_precision_difference_ms
+4,matched_patch,pressure_recurrence,1,1,43,26,22,U,416,417,1,4.164997909677801,4.165000118181775,2.2085039734776046e-06
+4,matched_patch,pressure_recurrence,2,2,32,25,10,U,313,314,1,3.134999747385578,3.1350001813996746,4.340140966618833e-07
+8,matched_patch,pressure_recurrence,2,2,32,25,10,U,313,314,1,3.134999747385578,3.135000037561956,2.90176378037188e-07

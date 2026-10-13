@@ -1,0 +1,95 @@
+{
+  "status": "pass_no_patch_introduced_source_findings",
+  "review_mode": "Independent adversarial read-only review; no source edits, builds or numerical executions.",
+  "candidate": "75698818c148ef1487adaf5377c932382ccdf6fe",
+  "baseline": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+  "combined_with_29": "feadc3dd11ec81863f29d0c5060854ecf8a4efc3",
+  "diff": {
+    "files": [
+      "src/RADIAT.cs"
+    ],
+    "added_lines": 2,
+    "removed_lines": 2
+  },
+  "findings": [],
+  "checks": [
+    {
+      "topic": "Complete nested write set",
+      "status": "pass",
+      "evidence": [
+        "RADIAT.cs:1771-1779",
+        "RADIAT.cs:1784-1814",
+        "RADIAT.cs:1817-1891",
+        "RADIAT.cs:1630-1683"
+      ],
+      "detail": "Cl_RterrG writes only RL[i][j] and RTerrG[i][j]. Cl_dTdtterr writes DT_TERR[i][j][k] and the same column's KST-1 slot. Cl_EpsB updates ref arguments bound to caller-local scalars, and Cl_Eps changes only by-value parameters and local variables. No shared scratch field, neighboring column write, reduction or utility side effect was found."
+    },
+    {
+      "topic": "Outer arrays and aliasing",
+      "status": "pass",
+      "evidence": [
+        "RADIAT.cs:252-290",
+        "Read_Ini_Files.cs:171-172",
+        "Program.cs:665-672"
+      ],
+      "detail": "RTerrG and RL allocate a distinct row for each i. DT_TERR allocates a distinct vertical array for each (i,j). CreateArray invokes its factory separately for every element. The new loop assigns each i once, and its j loop is serial, so all destination elements have one writer."
+    },
+    {
+      "topic": "Read dependency and phase ordering",
+      "status": "pass",
+      "evidence": [
+        "RADIAT.cs:481-488",
+        "RADIAT.cs:503-576",
+        "RADIAT.cs:1774-1813"
+      ],
+      "detail": "Geometry, vertical integrals, temperature profiles, solar radiation, LStrich and upper emissivity preparation all finish before the new loop. The shared Wrad/CGp/Rp/Dz/Eps/Tab reference profiles are read-only during this phase. Each column calls Cl_RterrG before Cl_dTdtterr, preserving the RL dependency. TABS[1][1] is read here and is not a destination of either method."
+    },
+    {
+      "topic": "KST and vertical ranges",
+      "status": "pass_unchanged_contract",
+      "evidence": [
+        "RADIAT.cs:1776-1777",
+        "RADIAT.cs:1803-1813",
+        "RADIAT.cs:1837-1888",
+        "INIT_Radiation.cs:96,173,250,350,425,499,587,647"
+      ],
+      "detail": "Each column retains its own KST. Heating still runs from KST through Program.NZ and then copies KST into KST-1. The downward search still reads k-1 through KST-1 before decrementing its local kk. The existing initialization calls with NK=3 use the same full allocated Program.NZ profiles and the same later boundary limits as before; this patch does not substitute NK for NZ or change any range. The existing TABS level-10 access and valid allocated-profile requirements remain unchanged."
+    },
+    {
+      "topic": "Boundary completion barrier",
+      "status": "pass",
+      "evidence": [
+        "RADIAT.cs:568-576",
+        "RADIAT.cs:578-617"
+      ],
+      "detail": "Parallel.For returns after its i bodies complete. The unchanged boundary copies begin afterwards and therefore read completed DT_TERR columns. The two existing boundary Parallel.For calls retain their ordering for each k. No asynchronous work escapes the body."
+    },
+    {
+      "topic": "One worker and scheduling",
+      "status": "pass_correctness_performance_measurement_required",
+      "evidence": [
+        "RADIAT.cs:569-576",
+        "Read_Ini_Files.cs:827-837"
+      ],
+      "detail": "The loop uses the existing Program.pOptions and introduces no nested parallel calls in either terrestrial method. MaxDegreeOfParallelism=1 preserves a single active body. Column order may be scheduled differently, but there is no cross-column dependency or reduction in the changed phase. Scheduler overhead on one worker or small initialization domains is a performance question for the native paired tests, not evidence of changed numerical results."
+    },
+    {
+      "topic": "Compatibility with PR #29",
+      "status": "pass",
+      "evidence": [
+        "gramm_combined RADIAT.cs:556-581",
+        "gramm_combined RADIAT.cs:1694-1770",
+        "gramm_combined commit feadc3dd11ec81863f29d0c5060854ecf8a4efc3"
+      ],
+      "detail": "The combined source contains both patches without changing either terrestrial method. PR #29 calculates one upper-emissivity tuple for each k and copies scalar values into the existing per-column arrays. Cl_EpsA reads the shared reference profile and does not use i/j in its calculations. Those serial copies finish before the terrestrial Parallel.For; no shared array alias or concurrent producer is introduced. The local double references in #29 belong to the completed producer phase."
+    }
+  ],
+  "existing_results_inspected": {
+    "component_record": "qa/gramm_candidates/component_result.json",
+    "component_status": "pass; 450 radiation cases within the existing component suite",
+    "combined_record": "gramm_validation/qa/surface_followup/fidelity.json",
+    "combined_status": "surface_radiation and combined each pass; all nine field comparisons, binary payloads and integration steps match in the 48x36x24 frequent-radiation case",
+    "independently_rerun": false
+  },
+  "recommendation": "No source correction is required. Keep the two-line patch independent of #29 and use the parent-controlled native measurements to decide its measured benefit and one-worker overhead."
+}

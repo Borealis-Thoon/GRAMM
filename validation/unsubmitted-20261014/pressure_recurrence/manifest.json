@@ -1,0 +1,93 @@
+{
+  "status": "reproduced_and_ready_for_parent_review",
+  "files": [
+    {
+      "path": "direct_checks.py",
+      "bytes": 9946,
+      "sha256": "50a53afad93676cba0e5408bdc7d150c1b0ba09a9bf950dd82616360bb36ef7e"
+    },
+    {
+      "path": "pressure_recurrence.patch",
+      "bytes": 12127,
+      "sha256": "81e11d0bdb80e3e27dd015cce7d8252fb2bed96073a4f73438bb33a47aaa137d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3040,
+      "sha256": "bd4bc8f76cbd4fb7e22e1d4c7751f09d4d78d92786cf81715410b17582f5f5ac"
+    },
+    {
+      "path": "recorded/baseline_build.log",
+      "bytes": 311,
+      "sha256": "e9644bdba2f2b5075a98a4c9246a18a8ed6f8d14ec21937a841105bcbd76c793"
+    },
+    {
+      "path": "recorded/candidate_build.log",
+      "bytes": 309,
+      "sha256": "e1e0f30664fbb6badbeaec22efd2ae1c09fa199909d8707066561c3eaaf4e2be"
+    },
+    {
+      "path": "recorded/direct_build.log",
+      "bytes": 357,
+      "sha256": "0c149f7974a592f173f6390c19a9837cfb1d35ca5e83da5386ffff68613f625c"
+    },
+    {
+      "path": "recorded/direct_result.json",
+      "bytes": 1752,
+      "sha256": "dfef691b40c900cf87b7ddb36442787c4723538f0567b36f9736a1f9fbfc3617"
+    },
+    {
+      "path": "recorded/implementation.json",
+      "bytes": 812,
+      "sha256": "e937c9c941eb14552e5b3950fd4ebe9f6a55f0ab575f52deed42eba4acd05ba3"
+    },
+    {
+      "path": "recorded/reproduced_baseline_build.log",
+      "bytes": 285,
+      "sha256": "f06fe8757073a2cff023a1db935d42605e456231f49f09d504321dd75c689a11"
+    },
+    {
+      "path": "recorded/reproduced_candidate_build.log",
+      "bytes": 287,
+      "sha256": "0418d67a041d5bb5580b196c5843725de7fedabd69912d9aeddff5ef1bfcc0e1"
+    },
+    {
+      "path": "recorded/reproduced_direct_build.log",
+      "bytes": 312,
+      "sha256": "00ffe121a20c008324ac8a69935f7bd03b35d485a35d3f317b75ba9c1c5aafdd"
+    },
+    {
+      "path": "recorded/reproduction.json",
+      "bytes": 3321,
+      "sha256": "4881bfbd79090784574de6a6b8de4c9bac557baa1ee6df0633454c78be85a9d7"
+    },
+    {
+      "path": "recorded/source_extraction.json",
+      "bytes": 2447,
+      "sha256": "9f603719ef56c3357dfa281aaecb4cc27c9b81456093a44e1adf5c7450a958df"
+    },
+    {
+      "path": "recorded/validation.json",
+      "bytes": 2487,
+      "sha256": "e2a23ebc7b26ac09bddbeec77ada65e8d7445347bd4504308acf8d3cdc792c7b"
+    },
+    {
+      "path": "reproduce.py",
+      "bytes": 4742,
+      "sha256": "ee718dbd812af352f878a8db178f2f5f8ccea8859cc310ab637d46b1f264ca9a"
+    },
+    {
+      "path": "source_lock.json",
+      "bytes": 1168,
+      "sha256": "afbb679896ede053450808375a31774c79b19a3e54b78c39a54c4d218930a644"
+    }
+  ],
+  "reproduction": "recorded/reproduction.json",
+  "private_path_scan": "pass",
+  "excluded": [
+    "raw model outputs",
+    "build artifacts",
+    "research inputs"
+  ],
+  "humanizer": "humanize-kit:humanizer Embedded; README claims checked after editing"
+}

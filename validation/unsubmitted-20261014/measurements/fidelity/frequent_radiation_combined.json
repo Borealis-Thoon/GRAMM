@@ -1,0 +1,139 @@
+{
+  "case": {
+    "nx": 48,
+    "ny": 36,
+    "nz": 24,
+    "dx": 250,
+    "sc": 3,
+    "wind": 2,
+    "duration": 600,
+    "threads": 4,
+    "irad": 1
+  },
+  "comparisons": [
+    {
+      "variant": "surface_radiation",
+      "status": "pass",
+      "fields": [
+        {
+          "weather": 1,
+          "field": "U",
+          "count": 45325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "V",
+          "count": 45325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "W",
+          "count": 45325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "T",
+          "count": 45325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "QU",
+          "count": 45325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "PN",
+          "count": 45325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "TE",
+          "count": 45325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "DISS",
+          "count": 45325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "RADIATION",
+          "count": 43512,
+          "identical": true
+        }
+      ],
+      "payloads_identical": true,
+      "steps_identical": true
+    },
+    {
+      "variant": "combined",
+      "status": "pass",
+      "fields": [
+        {
+          "weather": 1,
+          "field": "U",
+          "count": 45325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "V",
+          "count": 45325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "W",
+          "count": 45325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "T",
+          "count": 45325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "QU",
+          "count": 45325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "PN",
+          "count": 45325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "TE",
+          "count": 45325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "DISS",
+          "count": 45325,
+          "identical": true
+        },
+        {
+          "weather": 1,
+          "field": "RADIATION",
+          "count": 43512,
+          "identical": true
+        }
+      ],
+      "payloads_identical": true,
+      "steps_identical": true
+    }
+  ]
+}

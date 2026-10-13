@@ -1,0 +1,267 @@
+{
+  "candidate": "pressure_recurrence",
+  "aggregation": "Median of matched per-repetition lifetime reductions",
+  "aliases": [],
+  "included_cases": 5,
+  "included_pairs": 25,
+  "all_candidate_measured_conditions_shown": true,
+  "source_files": [
+    {
+      "file": "native_records.json",
+      "sha256": "abc32d8374ba464da0504b151c94d32d300dd06d0fa24e1ebed917084f189166"
+    }
+  ],
+  "conditions": [
+    {
+      "case": "medium_neutral_4",
+      "condition": "48 \u00d7 36 \u00d7 24 \u00b7 250 m \u00b7 worker setting 4",
+      "pairs": [
+        {
+          "source_case": "recurrence_medium_neutral_4",
+          "rep": 1,
+          "baseline_seconds": 4.0855228,
+          "candidate_seconds": 3.9332102,
+          "saved_percent": 3.7281054948463317
+        },
+        {
+          "source_case": "recurrence_medium_neutral_4",
+          "rep": 2,
+          "baseline_seconds": 4.0838226,
+          "candidate_seconds": 3.8563403,
+          "saved_percent": 5.570327663106633
+        },
+        {
+          "source_case": "recurrence_medium_neutral_4",
+          "rep": 3,
+          "baseline_seconds": 4.0723804,
+          "candidate_seconds": 3.7718186,
+          "saved_percent": 7.380494219056749
+        },
+        {
+          "source_case": "recurrence_medium_neutral_4",
+          "rep": 4,
+          "baseline_seconds": 3.9831364,
+          "candidate_seconds": 3.8241538,
+          "saved_percent": 3.991392310843281
+        },
+        {
+          "source_case": "recurrence_medium_neutral_4",
+          "rep": 5,
+          "baseline_seconds": 4.1448393,
+          "candidate_seconds": 3.9451593,
+          "saved_percent": 4.817557100464675
+        }
+      ],
+      "source_cases": {
+        "recurrence_medium_neutral_4": 5
+      },
+      "label": "Medium neutral",
+      "median_saved_percent": 4.817557100464675,
+      "faster_pairs": 5,
+      "pair_count": 5,
+      "secondary": false
+    },
+    {
+      "case": "stable_coast_8",
+      "condition": "64 \u00d7 48 \u00d7 24 \u00b7 500 m \u00b7 worker setting 8",
+      "pairs": [
+        {
+          "source_case": "recurrence_stable_coast_8",
+          "rep": 1,
+          "baseline_seconds": 6.796303,
+          "candidate_seconds": 6.6256571,
+          "saved_percent": 2.5108636268865623
+        },
+        {
+          "source_case": "recurrence_stable_coast_8",
+          "rep": 2,
+          "baseline_seconds": 6.8076213,
+          "candidate_seconds": 6.630772,
+          "saved_percent": 2.5978134241985487
+        },
+        {
+          "source_case": "recurrence_stable_coast_8",
+          "rep": 3,
+          "baseline_seconds": 7.4614558,
+          "candidate_seconds": 6.7768755,
+          "saved_percent": 9.17488916841135
+        },
+        {
+          "source_case": "recurrence_stable_coast_8",
+          "rep": 4,
+          "baseline_seconds": 6.6096108,
+          "candidate_seconds": 5.6836813,
+          "saved_percent": 14.008835437027543
+        },
+        {
+          "source_case": "recurrence_stable_coast_8",
+          "rep": 5,
+          "baseline_seconds": 6.7452091,
+          "candidate_seconds": 6.0549785,
+          "saved_percent": 10.232901452973495
+        }
+      ],
+      "source_cases": {
+        "recurrence_stable_coast_8": 5
+      },
+      "label": "Stable coastal",
+      "median_saved_percent": 9.17488916841135,
+      "faster_pairs": 5,
+      "pair_count": 5,
+      "secondary": false
+    },
+    {
+      "case": "small_neutral_1",
+      "condition": "24 \u00d7 20 \u00d7 16 \u00b7 100 m \u00b7 worker setting 1",
+      "pairs": [
+        {
+          "source_case": "recurrence_small_neutral_1",
+          "rep": 1,
+          "baseline_seconds": 1.5129739,
+          "candidate_seconds": 1.4997299,
+          "saved_percent": 0.8753620931597058
+        },
+        {
+          "source_case": "recurrence_small_neutral_1",
+          "rep": 2,
+          "baseline_seconds": 1.5213116,
+          "candidate_seconds": 1.4917399,
+          "saved_percent": 1.9438292589105335
+        },
+        {
+          "source_case": "recurrence_small_neutral_1",
+          "rep": 3,
+          "baseline_seconds": 1.528901,
+          "candidate_seconds": 1.49102,
+          "saved_percent": 2.4776620592177028
+        },
+        {
+          "source_case": "recurrence_small_neutral_1",
+          "rep": 4,
+          "baseline_seconds": 1.5097995,
+          "candidate_seconds": 1.4814145,
+          "saved_percent": 1.8800509604089737
+        },
+        {
+          "source_case": "recurrence_small_neutral_1",
+          "rep": 5,
+          "baseline_seconds": 1.5325405,
+          "candidate_seconds": 1.4865773,
+          "saved_percent": 2.9991507565379245
+        }
+      ],
+      "source_cases": {
+        "recurrence_small_neutral_1": 5
+      },
+      "label": "Small neutral",
+      "median_saved_percent": 1.9438292589105335,
+      "faster_pairs": 5,
+      "pair_count": 5,
+      "secondary": false
+    },
+    {
+      "case": "convective_tke_4",
+      "condition": "48 \u00d7 36 \u00d7 24 \u00b7 250 m \u00b7 worker setting 4",
+      "pairs": [
+        {
+          "source_case": "recurrence_convective_tke_4",
+          "rep": 1,
+          "baseline_seconds": 6.6796155,
+          "candidate_seconds": 6.5938036,
+          "saved_percent": 1.2846832276498474
+        },
+        {
+          "source_case": "recurrence_convective_tke_4",
+          "rep": 2,
+          "baseline_seconds": 7.0597655,
+          "candidate_seconds": 6.7445806,
+          "saved_percent": 4.464523644588481
+        },
+        {
+          "source_case": "recurrence_convective_tke_4",
+          "rep": 3,
+          "baseline_seconds": 6.8506029,
+          "candidate_seconds": 6.7432982,
+          "saved_percent": 1.5663541087748678
+        },
+        {
+          "source_case": "recurrence_convective_tke_4",
+          "rep": 4,
+          "baseline_seconds": 7.3592574,
+          "candidate_seconds": 7.0739024,
+          "saved_percent": 3.8774972050848504
+        },
+        {
+          "source_case": "recurrence_convective_tke_4",
+          "rep": 5,
+          "baseline_seconds": 6.7969927,
+          "candidate_seconds": 6.9115026,
+          "saved_percent": -1.6847141824942775
+        }
+      ],
+      "source_cases": {
+        "recurrence_convective_tke_4": 5
+      },
+      "label": "Convective, TKE enabled",
+      "median_saved_percent": 1.5663541087748678,
+      "faster_pairs": 4,
+      "pair_count": 5,
+      "secondary": false
+    },
+    {
+      "case": "large_neutral_14",
+      "condition": "96 \u00d7 64 \u00d7 28 \u00b7 500 m \u00b7 worker setting 14",
+      "pairs": [
+        {
+          "source_case": "products_confirmation_large_14",
+          "rep": 1,
+          "baseline_seconds": 12.740756,
+          "candidate_seconds": 12.8751291,
+          "saved_percent": -1.0546713240564474
+        },
+        {
+          "source_case": "products_confirmation_large_14",
+          "rep": 2,
+          "baseline_seconds": 12.6017135,
+          "candidate_seconds": 12.5127428,
+          "saved_percent": 0.7060206534611412
+        },
+        {
+          "source_case": "products_confirmation_large_14",
+          "rep": 3,
+          "baseline_seconds": 12.6074826,
+          "candidate_seconds": 12.4207342,
+          "saved_percent": 1.4812505075359041
+        },
+        {
+          "source_case": "products_confirmation_large_14",
+          "rep": 4,
+          "baseline_seconds": 12.5054446,
+          "candidate_seconds": 12.4376672,
+          "saved_percent": 0.5419831294922586
+        },
+        {
+          "source_case": "products_confirmation_large_14",
+          "rep": 5,
+          "baseline_seconds": 12.7758399,
+          "candidate_seconds": 12.481146,
+          "saved_percent": 2.30664991348239
+        }
+      ],
+      "source_cases": {
+        "products_confirmation_large_14": 5
+      },
+      "label": "Large neutral",
+      "median_saved_percent": 0.7060206534611412,
+      "faster_pairs": 4,
+      "pair_count": 5,
+      "secondary": false
+    }
+  ],
+  "mechanism_counts": {
+    "coefficient_recurrences_per_column_before": 8,
+    "coefficient_recurrences_per_column_after": 1,
+    "pressure_sweeps": 8,
+    "new_grid_arrays": 0
+  }
+}

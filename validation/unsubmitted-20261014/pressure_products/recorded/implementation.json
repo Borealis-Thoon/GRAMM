@@ -1,0 +1,22 @@
+{
+  "candidate": "pressure_source_products",
+  "baseline": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+  "head": "947cb27ae810ddd9fde3ce545aa5112bd494e330",
+  "branch": "codex/reuse-pressure-source-products",
+  "files": [
+    "src/CALCPR.cs",
+    "src/PRIMP.cs"
+  ],
+  "added_lines": 25,
+  "removed_lines": 48,
+  "added_characters_lf": 1924,
+  "removed_characters_lf": 3698,
+  "convention": "Source line contents plus one LF per added or removed line; diff metadata excluded.",
+  "extra_array_payload_bytes": 0,
+  "new_runtime_state_fields": 0,
+  "new_parallel_phases": 0,
+  "strict_build": "pass; baseline, candidate and direct harness each 0 warnings / 0 errors",
+  "runtime_validation": "source-extracted direct checks pass; full model pending",
+  "performance": "not_measured",
+  "changed_characters_lf": 5622
+}

@@ -1,0 +1,319 @@
+diff --git a/src/CALCPR.cs b/src/CALCPR.cs
+index a53156b..5f0782c 100644
+--- a/src/CALCPR.cs
++++ b/src/CALCPR.cs
+@@ -163,6 +163,14 @@ namespace GRAMM_2001
+                             {
+                                 SUXYZ_L[k] = 0;
+                             }
++
++                            // Cache the float products for the pressure sweeps in these temporary arrays.
++                            // The final divergence pass below restores their unweighted values.
++                            if (Program.ICPN && i > 1 && i < NI && j < NJ_P && k < NK_P)
++                            {
++                                SUZ_L[k] = SUZ_L[k] * AREAZ_L[k];
++                                SUXYZ_L[k] = SUXYZ_L[k] * AREAXYZ_L[k];
++                            }
+                         }
+                     }
+                 }
+diff --git a/src/PRIMP.cs b/src/PRIMP.cs
+index 0456666..d7f4302 100644
+--- a/src/PRIMP.cs
++++ b/src/PRIMP.cs
+@@ -29,6 +29,7 @@ namespace GRAMM_2001
+         [MethodImpl(MethodImplOptions.AggressiveOptimization)]
+         public static int Primp_calculate(int NI, int NJ, int NK)
+         {
++            // CALCPR has already multiplied SUZ and SUXYZ by their face areas.
+             // define the prsssure solver iteration number
+             int iteration = 0;
+             
+@@ -58,8 +59,6 @@ namespace GRAMM_2001
+                         ReadOnlySpan<float> AREAXi_L;
+                         ReadOnlySpan<float> AREAY_L;
+                         ReadOnlySpan<float> AREAYj_L;
+-                        ReadOnlySpan<float> AREAZ_L;
+-                        ReadOnlySpan<float> AREAXYZ_L;
+                         ReadOnlySpan<float> AREAZX_L;
+                         ReadOnlySpan<float> AREAZXi_L;
+                         ReadOnlySpan<float> AREAZY_L;
+@@ -147,8 +146,6 @@ namespace GRAMM_2001
+                                 AREAXi_L    = Program.AREAXImm[iP1][j].AsSpan();
+                                 AREAY_L     = Program.AREAYImm[i][j].AsSpan();
+                                 AREAYj_L    = Program.AREAYImm[i][jP1].AsSpan();
+-                                AREAZ_L     = Program.AREAZImm[i][j].AsSpan();
+-                                AREAXYZ_L   = Program.AREAXYZImm[i][j].AsSpan();
+                                 AREAZX_L    = Program.AREAZXImm[i][j].AsSpan();
+                                 AREAZXi_L   = Program.AREAZXImm[iP1][j].AsSpan();
+                                 AREAZY_L    = Program.AREAZYImm[i][j].AsSpan();
+@@ -169,7 +166,7 @@ namespace GRAMM_2001
+                                     //Coefficients for the lower half-cell
+                                     if (m == 2)
+                                     {
+-                                        DIM = SUZ_L[k] * AREAZ_L[k] - AE_L[kn] * DPXi_L[k - 1] -
++                                        DIM = SUZ_L[k] - AE_L[kn] * DPXi_L[k - 1] -
+                                             AN_L[kn] * DPYj_L[k - 1] - AW_L[kn] * DPX_L[k] -
+                                             AS_L[kn] * DPY_L[k];
+ 
+@@ -184,7 +181,7 @@ namespace GRAMM_2001
+                                     {
+                                         if (kn < 2 * NK_P)
+                                         {
+-                                            DIM = SUXYZ_L[k] * AREAXYZ_L[k] + AW_L[kn] * DPX_L[k] +
++                                            DIM = SUXYZ_L[k] + AW_L[kn] * DPX_L[k] +
+                                                 AS_L[kn] * DPY_L[k] + AE_L[kn] * DPXi_L[k] +
+                                                 AN_L[kn] * DPYj_L[k];
+ 
+@@ -282,8 +279,6 @@ namespace GRAMM_2001
+                         ReadOnlySpan<float> AREAXmi_L;
+                         ReadOnlySpan<float> AREAY_L;
+                         ReadOnlySpan<float> AREAYmj_L;
+-                        ReadOnlySpan<float> AREAZ_L;
+-                        ReadOnlySpan<float> AREAXYZ_L;
+                         ReadOnlySpan<float> AREAZX_L;
+                         ReadOnlySpan<float> AREAZXi_L;
+                         ReadOnlySpan<float> AREAZY_L;
+@@ -375,8 +370,6 @@ namespace GRAMM_2001
+                                 AREAXmi_L  = Program.AREAXImm[i - 1][j].AsSpan();
+                                 AREAY_L    = Program.AREAYImm[i][j].AsSpan();
+                                 AREAYmj_L  = Program.AREAYImm[i][j - 1].AsSpan();
+-                                AREAZ_L    = Program.AREAZImm[i][j].AsSpan();
+-                                AREAXYZ_L  = Program.AREAXYZImm[i][j].AsSpan();
+                                 AREAZX_L   = Program.AREAZXImm[i][j].AsSpan();
+                                 AREAZXi_L  = Program.AREAZXImm[i - 1][j].AsSpan();
+                                 AREAZY_L   = Program.AREAZYImm[i][j].AsSpan();
+@@ -397,7 +390,7 @@ namespace GRAMM_2001
+                                     //Coefficients for the lower half-cell
+                                     if (m == 2)
+                                     {
+-                                        DIM = SUZ_L[k] * AREAZ_L[k] - AE_L[kn] * DPXi_L[k - 1] -
++                                        DIM = SUZ_L[k] - AE_L[kn] * DPXi_L[k - 1] -
+                                             AN_L[kn] * DPYj_L[k - 1] - AW_L[kn] * DPX_L[k] -
+                                             AS_L[kn] * DPY_L[k];
+                                         //Recurrence formula
+@@ -411,7 +404,7 @@ namespace GRAMM_2001
+                                     {
+                                         if (kn < 2 * NK_P)
+                                         {
+-                                            DIM = SUXYZ_L[k] * AREAXYZ_L[k] + AW_L[kn] * DPX_L[k] +
++                                            DIM = SUXYZ_L[k] + AW_L[kn] * DPX_L[k] +
+                                                 AS_L[kn] * DPY_L[k] + AE_L[kn] * DPXi_L[k] +
+                                                 AN_L[kn] * DPYj_L[k];
+ 
+@@ -506,8 +499,6 @@ namespace GRAMM_2001
+                         ReadOnlySpan<float> AREAXmi_L;
+                         ReadOnlySpan<float> AREAY_L;
+                         ReadOnlySpan<float> AREAYmj_L;
+-                        ReadOnlySpan<float> AREAZ_L;
+-                        ReadOnlySpan<float> AREAXYZ_L;
+                         ReadOnlySpan<float> AREAZX_L;
+                         ReadOnlySpan<float> AREAZXi_L;
+                         ReadOnlySpan<float> AREAZY_L;
+@@ -590,8 +581,6 @@ namespace GRAMM_2001
+                                 AREAXmi_L  = Program.AREAXImm[i - 1][j].AsSpan();
+                                 AREAY_L    = Program.AREAYImm[i][j].AsSpan();
+                                 AREAYmj_L  = Program.AREAYImm[i][j - 1].AsSpan();
+-                                AREAZ_L    = Program.AREAZImm[i][j].AsSpan();
+-                                AREAXYZ_L  = Program.AREAXYZImm[i][j].AsSpan();
+                                 AREAZX_L   = Program.AREAZXImm[i][j].AsSpan();
+                                 AREAZXi_L  = Program.AREAZXImm[i - 1][j].AsSpan();
+                                 AREAZY_L   = Program.AREAZYImm[i][j].AsSpan();
+@@ -612,7 +601,7 @@ namespace GRAMM_2001
+                                     //Coefficients for the lower half-cell
+                                     if (m == 2)
+                                     {
+-                                        DIM = SUZ_L[k] * AREAZ_L[k] - AE_L[kn] * DPXi_L[k - 1] -
++                                        DIM = SUZ_L[k] - AE_L[kn] * DPXi_L[k - 1] -
+                                             AN_L[kn] * DPYj_L[k - 1] - AW_L[kn] * DPX_L[k] -
+                                             AS_L[kn] * DPY_L[k];
+ 
+@@ -627,7 +616,7 @@ namespace GRAMM_2001
+                                     {
+                                         if (kn < 2 * NK_P)
+                                         {
+-                                            DIM = SUXYZ_L[k] * AREAXYZ_L[k] + AW_L[kn] * DPX_L[k] +
++                                            DIM = SUXYZ_L[k] + AW_L[kn] * DPX_L[k] +
+                                                 AS_L[kn] * DPY_L[k] + AE_L[kn] * DPXi_L[k] +
+                                                 AN_L[kn] * DPYj_L[k];
+                                             //Recurrence formula
+@@ -720,8 +709,6 @@ namespace GRAMM_2001
+                         ReadOnlySpan<float> AREAXi_L;
+                         ReadOnlySpan<float> AREAY_L;
+                         ReadOnlySpan<float> AREAYj_L;
+-                        ReadOnlySpan<float> AREAZ_L;
+-                        ReadOnlySpan<float> AREAXYZ_L;
+                         ReadOnlySpan<float> AREAZX_L;
+                         ReadOnlySpan<float> AREAZXi_L;
+                         ReadOnlySpan<float> AREAZY_L;
+@@ -801,8 +788,6 @@ namespace GRAMM_2001
+                                 AREAXi_L  = Program.AREAXImm[iP1][j].AsSpan();
+                                 AREAY_L   = Program.AREAYImm[i][j].AsSpan();
+                                 AREAYj_L  = Program.AREAYImm[i][jP1].AsSpan();
+-                                AREAZ_L   = Program.AREAZImm[i][j].AsSpan();
+-                                AREAXYZ_L = Program.AREAXYZImm[i][j].AsSpan();
+                                 AREAZX_L  = Program.AREAZXImm[i][j].AsSpan();
+                                 AREAZXi_L = Program.AREAZXImm[iP1][j].AsSpan();
+                                 AREAZY_L  = Program.AREAZYImm[i][j].AsSpan();
+@@ -823,7 +808,7 @@ namespace GRAMM_2001
+                                     //Coefficients for the lower half-cell
+                                     if (m == 2)
+                                     {
+-                                        DIM = SUZ_L[k] * AREAZ_L[k] - AE_L[kn] * DPXi_L[k - 1] -
++                                        DIM = SUZ_L[k] - AE_L[kn] * DPXi_L[k - 1] -
+                                             AN_L[kn] * DPYj_L[k - 1] - AW_L[kn] * DPX_L[k] -
+                                             AS_L[kn] * DPY_L[k];
+ 
+@@ -838,7 +823,7 @@ namespace GRAMM_2001
+                                     {
+                                         if (kn < 2 * NK_P)
+                                         {
+-                                            DIM = SUXYZ_L[k] * AREAXYZ_L[k] + AW_L[kn] * DPX_L[k] +
++                                            DIM = SUXYZ_L[k] + AW_L[kn] * DPX_L[k] +
+                                                 AS_L[kn] * DPY_L[k] + AE_L[kn] * DPXi_L[k] +
+                                                 AN_L[kn] * DPYj_L[k];
+ 
+@@ -930,8 +915,6 @@ namespace GRAMM_2001
+                         ReadOnlySpan<float> AREAXmi_L;
+                         ReadOnlySpan<float> AREAY_L;
+                         ReadOnlySpan<float> AREAYj_L;
+-                        ReadOnlySpan<float> AREAZ_L;
+-                        ReadOnlySpan<float> AREAXYZ_L;
+                         ReadOnlySpan<float> AREAZX_L;
+                         ReadOnlySpan<float> AREAZXi_L;
+                         ReadOnlySpan<float> AREAZY_L;
+@@ -1021,8 +1004,6 @@ namespace GRAMM_2001
+                                 AREAXmi_L = Program.AREAXImm[i - 1][j].AsSpan();
+                                 AREAY_L   = Program.AREAYImm[i][j].AsSpan();
+                                 AREAYj_L  = Program.AREAYImm[i][jP1].AsSpan();
+-                                AREAZ_L   = Program.AREAZImm[i][j].AsSpan();
+-                                AREAXYZ_L = Program.AREAXYZImm[i][j].AsSpan();
+                                 AREAZX_L  = Program.AREAZXImm[i][j].AsSpan();
+                                 AREAZXi_L = Program.AREAZXImm[i - 1][j].AsSpan();
+                                 AREAZY_L  = Program.AREAZYImm[i][j].AsSpan();
+@@ -1043,7 +1024,7 @@ namespace GRAMM_2001
+                                     //Coefficients for the lower half-cell
+                                     if (m == 2)
+                                     {
+-                                        DIM = SUZ_L[k] * AREAZ_L[k] - AE_L[kn] * DPXi_L[k - 1] -
++                                        DIM = SUZ_L[k] - AE_L[kn] * DPXi_L[k - 1] -
+                                             AN_L[kn] * DPYj_L[k - 1] - AW_L[kn] * DPX_L[k] -
+                                             AS_L[kn] * DPY_L[k];
+ 
+@@ -1058,7 +1039,7 @@ namespace GRAMM_2001
+                                     {
+                                         if (kn < 2 * NK_P)
+                                         {
+-                                            DIM = SUXYZ_L[k] * AREAXYZ_L[k] + AW_L[kn] * DPX_L[k] +
++                                            DIM = SUXYZ_L[k] + AW_L[kn] * DPX_L[k] +
+                                                 AS_L[kn] * DPY_L[k] + AE_L[kn] * DPXi_L[k] +
+                                                 AN_L[kn] * DPYj_L[k];
+ 
+@@ -1151,8 +1132,6 @@ namespace GRAMM_2001
+                         ReadOnlySpan<float> AREAXi_L;
+                         ReadOnlySpan<float> AREAY_L;
+                         ReadOnlySpan<float> AREAYmj_L;
+-                        ReadOnlySpan<float> AREAZ_L;
+-                        ReadOnlySpan<float> AREAXYZ_L;
+                         ReadOnlySpan<float> AREAZX_L;
+                         ReadOnlySpan<float> AREAZXi_L;
+                         ReadOnlySpan<float> AREAZY_L;
+@@ -1243,8 +1222,6 @@ namespace GRAMM_2001
+                                 AREAXi_L  = Program.AREAXImm[iP1][j].AsSpan();
+                                 AREAY_L   = Program.AREAYImm[i][j].AsSpan();
+                                 AREAYmj_L = Program.AREAYImm[i][j - 1].AsSpan();
+-                                AREAZ_L   = Program.AREAZImm[i][j].AsSpan();
+-                                AREAXYZ_L = Program.AREAXYZImm[i][j].AsSpan();
+                                 AREAZX_L  = Program.AREAZXImm[i][j].AsSpan();
+                                 AREAZXi_L = Program.AREAZXImm[iP1][j].AsSpan();
+                                 AREAZY_L  = Program.AREAZYImm[i][j].AsSpan();
+@@ -1266,7 +1243,7 @@ namespace GRAMM_2001
+                                     //Coefficients for the lower half-cell
+                                     if (m == 2)
+                                     {
+-                                        DIM = SUZ_L[k] * AREAZ_L[k] - AE_L[kn] * DPXi_L[k - 1] -
++                                        DIM = SUZ_L[k] - AE_L[kn] * DPXi_L[k - 1] -
+                                             AN_L[kn] * DPYj_L[k - 1] - AW_L[kn] * DPX_L[k] -
+                                             AS_L[kn] * DPY_L[k];
+                                         //Recurrence formula
+@@ -1280,7 +1257,7 @@ namespace GRAMM_2001
+                                     {
+                                         if (kn < 2 * NK_P)
+                                         {
+-                                            DIM = SUXYZ_L[k] * AREAXYZ_L[k] + AW_L[kn] * DPX_L[k] +
++                                            DIM = SUXYZ_L[k] + AW_L[kn] * DPX_L[k] +
+                                                 AS_L[kn] * DPY_L[k] + AE_L[kn] * DPXi_L[k] +
+                                                 AN_L[kn] * DPYj_L[k];
+ 
+@@ -1373,8 +1350,6 @@ namespace GRAMM_2001
+                         ReadOnlySpan<float> AREAXi_L;
+                         ReadOnlySpan<float> AREAY_L;
+                         ReadOnlySpan<float> AREAYmj_L;
+-                        ReadOnlySpan<float> AREAZ_L;
+-                        ReadOnlySpan<float> AREAXYZ_L;
+                         ReadOnlySpan<float> AREAZX_L;
+                         ReadOnlySpan<float> AREAZXi_L;
+                         ReadOnlySpan<float> AREAZY_L;
+@@ -1455,8 +1430,6 @@ namespace GRAMM_2001
+                                 AREAXi_L   = Program.AREAXImm[iP1][j].AsSpan();
+                                 AREAY_L    = Program.AREAYImm[i][j].AsSpan();
+                                 AREAYmj_L  = Program.AREAYImm[i][j - 1].AsSpan();
+-                                AREAZ_L    = Program.AREAZImm[i][j].AsSpan();
+-                                AREAXYZ_L  = Program.AREAXYZImm[i][j].AsSpan();
+                                 AREAZX_L   = Program.AREAZXImm[i][j].AsSpan();
+                                 AREAZXi_L  = Program.AREAZXImm[iP1][j].AsSpan();
+                                 AREAZY_L   = Program.AREAZYImm[i][j].AsSpan();
+@@ -1478,7 +1451,7 @@ namespace GRAMM_2001
+                                     //Coefficients for the lower half-cell
+                                     if (m == 2)
+                                     {
+-                                        DIM = SUZ_L[k] * AREAZ_L[k] - AE_L[kn] * DPXi_L[k - 1] -
++                                        DIM = SUZ_L[k] - AE_L[kn] * DPXi_L[k - 1] -
+                                             AN_L[kn] * DPYj_L[k - 1] - AW_L[kn] * DPX_L[k] -
+                                             AS_L[kn] * DPY_L[k];
+                                         //Recurrence formula
+@@ -1492,7 +1465,7 @@ namespace GRAMM_2001
+                                     {
+                                         if (kn < 2 * NK_P)
+                                         {
+-                                            DIM = SUXYZ_L[k] * AREAXYZ_L[k] + AW_L[kn] * DPX_L[k] +
++                                            DIM = SUXYZ_L[k] + AW_L[kn] * DPX_L[k] +
+                                                 AS_L[kn] * DPY_L[k] + AE_L[kn] * DPXi_L[k] +
+                                                 AN_L[kn] * DPYj_L[k];
+                                             //Recurrence formula
+@@ -1585,8 +1558,6 @@ namespace GRAMM_2001
+                         ReadOnlySpan<float> AREAXmi_L;
+                         ReadOnlySpan<float> AREAY_L;
+                         ReadOnlySpan<float> AREAYj_L;
+-                        ReadOnlySpan<float> AREAZ_L;
+-                        ReadOnlySpan<float> AREAXYZ_L;
+                         ReadOnlySpan<float> AREAZX_L;
+                         ReadOnlySpan<float> AREAZXi_L;
+                         ReadOnlySpan<float> AREAZY_L;
+@@ -1666,8 +1637,6 @@ namespace GRAMM_2001
+                                 AREAXmi_L = Program.AREAXImm[i - 1][j].AsSpan();
+                                 AREAY_L   = Program.AREAYImm[i][j].AsSpan();
+                                 AREAYj_L  = Program.AREAYImm[i][jP1].AsSpan();
+-                                AREAZ_L   = Program.AREAZImm[i][j].AsSpan();
+-                                AREAXYZ_L = Program.AREAXYZImm[i][j].AsSpan();
+                                 AREAZX_L  = Program.AREAZXImm[i][j].AsSpan();
+                                 AREAZXi_L = Program.AREAZXImm[i - 1][j].AsSpan();
+                                 AREAZY_L  = Program.AREAZYImm[i][j].AsSpan();
+@@ -1688,7 +1657,7 @@ namespace GRAMM_2001
+                                     //Coefficients for the lower half-cell
+                                     if (m == 2)
+                                     {
+-                                        DIM = SUZ_L[k] * AREAZ_L[k] - AE_L[kn] * DPXi_L[k - 1] -
++                                        DIM = SUZ_L[k] - AE_L[kn] * DPXi_L[k - 1] -
+                                             AN_L[kn] * DPYj_L[k - 1] - AW_L[kn] * DPX_L[k] -
+                                             AS_L[kn] * DPY_L[k];
+ 
+@@ -1703,7 +1672,7 @@ namespace GRAMM_2001
+                                     {
+                                         if (kn < 2 * NK_P)
+                                         {
+-                                            DIM = SUXYZ_L[k] * AREAXYZ_L[k] + AW_L[kn] * DPX_L[k] +
++                                            DIM = SUXYZ_L[k] + AW_L[kn] * DPX_L[k] +
+                                                 AS_L[kn] * DPY_L[k] + AE_L[kn] * DPXi_L[k] +
+                                                 AN_L[kn] * DPYj_L[k];
+ 

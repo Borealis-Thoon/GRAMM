@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "expressionCases": 334112,
+  "finiteCases": 285712,
+  "nonfiniteCases": 48400,
+  "expressionMismatches": 0,
+  "floatCases": 142564,
+  "floatMismatches": 0,
+  "guardCases": 6300,
+  "failures": [],
+  "coverage": "16 extracted DIM expressions; source cutoff boundary; signed zero; finite random bit patterns; NaN and infinities; positive/negative/zero face areas; pressure off; lateral/level-zero/top sentinels",
+  "scope": "Component checks only. Full CALCPR restoration and model outputs are validated separately."
+}

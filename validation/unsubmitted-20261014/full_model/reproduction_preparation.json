@@ -1,0 +1,163 @@
+{
+  "status": "pass_all_eight_public_sources_reproduced",
+  "scripts": [
+    {
+      "file": "reproduce.py",
+      "sha256": "0304192dfae7a8489bd62435b667a75230f056b1be71d839618f748abbe73fef",
+      "syntax": "pass"
+    },
+    {
+      "file": "full_model/work/candidate_suite.py",
+      "sha256": "70b8fa53e2784acc89fca08ba483e230c520c52fb5b2f6b2ee36c7dd0a62ee17",
+      "syntax": "pass"
+    },
+    {
+      "file": "full_model/work/fidelity_suite.py",
+      "sha256": "ec3158b28864be64fa772edfdbd7b34949fb79c05e16ff99220e751c43f7b1b5",
+      "syntax": "pass"
+    },
+    {
+      "file": "full_model/work/fixture.py",
+      "sha256": "0f7037d132bce897c085b39b845d7a34fb83c3e90d6e8f45d106e24827e96696",
+      "syntax": "pass"
+    },
+    {
+      "file": "full_model/work/full_tests.py",
+      "sha256": "01b41f502c61ca3f3ec4dca73dd0c00f3b755822bc812c8a33283716eb5c588b",
+      "syntax": "pass"
+    },
+    {
+      "file": "full_model/work/geometry_fixture.py",
+      "sha256": "e832285584ae1f24dd99fd5ee73c697f47a5118f4bfc1359c20b345524a6087c",
+      "syntax": "pass"
+    },
+    {
+      "file": "full_model/work/pressure_followup.py",
+      "sha256": "c1161ea6695ca0ff700df944ef5f950949ca65a22d04294d21ec7d132de00f57",
+      "syntax": "pass"
+    },
+    {
+      "file": "full_model/work/recurrence_followup.py",
+      "sha256": "79e596cf717561808c44d60498e2cb8d4aae76cee500fda9bab9bd82582a7ff7",
+      "syntax": "pass"
+    },
+    {
+      "file": "full_model/work/surface_followup.py",
+      "sha256": "6d196dd514d474717ebe08ef07ce06a8928541092217817e2e92e7bfd282ad77",
+      "syntax": "pass"
+    },
+    {
+      "file": "full_model/qa/full_engine_harness/prepare_instrumented.py",
+      "sha256": "344cd20fe977a2f1debc6cc5b001ec5cdeced9542ba827c4d54a9531e109423b",
+      "syntax": "pass"
+    },
+    {
+      "file": "full_model/qa/parallel_state/analyze_parallel_state.py",
+      "sha256": "8f6ba9f09cf1f2c11743b4371d89d8c63d9a4916176b1360d301e9b9e96fd9ea",
+      "syntax": "pass"
+    },
+    {
+      "file": "full_model/qa/parallel_state/review_outputs.py",
+      "sha256": "9ab6f7b2372204e9b6c37a1406aff027e9414670d0b8304aedcdd5f1d17efccd",
+      "syntax": "pass"
+    },
+    {
+      "file": "full_model/qa/parallel_state/run_parallel_state.py",
+      "sha256": "bd92dcbaadc5c11266a986a3fdb47eebf1a13cb0a468300c3c695211d3427ec1",
+      "syntax": "pass"
+    },
+    {
+      "file": "full_model/qa/pressure/native_console_runner.py",
+      "sha256": "e6b720bc7dd56606016fb7676b5ba57b52eb9dbceef89399af60d88085c41242",
+      "syntax": "pass"
+    },
+    {
+      "file": "full_model/qa/recurrence_parallel/analyze_parallel_state.py",
+      "sha256": "58bf269e1375724cba147842d336c2bda6c9bb6b925c55723429ec8ff14f7cb5",
+      "syntax": "pass"
+    },
+    {
+      "file": "full_model/qa/recurrence_parallel/review_outputs.py",
+      "sha256": "79f50abd83bd96ecea590c63d1c4957ce06a64da5f5de44d0a593d2f192bcca5",
+      "syntax": "pass"
+    },
+    {
+      "file": "full_model/qa/recurrence_parallel/run_parallel_state.py",
+      "sha256": "e9521f5dcc04e5930b36fe79e5451c348792046837420f0848ba412447ed972d",
+      "syntax": "pass"
+    },
+    {
+      "file": "full_model/qa/test_review/validate_completed.py",
+      "sha256": "6f96bf00d17f2d2c845c8bab3e87306dac015dafc4e01ec8fb805e46fecf9e49",
+      "syntax": "pass"
+    },
+    {
+      "file": "call_lifetime/fidelity_suite.py",
+      "sha256": "1a27d7fdf0b6d462eff6cc2b3d02bbd2cce0370010f372592c19d4c9a1c21ef6",
+      "syntax": "pass"
+    },
+    {
+      "file": "call_lifetime/fixture.py",
+      "sha256": "0f7037d132bce897c085b39b845d7a34fb83c3e90d6e8f45d106e24827e96696",
+      "syntax": "pass"
+    },
+    {
+      "file": "call_lifetime/full_tests.py",
+      "sha256": "1a1856388b7677c8b013d20b7c218ee655fcc40f6ff0adeabaf35a4b8067e70e",
+      "syntax": "pass"
+    },
+    {
+      "file": "call_lifetime/geometry_fixture.py",
+      "sha256": "e832285584ae1f24dd99fd5ee73c697f47a5118f4bfc1359c20b345524a6087c",
+      "syntax": "pass"
+    },
+    {
+      "file": "call_lifetime/prepare_lifetime.py",
+      "sha256": "c8a6a4734fb5903acab00289e02ed17ba38dc7d817392bc4b5218e4de4d1901b",
+      "syntax": "pass"
+    },
+    {
+      "file": "call_lifetime/run_lifetime.py",
+      "sha256": "1a6692087462d7d4f313690c251fdc53e1edccff93fe2238c777b6f97534ea45",
+      "syntax": "pass"
+    },
+    {
+      "file": "figures/draw_pressure_products.py",
+      "sha256": "1d47a385e9aabd93cf345b01fa61734b60e2fbffe8ca2cc8812b5aaf5e7186c1",
+      "syntax": "pass"
+    },
+    {
+      "file": "figures/draw_pressure_recurrence.py",
+      "sha256": "45195cf7f1d36b24e05418e46f0e337c761bd076a5d9f6f13150f940b6d99240",
+      "syntax": "pass"
+    },
+    {
+      "file": "figures/draw_surface.py",
+      "sha256": "5ff5728af593b971f48780baad7d9241173392e660e88d0ea4072be3e64c7d69",
+      "syntax": "pass"
+    }
+  ],
+  "default_variants": [
+    "baseline",
+    "surface_radiation",
+    "store_height",
+    "terminal_diagnostics"
+  ],
+  "optional_variants": [
+    "pressure_products",
+    "combined",
+    "pressure_recurrence",
+    "selected_combined"
+  ],
+  "source_restore_and_build_reexecuted": true,
+  "models_reexecuted": true,
+  "timing_measured": false,
+  "prose_review": {
+    "skill": "humanize-kit:humanizer",
+    "mode": "Embedded",
+    "claims_numbers_and_scope_preserved": true
+  },
+  "pending_checks": [],
+  "verified_reproduction": "recorded/public_reproduction.json",
+  "call_lifetime_reproduction": "../call_lifetime/recorded/portable_reproduction.json"
+}

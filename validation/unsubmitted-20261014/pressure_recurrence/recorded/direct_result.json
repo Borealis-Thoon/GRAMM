@@ -1,0 +1,48 @@
+{
+  "status": "pass",
+  "recurrenceCases": 73728,
+  "comparisons": 3207168,
+  "finiteComparisons": 1860608,
+  "nonfiniteComparisons": 1346560,
+  "mismatches": 0,
+  "boundaryCases": 18432,
+  "pressureOffCases": 4608,
+  "baselinePressureLambdas": 8,
+  "baselineInitLocals": true,
+  "lambdaBodies": [
+    {
+      "method": "GRAMM_2001.Program\u002B\u003C\u003Ec__DisplayClass27_0.\u003CPrimp_calculate\u003Eb__0",
+      "initLocals": true
+    },
+    {
+      "method": "GRAMM_2001.Program\u002B\u003C\u003Ec__DisplayClass27_0.\u003CPrimp_calculate\u003Eb__1",
+      "initLocals": true
+    },
+    {
+      "method": "GRAMM_2001.Program\u002B\u003C\u003Ec__DisplayClass27_0.\u003CPrimp_calculate\u003Eb__2",
+      "initLocals": true
+    },
+    {
+      "method": "GRAMM_2001.Program\u002B\u003C\u003Ec__DisplayClass27_0.\u003CPrimp_calculate\u003Eb__3",
+      "initLocals": true
+    },
+    {
+      "method": "GRAMM_2001.Program\u002B\u003C\u003Ec__DisplayClass27_0.\u003CPrimp_calculate\u003Eb__4",
+      "initLocals": true
+    },
+    {
+      "method": "GRAMM_2001.Program\u002B\u003C\u003Ec__DisplayClass27_0.\u003CPrimp_calculate\u003Eb__5",
+      "initLocals": true
+    },
+    {
+      "method": "GRAMM_2001.Program\u002B\u003C\u003Ec__DisplayClass27_0.\u003CPrimp_calculate\u003Eb__6",
+      "initLocals": true
+    },
+    {
+      "method": "GRAMM_2001.Program\u002B\u003C\u003Ec__DisplayClass27_0.\u003CPrimp_calculate\u003Eb__7",
+      "initLocals": true
+    }
+  ],
+  "failures": [],
+  "scope": "16 source-extracted recurrence blocks, actual guarded TERMIP transform, P/Q bits, pressure-off arrays, AT preservation and top coefficient boundaries; compiled baseline locals and stackalloc \u002B0 top checks"
+}

@@ -1,0 +1,66 @@
+{
+  "baseline": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+  "candidate": "44df730514c6ea9af235a5abd0c66a03ce62dded",
+  "recurrence_blocks": 16,
+  "source_hashes": {
+    "baseline": {
+      "TERMIP.cs": "bd19d277cfcbe5bc33dde6621567d1c39780d94f207423d57f495e00cb0d6734",
+      "PRIMP.cs": "2dd582de8348cdefde08d1e3ab4c34d3346fb25a63c5f16ef6a4d6c18a460bbe"
+    },
+    "candidate": {
+      "TERMIP.cs": "9ed0f5665415b94e012e18173d0308589aa1fbb7ebc7d10bad4dd1da2da30f40",
+      "PRIMP.cs": "d5c166826649f7819ee7d6f8351771a66b4393d7c685864427c8a7437d0247b8"
+    }
+  },
+  "harness_sha256": "66616603bf9220b7dcb0d95e769565acb90475a60369993f1a3ddde7492e4c03",
+  "tests_run": true,
+  "result": {
+    "status": "pass",
+    "recurrenceCases": 73728,
+    "comparisons": 3207168,
+    "finiteComparisons": 1860608,
+    "nonfiniteComparisons": 1346560,
+    "mismatches": 0,
+    "boundaryCases": 18432,
+    "pressureOffCases": 4608,
+    "baselinePressureLambdas": 8,
+    "baselineInitLocals": true,
+    "lambdaBodies": [
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__0",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__1",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__2",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__3",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__4",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__5",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__6",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__7",
+        "initLocals": true
+      }
+    ],
+    "failures": [],
+    "scope": "16 source-extracted recurrence blocks, actual guarded TERMIP transform, P/Q bits, pressure-off arrays, AT preservation and top coefficient boundaries; compiled baseline locals and stackalloc +0 top checks"
+  },
+  "baseline_assembly_sha256": "3b6835376b306b52e078f0f880b18cf496abd0396b4447e21b3f7d64f166da27"
+}

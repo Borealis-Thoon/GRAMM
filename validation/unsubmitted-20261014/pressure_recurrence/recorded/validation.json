@@ -1,0 +1,76 @@
+{
+  "status": "direct_and_strict_builds_pass",
+  "baseline": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+  "candidate": "44df730514c6ea9af235a5abd0c66a03ce62dded",
+  "strict_builds": [
+    {
+      "name": "baseline",
+      "warnings": 0,
+      "errors": 0,
+      "log": "baseline_build.log"
+    },
+    {
+      "name": "candidate",
+      "warnings": 0,
+      "errors": 0,
+      "log": "candidate_build.log"
+    },
+    {
+      "name": "direct",
+      "warnings": 0,
+      "errors": 0,
+      "log": "direct_build.log"
+    }
+  ],
+  "direct": {
+    "status": "pass",
+    "recurrenceCases": 73728,
+    "comparisons": 3207168,
+    "finiteComparisons": 1860608,
+    "nonfiniteComparisons": 1346560,
+    "mismatches": 0,
+    "boundaryCases": 18432,
+    "pressureOffCases": 4608,
+    "baselinePressureLambdas": 8,
+    "baselineInitLocals": true,
+    "lambdaBodies": [
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__0",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__1",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__2",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__3",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__4",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__5",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__6",
+        "initLocals": true
+      },
+      {
+        "method": "GRAMM_2001.Program+<>c__DisplayClass27_0.<Primp_calculate>b__7",
+        "initLocals": true
+      }
+    ],
+    "failures": [],
+    "scope": "16 source-extracted recurrence blocks, actual guarded TERMIP transform, P/Q bits, pressure-off arrays, AT preservation and top coefficient boundaries; compiled baseline locals and stackalloc +0 top checks"
+  },
+  "baseline_assembly_note": "The baseline Release build is the unchanged warning-clean commit already used by the pressure-product checks. The direct harness inspected its actual PRIMP method bodies.",
+  "full_model": "Maintained separately.",
+  "performance_measured": false
+}

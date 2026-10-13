@@ -1,0 +1,15 @@
+{
+  "skill": "humanize-kit:humanizer",
+  "mode": "Embedded",
+  "files": [
+    "README.md"
+  ],
+  "process": [
+    "Drafted instructions from source locks and final measured component counts.",
+    "Audited staging phrases, repeated qualifiers and unsupported performance claims.",
+    "Revised the README to state the purpose directly and give one reproducible command sequence.",
+    "Checked commit IDs, counts, numerical scope and command arguments after editing."
+  ],
+  "unresolved_fidelity_issues": [],
+  "automated_grade": null
+}

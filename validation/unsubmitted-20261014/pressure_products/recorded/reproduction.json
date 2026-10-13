@@ -1,0 +1,77 @@
+{
+  "status": "pass",
+  "baseline": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+  "candidate": "947cb27ae810ddd9fde3ce545aa5112bd494e330",
+  "source_hashes_checked": [
+    {
+      "variant": "baseline",
+      "file": "src/CALCPR.cs",
+      "sha256": "7963d6e7f0dce6865131114512886e48443ed67e0d8a34a1fe7e0df38a12106a"
+    },
+    {
+      "variant": "baseline",
+      "file": "src/PRIMP.cs",
+      "sha256": "2dd582de8348cdefde08d1e3ab4c34d3346fb25a63c5f16ef6a4d6c18a460bbe"
+    },
+    {
+      "variant": "baseline",
+      "file": "src/GRAMM.csproj",
+      "sha256": "337de162b907efd0dec9e6bc6bb3b3b8a7e854748de33d671f00bea2ea4176dc"
+    },
+    {
+      "variant": "candidate",
+      "file": "src/CALCPR.cs",
+      "sha256": "98fc0e6085ad7c76913319dcde95bcb621016b28b02613d127d9b7ae6d56ab36"
+    },
+    {
+      "variant": "candidate",
+      "file": "src/PRIMP.cs",
+      "sha256": "d04ddcaf991b1bbafab4a092382bdf62e670c1f4433a3bd6eb01a6738fda342d"
+    },
+    {
+      "variant": "candidate",
+      "file": "src/GRAMM.csproj",
+      "sha256": "337de162b907efd0dec9e6bc6bb3b3b8a7e854748de33d671f00bea2ea4176dc"
+    }
+  ],
+  "engine_builds": [
+    {
+      "variant": "baseline",
+      "status": "pass",
+      "warnings_as_errors": true,
+      "log": "reproduced_baseline_build.log",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "variant": "candidate",
+      "status": "pass",
+      "warnings_as_errors": true,
+      "log": "reproduced_candidate_build.log",
+      "warnings": 0,
+      "errors": 0
+    }
+  ],
+  "direct_harness_build": {
+    "status": "pass",
+    "warnings": 0,
+    "errors": 0,
+    "log": "reproduced_direct_build.log"
+  },
+  "generated_harness_matches_recorded": true,
+  "direct_result_matches_recorded": true,
+  "direct_result": {
+    "status": "pass",
+    "expressionCases": 334112,
+    "finiteCases": 285712,
+    "nonfiniteCases": 48400,
+    "expressionMismatches": 0,
+    "floatCases": 142564,
+    "floatMismatches": 0,
+    "guardCases": 6300,
+    "failures": [],
+    "coverage": "16 extracted DIM expressions; source cutoff boundary; signed zero; finite random bit patterns; NaN and infinities; positive/negative/zero face areas; pressure off; lateral/level-zero/top sentinels",
+    "scope": "Component checks only. Full CALCPR restoration and model outputs are validated separately."
+  },
+  "performance_measured": false
+}

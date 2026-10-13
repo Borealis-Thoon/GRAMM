@@ -1,0 +1,841 @@
+{
+  "status": "pass",
+  "scope": "Completed native parallel runs; decoded integer outputs and final double snapshots",
+  "runs": 18,
+  "output_pairs": 18,
+  "wind_components_per_file": 124416,
+  "all_wind_component_rounding_checks": 2239488,
+  "wind_quantum_ms": 0.01,
+  "all_rounding_checks_passed": true,
+  "surface_payloads_per_file": 3,
+  "surface_storage_units": {
+    "ust": ".001 m/s",
+    "obl": ".1 m",
+    "scl": "stability-class integer"
+  },
+  "numerical_retries": 0,
+  "summary": [
+    {
+      "variant": "baseline",
+      "pairs": 9,
+      "wind_changed_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "wind_identical_pairs": 9,
+      "max_wind_changed_count": 0,
+      "max_wind_changed_fraction": 0.0,
+      "max_wind_tick_difference": 0,
+      "max_wind_mae_ms": 0.0,
+      "all_surface_payload_pairs_identical": true,
+      "steady_state_identical_pairs": 9,
+      "integration_identical_pairs": 9,
+      "full_precision_field_pairs": 81,
+      "full_precision_identical_field_pairs": 67,
+      "setting_1_all_fields_bitwise_identical": true,
+      "max_wind_component_difference_ms": 5.643165017037415e-06,
+      "max_temperature_difference_K": 1.529530990751482e-08
+    },
+    {
+      "variant": "pressure_recurrence",
+      "pairs": 9,
+      "wind_changed_counts": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "wind_identical_pairs": 6,
+      "max_wind_changed_count": 1,
+      "max_wind_changed_fraction": 8.037551440329219e-06,
+      "max_wind_tick_difference": 1,
+      "max_wind_mae_ms": 8.037551440329219e-08,
+      "all_surface_payload_pairs_identical": true,
+      "steady_state_identical_pairs": 9,
+      "integration_identical_pairs": 9,
+      "full_precision_field_pairs": 81,
+      "full_precision_identical_field_pairs": 50,
+      "setting_1_all_fields_bitwise_identical": true,
+      "max_wind_component_difference_ms": 1.816318261924768e-05,
+      "max_temperature_difference_K": 2.423274914065132e-07
+    }
+  ],
+  "comparisons": [
+    {
+      "threads": 1,
+      "kind": "baseline_repeat",
+      "reference_variant": "baseline",
+      "candidate_variant": "baseline",
+      "reference_repeat": 1,
+      "candidate_repeat": 2,
+      "wind_values": 124416,
+      "wind_changed_count": 0,
+      "wind_changed_fraction": 0.0,
+      "wind_max_abs_ticks": 0,
+      "wind_max_abs_ms": 0.0,
+      "wind_mae_ms": 0.0,
+      "wind_identical": true,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": []
+    },
+    {
+      "threads": 1,
+      "kind": "baseline_repeat",
+      "reference_variant": "baseline",
+      "candidate_variant": "baseline",
+      "reference_repeat": 1,
+      "candidate_repeat": 3,
+      "wind_values": 124416,
+      "wind_changed_count": 0,
+      "wind_changed_fraction": 0.0,
+      "wind_max_abs_ticks": 0,
+      "wind_max_abs_ms": 0.0,
+      "wind_mae_ms": 0.0,
+      "wind_identical": true,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": []
+    },
+    {
+      "threads": 1,
+      "kind": "baseline_repeat",
+      "reference_variant": "baseline",
+      "candidate_variant": "baseline",
+      "reference_repeat": 2,
+      "candidate_repeat": 3,
+      "wind_values": 124416,
+      "wind_changed_count": 0,
+      "wind_changed_fraction": 0.0,
+      "wind_max_abs_ticks": 0,
+      "wind_max_abs_ms": 0.0,
+      "wind_mae_ms": 0.0,
+      "wind_identical": true,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": []
+    },
+    {
+      "threads": 1,
+      "kind": "matched_patch",
+      "reference_variant": "baseline",
+      "candidate_variant": "pressure_recurrence",
+      "reference_repeat": 1,
+      "candidate_repeat": 1,
+      "wind_values": 124416,
+      "wind_changed_count": 0,
+      "wind_changed_fraction": 0.0,
+      "wind_max_abs_ticks": 0,
+      "wind_max_abs_ms": 0.0,
+      "wind_mae_ms": 0.0,
+      "wind_identical": true,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": []
+    },
+    {
+      "threads": 1,
+      "kind": "matched_patch",
+      "reference_variant": "baseline",
+      "candidate_variant": "pressure_recurrence",
+      "reference_repeat": 2,
+      "candidate_repeat": 2,
+      "wind_values": 124416,
+      "wind_changed_count": 0,
+      "wind_changed_fraction": 0.0,
+      "wind_max_abs_ticks": 0,
+      "wind_max_abs_ms": 0.0,
+      "wind_mae_ms": 0.0,
+      "wind_identical": true,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": []
+    },
+    {
+      "threads": 1,
+      "kind": "matched_patch",
+      "reference_variant": "baseline",
+      "candidate_variant": "pressure_recurrence",
+      "reference_repeat": 3,
+      "candidate_repeat": 3,
+      "wind_values": 124416,
+      "wind_changed_count": 0,
+      "wind_changed_fraction": 0.0,
+      "wind_max_abs_ticks": 0,
+      "wind_max_abs_ms": 0.0,
+      "wind_mae_ms": 0.0,
+      "wind_identical": true,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": []
+    },
+    {
+      "threads": 4,
+      "kind": "baseline_repeat",
+      "reference_variant": "baseline",
+      "candidate_variant": "baseline",
+      "reference_repeat": 1,
+      "candidate_repeat": 2,
+      "wind_values": 124416,
+      "wind_changed_count": 0,
+      "wind_changed_fraction": 0.0,
+      "wind_max_abs_ticks": 0,
+      "wind_max_abs_ms": 0.0,
+      "wind_mae_ms": 0.0,
+      "wind_identical": true,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": []
+    },
+    {
+      "threads": 4,
+      "kind": "baseline_repeat",
+      "reference_variant": "baseline",
+      "candidate_variant": "baseline",
+      "reference_repeat": 1,
+      "candidate_repeat": 3,
+      "wind_values": 124416,
+      "wind_changed_count": 0,
+      "wind_changed_fraction": 0.0,
+      "wind_max_abs_ticks": 0,
+      "wind_max_abs_ms": 0.0,
+      "wind_mae_ms": 0.0,
+      "wind_identical": true,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": []
+    },
+    {
+      "threads": 4,
+      "kind": "baseline_repeat",
+      "reference_variant": "baseline",
+      "candidate_variant": "baseline",
+      "reference_repeat": 2,
+      "candidate_repeat": 3,
+      "wind_values": 124416,
+      "wind_changed_count": 0,
+      "wind_changed_fraction": 0.0,
+      "wind_max_abs_ticks": 0,
+      "wind_max_abs_ms": 0.0,
+      "wind_mae_ms": 0.0,
+      "wind_identical": true,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": []
+    },
+    {
+      "threads": 4,
+      "kind": "matched_patch",
+      "reference_variant": "baseline",
+      "candidate_variant": "pressure_recurrence",
+      "reference_repeat": 1,
+      "candidate_repeat": 1,
+      "wind_values": 124416,
+      "wind_changed_count": 1,
+      "wind_changed_fraction": 8.037551440329219e-06,
+      "wind_max_abs_ticks": 1,
+      "wind_max_abs_ms": 0.01,
+      "wind_mae_ms": 8.037551440329219e-08,
+      "wind_identical": false,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": [
+        {
+          "i": 43,
+          "j": 26,
+          "k": 22,
+          "component": "U",
+          "baseline_tick": 416,
+          "candidate_tick": 417,
+          "difference_ticks": 1,
+          "baseline_full_precision_ms": 4.164997909677801,
+          "candidate_full_precision_ms": 4.165000118181775,
+          "full_precision_difference_ms": 2.2085039734776046e-06
+        }
+      ]
+    },
+    {
+      "threads": 4,
+      "kind": "matched_patch",
+      "reference_variant": "baseline",
+      "candidate_variant": "pressure_recurrence",
+      "reference_repeat": 2,
+      "candidate_repeat": 2,
+      "wind_values": 124416,
+      "wind_changed_count": 1,
+      "wind_changed_fraction": 8.037551440329219e-06,
+      "wind_max_abs_ticks": 1,
+      "wind_max_abs_ms": 0.01,
+      "wind_mae_ms": 8.037551440329219e-08,
+      "wind_identical": false,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": [
+        {
+          "i": 32,
+          "j": 25,
+          "k": 10,
+          "component": "U",
+          "baseline_tick": 313,
+          "candidate_tick": 314,
+          "difference_ticks": 1,
+          "baseline_full_precision_ms": 3.134999747385578,
+          "candidate_full_precision_ms": 3.1350001813996746,
+          "full_precision_difference_ms": 4.340140966618833e-07
+        }
+      ]
+    },
+    {
+      "threads": 4,
+      "kind": "matched_patch",
+      "reference_variant": "baseline",
+      "candidate_variant": "pressure_recurrence",
+      "reference_repeat": 3,
+      "candidate_repeat": 3,
+      "wind_values": 124416,
+      "wind_changed_count": 0,
+      "wind_changed_fraction": 0.0,
+      "wind_max_abs_ticks": 0,
+      "wind_max_abs_ms": 0.0,
+      "wind_mae_ms": 0.0,
+      "wind_identical": true,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": []
+    },
+    {
+      "threads": 8,
+      "kind": "baseline_repeat",
+      "reference_variant": "baseline",
+      "candidate_variant": "baseline",
+      "reference_repeat": 1,
+      "candidate_repeat": 2,
+      "wind_values": 124416,
+      "wind_changed_count": 0,
+      "wind_changed_fraction": 0.0,
+      "wind_max_abs_ticks": 0,
+      "wind_max_abs_ms": 0.0,
+      "wind_mae_ms": 0.0,
+      "wind_identical": true,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": []
+    },
+    {
+      "threads": 8,
+      "kind": "baseline_repeat",
+      "reference_variant": "baseline",
+      "candidate_variant": "baseline",
+      "reference_repeat": 1,
+      "candidate_repeat": 3,
+      "wind_values": 124416,
+      "wind_changed_count": 0,
+      "wind_changed_fraction": 0.0,
+      "wind_max_abs_ticks": 0,
+      "wind_max_abs_ms": 0.0,
+      "wind_mae_ms": 0.0,
+      "wind_identical": true,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": []
+    },
+    {
+      "threads": 8,
+      "kind": "baseline_repeat",
+      "reference_variant": "baseline",
+      "candidate_variant": "baseline",
+      "reference_repeat": 2,
+      "candidate_repeat": 3,
+      "wind_values": 124416,
+      "wind_changed_count": 0,
+      "wind_changed_fraction": 0.0,
+      "wind_max_abs_ticks": 0,
+      "wind_max_abs_ms": 0.0,
+      "wind_mae_ms": 0.0,
+      "wind_identical": true,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": []
+    },
+    {
+      "threads": 8,
+      "kind": "matched_patch",
+      "reference_variant": "baseline",
+      "candidate_variant": "pressure_recurrence",
+      "reference_repeat": 1,
+      "candidate_repeat": 1,
+      "wind_values": 124416,
+      "wind_changed_count": 0,
+      "wind_changed_fraction": 0.0,
+      "wind_max_abs_ticks": 0,
+      "wind_max_abs_ms": 0.0,
+      "wind_mae_ms": 0.0,
+      "wind_identical": true,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": []
+    },
+    {
+      "threads": 8,
+      "kind": "matched_patch",
+      "reference_variant": "baseline",
+      "candidate_variant": "pressure_recurrence",
+      "reference_repeat": 2,
+      "candidate_repeat": 2,
+      "wind_values": 124416,
+      "wind_changed_count": 1,
+      "wind_changed_fraction": 8.037551440329219e-06,
+      "wind_max_abs_ticks": 1,
+      "wind_max_abs_ms": 0.01,
+      "wind_mae_ms": 8.037551440329219e-08,
+      "wind_identical": false,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": [
+        {
+          "i": 32,
+          "j": 25,
+          "k": 10,
+          "component": "U",
+          "baseline_tick": 313,
+          "candidate_tick": 314,
+          "difference_ticks": 1,
+          "baseline_full_precision_ms": 3.134999747385578,
+          "candidate_full_precision_ms": 3.135000037561956,
+          "full_precision_difference_ms": 2.90176378037188e-07
+        }
+      ]
+    },
+    {
+      "threads": 8,
+      "kind": "matched_patch",
+      "reference_variant": "baseline",
+      "candidate_variant": "pressure_recurrence",
+      "reference_repeat": 3,
+      "candidate_repeat": 3,
+      "wind_values": 124416,
+      "wind_changed_count": 0,
+      "wind_changed_fraction": 0.0,
+      "wind_max_abs_ticks": 0,
+      "wind_max_abs_ms": 0.0,
+      "wind_mae_ms": 0.0,
+      "wind_identical": true,
+      "surface": {
+        "00001.obl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.scl": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        },
+        "00001.ust": {
+          "values": 1728,
+          "changed_count": 0,
+          "max_abs_ticks": 0,
+          "identical": true
+        }
+      },
+      "surface_all_identical": true,
+      "steady_state_identical": true,
+      "steps_identical": true,
+      "all_wind_values_explained_by_final_snapshot_rounding": true,
+      "changed_locations": []
+    }
+  ],
+  "notes": [
+    "Paired wind differences are reported, including baseline-to-baseline repeat differences.",
+    "The exact fixed-order comparisons and native parallel comparisons have separate scopes.",
+    "ZIP container timestamps are excluded; decoded SCL payloads are compared."
+  ]
+}

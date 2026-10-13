@@ -1,0 +1,12 @@
+{
+  "os": "Windows",
+  "cpu": "AMD Ryzen 9 9950X3D",
+  "physical_cores": 16,
+  "logical_processors": 32,
+  "installed_memory_GiB": 48,
+  "sdk": "10.0.401",
+  "run_method": "Unmodified Release binaries in a hidden native Windows console; process lifetime includes startup and output.",
+  "pair_method": "Warmup followed by five measured repetitions in rotating variant order. No concurrent model, build or plotting workload during timing.",
+  "time_formula": "100 * (baseline lifetime - candidate lifetime) / baseline lifetime",
+  "duration_note": "The fixture stores the requested duration. GRAMM selects the actual integration target from meteorological class and wind; neutral 3600-second inputs finish at the built-in 600-second target. Fixed-order fidelity records verify the target and completion."
+}

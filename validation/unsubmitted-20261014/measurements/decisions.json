@@ -1,0 +1,32 @@
+{
+  "surface_radiation": {
+    "decision": "submit",
+    "files": 1,
+    "added_lines": 2,
+    "removed_lines": 2,
+    "changed_characters_lf": 131,
+    "head": "75698818c148ef1487adaf5377c932382ccdf6fe",
+    "reason": "Repeated whole-model benefit in the neutral and frequent-radiation cases; column arithmetic and output comparisons pass."
+  },
+  "pressure_recurrence": {
+    "decision": "submit",
+    "files": 2,
+    "added_lines": 46,
+    "removed_lines": 32,
+    "changed_characters_lf": 5172,
+    "head": "44df730514c6ea9af235a5abd0c66a03ce62dded",
+    "reason": "Repeated benefit in small, medium and coastal cases; direct recurrence and full-model results are preserved, with no added grid arrays."
+  },
+  "pressure_products": {
+    "decision": "defer",
+    "reason": "The large-grid median reduction fell from 2.01% in the first window to 0.61% in the confirmation window. The pooled median is 1.37%; other medians are around 1%, and the smallest case regressed by 0.55%. The gain is too small to justify a separate array-semantics change in this submission."
+  },
+  "store_height": {
+    "decision": "defer",
+    "reason": "No consistent benefit in six native conditions."
+  },
+  "terminal_diagnostics": {
+    "decision": "defer",
+    "reason": "No consistent benefit in six native conditions; the frequent-radiation case regressed."
+  }
+}

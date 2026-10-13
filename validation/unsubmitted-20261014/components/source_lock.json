@@ -1,0 +1,92 @@
+{
+  "upstream_repository": "https://github.com/GralDispersionModel/GRAMM",
+  "upstream_base": "03224ce9d3490783c84a8aecd72642fe9df21242",
+  "warning_cleanup": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+  "hash_policy": "UTF-8 without BOM and LF line endings; calculations are extracted verbatim from these locked sources.",
+  "sources": {
+    "gramm_baseline": {
+      "commit": "4da3b7c172860e3f9369c7d2fba56b2d82ffbefb",
+      "patch": null,
+      "files": {
+        "src/RADIAT.cs": {
+          "utf8_lf_sha256": "108b3659452e11aa12a11e9803a3f99b435caab09d1c0c48daa2898c2c7c5c00"
+        },
+        "src/STORE.cs": {
+          "utf8_lf_sha256": "b8c8a196e3c260af5cd4f88801126186484445db7df06a454c3c543fbd2de96a"
+        },
+        "src/CALCTB.cs": {
+          "utf8_lf_sha256": "a357b8d3fae5cbb1922a91c359af10c17174802d0e39c5326b98d0f9b413de69"
+        },
+        "src/PRANDTL.cs": {
+          "utf8_lf_sha256": "48b56fcd4c28a423a69f8b60760aa098bd27d359cdbd3c58eb5a968255257d82"
+        },
+        "src/ProgramDeclarations.cs": {
+          "utf8_lf_sha256": "ce5d99ad14927c362eaf20b3ad2ca27dd20425a340e4a62099f145d626be3935"
+        }
+      }
+    },
+    "gramm_surface_radiation": {
+      "commit": "75698818c148ef1487adaf5377c932382ccdf6fe",
+      "patch": "surface_radiation.patch",
+      "files": {
+        "src/RADIAT.cs": {
+          "utf8_lf_sha256": "65d77b9ddcb368bdd20a793f6317cceb9d1dd178158caae120aeb002cecf6f55"
+        },
+        "src/STORE.cs": {
+          "utf8_lf_sha256": "b8c8a196e3c260af5cd4f88801126186484445db7df06a454c3c543fbd2de96a"
+        },
+        "src/CALCTB.cs": {
+          "utf8_lf_sha256": "a357b8d3fae5cbb1922a91c359af10c17174802d0e39c5326b98d0f9b413de69"
+        },
+        "src/PRANDTL.cs": {
+          "utf8_lf_sha256": "48b56fcd4c28a423a69f8b60760aa098bd27d359cdbd3c58eb5a968255257d82"
+        },
+        "src/ProgramDeclarations.cs": {
+          "utf8_lf_sha256": "ce5d99ad14927c362eaf20b3ad2ca27dd20425a340e4a62099f145d626be3935"
+        }
+      }
+    },
+    "gramm_store_height": {
+      "commit": "52eb6b69bf43f46978e13802e3d5e9c3a94e8b34",
+      "patch": "store_height.patch",
+      "files": {
+        "src/RADIAT.cs": {
+          "utf8_lf_sha256": "108b3659452e11aa12a11e9803a3f99b435caab09d1c0c48daa2898c2c7c5c00"
+        },
+        "src/STORE.cs": {
+          "utf8_lf_sha256": "042cd54c91dcf9cee39a5299115ae6677632325712e36cc05001d951a82f6157"
+        },
+        "src/CALCTB.cs": {
+          "utf8_lf_sha256": "a357b8d3fae5cbb1922a91c359af10c17174802d0e39c5326b98d0f9b413de69"
+        },
+        "src/PRANDTL.cs": {
+          "utf8_lf_sha256": "48b56fcd4c28a423a69f8b60760aa098bd27d359cdbd3c58eb5a968255257d82"
+        },
+        "src/ProgramDeclarations.cs": {
+          "utf8_lf_sha256": "ce5d99ad14927c362eaf20b3ad2ca27dd20425a340e4a62099f145d626be3935"
+        }
+      }
+    },
+    "gramm_terminal_diagnostics": {
+      "commit": "66e986ca47e6bee589c4a9e2a800dacd2910d051",
+      "patch": "terminal_diagnostics.patch",
+      "files": {
+        "src/RADIAT.cs": {
+          "utf8_lf_sha256": "108b3659452e11aa12a11e9803a3f99b435caab09d1c0c48daa2898c2c7c5c00"
+        },
+        "src/STORE.cs": {
+          "utf8_lf_sha256": "b8c8a196e3c260af5cd4f88801126186484445db7df06a454c3c543fbd2de96a"
+        },
+        "src/CALCTB.cs": {
+          "utf8_lf_sha256": "a6e4f683aeb0f7facb28dde1966f0461d420e82bbad4fa050142db0db099882c"
+        },
+        "src/PRANDTL.cs": {
+          "utf8_lf_sha256": "48b56fcd4c28a423a69f8b60760aa098bd27d359cdbd3c58eb5a968255257d82"
+        },
+        "src/ProgramDeclarations.cs": {
+          "utf8_lf_sha256": "ce5d99ad14927c362eaf20b3ad2ca27dd20425a340e4a62099f145d626be3935"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+  복원할 프로젝트를 확인하는 중...
+  <WORK>\qa\pressure_products\direct_tests\PressureProducts.csproj을(를) 51밀리초 동안 복원했습니다.
+  PressureProducts -> <WORK>\qa\pressure_products\direct_tests\bin\Release\net10.0\PressureProducts.dll
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:01.55

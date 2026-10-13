@@ -1,0 +1,41 @@
+{
+  "status": "pass",
+  "scope": "Fresh public source restoration and strict builds; fixed-order fidelity, no performance measurement",
+  "restored_variants": [
+    "baseline",
+    "surface_radiation",
+    "store_height",
+    "terminal_diagnostics",
+    "pressure_products",
+    "combined",
+    "pressure_recurrence",
+    "selected_combined"
+  ],
+  "native_strict_builds": 8,
+  "instrumented_strict_builds": 8,
+  "strict_build_warnings": 0,
+  "strict_build_errors": 0,
+  "fidelity_case": "frequent_radiation_4",
+  "seven_variant_fidelity": {
+    "status": "pass",
+    "case_count": 1,
+    "run_count": 7,
+    "weather_runs": 7,
+    "passed_runs": 7,
+    "field_values_checked": 558600,
+    "full_precision_field_pairs": 54,
+    "errors": []
+  },
+  "selected_combined_fidelity": {
+    "status": "pass",
+    "case_count": 1,
+    "run_count": 2,
+    "weather_runs": 2,
+    "passed_runs": 2,
+    "field_values_checked": 159600,
+    "full_precision_field_pairs": 9,
+    "errors": []
+  },
+  "selected_combined_reused_existing_baseline": true,
+  "public_wrapper_reached_strict_validator": true
+}

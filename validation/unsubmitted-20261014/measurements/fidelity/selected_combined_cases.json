@@ -1,0 +1,32 @@
+{
+  "small_neutral_1": {
+    "nx": 24,
+    "ny": 20,
+    "nz": 16,
+    "dx": 100,
+    "duration": 3600,
+    "threads": 1
+  },
+  "sequential_custom_4": {
+    "nx": 32,
+    "ny": 24,
+    "nz": 20,
+    "dx": 250,
+    "duration": 360,
+    "threads": 4,
+    "coast": true,
+    "multi": true,
+    "custom": true
+  },
+  "frequent_radiation_4": {
+    "nx": 24,
+    "ny": 20,
+    "nz": 16,
+    "dx": 100,
+    "sc": 3,
+    "wind": 2,
+    "duration": 180,
+    "threads": 4,
+    "irad": 1
+  }
+}

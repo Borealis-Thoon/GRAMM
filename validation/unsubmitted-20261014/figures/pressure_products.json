@@ -1,0 +1,303 @@
+{
+  "candidate": "pressure_products",
+  "aggregation": "Median of matched per-repetition lifetime reductions",
+  "aliases": [],
+  "included_cases": 5,
+  "included_pairs": 30,
+  "all_candidate_measured_conditions_shown": true,
+  "source_files": [
+    {
+      "file": "native_records.json",
+      "sha256": "abc32d8374ba464da0504b151c94d32d300dd06d0fa24e1ebed917084f189166"
+    }
+  ],
+  "conditions": [
+    {
+      "case": "large_neutral_14",
+      "condition": "96 \u00d7 64 \u00d7 28 \u00b7 500 m \u00b7 worker setting 14",
+      "pairs": [
+        {
+          "source_case": "pressure_large_neutral_14",
+          "rep": 1,
+          "baseline_seconds": 13.3315294,
+          "candidate_seconds": 13.0641972,
+          "saved_percent": 2.0052628020308023
+        },
+        {
+          "source_case": "pressure_large_neutral_14",
+          "rep": 2,
+          "baseline_seconds": 13.2091554,
+          "candidate_seconds": 12.9028287,
+          "saved_percent": 2.3190483473303645
+        },
+        {
+          "source_case": "pressure_large_neutral_14",
+          "rep": 3,
+          "baseline_seconds": 13.2468801,
+          "candidate_seconds": 13.0371299,
+          "saved_percent": 1.5833932096962229
+        },
+        {
+          "source_case": "pressure_large_neutral_14",
+          "rep": 4,
+          "baseline_seconds": 13.1574944,
+          "candidate_seconds": 13.0477892,
+          "saved_percent": 0.833784888405491
+        },
+        {
+          "source_case": "pressure_large_neutral_14",
+          "rep": 5,
+          "baseline_seconds": 13.4054903,
+          "candidate_seconds": 13.0921312,
+          "saved_percent": 2.337542999080008
+        },
+        {
+          "source_case": "products_confirmation_large_14",
+          "rep": 1,
+          "baseline_seconds": 12.740756,
+          "candidate_seconds": 12.9403094,
+          "saved_percent": -1.566260275292934
+        },
+        {
+          "source_case": "products_confirmation_large_14",
+          "rep": 2,
+          "baseline_seconds": 12.6017135,
+          "candidate_seconds": 12.455417,
+          "saved_percent": 1.1609254566849185
+        },
+        {
+          "source_case": "products_confirmation_large_14",
+          "rep": 3,
+          "baseline_seconds": 12.6074826,
+          "candidate_seconds": 12.5987967,
+          "saved_percent": 0.06889480061627423
+        },
+        {
+          "source_case": "products_confirmation_large_14",
+          "rep": 4,
+          "baseline_seconds": 12.5054446,
+          "candidate_seconds": 12.429514,
+          "saved_percent": 0.6071803316773022
+        },
+        {
+          "source_case": "products_confirmation_large_14",
+          "rep": 5,
+          "baseline_seconds": 12.7758399,
+          "candidate_seconds": 12.4833005,
+          "saved_percent": 2.2897860515612676
+        }
+      ],
+      "source_cases": {
+        "pressure_large_neutral_14": 5,
+        "products_confirmation_large_14": 5
+      },
+      "label": "Large neutral",
+      "median_saved_percent": 1.3721593331905706,
+      "faster_pairs": 9,
+      "pair_count": 10,
+      "secondary": false
+    },
+    {
+      "case": "medium_neutral_4",
+      "condition": "48 \u00d7 36 \u00d7 24 \u00b7 250 m \u00b7 worker setting 4",
+      "pairs": [
+        {
+          "source_case": "pressure_medium_neutral_4",
+          "rep": 1,
+          "baseline_seconds": 3.6995173,
+          "candidate_seconds": 3.6840126,
+          "saved_percent": 0.41910062158650124
+        },
+        {
+          "source_case": "pressure_medium_neutral_4",
+          "rep": 2,
+          "baseline_seconds": 3.8485753,
+          "candidate_seconds": 3.7007221,
+          "saved_percent": 3.8417645095835775
+        },
+        {
+          "source_case": "pressure_medium_neutral_4",
+          "rep": 3,
+          "baseline_seconds": 3.7508457,
+          "candidate_seconds": 3.7182669,
+          "saved_percent": 0.8685721196155848
+        },
+        {
+          "source_case": "pressure_medium_neutral_4",
+          "rep": 4,
+          "baseline_seconds": 4.0370401,
+          "candidate_seconds": 3.9938926,
+          "saved_percent": 1.0687904734956548
+        },
+        {
+          "source_case": "pressure_medium_neutral_4",
+          "rep": 5,
+          "baseline_seconds": 3.9564224,
+          "candidate_seconds": 3.9911903,
+          "saved_percent": -0.8787711847956339
+        }
+      ],
+      "source_cases": {
+        "pressure_medium_neutral_4": 5
+      },
+      "label": "Medium neutral",
+      "median_saved_percent": 0.8685721196155848,
+      "faster_pairs": 4,
+      "pair_count": 5,
+      "secondary": false
+    },
+    {
+      "case": "stable_coast_8",
+      "condition": "64 \u00d7 48 \u00d7 24 \u00b7 500 m \u00b7 worker setting 8",
+      "pairs": [
+        {
+          "source_case": "pressure_stable_coast_8",
+          "rep": 1,
+          "baseline_seconds": 6.8124018,
+          "candidate_seconds": 6.7785635,
+          "saved_percent": 0.4967161508295094
+        },
+        {
+          "source_case": "pressure_stable_coast_8",
+          "rep": 2,
+          "baseline_seconds": 6.7742441,
+          "candidate_seconds": 6.6761062,
+          "saved_percent": 1.448691522645299
+        },
+        {
+          "source_case": "pressure_stable_coast_8",
+          "rep": 3,
+          "baseline_seconds": 6.9549279,
+          "candidate_seconds": 6.7109961,
+          "saved_percent": 3.507323203163621
+        },
+        {
+          "source_case": "pressure_stable_coast_8",
+          "rep": 4,
+          "baseline_seconds": 6.6234672,
+          "candidate_seconds": 6.8933538,
+          "saved_percent": -4.0747027478297095
+        },
+        {
+          "source_case": "pressure_stable_coast_8",
+          "rep": 5,
+          "baseline_seconds": 6.7968954,
+          "candidate_seconds": 6.7228538,
+          "saved_percent": 1.0893444086251518
+        }
+      ],
+      "source_cases": {
+        "pressure_stable_coast_8": 5
+      },
+      "label": "Stable coastal",
+      "median_saved_percent": 1.0893444086251518,
+      "faster_pairs": 4,
+      "pair_count": 5,
+      "secondary": false
+    },
+    {
+      "case": "convective_tke_4",
+      "condition": "48 \u00d7 36 \u00d7 24 \u00b7 250 m \u00b7 worker setting 4",
+      "pairs": [
+        {
+          "source_case": "pressure_convective_tke_4",
+          "rep": 1,
+          "baseline_seconds": 6.6137647,
+          "candidate_seconds": 6.5470485,
+          "saved_percent": 1.0087477106647007
+        },
+        {
+          "source_case": "pressure_convective_tke_4",
+          "rep": 2,
+          "baseline_seconds": 6.6351603,
+          "candidate_seconds": 6.5541878,
+          "saved_percent": 1.220354842067639
+        },
+        {
+          "source_case": "pressure_convective_tke_4",
+          "rep": 3,
+          "baseline_seconds": 6.6186183,
+          "candidate_seconds": 6.449508,
+          "saved_percent": 2.5550695377009403
+        },
+        {
+          "source_case": "pressure_convective_tke_4",
+          "rep": 4,
+          "baseline_seconds": 6.6315234,
+          "candidate_seconds": 6.657442,
+          "saved_percent": -0.390839305490497
+        },
+        {
+          "source_case": "pressure_convective_tke_4",
+          "rep": 5,
+          "baseline_seconds": 6.6087861,
+          "candidate_seconds": 6.6250457,
+          "saved_percent": -0.24603005384000243
+        }
+      ],
+      "source_cases": {
+        "pressure_convective_tke_4": 5
+      },
+      "label": "Convective, TKE enabled",
+      "median_saved_percent": 1.0087477106647007,
+      "faster_pairs": 3,
+      "pair_count": 5,
+      "secondary": false
+    },
+    {
+      "case": "small_neutral_1",
+      "condition": "24 \u00d7 20 \u00d7 16 \u00b7 100 m \u00b7 worker setting 1",
+      "pairs": [
+        {
+          "source_case": "pressure_small_neutral_1",
+          "rep": 1,
+          "baseline_seconds": 1.44658,
+          "candidate_seconds": 1.4258936,
+          "saved_percent": 1.4300211533409832
+        },
+        {
+          "source_case": "pressure_small_neutral_1",
+          "rep": 2,
+          "baseline_seconds": 1.4299178,
+          "candidate_seconds": 1.4377905,
+          "saved_percent": -0.550570109694422
+        },
+        {
+          "source_case": "pressure_small_neutral_1",
+          "rep": 3,
+          "baseline_seconds": 1.4321083,
+          "candidate_seconds": 1.4298694,
+          "saved_percent": 0.15633594191164327
+        },
+        {
+          "source_case": "pressure_small_neutral_1",
+          "rep": 4,
+          "baseline_seconds": 1.4261945,
+          "candidate_seconds": 1.4569443,
+          "saved_percent": -2.1560733826977976
+        },
+        {
+          "source_case": "pressure_small_neutral_1",
+          "rep": 5,
+          "baseline_seconds": 1.4525921,
+          "candidate_seconds": 1.4673438,
+          "saved_percent": -1.0155431796717156
+        }
+      ],
+      "source_cases": {
+        "pressure_small_neutral_1": 5
+      },
+      "label": "Small neutral",
+      "median_saved_percent": -0.550570109694422,
+      "faster_pairs": 2,
+      "pair_count": 5,
+      "secondary": true
+    }
+  ],
+  "mechanism_counts": {
+    "products_per_cell_before": 16,
+    "products_per_cell_after": 2,
+    "pressure_sweeps": 8,
+    "new_grid_arrays": 0
+  }
+}

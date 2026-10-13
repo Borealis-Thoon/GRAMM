@@ -1,0 +1,109 @@
+{
+  "status": "no_source_blocker_direct_and_fixed_order_checks_pass_native_benefit_pending",
+  "review_kind": "independent_adversarial_read_and_evidence_review",
+  "source_head": "44df730514c6ea9af235a5abd0c66a03ce62dded",
+  "findings": [],
+  "checks": [
+    {
+      "topic": "Destructive AP/AB reuse",
+      "status": "pass",
+      "evidence": [
+        "TERMIP.cs:35-41",
+        "TERMIP.cs:52-128",
+        "TERMIP.cs:130-141"
+      ],
+      "detail": "The original ascending loop fully rebuilds AP, AB and AT for a column before any entry is replaced. Its formulas read geometry, density and AP0, not old AP/AB. The descending cache therefore reads the current raw coefficients, including after changed timesteps or a repeated weather initialization."
+    },
+    {
+      "topic": "All consumers",
+      "status": "pass",
+      "evidence": [
+        "ProgramDeclarations.cs:785-793",
+        "Read_Ini_Files.cs:307-309",
+        "PRIMP.cs",
+        "TERMIP.cs"
+      ],
+      "detail": "Repository-wide AP/AB references are limited to allocation, declarations, TERMIP and PRIMP. No later caller needs the original AP/AB coefficients. All sixteen recurrence sites were replaced; the eight sweeps retain their existing traversal, pressure source terms, locks and back-substitution."
+    },
+    {
+      "topic": "AT and Q recurrence",
+      "status": "pass",
+      "evidence": [
+        "TERMIP.cs:137-140",
+        "PRIMP.cs:178-195",
+        "direct_tests/source_extraction.json"
+      ],
+      "detail": "The cache stores the reciprocal in AP and the P coefficient in AB. AT remains unchanged and each Q update still evaluates (DIM + AT[kn] * Q[kn+1]) * TERMP. This is essential: reusing AT for the reciprocal would corrupt Q. The source-extracted checker confirms all sixteen Q expressions are unchanged."
+    },
+    {
+      "topic": "Data types and operation order",
+      "status": "pass",
+      "evidence": [
+        "TERMIP.cs:35-41",
+        "TERMIP.cs:134-140",
+        "PRIMP.cs:44-45"
+      ],
+      "detail": "AP, AB, AT, TERMP, PIM and pNext are double. The cache visits the same descending kn order and performs the same reciprocal and multiplication before storing each P value. It introduces no float narrowing, algebraic cancellation or rearrangement of the Q expression."
+    },
+    {
+      "topic": "Upper boundary and initialized stack storage",
+      "status": "pass_runtime_evidence",
+      "evidence": [
+        "PRIMP.cs:44-45",
+        "TERMIP.cs:133-139",
+        "direct_tests/result.json"
+      ],
+      "detail": "The original first recurrence reads the untouched PIM slot above 2*(NK-1). The compiled baseline has exactly eight PRIMP lambdas, all with InitLocals=true. The extracted methods also checked that the top P/Q slots contain positive zero. This resolves the review concern about whether pNext=0 matches the actual baseline boundary. The separate SkipLocalsInit attribute on UVWIMP does not apply to PRIMP."
+    },
+    {
+      "topic": "Bounds and pressure-disabled path",
+      "status": "pass",
+      "evidence": [
+        "TERMIP.cs:29-33",
+        "TERMIP.cs:52",
+        "TERMIP.cs:130-141",
+        "SIMPLE.cs:60-107"
+      ],
+      "detail": "Cache columns match the pressure interior. Entries 1..2*(NK-1) are transformed; index 0 and the upper coefficient entries remain unchanged. NK=1 yields an empty transform. ICPN=false keeps the raw coefficients and adds no recurrence calculation; SIMPLE also bypasses CALCPR in that mode."
+    },
+    {
+      "topic": "Parallel lifetime",
+      "status": "pass",
+      "evidence": [
+        "TERMIP.cs:29-145",
+        "SIMPLE.cs:60-107"
+      ],
+      "detail": "A TERMIP worker owns each complete i column. Its existing Parallel.For finishes before SIMPLE reaches CALCPR and PRIMP. The pressure sweeps only read the cached AP/AB values. No new array, task, reduction or shared writer is introduced."
+    }
+  ],
+  "evidence_review": {
+    "direct": {
+      "status": "pass",
+      "recurrence_cases": 73728,
+      "comparisons": 3207168,
+      "finite_comparisons": 1860608,
+      "deliberate_nonfinite_edge_comparisons": 1346560,
+      "mismatches": 0,
+      "boundary_cases": 18432,
+      "pressure_off_cases": 4608,
+      "compiled_pressure_lambdas": 8,
+      "all_init_locals": true,
+      "candidate_source_hashes_verified": true
+    },
+    "fixed_order_full_model": {
+      "status": "pass",
+      "run_count": 20,
+      "weather_runs": 24,
+      "full_precision_field_pairs": 108,
+      "errors": []
+    },
+    "test_scope": "The direct harness extracts the sixteen recurrence blocks and actual guarded cache block. It does not replace full TERMIP execution; the complete fixed-order model tests exercise coefficient rebuilding and integration."
+  },
+  "remaining_submission_gate": "Measure repeatable whole-model benefit in the reserved native timing window; do not infer benefit from removed operations alone.",
+  "execution_by_reviewer": {
+    "builds": 0,
+    "models": 0,
+    "benchmarks": 0,
+    "additional_numerical_tests": 0
+  }
+}

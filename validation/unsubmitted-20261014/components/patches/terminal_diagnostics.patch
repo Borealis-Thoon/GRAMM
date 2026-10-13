@@ -1,0 +1,27 @@
+diff --git a/src/CALCTB.cs b/src/CALCTB.cs
+index b7cc8c8..0e9e457 100644
+--- a/src/CALCTB.cs
++++ b/src/CALCTB.cs
+@@ -42,13 +42,12 @@ namespace GRAMM_2001
+             */
+ 
+             //Surface energy balance is not computed at the edges, where topography is smoothed - OETTL 23.Dec 13
+-            for (int i = 2; i <= NI - 1; i++)
++            for (int i = 2; i <= NI - 1 && Program.TerminalOut >= TerminalThreshold; i++)
+             {
+                 double TB2_L;
+                 for (int j = 2; j <= NJ - 1; j++)
+                 {
+                     TB2_L = Program.TB[i][j][2];
+-                    Program.TB[i][j][1] = TB2_L;
+                     EINTRAG1 += Program.WQU[i][j] / Program.DDXImm[i] / Program.DDYImm[j];
+                     EINTRAG2 += Program.RSOLG[i][j];
+                     EINTRAG3 += (Program.RL[i][j] - Program.EPSG[i][j] * Program.SIGMA * Pow4(TB2_L));
+@@ -77,6 +76,7 @@ namespace GRAMM_2001
+                 {
+                     for (int j = 2; j <= NJ - 1; j++)
+                     {
++                        Program.TB[i][j][1] = Program.TB[i][j][2];
+                         //NLAND++;
+                         for (int k = 2; k <= Program.NZB - 1; k++)
+                         {

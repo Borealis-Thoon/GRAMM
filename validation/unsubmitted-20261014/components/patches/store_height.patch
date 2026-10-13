@@ -1,0 +1,34 @@
+diff --git a/src/STORE.cs b/src/STORE.cs
+index 1ef1a49..738a47f 100644
+--- a/src/STORE.cs
++++ b/src/STORE.cs
+@@ -301,11 +301,15 @@ namespace GRAMM_2001
+                             double[] VISV_L = Program.VISV[i][j];
+                             double[] RITSCH_L = Program.RITSCH[i][j];
+                             Program.ZI[i][j] = 0;
++                            double ALUN = Math.Abs(Program.FN) / (0.007 * Program.UST[i][j]);
++                            if (NK > 1)
++                            {
++                                VISV_L[1] = 0.4 * Program.UST[i][j] * (ZSP_L[1] - Program.AHImm[i][j]);
++                            }
+ 
+-                            for (int k = 1; k <= NK - 1; k++)
++                            for (int k = 2; k <= NK - 1; k++)
+                             {
+                                 double DZZ = (ZSP_L[k + 1] - ZSP_L[k]);
+-                                double ALUN = Math.Abs(Program.FN) / (0.007 * Program.UST[i][j]);
+                                 double ALBL = Program.CK * (ZSP_L[k] - Program.AHImm[i][j]) /
+                                    (1 + Program.CK * (ZSP_L[k] - ZSP_L[1]) * ALUN);
+                                 double DVDZ = 0.5 * Math.Sqrt(Pow2((U_L[k + 1] - U_L[k]) / DZZ) + Pow2((V_L[k + 1] - V_L[k]) / DZZ));
+@@ -325,11 +329,6 @@ namespace GRAMM_2001
+ 
+                                 VISV_L[k] = ALBL * ALBL * DVDZ * FRITSCH;
+                                 VISV_L[k] = Math.Max(Program.VISEL, VISV_L[k]);
+-
+-                                if (k == 1)
+-                                {
+-                                    VISV_L[k] = 0.4 * Program.UST[i][j] * (ZSP_L[k] - Program.AHImm[i][j]);
+-                                }
+                             }
+                         }
+                     }
