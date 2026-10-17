@@ -1,0 +1,77 @@
+{
+  "comparisons": [
+    {
+      "case": "cool_main",
+      "variant": "A",
+      "fields": 36,
+      "equal_payloads": 36
+    },
+    {
+      "case": "cool_main",
+      "variant": "B",
+      "fields": 36,
+      "equal_payloads": 36
+    },
+    {
+      "case": "cool_dx50",
+      "variant": "A",
+      "fields": 12,
+      "equal_payloads": 12
+    },
+    {
+      "case": "cool_dx50",
+      "variant": "B",
+      "fields": 12,
+      "equal_payloads": 12
+    },
+    {
+      "case": "cool_rate100",
+      "variant": "A",
+      "fields": 12,
+      "equal_payloads": 12
+    },
+    {
+      "case": "cool_rate100",
+      "variant": "B",
+      "fields": 12,
+      "equal_payloads": 12
+    },
+    {
+      "case": "warm_control",
+      "variant": "A",
+      "fields": 12,
+      "equal_payloads": 12
+    },
+    {
+      "case": "warm_control",
+      "variant": "B",
+      "fields": 12,
+      "equal_payloads": 12
+    },
+    {
+      "case": "neutral_control",
+      "variant": "A",
+      "fields": 12,
+      "equal_payloads": 12
+    },
+    {
+      "case": "neutral_control",
+      "variant": "B",
+      "fields": 12,
+      "equal_payloads": 12
+    },
+    {
+      "case": "land_control",
+      "variant": "A",
+      "fields": 12,
+      "equal_payloads": 12
+    },
+    {
+      "case": "land_control",
+      "variant": "B",
+      "fields": 12,
+      "equal_payloads": 12
+    }
+  ],
+  "all_equal": true
+}

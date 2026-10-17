@@ -1,0 +1,4453 @@
+{
+  "gral_dll_sha256": "3a822187bc96c63a2cba9f355bd6e43a199898297fdd47ab14d232d976b71905",
+  "cases": [
+    {
+      "case": {
+        "id": "cool_main",
+        "native": "cool_day_24x20x16_250m_t1",
+        "dx": 100,
+        "rate": 1000,
+        "situations": 3
+      },
+      "results": {
+        "A": {
+          "directory": "PUBLIC_REPRODUCTION\\runs\\coupling\\cool_main_A",
+          "exit_code": 0,
+          "wall_s": 28.90599999999904,
+          "console_sha256": "841cf3ed0a4f59a5cca500e655b7a3eadfe99abb66d2225b0b02c07acd6d22d8",
+          "outputs": {
+            "00001.grz:00001-101.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "01121a7cef8f2e4af37a311e9c5c6b0e24be5aa3bd589c85f7135a2345f26f78",
+              "maximum": 95.86922454833984,
+              "spatial_integral": 5810139.00740596,
+              "nonzero": 385,
+              "centroid_x": 2809.040893174327,
+              "centroid_y": 2520.9170154574604
+            },
+            "00001.grz:00001-201.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "c2fa171a4df76955b0bc2ef7f2a1492b073fbcf72fad184cbdee400a55c96709",
+              "maximum": 33.44725036621094,
+              "spatial_integral": 4022670.417627087,
+              "nonzero": 398,
+              "centroid_x": 2969.9219665834016,
+              "centroid_y": 2523.3205609601728
+            },
+            "00001.grz:00001-301.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "1e25764bb90b3832a27f6c8e36b4220553db4a8ffcf9dba38eb7f6a42ed6ab1a",
+              "maximum": 13.817183494567871,
+              "spatial_integral": 3002272.1612092573,
+              "nonzero": 402,
+              "centroid_x": 3196.7260763781965,
+              "centroid_y": 2527.183954888745
+            },
+            "00001.grz:00001-102.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "3b725d23348723d440e75f4b2cce75c50fc03b08f5e48be614b87bbcfc0299e7",
+              "maximum": 14.78567886352539,
+              "spatial_integral": 3772488.1186612765,
+              "nonzero": 430,
+              "centroid_x": 3270.6829845769075,
+              "centroid_y": 2528.0300027466806
+            },
+            "00001.grz:00001-202.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "93bda42be87d0825e560f99b45a3b4424a2d123f6a0c1c3a7cd195f43a8694b0",
+              "maximum": 14.276762008666992,
+              "spatial_integral": 3392482.7209411887,
+              "nonzero": 444,
+              "centroid_x": 3197.2723551938484,
+              "centroid_y": 2525.9326012470915
+            },
+            "00001.grz:00001-302.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "376c1325e4117a5441f8bf646deda82b64335d8d584f74ec6865b093a8e3a194",
+              "maximum": 21.35968589782715,
+              "spatial_integral": 3586760.7259121723,
+              "nonzero": 443,
+              "centroid_x": 3078.227038972226,
+              "centroid_y": 2523.5976605124956
+            },
+            "00001.grz:00001-103.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "8a98a32be3c1fd9c4602bd48557a9eab81e87c752e0f69f8cd481b5d8ed08ec8",
+              "maximum": 109.54695129394531,
+              "spatial_integral": 4839549.8085190775,
+              "nonzero": 63,
+              "centroid_x": 4275.2442181444385,
+              "centroid_y": 2511.536012496391
+            },
+            "00001.grz:00001-203.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "31e02dd3e5c4a96403aa40264866302bf5347111801c3eff07e4040fe29d8df9",
+              "maximum": 32.73689651489258,
+              "spatial_integral": 2810495.8604072453,
+              "nonzero": 65,
+              "centroid_x": 4366.483315597314,
+              "centroid_y": 2513.558444473399
+            },
+            "00001.grz:00001-303.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "0c1f55da10b65710326101c7f01986a7320f80a8f8f3a8b06ed6d2dd935f36fa",
+              "maximum": 11.848729133605957,
+              "spatial_integral": 1445634.4766216353,
+              "nonzero": 65,
+              "centroid_x": 4515.008237501678,
+              "centroid_y": 2514.3232666581816
+            },
+            "00001.grz:00001-104.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "0568dbb20ec75958f22a37bb490a261981a74764da1ddeedaf3479600c2a53cc",
+              "maximum": 20.006027221679688,
+              "spatial_integral": 2273598.4254968935,
+              "nonzero": 70,
+              "centroid_x": 4489.1830207569665,
+              "centroid_y": 2513.299882492738
+            },
+            "00001.grz:00001-204.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "55ae5a2fb9f21e1b6293e1c479ebd419e79a894c93795aedeea54932980c2deb",
+              "maximum": 16.52194595336914,
+              "spatial_integral": 2017324.3882885436,
+              "nonzero": 72,
+              "centroid_x": 4462.874764275246,
+              "centroid_y": 2511.8971664351707
+            },
+            "00001.grz:00001-304.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "4bf6cb9ed9e754ca4369974fd11dbbad88f5e068bb02a8fb6b79a819e243b19b",
+              "maximum": 17.13084602355957,
+              "spatial_integral": 1753046.2402198464,
+              "nonzero": 74,
+              "centroid_x": 4441.4330869066425,
+              "centroid_y": 2510.481670153238
+            },
+            "00002.grz:00002-101.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "c7e3348e2db8f4f95caa57b7bb39c71641f803078142d50b1f8ea8b135e2844f",
+              "maximum": 95.21324920654297,
+              "spatial_integral": 5776360.098496953,
+              "nonzero": 395,
+              "centroid_x": 2804.3293021179406,
+              "centroid_y": 2521.0564562251584
+            },
+            "00002.grz:00002-201.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "96dcfa3660968a2575980a199bb6e7b358a0de6dad8ef9706a90fc90a0e9ae0b",
+              "maximum": 33.537532806396484,
+              "spatial_integral": 4037233.479602437,
+              "nonzero": 403,
+              "centroid_x": 2968.3823750739152,
+              "centroid_y": 2524.7966115996055
+            },
+            "00002.grz:00002-301.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "a358292286e59226a98f12d8d8039d6607821a62b52c4fa2838cdb18501798cc",
+              "maximum": 14.019304275512695,
+              "spatial_integral": 3000939.548027236,
+              "nonzero": 394,
+              "centroid_x": 3190.98848416083,
+              "centroid_y": 2528.336542815974
+            },
+            "00002.grz:00002-102.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "9cc2fa825884f4da129f7eb14a85b3fae440dbcbf1149cdbbb4bf2a962503ffc",
+              "maximum": 15.158198356628418,
+              "spatial_integral": 3733036.3502755063,
+              "nonzero": 443,
+              "centroid_x": 3269.393868861414,
+              "centroid_y": 2530.005411823544
+            },
+            "00002.grz:00002-202.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "b8c4c098cb0b5a4f22f5b28f11768ddeabe4a8a90836f343318908f3d11f9c04",
+              "maximum": 13.591771125793457,
+              "spatial_integral": 3355980.392108904,
+              "nonzero": 451,
+              "centroid_x": 3199.739346944531,
+              "centroid_y": 2527.6703519676303
+            },
+            "00002.grz:00002-302.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "c93f566ff7b39a8a8702477874ef89086ae156cc25d6d2ca039dbb2999411c7f",
+              "maximum": 21.155540466308594,
+              "spatial_integral": 3574027.9198426288,
+              "nonzero": 439,
+              "centroid_x": 3079.2522943691524,
+              "centroid_y": 2523.2290812677334
+            },
+            "00002.grz:00002-103.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "6a6fe9277f0aa8b5bedcb9867dfb00346be5118f674c4fbcb0525fa082aaf4ad",
+              "maximum": 110.14313507080078,
+              "spatial_integral": 4832787.735708407,
+              "nonzero": 68,
+              "centroid_x": 4273.070512248537,
+              "centroid_y": 2511.667896416121
+            },
+            "00002.grz:00002-203.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "f3f6dc385cdec69c4bd48cd05d9126a9b45618dfcc5f29cd7bb363ce3a20b71c",
+              "maximum": 32.734779357910156,
+              "spatial_integral": 2795383.5501061985,
+              "nonzero": 66,
+              "centroid_x": 4366.153231902578,
+              "centroid_y": 2513.4798686015156
+            },
+            "00002.grz:00002-303.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "39e486e8ff08ff41ba9dd676a3bc8af6ca0aad792a419a428fc154722359efed",
+              "maximum": 11.794516563415527,
+              "spatial_integral": 1433907.7782118693,
+              "nonzero": 68,
+              "centroid_x": 4514.954892133712,
+              "centroid_y": 2514.0525877235673
+            },
+            "00002.grz:00002-104.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "6de052d203330a730d3a9d1049ee777b37ffc72afc55ee8f1fb5b777526a5cb8",
+              "maximum": 20.151609420776367,
+              "spatial_integral": 2268114.91622997,
+              "nonzero": 70,
+              "centroid_x": 4490.588804176217,
+              "centroid_y": 2513.6302098900237
+            },
+            "00002.grz:00002-204.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "b4483100c9c99cea33b4365c62a9de59baad01e5ba17e4410be1569d0aa9ebbf",
+              "maximum": 16.81978988647461,
+              "spatial_integral": 2019303.8807992707,
+              "nonzero": 72,
+              "centroid_x": 4460.88080682289,
+              "centroid_y": 2512.3228729682273
+            },
+            "00002.grz:00002-304.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "6ef8e318808b5109cee553213c1a9fa3516908cfdb0d8e34fa1c448e15acc1ef",
+              "maximum": 17.31331443786621,
+              "spatial_integral": 1757264.2992180772,
+              "nonzero": 77,
+              "centroid_x": 4440.4443514791765,
+              "centroid_y": 2511.629126003079
+            },
+            "00003.grz:00003-101.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "94d8cf7c8ec78c7019be18a9a7295bba6d73eea8231137a6056ff2aee699d622",
+              "maximum": 95.83843994140625,
+              "spatial_integral": 5826577.68925681,
+              "nonzero": 388,
+              "centroid_x": 2801.645687808412,
+              "centroid_y": 2522.3564436157235
+            },
+            "00003.grz:00003-201.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "d9d3ddaaca9f2cd4d34dcfeef2080582aebd2a36b44aabb85b917cf0b8919ff9",
+              "maximum": 33.371089935302734,
+              "spatial_integral": 4037955.1352653652,
+              "nonzero": 404,
+              "centroid_x": 2969.912222806239,
+              "centroid_y": 2524.9641623589537
+            },
+            "00003.grz:00003-301.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "8fe1abc022bde15a73193f7e375256d00c8b34b82862f136d870650eb4578fc7",
+              "maximum": 14.095710754394531,
+              "spatial_integral": 3010290.9345342778,
+              "nonzero": 398,
+              "centroid_x": 3195.0823767696497,
+              "centroid_y": 2528.459542858623
+            },
+            "00003.grz:00003-102.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "6cca35afcea406ff8d4ab2054b09b8207dbd52d7e59845f2e95fc3e50b5a0931",
+              "maximum": 14.921853065490723,
+              "spatial_integral": 3778030.2897366346,
+              "nonzero": 425,
+              "centroid_x": 3280.6789212466306,
+              "centroid_y": 2529.9738369103397
+            },
+            "00003.grz:00003-202.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "b7500398346aae891f886b3a75b8c8f7fb3ee46a5ffa6ecded3678dc0fa0a845",
+              "maximum": 13.731775283813477,
+              "spatial_integral": 3373915.91376625,
+              "nonzero": 437,
+              "centroid_x": 3206.960559348299,
+              "centroid_y": 2527.786677512288
+            },
+            "00003.grz:00003-302.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "926b51142f50b967f2ff01336cd3d9e3a57a0eb912f2f41cf213a2dc74bc011c",
+              "maximum": 21.69269561767578,
+              "spatial_integral": 3606229.6306318603,
+              "nonzero": 431,
+              "centroid_x": 3069.6366461036564,
+              "centroid_y": 2523.8016093789684
+            },
+            "00003.grz:00003-103.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "661f8daa1e12d4cedda79ee455a207a944e503649ca289fda74f9d620f816ac3",
+              "maximum": 110.2892074584961,
+              "spatial_integral": 4847046.948147472,
+              "nonzero": 62,
+              "centroid_x": 4274.192752566191,
+              "centroid_y": 2511.6013529613774
+            },
+            "00003.grz:00003-203.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "08e91a9491b1ed6236b484fe9650cba719c05760ce809629c269c556c61584a5",
+              "maximum": 32.637603759765625,
+              "spatial_integral": 2802762.0965003734,
+              "nonzero": 63,
+              "centroid_x": 4366.260466748004,
+              "centroid_y": 2513.3654440058317
+            },
+            "00003.grz:00003-303.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "e98c7936fbcf6f520d6ef336b87463be5c7de028f33debb05b7c06f4f9482f41",
+              "maximum": 11.756571769714355,
+              "spatial_integral": 1442740.5819145497,
+              "nonzero": 61,
+              "centroid_x": 4514.8153254659865,
+              "centroid_y": 2514.4147156283
+            },
+            "00003.grz:00003-104.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "5252f1b280084f0209cc119aa7c9bc3e51f2872bec1cf4566de15eaf6d463efa",
+              "maximum": 20.326181411743164,
+              "spatial_integral": 2262346.5219023637,
+              "nonzero": 75,
+              "centroid_x": 4488.706709382719,
+              "centroid_y": 2513.2865870726264
+            },
+            "00003.grz:00003-204.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "cb93078887730761ec52cccc921f3f34dee931910ae5d0e9067f9462d58b7db0",
+              "maximum": 16.874818801879883,
+              "spatial_integral": 2005748.271815828,
+              "nonzero": 76,
+              "centroid_x": 4460.660558310942,
+              "centroid_y": 2512.2311906053083
+            },
+            "00003.grz:00003-304.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "54ec83a36ad95a75822b096ddcb00a3d75caf729eaa4b211fdf17b9527d98672",
+              "maximum": 17.18624496459961,
+              "spatial_integral": 1758408.8074229658,
+              "nonzero": 71,
+              "centroid_x": 4439.363013213073,
+              "centroid_y": 2510.903359287231
+            }
+          },
+          "particle_lines": [
+            "Using a total of 300000 particles (1000 part./s) within the model domain"
+          ],
+          "completion_tail": "layer height [m]: 637\nInit meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 2\nGRAMM meteo: wind speed [m/s]: 2.11  direction [deg]: 269  Stability class [-]: 2\n                           ----------\n\nDispersion computation.....IIIIIIIIII\n\nTotal simulation time [s]: 9.5\nDispersion [s]: 9.5\nFlow field [s]: 0.0\nWriting result files in a background thread\n_______________________________________________________________________________\nWeather number: 3\nReading GRAMM wind field: 00003.wnd\nReading GRAMM stability classes: 00003.scl\n\nFLOW FIELD COMPUTATION WITH TOPOGRAPHY\nDIAGNOSTIC WIND FIELD CALCULATION\nObukhov length [m]:        -4.0\nFriction velocity [m/s]:   0.08\nBoundary-layer height [m]: 637\nInit meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 2\nGRAMM meteo: wind speed [m/s]: 2.11  direction [deg]: 269  Stability class [-]: 2\n                           ----------\n\nDispersion computation.....IIIIIIIIII\n\nTotal simulation time [s]: 9.7\nDispersion [s]: 9.7\nFlow field [s]: 0.0\nWriting result files in a background thread\n_______________________________________________________________________________\nWeather number: 4\nProcess exit called\n"
+        },
+        "B": {
+          "directory": "PUBLIC_REPRODUCTION\\runs\\coupling\\cool_main_B",
+          "exit_code": 0,
+          "wall_s": 44.18799999999828,
+          "console_sha256": "fb8d93ce41bdb963c1bd0538086b83f7e0ead07130445659806183f5e0e6c417",
+          "outputs": {
+            "00001.grz:00001-101.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "b6ff1c6dd847a4647d75bcb6f433afc55cd2eb483d744043253b4fe226fb439e",
+              "maximum": 105.39427947998047,
+              "spatial_integral": 14883510.301336356,
+              "nonzero": 431,
+              "centroid_x": 2772.6380112609804,
+              "centroid_y": 2524.211698542055
+            },
+            "00001.grz:00001-201.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "bdf7bdd8f3ec3674be3b80f512bf0043bd880e5773765f459aa24b324256ef80",
+              "maximum": 46.143306732177734,
+              "spatial_integral": 9090722.249290848,
+              "nonzero": 439,
+              "centroid_x": 2918.6481860283634,
+              "centroid_y": 2526.8006818293766
+            },
+            "00001.grz:00001-301.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "82f4793ba5786d931bf5ca15028e6915ece15c4a64c6ea8919ad914a1443004f",
+              "maximum": 5.567591190338135,
+              "spatial_integral": 3442920.4950493295,
+              "nonzero": 423,
+              "centroid_x": 3491.212975852177,
+              "centroid_y": 2538.810738073658
+            },
+            "00001.grz:00001-102.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "bc68402bff57028773e385b86ac47e84a07921749732eadd6b3197b79cf65d7b",
+              "maximum": 5.1355719566345215,
+              "spatial_integral": 3994607.7322229394,
+              "nonzero": 498,
+              "centroid_x": 3602.4312304991977,
+              "centroid_y": 2538.792636896058
+            },
+            "00001.grz:00001-202.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "e27c261f734aebb819dec62b7185bac1a28477edb7a8d009cc45f43a7c17765d",
+              "maximum": 7.261512279510498,
+              "spatial_integral": 4256795.402875578,
+              "nonzero": 514,
+              "centroid_x": 3385.0631405336285,
+              "centroid_y": 2533.039784768124
+            },
+            "00001.grz:00001-302.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "19b277d90382c3c9af99ebbafc8a4ccfa806fe2b37fd05ffb5671d5e7e6bd9ae",
+              "maximum": 27.621498107910156,
+              "spatial_integral": 5892325.35924064,
+              "nonzero": 517,
+              "centroid_x": 3029.0448470326182,
+              "centroid_y": 2523.1432249974337
+            },
+            "00001.grz:00001-103.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "8a98a32be3c1fd9c4602bd48557a9eab81e87c752e0f69f8cd481b5d8ed08ec8",
+              "maximum": 109.54695129394531,
+              "spatial_integral": 4839549.8085190775,
+              "nonzero": 63,
+              "centroid_x": 4275.2442181444385,
+              "centroid_y": 2511.536012496391
+            },
+            "00001.grz:00001-203.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "31e02dd3e5c4a96403aa40264866302bf5347111801c3eff07e4040fe29d8df9",
+              "maximum": 32.73689651489258,
+              "spatial_integral": 2810495.8604072453,
+              "nonzero": 65,
+              "centroid_x": 4366.483315597314,
+              "centroid_y": 2513.558444473399
+            },
+            "00001.grz:00001-303.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "0c1f55da10b65710326101c7f01986a7320f80a8f8f3a8b06ed6d2dd935f36fa",
+              "maximum": 11.848729133605957,
+              "spatial_integral": 1445634.4766216353,
+              "nonzero": 65,
+              "centroid_x": 4515.008237501678,
+              "centroid_y": 2514.3232666581816
+            },
+            "00001.grz:00001-104.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "0568dbb20ec75958f22a37bb490a261981a74764da1ddeedaf3479600c2a53cc",
+              "maximum": 20.006027221679688,
+              "spatial_integral": 2273598.4254968935,
+              "nonzero": 70,
+              "centroid_x": 4489.1830207569665,
+              "centroid_y": 2513.299882492738
+            },
+            "00001.grz:00001-204.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "55ae5a2fb9f21e1b6293e1c479ebd419e79a894c93795aedeea54932980c2deb",
+              "maximum": 16.52194595336914,
+              "spatial_integral": 2017324.3882885436,
+              "nonzero": 72,
+              "centroid_x": 4462.874764275246,
+              "centroid_y": 2511.8971664351707
+            },
+            "00001.grz:00001-304.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "4bf6cb9ed9e754ca4369974fd11dbbad88f5e068bb02a8fb6b79a819e243b19b",
+              "maximum": 17.13084602355957,
+              "spatial_integral": 1753046.2402198464,
+              "nonzero": 74,
+              "centroid_x": 4441.4330869066425,
+              "centroid_y": 2510.481670153238
+            },
+            "00002.grz:00002-101.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "3b03426589468a319354aaeb7b62cfb6ac0e2b2b889eecdab72a13536bbd389e",
+              "maximum": 105.59185791015625,
+              "spatial_integral": 14946994.117617432,
+              "nonzero": 443,
+              "centroid_x": 2776.339612379306,
+              "centroid_y": 2524.881181940039
+            },
+            "00002.grz:00002-201.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "ad956927f8aba6a40f151304fc7e92a67ba55100172c65b3654990d3079bde3c",
+              "maximum": 46.17643356323242,
+              "spatial_integral": 9073675.211046357,
+              "nonzero": 443,
+              "centroid_x": 2921.5952122942413,
+              "centroid_y": 2527.3206335394248
+            },
+            "00002.grz:00002-301.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "4710aa59f353a35ff22e2be6fcb9e705c4ceabf12e013bd849dc7cab7984cf48",
+              "maximum": 5.640892028808594,
+              "spatial_integral": 3443213.0672968924,
+              "nonzero": 433,
+              "centroid_x": 3492.6870774011054,
+              "centroid_y": 2539.8525414502014
+            },
+            "00002.grz:00002-102.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "9dfa615d51c884bc9ce2f606c5db0ab76fab0d836afa63c648470ce68f983db7",
+              "maximum": 4.9049973487854,
+              "spatial_integral": 4009279.141111474,
+              "nonzero": 515,
+              "centroid_x": 3604.9188616590905,
+              "centroid_y": 2541.1608171228927
+            },
+            "00002.grz:00002-202.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "9667d9b55cf9219993afbc6a97737b7bc67a61b8b84c9ff8fcea8f141cb3f93e",
+              "maximum": 7.179960250854492,
+              "spatial_integral": 4241805.623335531,
+              "nonzero": 527,
+              "centroid_x": 3387.1021932032627,
+              "centroid_y": 2533.6616967150126
+            },
+            "00002.grz:00002-302.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "35ae14f9b8debeeb745a201f7781c0f83cb1b36dfcc1fac3bcf13f6902a132ab",
+              "maximum": 27.927412033081055,
+              "spatial_integral": 5900585.649040295,
+              "nonzero": 516,
+              "centroid_x": 3030.1755966879314,
+              "centroid_y": 2523.4368898416005
+            },
+            "00002.grz:00002-103.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "6a6fe9277f0aa8b5bedcb9867dfb00346be5118f674c4fbcb0525fa082aaf4ad",
+              "maximum": 110.14313507080078,
+              "spatial_integral": 4832787.735708407,
+              "nonzero": 68,
+              "centroid_x": 4273.070512248537,
+              "centroid_y": 2511.667896416121
+            },
+            "00002.grz:00002-203.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "f3f6dc385cdec69c4bd48cd05d9126a9b45618dfcc5f29cd7bb363ce3a20b71c",
+              "maximum": 32.734779357910156,
+              "spatial_integral": 2795383.5501061985,
+              "nonzero": 66,
+              "centroid_x": 4366.153231902578,
+              "centroid_y": 2513.4798686015156
+            },
+            "00002.grz:00002-303.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "39e486e8ff08ff41ba9dd676a3bc8af6ca0aad792a419a428fc154722359efed",
+              "maximum": 11.794516563415527,
+              "spatial_integral": 1433907.7782118693,
+              "nonzero": 68,
+              "centroid_x": 4514.954892133712,
+              "centroid_y": 2514.0525877235673
+            },
+            "00002.grz:00002-104.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "6de052d203330a730d3a9d1049ee777b37ffc72afc55ee8f1fb5b777526a5cb8",
+              "maximum": 20.151609420776367,
+              "spatial_integral": 2268114.91622997,
+              "nonzero": 70,
+              "centroid_x": 4490.588804176217,
+              "centroid_y": 2513.6302098900237
+            },
+            "00002.grz:00002-204.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "b4483100c9c99cea33b4365c62a9de59baad01e5ba17e4410be1569d0aa9ebbf",
+              "maximum": 16.81978988647461,
+              "spatial_integral": 2019303.8807992707,
+              "nonzero": 72,
+              "centroid_x": 4460.88080682289,
+              "centroid_y": 2512.3228729682273
+            },
+            "00002.grz:00002-304.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "6ef8e318808b5109cee553213c1a9fa3516908cfdb0d8e34fa1c448e15acc1ef",
+              "maximum": 17.31331443786621,
+              "spatial_integral": 1757264.2992180772,
+              "nonzero": 77,
+              "centroid_x": 4440.4443514791765,
+              "centroid_y": 2511.629126003079
+            },
+            "00003.grz:00003-101.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "bf54c7df16ae4c83a58c6336cc89ef8c2c4aaee828f1756b0ce06b7a4b045b6c",
+              "maximum": 105.14986419677734,
+              "spatial_integral": 14960488.88305144,
+              "nonzero": 435,
+              "centroid_x": 2772.1019698698587,
+              "centroid_y": 2524.041765873809
+            },
+            "00003.grz:00003-201.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "a1c0295cce0718932d24728d7b3b5c9f128c5d2367e37b3f478b16132fbe7837",
+              "maximum": 45.649539947509766,
+              "spatial_integral": 9065615.180900786,
+              "nonzero": 454,
+              "centroid_x": 2920.6069086955554,
+              "centroid_y": 2527.740837735347
+            },
+            "00003.grz:00003-301.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "23469ff8903dc730ebaec59fc1567ccce748a7b15231f2c78f29e17c9953bb80",
+              "maximum": 5.459484577178955,
+              "spatial_integral": 3429267.123923637,
+              "nonzero": 434,
+              "centroid_x": 3495.060531336749,
+              "centroid_y": 2539.686970545847
+            },
+            "00003.grz:00003-102.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "bc2b051cdc1ab1436c1ec025b4d1a821a5ff1723fa8b3db7f33129d669ec4be5",
+              "maximum": 4.975419998168945,
+              "spatial_integral": 3995189.2619777936,
+              "nonzero": 495,
+              "centroid_x": 3599.24416733828,
+              "centroid_y": 2539.215830452689
+            },
+            "00003.grz:00003-202.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "54cca9f578b81c74c322bd7253f5066d07b04427eaf13a71634fd643d528a418",
+              "maximum": 7.0149245262146,
+              "spatial_integral": 4225173.416457837,
+              "nonzero": 518,
+              "centroid_x": 3382.3585650329824,
+              "centroid_y": 2533.478577223544
+            },
+            "00003.grz:00003-302.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "af0317906bd0f2da87b416afa3105acc2e7f0ef680fd6d35c2b8f0663dd4341d",
+              "maximum": 27.918689727783203,
+              "spatial_integral": 5838306.789617054,
+              "nonzero": 490,
+              "centroid_x": 3030.3504680285505,
+              "centroid_y": 2523.858959534988
+            },
+            "00003.grz:00003-103.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "661f8daa1e12d4cedda79ee455a207a944e503649ca289fda74f9d620f816ac3",
+              "maximum": 110.2892074584961,
+              "spatial_integral": 4847046.948147472,
+              "nonzero": 62,
+              "centroid_x": 4274.192752566191,
+              "centroid_y": 2511.6013529613774
+            },
+            "00003.grz:00003-203.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "08e91a9491b1ed6236b484fe9650cba719c05760ce809629c269c556c61584a5",
+              "maximum": 32.637603759765625,
+              "spatial_integral": 2802762.0965003734,
+              "nonzero": 63,
+              "centroid_x": 4366.260466748004,
+              "centroid_y": 2513.3654440058317
+            },
+            "00003.grz:00003-303.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "e98c7936fbcf6f520d6ef336b87463be5c7de028f33debb05b7c06f4f9482f41",
+              "maximum": 11.756571769714355,
+              "spatial_integral": 1442740.5819145497,
+              "nonzero": 61,
+              "centroid_x": 4514.8153254659865,
+              "centroid_y": 2514.4147156283
+            },
+            "00003.grz:00003-104.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "5252f1b280084f0209cc119aa7c9bc3e51f2872bec1cf4566de15eaf6d463efa",
+              "maximum": 20.326181411743164,
+              "spatial_integral": 2262346.5219023637,
+              "nonzero": 75,
+              "centroid_x": 4488.706709382719,
+              "centroid_y": 2513.2865870726264
+            },
+            "00003.grz:00003-204.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "cb93078887730761ec52cccc921f3f34dee931910ae5d0e9067f9462d58b7db0",
+              "maximum": 16.874818801879883,
+              "spatial_integral": 2005748.271815828,
+              "nonzero": 76,
+              "centroid_x": 4460.660558310942,
+              "centroid_y": 2512.2311906053083
+            },
+            "00003.grz:00003-304.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "54ec83a36ad95a75822b096ddcb00a3d75caf729eaa4b211fdf17b9527d98672",
+              "maximum": 17.18624496459961,
+              "spatial_integral": 1758408.8074229658,
+              "nonzero": 71,
+              "centroid_x": 4439.363013213073,
+              "centroid_y": 2510.903359287231
+            }
+          },
+          "particle_lines": [
+            "Using a total of 300000 particles (1000 part./s) within the model domain"
+          ],
+          "completion_tail": "r height [m]: 637\nInit meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 2\nGRAMM meteo: wind speed [m/s]: 2.11  direction [deg]: 269  Stability class [-]: 3\n                           ----------\n\nDispersion computation.....IIIIIIIIII\n\nTotal simulation time [s]: 14.7\nDispersion [s]: 14.7\nFlow field [s]: 0.0\nWriting result files in a background thread\n_______________________________________________________________________________\nWeather number: 3\nReading GRAMM wind field: 00003.wnd\nReading GRAMM stability classes: 00003.scl\n\nFLOW FIELD COMPUTATION WITH TOPOGRAPHY\nDIAGNOSTIC WIND FIELD CALCULATION\nObukhov length [m]:        -4.0\nFriction velocity [m/s]:   0.08\nBoundary-layer height [m]: 637\nInit meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 2\nGRAMM meteo: wind speed [m/s]: 2.11  direction [deg]: 269  Stability class [-]: 3\n                           ----------\n\nDispersion computation.....IIIIIIIIII\n\nTotal simulation time [s]: 14.8\nDispersion [s]: 14.8\nFlow field [s]: 0.0\nWriting result files in a background thread\n_______________________________________________________________________________\nWeather number: 4\nProcess exit called\n"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "cool_dx50",
+        "native": "cool_day_24x20x16_250m_t1",
+        "dx": 50,
+        "rate": 1000,
+        "situations": 1
+      },
+      "results": {
+        "A": {
+          "directory": "PUBLIC_REPRODUCTION\\runs\\coupling\\cool_dx50_A",
+          "exit_code": 0,
+          "wall_s": 11.18699999999808,
+          "console_sha256": "d62096407dac69d4a713a0663ab1b21827760a9a091d8046b92e9d93d901c708",
+          "outputs": {
+            "00001.grz:00001-101.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "d79525c204ad45f1dab084e014889281eb570f824e41346155c38e41601159f9",
+              "maximum": 239.69357299804688,
+              "spatial_integral": 5442424.669889296,
+              "nonzero": 1402,
+              "centroid_x": 2788.9985676003166,
+              "centroid_y": 2518.84016445656
+            },
+            "00001.grz:00001-201.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "bfc5edb8d62fe544302764ce8a42e4309c710538d42afeb9d870977f85587ae1",
+              "maximum": 110.91596221923828,
+              "spatial_integral": 4251806.535508367,
+              "nonzero": 1424,
+              "centroid_x": 2879.3461473371513,
+              "centroid_y": 2522.1569034766662
+            },
+            "00001.grz:00001-301.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "80302947307b215139c9bcdd5a790619234d926ce6916fa24038b18218f540c4",
+              "maximum": 22.22220230102539,
+              "spatial_integral": 3015811.7119182134,
+              "nonzero": 1430,
+              "centroid_x": 3201.5583093328814,
+              "centroid_y": 2527.954823104401
+            },
+            "00001.grz:00001-102.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "dc7a27a00af1ae58ae3ba43c6da835faabb6e294569b0a7e2a4abc9b307e1da1",
+              "maximum": 20.023284912109375,
+              "spatial_integral": 3480685.057696537,
+              "nonzero": 1548,
+              "centroid_x": 3266.1524301168006,
+              "centroid_y": 2528.0580070031356
+            },
+            "00001.grz:00001-202.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "5a1dcfcd4b2df109b9edbd9a32dd29dc49dadc42b7246b563d5f826f29267bc4",
+              "maximum": 23.921321868896484,
+              "spatial_integral": 3413328.9394073654,
+              "nonzero": 1573,
+              "centroid_x": 3143.8611888577234,
+              "centroid_y": 2525.224319627402
+            },
+            "00001.grz:00001-302.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "eda7853ba1a29c9e9290a966ad16da53880b6439f826e28ab9d34d5483301659",
+              "maximum": 42.919246673583984,
+              "spatial_integral": 3611664.060591138,
+              "nonzero": 1588,
+              "centroid_x": 3082.084187395492,
+              "centroid_y": 2522.3985831364694
+            },
+            "00001.grz:00001-103.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "e5410cca8df0f77b87a67ba9c075aa3e72e5ca6a3b82f77f5d9b75fab2b1a912",
+              "maximum": 281.4697570800781,
+              "spatial_integral": 4709722.597849905,
+              "nonzero": 223,
+              "centroid_x": 4260.689570088362,
+              "centroid_y": 2508.6908110053996
+            },
+            "00001.grz:00001-203.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "8852c967a2d4a235d2042d03798a92e95f18200a54fb1a23906046dcde921c60",
+              "maximum": 82.87353515625,
+              "spatial_integral": 2686871.1369956145,
+              "nonzero": 230,
+              "centroid_x": 4355.886269491713,
+              "centroid_y": 2510.8473079537234
+            },
+            "00001.grz:00001-303.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "d56a8322b679bbdb1ec9dbb62220a65b6f52a2d53f033c49f747ed0efecbad58",
+              "maximum": 21.089046478271484,
+              "spatial_integral": 1471245.127550792,
+              "nonzero": 215,
+              "centroid_x": 4509.5835191396345,
+              "centroid_y": 2513.1827683755837
+            },
+            "00001.grz:00001-104.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "3644b9279350de9dd4237c3a4cca1334f38731975d417d03fa9dfd9ab611b21e",
+              "maximum": 30.896747589111328,
+              "spatial_integral": 2125620.0221704785,
+              "nonzero": 248,
+              "centroid_x": 4484.158445318047,
+              "centroid_y": 2513.2659408453997
+            },
+            "00001.grz:00001-204.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "1c726d727d74abfabd4e2194acf898a375cbff8449b1af924a7ebc338a3c7816",
+              "maximum": 28.71122932434082,
+              "spatial_integral": 1883422.318896046,
+              "nonzero": 256,
+              "centroid_x": 4458.051432945863,
+              "centroid_y": 2512.098510305841
+            },
+            "00001.grz:00001-304.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "af13020edda595331f23f894003afdb14db5b325917ee9e090c5a9132b444e90",
+              "maximum": 37.1280517578125,
+              "spatial_integral": 1812443.577083177,
+              "nonzero": 256,
+              "centroid_x": 4435.905257356335,
+              "centroid_y": 2509.4195699466313
+            }
+          },
+          "particle_lines": [
+            "Using a total of 300000 particles (1000 part./s) within the model domain"
+          ],
+          "completion_tail": "number of point sources: 4\nTotal emission [kg/h]: 4.000 (  SG 1[kg/h]: 1.000  SG 2[kg/h]: 1.000  SG 3[kg/h]: 1.000  SG 4[kg/h]: 1.000 )\nUsing a total of 300000 particles (1000 part./s) within the model domain\n\n_______________________________________________________________________________\nWeather number: 1\nReading GRAMM wind field: 00001.wnd\nReading GRAMM stability classes: 00001.scl\n\nFLOW FIELD COMPUTATION WITH TOPOGRAPHY\nDIAGNOSTIC WIND FIELD CALCULATION\n\nRec 1\twater2 : x = 2000\t y = 2500\t z = 2\nRec 2\twater20 : x = 2000\t y = 2500\t z = 20\nRec 3\tland2 : x = 4000\t y = 2500\t z = 2\nRec 4\tland20 : x = 4000\t y = 2500\t z = 20\nObukhov length [m]:        -4.0\nFriction velocity [m/s]:   0.08\nBoundary-layer height [m]: 637\nInit meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 2\nGRAMM meteo: wind speed [m/s]: 2.11  direction [deg]: 269  Stability class [-]: 2\n                           ----------\n\nDispersion computation.....IIIIIIIIII\n\nTotal simulation time [s]: 10.9\nDispersion [s]: 10.8\nFlow field [s]: 0.0\nWriting result files in a background thread\n_______________________________________________________________________________\nWeather number: 2\nProcess exit called\n"
+        },
+        "B": {
+          "directory": "PUBLIC_REPRODUCTION\\runs\\coupling\\cool_dx50_B",
+          "exit_code": 0,
+          "wall_s": 15.875,
+          "console_sha256": "2383fd49782839c31c9e125cbecf9bec57e64d4b22ace4d26d4bb77b036e003c",
+          "outputs": {
+            "00001.grz:00001-101.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "74e8d3037d570a8642b67ec60c6f1f98a2106c0bb395dc5dc295a763bb4f39a8",
+              "maximum": 262.3876953125,
+              "spatial_integral": 14533294.608483376,
+              "nonzero": 1566,
+              "centroid_x": 2749.2130287440264,
+              "centroid_y": 2522.7547549471105
+            },
+            "00001.grz:00001-201.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "1e4723c01dd065a2e7f10f7495538a836e0080185482663cdbe63293730e5930",
+              "maximum": 104.38709259033203,
+              "spatial_integral": 8714921.865166398,
+              "nonzero": 1581,
+              "centroid_x": 2893.895698552108,
+              "centroid_y": 2524.931935172099
+            },
+            "00001.grz:00001-301.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "694a85f6a29f3c21422a0e9c531003e087faca80ed0a21d6a96e6b5d47b603d4",
+              "maximum": 7.188853740692139,
+              "spatial_integral": 3473976.3303817017,
+              "nonzero": 1559,
+              "centroid_x": 3486.440810163707,
+              "centroid_y": 2538.318096529056
+            },
+            "00001.grz:00001-102.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "f518e2e4113b3808872f5f5bc3f02d1012960634bd5451af15b2281d25c269f9",
+              "maximum": 4.93288516998291,
+              "spatial_integral": 3726160.4428324793,
+              "nonzero": 1830,
+              "centroid_x": 3583.8995727208267,
+              "centroid_y": 2536.6072018855484
+            },
+            "00001.grz:00001-202.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "65724e222fe118f2bc27834bad058e5e375b3dd26f339661254e639d54ae7fa9",
+              "maximum": 8.030346870422363,
+              "spatial_integral": 4032774.4807416457,
+              "nonzero": 1850,
+              "centroid_x": 3361.2803086062822,
+              "centroid_y": 2530.900871948675
+            },
+            "00001.grz:00001-302.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "1ffd875edb79c2d1c3c1c3c78d09461075a4f71b7edacf1686f07030623c465d",
+              "maximum": 52.118675231933594,
+              "spatial_integral": 5899747.765092761,
+              "nonzero": 1887,
+              "centroid_x": 3034.090640636363,
+              "centroid_y": 2523.637716383816
+            },
+            "00001.grz:00001-103.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "e5410cca8df0f77b87a67ba9c075aa3e72e5ca6a3b82f77f5d9b75fab2b1a912",
+              "maximum": 281.4697570800781,
+              "spatial_integral": 4709722.597849905,
+              "nonzero": 223,
+              "centroid_x": 4260.689570088362,
+              "centroid_y": 2508.6908110053996
+            },
+            "00001.grz:00001-203.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "8852c967a2d4a235d2042d03798a92e95f18200a54fb1a23906046dcde921c60",
+              "maximum": 82.87353515625,
+              "spatial_integral": 2686871.1369956145,
+              "nonzero": 230,
+              "centroid_x": 4355.886269491713,
+              "centroid_y": 2510.8473079537234
+            },
+            "00001.grz:00001-303.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "d56a8322b679bbdb1ec9dbb62220a65b6f52a2d53f033c49f747ed0efecbad58",
+              "maximum": 21.089046478271484,
+              "spatial_integral": 1471245.127550792,
+              "nonzero": 215,
+              "centroid_x": 4509.5835191396345,
+              "centroid_y": 2513.1827683755837
+            },
+            "00001.grz:00001-104.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "3644b9279350de9dd4237c3a4cca1334f38731975d417d03fa9dfd9ab611b21e",
+              "maximum": 30.896747589111328,
+              "spatial_integral": 2125620.0221704785,
+              "nonzero": 248,
+              "centroid_x": 4484.158445318047,
+              "centroid_y": 2513.2659408453997
+            },
+            "00001.grz:00001-204.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "1c726d727d74abfabd4e2194acf898a375cbff8449b1af924a7ebc338a3c7816",
+              "maximum": 28.71122932434082,
+              "spatial_integral": 1883422.318896046,
+              "nonzero": 256,
+              "centroid_x": 4458.051432945863,
+              "centroid_y": 2512.098510305841
+            },
+            "00001.grz:00001-304.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                50.0,
+                50.0,
+                80,
+                60
+              ],
+              "payload_sha256": "af13020edda595331f23f894003afdb14db5b325917ee9e090c5a9132b444e90",
+              "maximum": 37.1280517578125,
+              "spatial_integral": 1812443.577083177,
+              "nonzero": 256,
+              "centroid_x": 4435.905257356335,
+              "centroid_y": 2509.4195699466313
+            }
+          },
+          "particle_lines": [
+            "Using a total of 300000 particles (1000 part./s) within the model domain"
+          ],
+          "completion_tail": "number of point sources: 4\nTotal emission [kg/h]: 4.000 (  SG 1[kg/h]: 1.000  SG 2[kg/h]: 1.000  SG 3[kg/h]: 1.000  SG 4[kg/h]: 1.000 )\nUsing a total of 300000 particles (1000 part./s) within the model domain\n\n_______________________________________________________________________________\nWeather number: 1\nReading GRAMM wind field: 00001.wnd\nReading GRAMM stability classes: 00001.scl\n\nFLOW FIELD COMPUTATION WITH TOPOGRAPHY\nDIAGNOSTIC WIND FIELD CALCULATION\n\nRec 1\twater2 : x = 2000\t y = 2500\t z = 2\nRec 2\twater20 : x = 2000\t y = 2500\t z = 20\nRec 3\tland2 : x = 4000\t y = 2500\t z = 2\nRec 4\tland20 : x = 4000\t y = 2500\t z = 20\nObukhov length [m]:        -4.0\nFriction velocity [m/s]:   0.08\nBoundary-layer height [m]: 637\nInit meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 2\nGRAMM meteo: wind speed [m/s]: 2.11  direction [deg]: 269  Stability class [-]: 3\n                           ----------\n\nDispersion computation.....IIIIIIIIII\n\nTotal simulation time [s]: 15.6\nDispersion [s]: 15.5\nFlow field [s]: 0.0\nWriting result files in a background thread\n_______________________________________________________________________________\nWeather number: 2\nProcess exit called\n"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "cool_rate100",
+        "native": "cool_day_24x20x16_250m_t1",
+        "dx": 100,
+        "rate": 100,
+        "situations": 1
+      },
+      "results": {
+        "A": {
+          "directory": "PUBLIC_REPRODUCTION\\runs\\coupling\\cool_rate100_A",
+          "exit_code": 0,
+          "wall_s": 1.2029999999977008,
+          "console_sha256": "cea214b0c98f8576d109d9eff585cdbd9c88e34a2da438b078a56fdfddc61e28",
+          "outputs": {
+            "00001.grz:00001-101.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "3c024309b16b34ad4b05b641841c475096408c9b3c479e6e34713295ff3852df",
+              "maximum": 96.65479278564453,
+              "spatial_integral": 5820697.211809456,
+              "nonzero": 306,
+              "centroid_x": 2807.1086501959235,
+              "centroid_y": 2518.568752745506
+            },
+            "00001.grz:00001-201.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "d921ea1081dbea93514ade7425646d748ceee73a629d826bfc1429fa8a293158",
+              "maximum": 33.32249069213867,
+              "spatial_integral": 4064087.7156797796,
+              "nonzero": 324,
+              "centroid_x": 2971.1231822016275,
+              "centroid_y": 2519.42454297168
+            },
+            "00001.grz:00001-301.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "70bff9249a5143d5688ffa874dfabdc62555164205345a89fb53dd272bc5a50a",
+              "maximum": 14.05029296875,
+              "spatial_integral": 2953471.310008317,
+              "nonzero": 321,
+              "centroid_x": 3191.479196199643,
+              "centroid_y": 2522.6735537843106
+            },
+            "00001.grz:00001-102.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "8087ee4026e25583d458da6d4bd8ecc71c19a216d74b4448fcd1d8bf0cc7a804",
+              "maximum": 14.986486434936523,
+              "spatial_integral": 3742683.857108932,
+              "nonzero": 343,
+              "centroid_x": 3277.0771192216735,
+              "centroid_y": 2528.4536778211773
+            },
+            "00001.grz:00001-202.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "a8aeefed2f7be1bbc2708aa09b64ca8efce33e7f9ff3e8a9c015ce6497317393",
+              "maximum": 14.599141120910645,
+              "spatial_integral": 3355600.482034497,
+              "nonzero": 361,
+              "centroid_x": 3205.437148004209,
+              "centroid_y": 2526.3431773475913
+            },
+            "00001.grz:00001-302.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "29290d566b7bceb9c831d686cc2911e731cb32ee3c14efdfb540f03cf3db3f45",
+              "maximum": 21.586299896240234,
+              "spatial_integral": 3574806.582806632,
+              "nonzero": 349,
+              "centroid_x": 3078.786766614643,
+              "centroid_y": 2520.951726474852
+            },
+            "00001.grz:00001-103.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "d9bcf7e335d77e66e2e346554baf95b869932cb7672774ebcfbef561b8453e59",
+              "maximum": 110.29837036132812,
+              "spatial_integral": 4792412.713682279,
+              "nonzero": 54,
+              "centroid_x": 4277.582163685757,
+              "centroid_y": 2511.0699582547386
+            },
+            "00001.grz:00001-203.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "66cabb03b6b5926e69e1553c8e5d40f0a2544461981bdee457154e0fde714989",
+              "maximum": 32.71080017089844,
+              "spatial_integral": 2799481.8902993575,
+              "nonzero": 52,
+              "centroid_x": 4366.359747861409,
+              "centroid_y": 2512.1328983044687
+            },
+            "00001.grz:00001-303.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "f122817a5e940d99f153e40d66e96866f0673eba8856685196949c7ad24cd917",
+              "maximum": 12.144122123718262,
+              "spatial_integral": 1479816.7670238763,
+              "nonzero": 54,
+              "centroid_x": 4516.919464984277,
+              "centroid_y": 2514.2489131393017
+            },
+            "00001.grz:00001-104.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "40b847fcb802937bc7fa5838192bffa84d9c03379069bcf289461610718c1462",
+              "maximum": 18.69215202331543,
+              "spatial_integral": 2238605.4443358444,
+              "nonzero": 56,
+              "centroid_x": 4491.282402279702,
+              "centroid_y": 2513.5395939449763
+            },
+            "00001.grz:00001-204.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "3b0f322f22aba26b6f8bd26d8276338832624fb04bcdf78c12b4277ac58ea229",
+              "maximum": 16.930774688720703,
+              "spatial_integral": 1981474.7996022925,
+              "nonzero": 61,
+              "centroid_x": 4463.020860768145,
+              "centroid_y": 2512.8210192225383
+            },
+            "00001.grz:00001-304.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "262c050ee4ab63bdc2807b78b91ec39b4c98d007e37280adda84b63356347da0",
+              "maximum": 16.993562698364258,
+              "spatial_integral": 1745526.593485847,
+              "nonzero": 59,
+              "centroid_x": 4436.052154837495,
+              "centroid_y": 2512.543226855794
+            }
+          },
+          "particle_lines": [
+            "Using a total of 30000 particles (100 part./s) within the model domain"
+          ],
+          "completion_tail": "tal number of point sources: 4\nTotal emission [kg/h]: 4.000 (  SG 1[kg/h]: 1.000  SG 2[kg/h]: 1.000  SG 3[kg/h]: 1.000  SG 4[kg/h]: 1.000 )\nUsing a total of 30000 particles (100 part./s) within the model domain\n\n_______________________________________________________________________________\nWeather number: 1\nReading GRAMM wind field: 00001.wnd\nReading GRAMM stability classes: 00001.scl\n\nFLOW FIELD COMPUTATION WITH TOPOGRAPHY\nDIAGNOSTIC WIND FIELD CALCULATION\n\nRec 1\twater2 : x = 2000\t y = 2500\t z = 2\nRec 2\twater20 : x = 2000\t y = 2500\t z = 20\nRec 3\tland2 : x = 4000\t y = 2500\t z = 2\nRec 4\tland20 : x = 4000\t y = 2500\t z = 20\nObukhov length [m]:        -4.0\nFriction velocity [m/s]:   0.08\nBoundary-layer height [m]: 637\nInit meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 2\nGRAMM meteo: wind speed [m/s]: 2.11  direction [deg]: 269  Stability class [-]: 2\n                           ----------\n\nDispersion computation.....IIIIIIIIII\n\nTotal simulation time [s]: 1.0\nDispersion [s]: 0.9\nFlow field [s]: 0.0\nWriting result files in a background thread\n_______________________________________________________________________________\nWeather number: 2\nProcess exit called\n"
+        },
+        "B": {
+          "directory": "PUBLIC_REPRODUCTION\\runs\\coupling\\cool_rate100_B",
+          "exit_code": 0,
+          "wall_s": 1.6879999999982829,
+          "console_sha256": "3ac2855e3990aa83b2dd2f5ab8b0a281f8a811e8e75882f4d419f9538d0783e8",
+          "outputs": {
+            "00001.grz:00001-101.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "15fe15b952f31be582c1bc41bf3d6ab8f567bfd226c9a071e30a39f564e08232",
+              "maximum": 105.47470092773438,
+              "spatial_integral": 14890790.78340903,
+              "nonzero": 354,
+              "centroid_x": 2768.7028889555554,
+              "centroid_y": 2520.4661027781053
+            },
+            "00001.grz:00001-201.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "b9cb98ed0868bfdc45c1cce328b1513032e07718c7f697af3b37a9db8e43363b",
+              "maximum": 46.68311309814453,
+              "spatial_integral": 9071198.249389417,
+              "nonzero": 363,
+              "centroid_x": 2918.7453585755256,
+              "centroid_y": 2522.3065995186585
+            },
+            "00001.grz:00001-301.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "f2976e36ae4b9dc7d7580cffba5db6103cd55d4733650287e41b839b4d567e54",
+              "maximum": 5.887600421905518,
+              "spatial_integral": 3422246.9633538276,
+              "nonzero": 339,
+              "centroid_x": 3483.4835185980455,
+              "centroid_y": 2536.389422621363
+            },
+            "00001.grz:00001-102.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "b16491e2cf2a68f730a7e2e1cf6dd3633f984aa860a01c4fd5d043b7986ca745",
+              "maximum": 5.093095779418945,
+              "spatial_integral": 4054885.826993268,
+              "nonzero": 391,
+              "centroid_x": 3608.159498165286,
+              "centroid_y": 2533.567311930595
+            },
+            "00001.grz:00001-202.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "f6080ae8d2bf76be8fb55dd1abafdb32b82cd4b0a0c61b1a24bf5ef4e152de81",
+              "maximum": 6.978429794311523,
+              "spatial_integral": 4236966.230054386,
+              "nonzero": 411,
+              "centroid_x": 3388.3210288137575,
+              "centroid_y": 2530.7896048510383
+            },
+            "00001.grz:00001-302.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "1bffa5c54141a4c452c897f53433363a6cc15ce405c119d4c55b05f3186978a5",
+              "maximum": 27.377750396728516,
+              "spatial_integral": 5800672.552976757,
+              "nonzero": 414,
+              "centroid_x": 3025.3685040343157,
+              "centroid_y": 2521.8518419633374
+            },
+            "00001.grz:00001-103.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "d9bcf7e335d77e66e2e346554baf95b869932cb7672774ebcfbef561b8453e59",
+              "maximum": 110.29837036132812,
+              "spatial_integral": 4792412.713682279,
+              "nonzero": 54,
+              "centroid_x": 4277.582163685757,
+              "centroid_y": 2511.0699582547386
+            },
+            "00001.grz:00001-203.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "66cabb03b6b5926e69e1553c8e5d40f0a2544461981bdee457154e0fde714989",
+              "maximum": 32.71080017089844,
+              "spatial_integral": 2799481.8902993575,
+              "nonzero": 52,
+              "centroid_x": 4366.359747861409,
+              "centroid_y": 2512.1328983044687
+            },
+            "00001.grz:00001-303.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "f122817a5e940d99f153e40d66e96866f0673eba8856685196949c7ad24cd917",
+              "maximum": 12.144122123718262,
+              "spatial_integral": 1479816.7670238763,
+              "nonzero": 54,
+              "centroid_x": 4516.919464984277,
+              "centroid_y": 2514.2489131393017
+            },
+            "00001.grz:00001-104.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "40b847fcb802937bc7fa5838192bffa84d9c03379069bcf289461610718c1462",
+              "maximum": 18.69215202331543,
+              "spatial_integral": 2238605.4443358444,
+              "nonzero": 56,
+              "centroid_x": 4491.282402279702,
+              "centroid_y": 2513.5395939449763
+            },
+            "00001.grz:00001-204.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "3b0f322f22aba26b6f8bd26d8276338832624fb04bcdf78c12b4277ac58ea229",
+              "maximum": 16.930774688720703,
+              "spatial_integral": 1981474.7996022925,
+              "nonzero": 61,
+              "centroid_x": 4463.020860768145,
+              "centroid_y": 2512.8210192225383
+            },
+            "00001.grz:00001-304.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "262c050ee4ab63bdc2807b78b91ec39b4c98d007e37280adda84b63356347da0",
+              "maximum": 16.993562698364258,
+              "spatial_integral": 1745526.593485847,
+              "nonzero": 59,
+              "centroid_x": 4436.052154837495,
+              "centroid_y": 2512.543226855794
+            }
+          },
+          "particle_lines": [
+            "Using a total of 30000 particles (100 part./s) within the model domain"
+          ],
+          "completion_tail": "tal number of point sources: 4\nTotal emission [kg/h]: 4.000 (  SG 1[kg/h]: 1.000  SG 2[kg/h]: 1.000  SG 3[kg/h]: 1.000  SG 4[kg/h]: 1.000 )\nUsing a total of 30000 particles (100 part./s) within the model domain\n\n_______________________________________________________________________________\nWeather number: 1\nReading GRAMM wind field: 00001.wnd\nReading GRAMM stability classes: 00001.scl\n\nFLOW FIELD COMPUTATION WITH TOPOGRAPHY\nDIAGNOSTIC WIND FIELD CALCULATION\n\nRec 1\twater2 : x = 2000\t y = 2500\t z = 2\nRec 2\twater20 : x = 2000\t y = 2500\t z = 20\nRec 3\tland2 : x = 4000\t y = 2500\t z = 2\nRec 4\tland20 : x = 4000\t y = 2500\t z = 20\nObukhov length [m]:        -4.0\nFriction velocity [m/s]:   0.08\nBoundary-layer height [m]: 637\nInit meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 2\nGRAMM meteo: wind speed [m/s]: 2.11  direction [deg]: 269  Stability class [-]: 3\n                           ----------\n\nDispersion computation.....IIIIIIIIII\n\nTotal simulation time [s]: 1.4\nDispersion [s]: 1.4\nFlow field [s]: 0.0\nWriting result files in a background thread\n_______________________________________________________________________________\nWeather number: 2\nProcess exit called\n"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "warm_control",
+        "native": "warm_day_24x20x16_250m_t8",
+        "dx": 100,
+        "rate": 1000,
+        "situations": 1
+      },
+      "results": {
+        "A": {
+          "directory": "PUBLIC_REPRODUCTION\\runs\\coupling\\warm_control_A",
+          "exit_code": 0,
+          "wall_s": 9.328000000001339,
+          "console_sha256": "b1487ed218a5dd393c469324ba42c8a8e6df2e71f2b269bab025779c58307ce4",
+          "outputs": {
+            "00001.grz:00001-101.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "420b61c7e108b0076e21d340daaa54d5856aaadd7deb076a6cf1153fc7db8711",
+              "maximum": 95.80046081542969,
+              "spatial_integral": 5778497.825473896,
+              "nonzero": 388,
+              "centroid_x": 2805.9429962693157,
+              "centroid_y": 2520.562560600571
+            },
+            "00001.grz:00001-201.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "8aab0d4876f4c4551647515e77a6528f38e03492e18c7aa4d099eba72016d959",
+              "maximum": 33.349266052246094,
+              "spatial_integral": 4015453.351008473,
+              "nonzero": 397,
+              "centroid_x": 2970.6552141445636,
+              "centroid_y": 2523.3393397289847
+            },
+            "00001.grz:00001-301.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "e7b6933a38e7dfce454519757f2f640696a234f2d87060b83e56bfaf29465114",
+              "maximum": 13.841570854187012,
+              "spatial_integral": 3003006.768224295,
+              "nonzero": 401,
+              "centroid_x": 3198.568505853001,
+              "centroid_y": 2527.373550790612
+            },
+            "00001.grz:00001-102.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "8445fbbc97d6175afa3a413739b1623ad0178d2bd0aae7640ffbcda6d31e787c",
+              "maximum": 14.770451545715332,
+              "spatial_integral": 3754626.7627622,
+              "nonzero": 429,
+              "centroid_x": 3271.1007660322566,
+              "centroid_y": 2527.796069690647
+            },
+            "00001.grz:00001-202.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "90b9d392b7c51e64ee9c4d080717728f1cbb4a7bcb35e1f3d346ccc264f1a896",
+              "maximum": 14.288155555725098,
+              "spatial_integral": 3375471.895141818,
+              "nonzero": 443,
+              "centroid_x": 3196.4946282337055,
+              "centroid_y": 2526.5365047456885
+            },
+            "00001.grz:00001-302.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "03245fd92d047fb780dd185e98412c1ca9099322b19876841025971d55f08d4c",
+              "maximum": 21.345775604248047,
+              "spatial_integral": 3578923.126787413,
+              "nonzero": 446,
+              "centroid_x": 3077.735925108958,
+              "centroid_y": 2523.756655930969
+            },
+            "00001.grz:00001-103.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "abd276be52b132fdd6e4b8a033a4eaada0c6e01ebf93ce80b30ed022e357c28a",
+              "maximum": 110.31249237060547,
+              "spatial_integral": 4846827.871226706,
+              "nonzero": 62,
+              "centroid_x": 4275.056171784222,
+              "centroid_y": 2511.749766859312
+            },
+            "00001.grz:00001-203.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "d602c8a0061045d9b8901900726e49aa8691448001a56b2503ee0a83aa666511",
+              "maximum": 32.84812927246094,
+              "spatial_integral": 2817554.751143325,
+              "nonzero": 63,
+              "centroid_x": 4365.951983261221,
+              "centroid_y": 2513.4900440346814
+            },
+            "00001.grz:00001-303.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "9a0887bb1f92a51d6ee12e0956ecdf9bf0f13fe982426a828455ed088f41bf66",
+              "maximum": 11.859411239624023,
+              "spatial_integral": 1447742.6064445172,
+              "nonzero": 64,
+              "centroid_x": 4516.285154787273,
+              "centroid_y": 2514.553698743359
+            },
+            "00001.grz:00001-104.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "88d1420398310fbc33cab3e22c030984db7485b49bdf0343ea4da08494aed21c",
+              "maximum": 20.001514434814453,
+              "spatial_integral": 2263094.367624726,
+              "nonzero": 69,
+              "centroid_x": 4488.610840455182,
+              "centroid_y": 2513.3551291888634
+            },
+            "00001.grz:00001-204.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "45bd20160957c2e98ce5ede1b2d8efa38c1c2be14b016535119854a17a24b9a8",
+              "maximum": 16.656387329101562,
+              "spatial_integral": 2025037.954855943,
+              "nonzero": 74,
+              "centroid_x": 4463.441556867973,
+              "centroid_y": 2511.968304715599
+            },
+            "00001.grz:00001-304.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "0d21f222b384c3130d561cf564fd1f534d19c0c6d4b1cf5dccb5c96c880f10d9",
+              "maximum": 17.17359161376953,
+              "spatial_integral": 1748467.5760602113,
+              "nonzero": 72,
+              "centroid_x": 4439.5916962572155,
+              "centroid_y": 2510.400377065984
+            }
+          },
+          "particle_lines": [
+            "Using a total of 300000 particles (1000 part./s) within the model domain"
+          ],
+          "completion_tail": "l number of point sources: 4\nTotal emission [kg/h]: 4.000 (  SG 1[kg/h]: 1.000  SG 2[kg/h]: 1.000  SG 3[kg/h]: 1.000  SG 4[kg/h]: 1.000 )\nUsing a total of 300000 particles (1000 part./s) within the model domain\n\n_______________________________________________________________________________\nWeather number: 1\nReading GRAMM wind field: 00001.wnd\nReading GRAMM stability classes: 00001.scl\n\nFLOW FIELD COMPUTATION WITH TOPOGRAPHY\nDIAGNOSTIC WIND FIELD CALCULATION\n\nRec 1\twater2 : x = 2000\t y = 2500\t z = 2\nRec 2\twater20 : x = 2000\t y = 2500\t z = 20\nRec 3\tland2 : x = 4000\t y = 2500\t z = 2\nRec 4\tland20 : x = 4000\t y = 2500\t z = 20\nObukhov length [m]:        -4.0\nFriction velocity [m/s]:   0.08\nBoundary-layer height [m]: 641\nInit meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 2\nGRAMM meteo: wind speed [m/s]: 2.10  direction [deg]: 269  Stability class [-]: 2\n                           ----------\n\nDispersion computation.....IIIIIIIIII\n\nTotal simulation time [s]: 9.1\nDispersion [s]: 9.0\nFlow field [s]: 0.0\nWriting result files in a background thread\n_______________________________________________________________________________\nWeather number: 2\nProcess exit called\n"
+        },
+        "B": {
+          "directory": "PUBLIC_REPRODUCTION\\runs\\coupling\\warm_control_B",
+          "exit_code": 0,
+          "wall_s": 9.670999999998457,
+          "console_sha256": "619ec688bf80b0a4951af3ca7cf5413e5682aec6d5efb38a6ea7f1d915b5cddf",
+          "outputs": {
+            "00001.grz:00001-101.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "420b61c7e108b0076e21d340daaa54d5856aaadd7deb076a6cf1153fc7db8711",
+              "maximum": 95.80046081542969,
+              "spatial_integral": 5778497.825473896,
+              "nonzero": 388,
+              "centroid_x": 2805.9429962693157,
+              "centroid_y": 2520.562560600571
+            },
+            "00001.grz:00001-201.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "8aab0d4876f4c4551647515e77a6528f38e03492e18c7aa4d099eba72016d959",
+              "maximum": 33.349266052246094,
+              "spatial_integral": 4015453.351008473,
+              "nonzero": 397,
+              "centroid_x": 2970.6552141445636,
+              "centroid_y": 2523.3393397289847
+            },
+            "00001.grz:00001-301.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "e7b6933a38e7dfce454519757f2f640696a234f2d87060b83e56bfaf29465114",
+              "maximum": 13.841570854187012,
+              "spatial_integral": 3003006.768224295,
+              "nonzero": 401,
+              "centroid_x": 3198.568505853001,
+              "centroid_y": 2527.373550790612
+            },
+            "00001.grz:00001-102.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "8445fbbc97d6175afa3a413739b1623ad0178d2bd0aae7640ffbcda6d31e787c",
+              "maximum": 14.770451545715332,
+              "spatial_integral": 3754626.7627622,
+              "nonzero": 429,
+              "centroid_x": 3271.1007660322566,
+              "centroid_y": 2527.796069690647
+            },
+            "00001.grz:00001-202.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "90b9d392b7c51e64ee9c4d080717728f1cbb4a7bcb35e1f3d346ccc264f1a896",
+              "maximum": 14.288155555725098,
+              "spatial_integral": 3375471.895141818,
+              "nonzero": 443,
+              "centroid_x": 3196.4946282337055,
+              "centroid_y": 2526.5365047456885
+            },
+            "00001.grz:00001-302.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "03245fd92d047fb780dd185e98412c1ca9099322b19876841025971d55f08d4c",
+              "maximum": 21.345775604248047,
+              "spatial_integral": 3578923.126787413,
+              "nonzero": 446,
+              "centroid_x": 3077.735925108958,
+              "centroid_y": 2523.756655930969
+            },
+            "00001.grz:00001-103.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "abd276be52b132fdd6e4b8a033a4eaada0c6e01ebf93ce80b30ed022e357c28a",
+              "maximum": 110.31249237060547,
+              "spatial_integral": 4846827.871226706,
+              "nonzero": 62,
+              "centroid_x": 4275.056171784222,
+              "centroid_y": 2511.749766859312
+            },
+            "00001.grz:00001-203.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "d602c8a0061045d9b8901900726e49aa8691448001a56b2503ee0a83aa666511",
+              "maximum": 32.84812927246094,
+              "spatial_integral": 2817554.751143325,
+              "nonzero": 63,
+              "centroid_x": 4365.951983261221,
+              "centroid_y": 2513.4900440346814
+            },
+            "00001.grz:00001-303.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "9a0887bb1f92a51d6ee12e0956ecdf9bf0f13fe982426a828455ed088f41bf66",
+              "maximum": 11.859411239624023,
+              "spatial_integral": 1447742.6064445172,
+              "nonzero": 64,
+              "centroid_x": 4516.285154787273,
+              "centroid_y": 2514.553698743359
+            },
+            "00001.grz:00001-104.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "88d1420398310fbc33cab3e22c030984db7485b49bdf0343ea4da08494aed21c",
+              "maximum": 20.001514434814453,
+              "spatial_integral": 2263094.367624726,
+              "nonzero": 69,
+              "centroid_x": 4488.610840455182,
+              "centroid_y": 2513.3551291888634
+            },
+            "00001.grz:00001-204.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "45bd20160957c2e98ce5ede1b2d8efa38c1c2be14b016535119854a17a24b9a8",
+              "maximum": 16.656387329101562,
+              "spatial_integral": 2025037.954855943,
+              "nonzero": 74,
+              "centroid_x": 4463.441556867973,
+              "centroid_y": 2511.968304715599
+            },
+            "00001.grz:00001-304.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "0d21f222b384c3130d561cf564fd1f534d19c0c6d4b1cf5dccb5c96c880f10d9",
+              "maximum": 17.17359161376953,
+              "spatial_integral": 1748467.5760602113,
+              "nonzero": 72,
+              "centroid_x": 4439.5916962572155,
+              "centroid_y": 2510.400377065984
+            }
+          },
+          "particle_lines": [
+            "Using a total of 300000 particles (1000 part./s) within the model domain"
+          ],
+          "completion_tail": "l number of point sources: 4\nTotal emission [kg/h]: 4.000 (  SG 1[kg/h]: 1.000  SG 2[kg/h]: 1.000  SG 3[kg/h]: 1.000  SG 4[kg/h]: 1.000 )\nUsing a total of 300000 particles (1000 part./s) within the model domain\n\n_______________________________________________________________________________\nWeather number: 1\nReading GRAMM wind field: 00001.wnd\nReading GRAMM stability classes: 00001.scl\n\nFLOW FIELD COMPUTATION WITH TOPOGRAPHY\nDIAGNOSTIC WIND FIELD CALCULATION\n\nRec 1\twater2 : x = 2000\t y = 2500\t z = 2\nRec 2\twater20 : x = 2000\t y = 2500\t z = 20\nRec 3\tland2 : x = 4000\t y = 2500\t z = 2\nRec 4\tland20 : x = 4000\t y = 2500\t z = 20\nObukhov length [m]:        -4.0\nFriction velocity [m/s]:   0.08\nBoundary-layer height [m]: 641\nInit meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 2\nGRAMM meteo: wind speed [m/s]: 2.10  direction [deg]: 269  Stability class [-]: 2\n                           ----------\n\nDispersion computation.....IIIIIIIIII\n\nTotal simulation time [s]: 9.4\nDispersion [s]: 9.4\nFlow field [s]: 0.0\nWriting result files in a background thread\n_______________________________________________________________________________\nWeather number: 2\nProcess exit called\n"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "neutral_control",
+        "native": "strong_neutral_24x20x16_250m_t8",
+        "dx": 100,
+        "rate": 1000,
+        "situations": 1
+      },
+      "results": {
+        "A": {
+          "directory": "PUBLIC_REPRODUCTION\\runs\\coupling\\neutral_control_A",
+          "exit_code": 0,
+          "wall_s": 26.0779999999977,
+          "console_sha256": "af1adcb6804f9522851435adb88d909057ae7940ab26cbf054e3008fd69814d9",
+          "outputs": {
+            "00001.grz:00001-101.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "0ed1eb0a89501a378a3a4b209003f0b4710b120bbde6a80bb3dad7fbd8137b1b",
+              "maximum": 37.956912994384766,
+              "spatial_integral": 5498867.008789675,
+              "nonzero": 295,
+              "centroid_x": 2865.921014167878,
+              "centroid_y": 2506.165857505624
+            },
+            "00001.grz:00001-201.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "0c49df7e03f4fe46d59debacb535f6b5ae39e57d6698bc575c3a95e3c181f754",
+              "maximum": 6.438194274902344,
+              "spatial_integral": 2340728.123677909,
+              "nonzero": 320,
+              "centroid_x": 3258.752158301347,
+              "centroid_y": 2507.2915398113755
+            },
+            "00001.grz:00001-301.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "e66fde97c1b8f32ccb56ad6cbcde32125a1b6b0f5a0f1b150d79c2ce24be40ad",
+              "maximum": 1.3608590364456177,
+              "spatial_integral": 813297.283265565,
+              "nonzero": 314,
+              "centroid_x": 3780.792218910129,
+              "centroid_y": 2509.574413543385
+            },
+            "00001.grz:00001-102.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "2c0c192353025166f6f810060a97290b4fa3bc861530e8a416f6ebc445d1620c",
+              "maximum": 2.3693149089813232,
+              "spatial_integral": 1504211.3691855776,
+              "nonzero": 354,
+              "centroid_x": 3659.029681866375,
+              "centroid_y": 2509.6516476570573
+            },
+            "00001.grz:00001-202.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "2fa01857efa19fbe4bc46b2b16208c51277d8c6592f5d457b15b97c42419c72e",
+              "maximum": 3.6420764923095703,
+              "spatial_integral": 1508675.2710132715,
+              "nonzero": 377,
+              "centroid_x": 3412.4843331944594,
+              "centroid_y": 2507.2583436303994
+            },
+            "00001.grz:00001-302.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "293e0b734cd5986adfca13595e818d449b2a4bd5e359aab72d88c8545195f85c",
+              "maximum": 3.6101725101470947,
+              "spatial_integral": 1215189.2292455886,
+              "nonzero": 379,
+              "centroid_x": 3322.4048073990725,
+              "centroid_y": 2506.9605126078627
+            },
+            "00001.grz:00001-103.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "bea4c9fb0ed049d60bf2105a2c075aa05adec94812674f16d2c24fcf0ff2b0e5",
+              "maximum": 35.23670196533203,
+              "spatial_integral": 2554510.0307349637,
+              "nonzero": 45,
+              "centroid_x": 4341.129889619545,
+              "centroid_y": 2504.4809848477307
+            },
+            "00001.grz:00001-203.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "2da959ee5a3e4180e61852a0bc423c4043a73e151b3c49308fd61a90477b80f5",
+              "maximum": 7.497013092041016,
+              "spatial_integral": 1045436.6789779306,
+              "nonzero": 50,
+              "centroid_x": 4472.365894721766,
+              "centroid_y": 2504.3372549580004
+            },
+            "00001.grz:00001-303.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "cb08b16c4eab47e2625200322afe741adb4ccd75d32c621cb1e2419c50a56325",
+              "maximum": 1.968504786491394,
+              "spatial_integral": 267628.59598209616,
+              "nonzero": 48,
+              "centroid_x": 4651.568092605195,
+              "centroid_y": 2504.6500499760846
+            },
+            "00001.grz:00001-104.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "57a7bdf6974f8dcebd432f96be1b014895ea0ece89a0565ea590580bd0e81d25",
+              "maximum": 4.088875770568848,
+              "spatial_integral": 583565.3118774644,
+              "nonzero": 51,
+              "centroid_x": 4619.281397544627,
+              "centroid_y": 2504.3364822384283
+            },
+            "00001.grz:00001-204.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "bae406acb557d0100c163cd91eb040aaa5e283b5975299efb8cdc94c37a2415d",
+              "maximum": 4.1385698318481445,
+              "spatial_integral": 611625.7623026468,
+              "nonzero": 58,
+              "centroid_x": 4524.818547163153,
+              "centroid_y": 2503.4737594643975
+            },
+            "00001.grz:00001-304.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "6d046d4644edc4aa97568f4388753d68fca8d6044fb9b6e44bda134fe5f02afa",
+              "maximum": 3.417609691619873,
+              "spatial_integral": 470612.5420720491,
+              "nonzero": 61,
+              "centroid_x": 4496.007232247028,
+              "centroid_y": 2503.1637932740423
+            }
+          },
+          "particle_lines": [
+            "Using a total of 300000 particles (1000 part./s) within the model domain"
+          ],
+          "completion_tail": "mber of point sources: 4\nTotal emission [kg/h]: 4.000 (  SG 1[kg/h]: 1.000  SG 2[kg/h]: 1.000  SG 3[kg/h]: 1.000  SG 4[kg/h]: 1.000 )\nUsing a total of 300000 particles (1000 part./s) within the model domain\n\n_______________________________________________________________________________\nWeather number: 1\nReading GRAMM wind field: 00001.wnd\nReading GRAMM stability classes: 00001.scl\n\nFLOW FIELD COMPUTATION WITH TOPOGRAPHY\nDIAGNOSTIC WIND FIELD CALCULATION\n\nRec 1\twater2 : x = 2000\t y = 2500\t z = 2\nRec 2\twater20 : x = 2000\t y = 2500\t z = 20\nRec 3\tland2 : x = 4000\t y = 2500\t z = 2\nRec 4\tland20 : x = 4000\t y = 2500\t z = 20\nObukhov length [m]:        1000.0\nFriction velocity [m/s]:   0.28\nBoundary-layer height [m]: 651\nInit meteo:  wind speed [m/s]: 8.00  direction [deg]: 270  Stability class [-]: 4\nGRAMM meteo: wind speed [m/s]: 9.00  direction [deg]: 270  Stability class [-]: 4\n                           ----------\n\nDispersion computation.....IIIIIIIIII\n\nTotal simulation time [s]: 25.8\nDispersion [s]: 25.8\nFlow field [s]: 0.0\nWriting result files in a background thread\n_______________________________________________________________________________\nWeather number: 2\nProcess exit called\n"
+        },
+        "B": {
+          "directory": "PUBLIC_REPRODUCTION\\runs\\coupling\\neutral_control_B",
+          "exit_code": 0,
+          "wall_s": 26.187999999998283,
+          "console_sha256": "bd2d5b613bffe13e49eecc0a60ece66d7c134dad3f377c4944f4f60d6fe74ad7",
+          "outputs": {
+            "00001.grz:00001-101.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "0ed1eb0a89501a378a3a4b209003f0b4710b120bbde6a80bb3dad7fbd8137b1b",
+              "maximum": 37.956912994384766,
+              "spatial_integral": 5498867.008789675,
+              "nonzero": 295,
+              "centroid_x": 2865.921014167878,
+              "centroid_y": 2506.165857505624
+            },
+            "00001.grz:00001-201.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "0c49df7e03f4fe46d59debacb535f6b5ae39e57d6698bc575c3a95e3c181f754",
+              "maximum": 6.438194274902344,
+              "spatial_integral": 2340728.123677909,
+              "nonzero": 320,
+              "centroid_x": 3258.752158301347,
+              "centroid_y": 2507.2915398113755
+            },
+            "00001.grz:00001-301.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "e66fde97c1b8f32ccb56ad6cbcde32125a1b6b0f5a0f1b150d79c2ce24be40ad",
+              "maximum": 1.3608590364456177,
+              "spatial_integral": 813297.283265565,
+              "nonzero": 314,
+              "centroid_x": 3780.792218910129,
+              "centroid_y": 2509.574413543385
+            },
+            "00001.grz:00001-102.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "2c0c192353025166f6f810060a97290b4fa3bc861530e8a416f6ebc445d1620c",
+              "maximum": 2.3693149089813232,
+              "spatial_integral": 1504211.3691855776,
+              "nonzero": 354,
+              "centroid_x": 3659.029681866375,
+              "centroid_y": 2509.6516476570573
+            },
+            "00001.grz:00001-202.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "2fa01857efa19fbe4bc46b2b16208c51277d8c6592f5d457b15b97c42419c72e",
+              "maximum": 3.6420764923095703,
+              "spatial_integral": 1508675.2710132715,
+              "nonzero": 377,
+              "centroid_x": 3412.4843331944594,
+              "centroid_y": 2507.2583436303994
+            },
+            "00001.grz:00001-302.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "293e0b734cd5986adfca13595e818d449b2a4bd5e359aab72d88c8545195f85c",
+              "maximum": 3.6101725101470947,
+              "spatial_integral": 1215189.2292455886,
+              "nonzero": 379,
+              "centroid_x": 3322.4048073990725,
+              "centroid_y": 2506.9605126078627
+            },
+            "00001.grz:00001-103.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "bea4c9fb0ed049d60bf2105a2c075aa05adec94812674f16d2c24fcf0ff2b0e5",
+              "maximum": 35.23670196533203,
+              "spatial_integral": 2554510.0307349637,
+              "nonzero": 45,
+              "centroid_x": 4341.129889619545,
+              "centroid_y": 2504.4809848477307
+            },
+            "00001.grz:00001-203.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "2da959ee5a3e4180e61852a0bc423c4043a73e151b3c49308fd61a90477b80f5",
+              "maximum": 7.497013092041016,
+              "spatial_integral": 1045436.6789779306,
+              "nonzero": 50,
+              "centroid_x": 4472.365894721766,
+              "centroid_y": 2504.3372549580004
+            },
+            "00001.grz:00001-303.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "cb08b16c4eab47e2625200322afe741adb4ccd75d32c621cb1e2419c50a56325",
+              "maximum": 1.968504786491394,
+              "spatial_integral": 267628.59598209616,
+              "nonzero": 48,
+              "centroid_x": 4651.568092605195,
+              "centroid_y": 2504.6500499760846
+            },
+            "00001.grz:00001-104.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "57a7bdf6974f8dcebd432f96be1b014895ea0ece89a0565ea590580bd0e81d25",
+              "maximum": 4.088875770568848,
+              "spatial_integral": 583565.3118774644,
+              "nonzero": 51,
+              "centroid_x": 4619.281397544627,
+              "centroid_y": 2504.3364822384283
+            },
+            "00001.grz:00001-204.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "bae406acb557d0100c163cd91eb040aaa5e283b5975299efb8cdc94c37a2415d",
+              "maximum": 4.1385698318481445,
+              "spatial_integral": 611625.7623026468,
+              "nonzero": 58,
+              "centroid_x": 4524.818547163153,
+              "centroid_y": 2503.4737594643975
+            },
+            "00001.grz:00001-304.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "6d046d4644edc4aa97568f4388753d68fca8d6044fb9b6e44bda134fe5f02afa",
+              "maximum": 3.417609691619873,
+              "spatial_integral": 470612.5420720491,
+              "nonzero": 61,
+              "centroid_x": 4496.007232247028,
+              "centroid_y": 2503.1637932740423
+            }
+          },
+          "particle_lines": [
+            "Using a total of 300000 particles (1000 part./s) within the model domain"
+          ],
+          "completion_tail": "mber of point sources: 4\nTotal emission [kg/h]: 4.000 (  SG 1[kg/h]: 1.000  SG 2[kg/h]: 1.000  SG 3[kg/h]: 1.000  SG 4[kg/h]: 1.000 )\nUsing a total of 300000 particles (1000 part./s) within the model domain\n\n_______________________________________________________________________________\nWeather number: 1\nReading GRAMM wind field: 00001.wnd\nReading GRAMM stability classes: 00001.scl\n\nFLOW FIELD COMPUTATION WITH TOPOGRAPHY\nDIAGNOSTIC WIND FIELD CALCULATION\n\nRec 1\twater2 : x = 2000\t y = 2500\t z = 2\nRec 2\twater20 : x = 2000\t y = 2500\t z = 20\nRec 3\tland2 : x = 4000\t y = 2500\t z = 2\nRec 4\tland20 : x = 4000\t y = 2500\t z = 20\nObukhov length [m]:        1000.0\nFriction velocity [m/s]:   0.28\nBoundary-layer height [m]: 651\nInit meteo:  wind speed [m/s]: 8.00  direction [deg]: 270  Stability class [-]: 4\nGRAMM meteo: wind speed [m/s]: 9.00  direction [deg]: 270  Stability class [-]: 4\n                           ----------\n\nDispersion computation.....IIIIIIIIII\n\nTotal simulation time [s]: 25.9\nDispersion [s]: 25.9\nFlow field [s]: 0.0\nWriting result files in a background thread\n_______________________________________________________________________________\nWeather number: 2\nProcess exit called\n"
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "land_control",
+        "native": "land_day_24x20x16_250m_t2",
+        "dx": 100,
+        "rate": 1000,
+        "situations": 1
+      },
+      "results": {
+        "A": {
+          "directory": "PUBLIC_REPRODUCTION\\runs\\coupling\\land_control_A",
+          "exit_code": 0,
+          "wall_s": 9.75,
+          "console_sha256": "5cb19c55258f571c202f1b335097837028f26e5b0774b690ca3a85e3e528e9ff",
+          "outputs": {
+            "00001.grz:00001-101.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "c8580a42060a2abb12a5c8ef79e3929d59ace44e9278843a7aba08fe5d769e2e",
+              "maximum": 105.381103515625,
+              "spatial_integral": 6142200.357532129,
+              "nonzero": 391,
+              "centroid_x": 2735.6293686113636,
+              "centroid_y": 2520.546997522731
+            },
+            "00001.grz:00001-201.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "18b57835834953ed6a3c7f36e8b114c994357758736653a7ed56de89c0295616",
+              "maximum": 30.55807113647461,
+              "spatial_integral": 3991798.9046371076,
+              "nonzero": 399,
+              "centroid_x": 2911.7810456286757,
+              "centroid_y": 2523.4175647159036
+            },
+            "00001.grz:00001-301.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "b943019849d0ed5fc5481992ec4a68229e104d013f71f6882384fc7694269346",
+              "maximum": 11.972687721252441,
+              "spatial_integral": 2696227.1107314155,
+              "nonzero": 397,
+              "centroid_x": 3191.3394690642212,
+              "centroid_y": 2527.2897026107908
+            },
+            "00001.grz:00001-102.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "13fabf7379cf0b6cab40e8d3861909ae5019a1b7c22b0f0045943e73bdae0645",
+              "maximum": 19.88654899597168,
+              "spatial_integral": 3902822.192607564,
+              "nonzero": 399,
+              "centroid_x": 3125.91945530827,
+              "centroid_y": 2526.357374062031
+            },
+            "00001.grz:00001-202.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "1c9546b2868d759d5f80ec3077bce7512d1ad3ae5a5277873b725deea3507eea",
+              "maximum": 16.625764846801758,
+              "spatial_integral": 3357958.233440877,
+              "nonzero": 410,
+              "centroid_x": 3089.4818987565177,
+              "centroid_y": 2525.118532923635
+            },
+            "00001.grz:00001-302.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "5a53952fb6379820ffc5a585644dbbde74fefed951d40ba4fa93cb48fb516444",
+              "maximum": 16.544471740722656,
+              "spatial_integral": 3018753.528103698,
+              "nonzero": 425,
+              "centroid_x": 3092.7235719281502,
+              "centroid_y": 2523.5354684942636
+            },
+            "00001.grz:00001-103.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "6cc085c5a1c55c31787c8daafddd9f1207a3ec61c3546bf2d2e5b94c83e7d150",
+              "maximum": 105.32299041748047,
+              "spatial_integral": 4363894.660394872,
+              "nonzero": 64,
+              "centroid_x": 4261.693115384791,
+              "centroid_y": 2511.1260509581566
+            },
+            "00001.grz:00001-203.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "84b9c1218af082879a267c13036ad30b1e4baf1f8d06ebd722afd4a75af5073f",
+              "maximum": 30.583768844604492,
+              "spatial_integral": 2542019.4649411133,
+              "nonzero": 66,
+              "centroid_x": 4352.91929075974,
+              "centroid_y": 2512.53186181934
+            },
+            "00001.grz:00001-303.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "218077db0f791ca85bf4d5de53b356e52f40f0219d3a246e40c45d15e15dfaf5",
+              "maximum": 12.238595008850098,
+              "spatial_integral": 1354993.527539773,
+              "nonzero": 64,
+              "centroid_x": 4495.9921210524335,
+              "centroid_y": 2513.272997583293
+            },
+            "00001.grz:00001-104.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "49184f4756fe5ae7986d9d43c2d4b96416897ea29d285ef14006ed63ecdd7e00",
+              "maximum": 19.725658416748047,
+              "spatial_integral": 2126772.506266134,
+              "nonzero": 72,
+              "centroid_x": 4474.010925102604,
+              "centroid_y": 2512.707865232001
+            },
+            "00001.grz:00001-204.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "6e10e7e13141ca217e8e8d43b8d1f0ca53f69cd99c783a39868564cae477705b",
+              "maximum": 16.739389419555664,
+              "spatial_integral": 1895056.4612005837,
+              "nonzero": 71,
+              "centroid_x": 4450.040580270825,
+              "centroid_y": 2511.699341074118
+            },
+            "00001.grz:00001-304.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "f2c01c4a1f34dd004ee6193a53ebbb3d5f36f07addd69e50a38b4eab6e7e2d67",
+              "maximum": 16.531618118286133,
+              "spatial_integral": 1640604.1035871021,
+              "nonzero": 73,
+              "centroid_x": 4431.918048396708,
+              "centroid_y": 2509.6377269002373
+            }
+          },
+          "particle_lines": [
+            "Using a total of 300000 particles (1000 part./s) within the model domain"
+          ],
+          "completion_tail": " number of point sources: 4\nTotal emission [kg/h]: 4.000 (  SG 1[kg/h]: 1.000  SG 2[kg/h]: 1.000  SG 3[kg/h]: 1.000  SG 4[kg/h]: 1.000 )\nUsing a total of 300000 particles (1000 part./s) within the model domain\n\n_______________________________________________________________________________\nWeather number: 1\nReading GRAMM wind field: 00001.wnd\nReading GRAMM stability classes: 00001.scl\n\nFLOW FIELD COMPUTATION WITH TOPOGRAPHY\nDIAGNOSTIC WIND FIELD CALCULATION\n\nRec 1\twater2 : x = 2000\t y = 2500\t z = 2\nRec 2\twater20 : x = 2000\t y = 2500\t z = 20\nRec 3\tland2 : x = 4000\t y = 2500\t z = 2\nRec 4\tland20 : x = 4000\t y = 2500\t z = 20\nObukhov length [m]:        -26.4\nFriction velocity [m/s]:   0.20\nBoundary-layer height [m]: 773\nInit meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 2\nGRAMM meteo: wind speed [m/s]: 2.10  direction [deg]: 269  Stability class [-]: 2\n                           ----------\n\nDispersion computation.....IIIIIIIIII\n\nTotal simulation time [s]: 9.5\nDispersion [s]: 9.5\nFlow field [s]: 0.0\nWriting result files in a background thread\n_______________________________________________________________________________\nWeather number: 2\nProcess exit called\n"
+        },
+        "B": {
+          "directory": "PUBLIC_REPRODUCTION\\runs\\coupling\\land_control_B",
+          "exit_code": 0,
+          "wall_s": 9.75,
+          "console_sha256": "5cb19c55258f571c202f1b335097837028f26e5b0774b690ca3a85e3e528e9ff",
+          "outputs": {
+            "00001.grz:00001-101.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "c8580a42060a2abb12a5c8ef79e3929d59ace44e9278843a7aba08fe5d769e2e",
+              "maximum": 105.381103515625,
+              "spatial_integral": 6142200.357532129,
+              "nonzero": 391,
+              "centroid_x": 2735.6293686113636,
+              "centroid_y": 2520.546997522731
+            },
+            "00001.grz:00001-201.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "18b57835834953ed6a3c7f36e8b114c994357758736653a7ed56de89c0295616",
+              "maximum": 30.55807113647461,
+              "spatial_integral": 3991798.9046371076,
+              "nonzero": 399,
+              "centroid_x": 2911.7810456286757,
+              "centroid_y": 2523.4175647159036
+            },
+            "00001.grz:00001-301.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "b943019849d0ed5fc5481992ec4a68229e104d013f71f6882384fc7694269346",
+              "maximum": 11.972687721252441,
+              "spatial_integral": 2696227.1107314155,
+              "nonzero": 397,
+              "centroid_x": 3191.3394690642212,
+              "centroid_y": 2527.2897026107908
+            },
+            "00001.grz:00001-102.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "13fabf7379cf0b6cab40e8d3861909ae5019a1b7c22b0f0045943e73bdae0645",
+              "maximum": 19.88654899597168,
+              "spatial_integral": 3902822.192607564,
+              "nonzero": 399,
+              "centroid_x": 3125.91945530827,
+              "centroid_y": 2526.357374062031
+            },
+            "00001.grz:00001-202.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "1c9546b2868d759d5f80ec3077bce7512d1ad3ae5a5277873b725deea3507eea",
+              "maximum": 16.625764846801758,
+              "spatial_integral": 3357958.233440877,
+              "nonzero": 410,
+              "centroid_x": 3089.4818987565177,
+              "centroid_y": 2525.118532923635
+            },
+            "00001.grz:00001-302.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "5a53952fb6379820ffc5a585644dbbde74fefed951d40ba4fa93cb48fb516444",
+              "maximum": 16.544471740722656,
+              "spatial_integral": 3018753.528103698,
+              "nonzero": 425,
+              "centroid_x": 3092.7235719281502,
+              "centroid_y": 2523.5354684942636
+            },
+            "00001.grz:00001-103.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "6cc085c5a1c55c31787c8daafddd9f1207a3ec61c3546bf2d2e5b94c83e7d150",
+              "maximum": 105.32299041748047,
+              "spatial_integral": 4363894.660394872,
+              "nonzero": 64,
+              "centroid_x": 4261.693115384791,
+              "centroid_y": 2511.1260509581566
+            },
+            "00001.grz:00001-203.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "84b9c1218af082879a267c13036ad30b1e4baf1f8d06ebd722afd4a75af5073f",
+              "maximum": 30.583768844604492,
+              "spatial_integral": 2542019.4649411133,
+              "nonzero": 66,
+              "centroid_x": 4352.91929075974,
+              "centroid_y": 2512.53186181934
+            },
+            "00001.grz:00001-303.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "218077db0f791ca85bf4d5de53b356e52f40f0219d3a246e40c45d15e15dfaf5",
+              "maximum": 12.238595008850098,
+              "spatial_integral": 1354993.527539773,
+              "nonzero": 64,
+              "centroid_x": 4495.9921210524335,
+              "centroid_y": 2513.272997583293
+            },
+            "00001.grz:00001-104.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "49184f4756fe5ae7986d9d43c2d4b96416897ea29d285ef14006ed63ecdd7e00",
+              "maximum": 19.725658416748047,
+              "spatial_integral": 2126772.506266134,
+              "nonzero": 72,
+              "centroid_x": 4474.010925102604,
+              "centroid_y": 2512.707865232001
+            },
+            "00001.grz:00001-204.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "6e10e7e13141ca217e8e8d43b8d1f0ca53f69cd99c783a39868564cae477705b",
+              "maximum": 16.739389419555664,
+              "spatial_integral": 1895056.4612005837,
+              "nonzero": 71,
+              "centroid_x": 4450.040580270825,
+              "centroid_y": 2511.699341074118
+            },
+            "00001.grz:00001-304.con": {
+              "header": [
+                -3,
+                1000,
+                1000,
+                100.0,
+                100.0,
+                40,
+                30
+              ],
+              "payload_sha256": "f2c01c4a1f34dd004ee6193a53ebbb3d5f36f07addd69e50a38b4eab6e7e2d67",
+              "maximum": 16.531618118286133,
+              "spatial_integral": 1640604.1035871021,
+              "nonzero": 73,
+              "centroid_x": 4431.918048396708,
+              "centroid_y": 2509.6377269002373
+            }
+          },
+          "particle_lines": [
+            "Using a total of 300000 particles (1000 part./s) within the model domain"
+          ],
+          "completion_tail": " number of point sources: 4\nTotal emission [kg/h]: 4.000 (  SG 1[kg/h]: 1.000  SG 2[kg/h]: 1.000  SG 3[kg/h]: 1.000  SG 4[kg/h]: 1.000 )\nUsing a total of 300000 particles (1000 part./s) within the model domain\n\n_______________________________________________________________________________\nWeather number: 1\nReading GRAMM wind field: 00001.wnd\nReading GRAMM stability classes: 00001.scl\n\nFLOW FIELD COMPUTATION WITH TOPOGRAPHY\nDIAGNOSTIC WIND FIELD CALCULATION\n\nRec 1\twater2 : x = 2000\t y = 2500\t z = 2\nRec 2\twater20 : x = 2000\t y = 2500\t z = 20\nRec 3\tland2 : x = 4000\t y = 2500\t z = 2\nRec 4\tland20 : x = 4000\t y = 2500\t z = 20\nObukhov length [m]:        -26.4\nFriction velocity [m/s]:   0.20\nBoundary-layer height [m]: 773\nInit meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 2\nGRAMM meteo: wind speed [m/s]: 2.10  direction [deg]: 269  Stability class [-]: 2\n                           ----------\n\nDispersion computation.....IIIIIIIIII\n\nTotal simulation time [s]: 9.5\nDispersion [s]: 9.5\nFlow field [s]: 0.0\nWriting result files in a background thread\n_______________________________________________________________________________\nWeather number: 2\nProcess exit called\n"
+        }
+      }
+    }
+  ],
+  "comparisons": {
+    "cool_main": [
+      {
+        "output": "00001.grz:00001-101.con",
+        "identical": false,
+        "base_max": 95.86922454833984,
+        "candidate_max": 105.39427947998047,
+        "max_pct": 9.935466753293532,
+        "base_integral": 5810139.00740596,
+        "candidate_integral": 14883510.301336356,
+        "integral_pct": 156.1644442992658
+      },
+      {
+        "output": "00001.grz:00001-201.con",
+        "identical": false,
+        "base_max": 33.44725036621094,
+        "candidate_max": 46.143306732177734,
+        "max_pct": 37.958445692721575,
+        "base_integral": 4022670.417627087,
+        "candidate_integral": 9090722.249290848,
+        "integral_pct": 125.98724989887016
+      },
+      {
+        "output": "00001.grz:00001-301.con",
+        "identical": false,
+        "base_max": 13.817183494567871,
+        "candidate_max": 5.567591190338135,
+        "max_pct": -59.705310474258425,
+        "base_integral": 3002272.1612092573,
+        "candidate_integral": 3442920.4950493295,
+        "integral_pct": 14.677161502326541
+      },
+      {
+        "output": "00001.grz:00001-102.con",
+        "identical": false,
+        "base_max": 14.78567886352539,
+        "candidate_max": 5.1355719566345215,
+        "max_pct": -65.26657988424596,
+        "base_integral": 3772488.1186612765,
+        "candidate_integral": 3994607.7322229394,
+        "integral_pct": 5.887881063505773
+      },
+      {
+        "output": "00001.grz:00001-202.con",
+        "identical": false,
+        "base_max": 14.276762008666992,
+        "candidate_max": 7.261512279510498,
+        "max_pct": -49.137540605480055,
+        "base_integral": 3392482.7209411887,
+        "candidate_integral": 4256795.402875578,
+        "integral_pct": 25.477290616666725
+      },
+      {
+        "output": "00001.grz:00001-302.con",
+        "identical": false,
+        "base_max": 21.35968589782715,
+        "candidate_max": 27.621498107910156,
+        "max_pct": 29.316031331340888,
+        "base_integral": 3586760.7259121723,
+        "candidate_integral": 5892325.35924064,
+        "integral_pct": 64.27985610169533
+      },
+      {
+        "output": "00001.grz:00001-103.con",
+        "identical": true,
+        "base_max": 109.54695129394531,
+        "candidate_max": 109.54695129394531,
+        "max_pct": 0.0,
+        "base_integral": 4839549.8085190775,
+        "candidate_integral": 4839549.8085190775,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-203.con",
+        "identical": true,
+        "base_max": 32.73689651489258,
+        "candidate_max": 32.73689651489258,
+        "max_pct": 0.0,
+        "base_integral": 2810495.8604072453,
+        "candidate_integral": 2810495.8604072453,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-303.con",
+        "identical": true,
+        "base_max": 11.848729133605957,
+        "candidate_max": 11.848729133605957,
+        "max_pct": 0.0,
+        "base_integral": 1445634.4766216353,
+        "candidate_integral": 1445634.4766216353,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-104.con",
+        "identical": true,
+        "base_max": 20.006027221679688,
+        "candidate_max": 20.006027221679688,
+        "max_pct": 0.0,
+        "base_integral": 2273598.4254968935,
+        "candidate_integral": 2273598.4254968935,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-204.con",
+        "identical": true,
+        "base_max": 16.52194595336914,
+        "candidate_max": 16.52194595336914,
+        "max_pct": 0.0,
+        "base_integral": 2017324.3882885436,
+        "candidate_integral": 2017324.3882885436,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-304.con",
+        "identical": true,
+        "base_max": 17.13084602355957,
+        "candidate_max": 17.13084602355957,
+        "max_pct": 0.0,
+        "base_integral": 1753046.2402198464,
+        "candidate_integral": 1753046.2402198464,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00002.grz:00002-101.con",
+        "identical": false,
+        "base_max": 95.21324920654297,
+        "candidate_max": 105.59185791015625,
+        "max_pct": 10.90038286698871,
+        "base_integral": 5776360.098496953,
+        "candidate_integral": 14946994.117617432,
+        "integral_pct": 158.7614667843637
+      },
+      {
+        "output": "00002.grz:00002-201.con",
+        "identical": false,
+        "base_max": 33.537532806396484,
+        "candidate_max": 46.17643356323242,
+        "max_pct": 37.68583941399937,
+        "base_integral": 4037233.479602437,
+        "candidate_integral": 9073675.211046357,
+        "integral_pct": 124.74982576286071
+      },
+      {
+        "output": "00002.grz:00002-301.con",
+        "identical": false,
+        "base_max": 14.019304275512695,
+        "candidate_max": 5.640892028808594,
+        "max_pct": -59.76339540142905,
+        "base_integral": 3000939.548027236,
+        "candidate_integral": 3443213.0672968924,
+        "integral_pct": 14.737835007719479
+      },
+      {
+        "output": "00002.grz:00002-102.con",
+        "identical": false,
+        "base_max": 15.158198356628418,
+        "candidate_max": 4.9049973487854,
+        "max_pct": -67.64129065087388,
+        "base_integral": 3733036.3502755063,
+        "candidate_integral": 4009279.141111474,
+        "integral_pct": 7.399949127620475
+      },
+      {
+        "output": "00002.grz:00002-202.con",
+        "identical": false,
+        "base_max": 13.591771125793457,
+        "candidate_max": 7.179960250854492,
+        "max_pct": -47.17421162846912,
+        "base_integral": 3355980.392108904,
+        "candidate_integral": 4241805.623335531,
+        "integral_pct": 26.395423325759438
+      },
+      {
+        "output": "00002.grz:00002-302.con",
+        "identical": false,
+        "base_max": 21.155540466308594,
+        "candidate_max": 27.927412033081055,
+        "max_pct": 32.009919942991075,
+        "base_integral": 3574027.9198426288,
+        "candidate_integral": 5900585.649040295,
+        "integral_pct": 65.09623823252362
+      },
+      {
+        "output": "00002.grz:00002-103.con",
+        "identical": true,
+        "base_max": 110.14313507080078,
+        "candidate_max": 110.14313507080078,
+        "max_pct": 0.0,
+        "base_integral": 4832787.735708407,
+        "candidate_integral": 4832787.735708407,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00002.grz:00002-203.con",
+        "identical": true,
+        "base_max": 32.734779357910156,
+        "candidate_max": 32.734779357910156,
+        "max_pct": 0.0,
+        "base_integral": 2795383.5501061985,
+        "candidate_integral": 2795383.5501061985,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00002.grz:00002-303.con",
+        "identical": true,
+        "base_max": 11.794516563415527,
+        "candidate_max": 11.794516563415527,
+        "max_pct": 0.0,
+        "base_integral": 1433907.7782118693,
+        "candidate_integral": 1433907.7782118693,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00002.grz:00002-104.con",
+        "identical": true,
+        "base_max": 20.151609420776367,
+        "candidate_max": 20.151609420776367,
+        "max_pct": 0.0,
+        "base_integral": 2268114.91622997,
+        "candidate_integral": 2268114.91622997,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00002.grz:00002-204.con",
+        "identical": true,
+        "base_max": 16.81978988647461,
+        "candidate_max": 16.81978988647461,
+        "max_pct": 0.0,
+        "base_integral": 2019303.8807992707,
+        "candidate_integral": 2019303.8807992707,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00002.grz:00002-304.con",
+        "identical": true,
+        "base_max": 17.31331443786621,
+        "candidate_max": 17.31331443786621,
+        "max_pct": 0.0,
+        "base_integral": 1757264.2992180772,
+        "candidate_integral": 1757264.2992180772,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00003.grz:00003-101.con",
+        "identical": false,
+        "base_max": 95.83843994140625,
+        "candidate_max": 105.14986419677734,
+        "max_pct": 9.715751071348745,
+        "base_integral": 5826577.68925681,
+        "candidate_integral": 14960488.88305144,
+        "integral_pct": 156.762883478512
+      },
+      {
+        "output": "00003.grz:00003-201.con",
+        "identical": false,
+        "base_max": 33.371089935302734,
+        "candidate_max": 45.649539947509766,
+        "max_pct": 36.79367391359267,
+        "base_integral": 4037955.1352653652,
+        "candidate_integral": 9065615.180900786,
+        "integral_pct": 124.51005217285594
+      },
+      {
+        "output": "00003.grz:00003-301.con",
+        "identical": false,
+        "base_max": 14.095710754394531,
+        "candidate_max": 5.459484577178955,
+        "max_pct": -61.26846902362206,
+        "base_integral": 3010290.9345342778,
+        "candidate_integral": 3429267.123923637,
+        "integral_pct": 13.918129459941353
+      },
+      {
+        "output": "00003.grz:00003-102.con",
+        "identical": false,
+        "base_max": 14.921853065490723,
+        "candidate_max": 4.975419998168945,
+        "max_pct": -66.65682220343373,
+        "base_integral": 3778030.2897366346,
+        "candidate_integral": 3995189.2619777936,
+        "integral_pct": 5.747941535331025
+      },
+      {
+        "output": "00003.grz:00003-202.con",
+        "identical": false,
+        "base_max": 13.731775283813477,
+        "candidate_max": 7.0149245262146,
+        "max_pct": -48.91465683622466,
+        "base_integral": 3373915.91376625,
+        "candidate_integral": 4225173.416457837,
+        "integral_pct": 25.230548847358246
+      },
+      {
+        "output": "00003.grz:00003-302.con",
+        "identical": false,
+        "base_max": 21.69269561767578,
+        "candidate_max": 27.918689727783203,
+        "max_pct": 28.700878027506715,
+        "base_integral": 3606229.6306318603,
+        "candidate_integral": 5838306.789617054,
+        "integral_pct": 61.89503685582285
+      },
+      {
+        "output": "00003.grz:00003-103.con",
+        "identical": true,
+        "base_max": 110.2892074584961,
+        "candidate_max": 110.2892074584961,
+        "max_pct": 0.0,
+        "base_integral": 4847046.948147472,
+        "candidate_integral": 4847046.948147472,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00003.grz:00003-203.con",
+        "identical": true,
+        "base_max": 32.637603759765625,
+        "candidate_max": 32.637603759765625,
+        "max_pct": 0.0,
+        "base_integral": 2802762.0965003734,
+        "candidate_integral": 2802762.0965003734,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00003.grz:00003-303.con",
+        "identical": true,
+        "base_max": 11.756571769714355,
+        "candidate_max": 11.756571769714355,
+        "max_pct": 0.0,
+        "base_integral": 1442740.5819145497,
+        "candidate_integral": 1442740.5819145497,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00003.grz:00003-104.con",
+        "identical": true,
+        "base_max": 20.326181411743164,
+        "candidate_max": 20.326181411743164,
+        "max_pct": 0.0,
+        "base_integral": 2262346.5219023637,
+        "candidate_integral": 2262346.5219023637,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00003.grz:00003-204.con",
+        "identical": true,
+        "base_max": 16.874818801879883,
+        "candidate_max": 16.874818801879883,
+        "max_pct": 0.0,
+        "base_integral": 2005748.271815828,
+        "candidate_integral": 2005748.271815828,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00003.grz:00003-304.con",
+        "identical": true,
+        "base_max": 17.18624496459961,
+        "candidate_max": 17.18624496459961,
+        "max_pct": 0.0,
+        "base_integral": 1758408.8074229658,
+        "candidate_integral": 1758408.8074229658,
+        "integral_pct": 0.0
+      }
+    ],
+    "cool_dx50": [
+      {
+        "output": "00001.grz:00001-101.con",
+        "identical": false,
+        "base_max": 239.69357299804688,
+        "candidate_max": 262.3876953125,
+        "max_pct": 9.467972808197933,
+        "base_integral": 5442424.669889296,
+        "candidate_integral": 14533294.608483376,
+        "integral_pct": 167.03712940465917
+      },
+      {
+        "output": "00001.grz:00001-201.con",
+        "identical": false,
+        "base_max": 110.91596221923828,
+        "candidate_max": 104.38709259033203,
+        "max_pct": -5.886321047281884,
+        "base_integral": 4251806.535508367,
+        "candidate_integral": 8714921.865166398,
+        "integral_pct": 104.96985910306473
+      },
+      {
+        "output": "00001.grz:00001-301.con",
+        "identical": false,
+        "base_max": 22.22220230102539,
+        "candidate_max": 7.188853740692139,
+        "max_pct": -67.65012916671888,
+        "base_integral": 3015811.7119182134,
+        "candidate_integral": 3473976.3303817017,
+        "integral_pct": 15.19208300216035
+      },
+      {
+        "output": "00001.grz:00001-102.con",
+        "identical": false,
+        "base_max": 20.023284912109375,
+        "candidate_max": 4.93288516998291,
+        "max_pct": -75.36425620653444,
+        "base_integral": 3480685.057696537,
+        "candidate_integral": 3726160.4428324793,
+        "integral_pct": 7.0525020525239235
+      },
+      {
+        "output": "00001.grz:00001-202.con",
+        "identical": false,
+        "base_max": 23.921321868896484,
+        "candidate_max": 8.030346870422363,
+        "max_pct": -66.43017089760512,
+        "base_integral": 3413328.9394073654,
+        "candidate_integral": 4032774.4807416457,
+        "integral_pct": 18.147841955186152
+      },
+      {
+        "output": "00001.grz:00001-302.con",
+        "identical": false,
+        "base_max": 42.919246673583984,
+        "candidate_max": 52.118675231933594,
+        "max_pct": 21.434273132318715,
+        "base_integral": 3611664.060591138,
+        "candidate_integral": 5899747.765092761,
+        "integral_pct": 63.35261713480411
+      },
+      {
+        "output": "00001.grz:00001-103.con",
+        "identical": true,
+        "base_max": 281.4697570800781,
+        "candidate_max": 281.4697570800781,
+        "max_pct": 0.0,
+        "base_integral": 4709722.597849905,
+        "candidate_integral": 4709722.597849905,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-203.con",
+        "identical": true,
+        "base_max": 82.87353515625,
+        "candidate_max": 82.87353515625,
+        "max_pct": 0.0,
+        "base_integral": 2686871.1369956145,
+        "candidate_integral": 2686871.1369956145,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-303.con",
+        "identical": true,
+        "base_max": 21.089046478271484,
+        "candidate_max": 21.089046478271484,
+        "max_pct": 0.0,
+        "base_integral": 1471245.127550792,
+        "candidate_integral": 1471245.127550792,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-104.con",
+        "identical": true,
+        "base_max": 30.896747589111328,
+        "candidate_max": 30.896747589111328,
+        "max_pct": 0.0,
+        "base_integral": 2125620.0221704785,
+        "candidate_integral": 2125620.0221704785,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-204.con",
+        "identical": true,
+        "base_max": 28.71122932434082,
+        "candidate_max": 28.71122932434082,
+        "max_pct": 0.0,
+        "base_integral": 1883422.318896046,
+        "candidate_integral": 1883422.318896046,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-304.con",
+        "identical": true,
+        "base_max": 37.1280517578125,
+        "candidate_max": 37.1280517578125,
+        "max_pct": 0.0,
+        "base_integral": 1812443.577083177,
+        "candidate_integral": 1812443.577083177,
+        "integral_pct": 0.0
+      }
+    ],
+    "cool_rate100": [
+      {
+        "output": "00001.grz:00001-101.con",
+        "identical": false,
+        "base_max": 96.65479278564453,
+        "candidate_max": 105.47470092773438,
+        "max_pct": 9.12516377915178,
+        "base_integral": 5820697.211809456,
+        "candidate_integral": 14890790.78340903,
+        "integral_pct": 155.8248649869212
+      },
+      {
+        "output": "00001.grz:00001-201.con",
+        "identical": false,
+        "base_max": 33.32249069213867,
+        "candidate_max": 46.68311309814453,
+        "max_pct": 40.094909259462575,
+        "base_integral": 4064087.7156797796,
+        "candidate_integral": 9071198.249389417,
+        "integral_pct": 123.20380080359863
+      },
+      {
+        "output": "00001.grz:00001-301.con",
+        "identical": false,
+        "base_max": 14.05029296875,
+        "candidate_max": 5.887600421905518,
+        "max_pct": -58.09624443418766,
+        "base_integral": 2953471.310008317,
+        "candidate_integral": 3422246.9633538276,
+        "integral_pct": 15.872023261474988
+      },
+      {
+        "output": "00001.grz:00001-102.con",
+        "identical": false,
+        "base_max": 14.986486434936523,
+        "candidate_max": 5.093095779418945,
+        "max_pct": -66.01541127381326,
+        "base_integral": 3742683.857108932,
+        "candidate_integral": 4054885.826993268,
+        "integral_pct": 8.341660204383361
+      },
+      {
+        "output": "00001.grz:00001-202.con",
+        "identical": false,
+        "base_max": 14.599141120910645,
+        "candidate_max": 6.978429794311523,
+        "max_pct": -52.19972369253847,
+        "base_integral": 3355600.482034497,
+        "candidate_integral": 4236966.230054386,
+        "integral_pct": 26.265515002117223
+      },
+      {
+        "output": "00001.grz:00001-302.con",
+        "identical": false,
+        "base_max": 21.586299896240234,
+        "candidate_max": 27.377750396728516,
+        "max_pct": 26.829287688609394,
+        "base_integral": 3574806.582806632,
+        "candidate_integral": 5800672.552976757,
+        "integral_pct": 62.26535390405839
+      },
+      {
+        "output": "00001.grz:00001-103.con",
+        "identical": true,
+        "base_max": 110.29837036132812,
+        "candidate_max": 110.29837036132812,
+        "max_pct": 0.0,
+        "base_integral": 4792412.713682279,
+        "candidate_integral": 4792412.713682279,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-203.con",
+        "identical": true,
+        "base_max": 32.71080017089844,
+        "candidate_max": 32.71080017089844,
+        "max_pct": 0.0,
+        "base_integral": 2799481.8902993575,
+        "candidate_integral": 2799481.8902993575,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-303.con",
+        "identical": true,
+        "base_max": 12.144122123718262,
+        "candidate_max": 12.144122123718262,
+        "max_pct": 0.0,
+        "base_integral": 1479816.7670238763,
+        "candidate_integral": 1479816.7670238763,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-104.con",
+        "identical": true,
+        "base_max": 18.69215202331543,
+        "candidate_max": 18.69215202331543,
+        "max_pct": 0.0,
+        "base_integral": 2238605.4443358444,
+        "candidate_integral": 2238605.4443358444,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-204.con",
+        "identical": true,
+        "base_max": 16.930774688720703,
+        "candidate_max": 16.930774688720703,
+        "max_pct": 0.0,
+        "base_integral": 1981474.7996022925,
+        "candidate_integral": 1981474.7996022925,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-304.con",
+        "identical": true,
+        "base_max": 16.993562698364258,
+        "candidate_max": 16.993562698364258,
+        "max_pct": 0.0,
+        "base_integral": 1745526.593485847,
+        "candidate_integral": 1745526.593485847,
+        "integral_pct": 0.0
+      }
+    ],
+    "warm_control": [
+      {
+        "output": "00001.grz:00001-101.con",
+        "identical": true,
+        "base_max": 95.80046081542969,
+        "candidate_max": 95.80046081542969,
+        "max_pct": 0.0,
+        "base_integral": 5778497.825473896,
+        "candidate_integral": 5778497.825473896,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-201.con",
+        "identical": true,
+        "base_max": 33.349266052246094,
+        "candidate_max": 33.349266052246094,
+        "max_pct": 0.0,
+        "base_integral": 4015453.351008473,
+        "candidate_integral": 4015453.351008473,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-301.con",
+        "identical": true,
+        "base_max": 13.841570854187012,
+        "candidate_max": 13.841570854187012,
+        "max_pct": 0.0,
+        "base_integral": 3003006.768224295,
+        "candidate_integral": 3003006.768224295,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-102.con",
+        "identical": true,
+        "base_max": 14.770451545715332,
+        "candidate_max": 14.770451545715332,
+        "max_pct": 0.0,
+        "base_integral": 3754626.7627622,
+        "candidate_integral": 3754626.7627622,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-202.con",
+        "identical": true,
+        "base_max": 14.288155555725098,
+        "candidate_max": 14.288155555725098,
+        "max_pct": 0.0,
+        "base_integral": 3375471.895141818,
+        "candidate_integral": 3375471.895141818,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-302.con",
+        "identical": true,
+        "base_max": 21.345775604248047,
+        "candidate_max": 21.345775604248047,
+        "max_pct": 0.0,
+        "base_integral": 3578923.126787413,
+        "candidate_integral": 3578923.126787413,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-103.con",
+        "identical": true,
+        "base_max": 110.31249237060547,
+        "candidate_max": 110.31249237060547,
+        "max_pct": 0.0,
+        "base_integral": 4846827.871226706,
+        "candidate_integral": 4846827.871226706,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-203.con",
+        "identical": true,
+        "base_max": 32.84812927246094,
+        "candidate_max": 32.84812927246094,
+        "max_pct": 0.0,
+        "base_integral": 2817554.751143325,
+        "candidate_integral": 2817554.751143325,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-303.con",
+        "identical": true,
+        "base_max": 11.859411239624023,
+        "candidate_max": 11.859411239624023,
+        "max_pct": 0.0,
+        "base_integral": 1447742.6064445172,
+        "candidate_integral": 1447742.6064445172,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-104.con",
+        "identical": true,
+        "base_max": 20.001514434814453,
+        "candidate_max": 20.001514434814453,
+        "max_pct": 0.0,
+        "base_integral": 2263094.367624726,
+        "candidate_integral": 2263094.367624726,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-204.con",
+        "identical": true,
+        "base_max": 16.656387329101562,
+        "candidate_max": 16.656387329101562,
+        "max_pct": 0.0,
+        "base_integral": 2025037.954855943,
+        "candidate_integral": 2025037.954855943,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-304.con",
+        "identical": true,
+        "base_max": 17.17359161376953,
+        "candidate_max": 17.17359161376953,
+        "max_pct": 0.0,
+        "base_integral": 1748467.5760602113,
+        "candidate_integral": 1748467.5760602113,
+        "integral_pct": 0.0
+      }
+    ],
+    "neutral_control": [
+      {
+        "output": "00001.grz:00001-101.con",
+        "identical": true,
+        "base_max": 37.956912994384766,
+        "candidate_max": 37.956912994384766,
+        "max_pct": 0.0,
+        "base_integral": 5498867.008789675,
+        "candidate_integral": 5498867.008789675,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-201.con",
+        "identical": true,
+        "base_max": 6.438194274902344,
+        "candidate_max": 6.438194274902344,
+        "max_pct": 0.0,
+        "base_integral": 2340728.123677909,
+        "candidate_integral": 2340728.123677909,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-301.con",
+        "identical": true,
+        "base_max": 1.3608590364456177,
+        "candidate_max": 1.3608590364456177,
+        "max_pct": 0.0,
+        "base_integral": 813297.283265565,
+        "candidate_integral": 813297.283265565,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-102.con",
+        "identical": true,
+        "base_max": 2.3693149089813232,
+        "candidate_max": 2.3693149089813232,
+        "max_pct": 0.0,
+        "base_integral": 1504211.3691855776,
+        "candidate_integral": 1504211.3691855776,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-202.con",
+        "identical": true,
+        "base_max": 3.6420764923095703,
+        "candidate_max": 3.6420764923095703,
+        "max_pct": 0.0,
+        "base_integral": 1508675.2710132715,
+        "candidate_integral": 1508675.2710132715,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-302.con",
+        "identical": true,
+        "base_max": 3.6101725101470947,
+        "candidate_max": 3.6101725101470947,
+        "max_pct": 0.0,
+        "base_integral": 1215189.2292455886,
+        "candidate_integral": 1215189.2292455886,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-103.con",
+        "identical": true,
+        "base_max": 35.23670196533203,
+        "candidate_max": 35.23670196533203,
+        "max_pct": 0.0,
+        "base_integral": 2554510.0307349637,
+        "candidate_integral": 2554510.0307349637,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-203.con",
+        "identical": true,
+        "base_max": 7.497013092041016,
+        "candidate_max": 7.497013092041016,
+        "max_pct": 0.0,
+        "base_integral": 1045436.6789779306,
+        "candidate_integral": 1045436.6789779306,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-303.con",
+        "identical": true,
+        "base_max": 1.968504786491394,
+        "candidate_max": 1.968504786491394,
+        "max_pct": 0.0,
+        "base_integral": 267628.59598209616,
+        "candidate_integral": 267628.59598209616,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-104.con",
+        "identical": true,
+        "base_max": 4.088875770568848,
+        "candidate_max": 4.088875770568848,
+        "max_pct": 0.0,
+        "base_integral": 583565.3118774644,
+        "candidate_integral": 583565.3118774644,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-204.con",
+        "identical": true,
+        "base_max": 4.1385698318481445,
+        "candidate_max": 4.1385698318481445,
+        "max_pct": 0.0,
+        "base_integral": 611625.7623026468,
+        "candidate_integral": 611625.7623026468,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-304.con",
+        "identical": true,
+        "base_max": 3.417609691619873,
+        "candidate_max": 3.417609691619873,
+        "max_pct": 0.0,
+        "base_integral": 470612.5420720491,
+        "candidate_integral": 470612.5420720491,
+        "integral_pct": 0.0
+      }
+    ],
+    "land_control": [
+      {
+        "output": "00001.grz:00001-101.con",
+        "identical": true,
+        "base_max": 105.381103515625,
+        "candidate_max": 105.381103515625,
+        "max_pct": 0.0,
+        "base_integral": 6142200.357532129,
+        "candidate_integral": 6142200.357532129,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-201.con",
+        "identical": true,
+        "base_max": 30.55807113647461,
+        "candidate_max": 30.55807113647461,
+        "max_pct": 0.0,
+        "base_integral": 3991798.9046371076,
+        "candidate_integral": 3991798.9046371076,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-301.con",
+        "identical": true,
+        "base_max": 11.972687721252441,
+        "candidate_max": 11.972687721252441,
+        "max_pct": 0.0,
+        "base_integral": 2696227.1107314155,
+        "candidate_integral": 2696227.1107314155,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-102.con",
+        "identical": true,
+        "base_max": 19.88654899597168,
+        "candidate_max": 19.88654899597168,
+        "max_pct": 0.0,
+        "base_integral": 3902822.192607564,
+        "candidate_integral": 3902822.192607564,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-202.con",
+        "identical": true,
+        "base_max": 16.625764846801758,
+        "candidate_max": 16.625764846801758,
+        "max_pct": 0.0,
+        "base_integral": 3357958.233440877,
+        "candidate_integral": 3357958.233440877,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-302.con",
+        "identical": true,
+        "base_max": 16.544471740722656,
+        "candidate_max": 16.544471740722656,
+        "max_pct": 0.0,
+        "base_integral": 3018753.528103698,
+        "candidate_integral": 3018753.528103698,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-103.con",
+        "identical": true,
+        "base_max": 105.32299041748047,
+        "candidate_max": 105.32299041748047,
+        "max_pct": 0.0,
+        "base_integral": 4363894.660394872,
+        "candidate_integral": 4363894.660394872,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-203.con",
+        "identical": true,
+        "base_max": 30.583768844604492,
+        "candidate_max": 30.583768844604492,
+        "max_pct": 0.0,
+        "base_integral": 2542019.4649411133,
+        "candidate_integral": 2542019.4649411133,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-303.con",
+        "identical": true,
+        "base_max": 12.238595008850098,
+        "candidate_max": 12.238595008850098,
+        "max_pct": 0.0,
+        "base_integral": 1354993.527539773,
+        "candidate_integral": 1354993.527539773,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-104.con",
+        "identical": true,
+        "base_max": 19.725658416748047,
+        "candidate_max": 19.725658416748047,
+        "max_pct": 0.0,
+        "base_integral": 2126772.506266134,
+        "candidate_integral": 2126772.506266134,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-204.con",
+        "identical": true,
+        "base_max": 16.739389419555664,
+        "candidate_max": 16.739389419555664,
+        "max_pct": 0.0,
+        "base_integral": 1895056.4612005837,
+        "candidate_integral": 1895056.4612005837,
+        "integral_pct": 0.0
+      },
+      {
+        "output": "00001.grz:00001-304.con",
+        "identical": true,
+        "base_max": 16.531618118286133,
+        "candidate_max": 16.531618118286133,
+        "max_pct": 0.0,
+        "base_integral": 1640604.1035871021,
+        "candidate_integral": 1640604.1035871021,
+        "integral_pct": 0.0
+      }
+    ]
+  }
+}

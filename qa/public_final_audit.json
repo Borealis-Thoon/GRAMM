@@ -1,0 +1,54 @@
+{
+  "status": "review_required",
+  "functional_status": "pass",
+  "wind_status": "review_required",
+  "reproduction_status": "completed_exit_2_wind_review_required",
+  "checks": {
+    "all_public_json_parse": "pass",
+    "readme_and_pr_relative_links": "pass",
+    "pr_humanizer_final_sha256": "pass",
+    "figure_qa_input_and_output_hashes": "pass",
+    "test_code_user_specific_D_paths": "pass",
+    "forbidden_model_binary_document_extensions": "pass",
+    "private_research_materials": true,
+    "payload_inventory_current": "pass",
+    "author_specific_paths": "pass: zero matches after normalization"
+  },
+  "counts": {
+    "public_json_files_parsed": 33,
+    "figure_hashes_checked": 12,
+    "payload_audit_file_count": 253,
+    "current_payload_file_count": 275
+  },
+  "payload_inventory_unlisted_files": [
+    "docs/PR_body.md",
+    "logs/public_reproduction.log",
+    "qa/figures/01_stability_temporal_response.csv",
+    "qa/figures/03_gral_ground_response.csv",
+    "qa/figures/coupling_figure_checks.json",
+    "qa/figures/figure_checks.json",
+    "qa/humanize_en/pr_final.json",
+    "qa/humanize_en/pr_source.json",
+    "qa/humanize_en/readme_final.json",
+    "qa/humanize_en/readme_source.json",
+    "qa/humanize_en/review.json",
+    "qa/provenance.json",
+    "qa/public_reproduction/component/component_checks.json",
+    "qa/public_reproduction/concentration_identity.json",
+    "qa/public_reproduction/coupling/integrity.json",
+    "qa/public_reproduction/coupling/repeat.json",
+    "qa/public_reproduction/coupling/summary.json",
+    "qa/public_reproduction/coupling/validation.json",
+    "qa/public_reproduction/native/native_matrix_results.json",
+    "qa/public_reproduction/native/native_matrix_summary.csv",
+    "qa/public_reproduction/temporal/temporal_checks.json",
+    "reproduce.ps1"
+  ],
+  "findings": [
+    "Clean public reproduction completed: 34 native runs, 13 official GRAL runs, two diagnostic runs; 192 concentration payloads reproduced exactly.",
+    "The preserved native wind identity gate remains review_required; one of 14 fresh pairs differs by two 0.01 m/s output increments. Functional checks pass.",
+    "All public JSON parsed, Markdown local links resolved, PR final SHA256 matched its Humanizer review record, and all 12 figure source/output hashes matched their QA records."
+  ],
+  "payload_inventory_current": "pass",
+  "inventory_resolution": "Regenerated from the final public file set before commit."
+}

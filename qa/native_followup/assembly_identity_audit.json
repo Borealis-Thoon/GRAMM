@@ -1,0 +1,34 @@
+{
+  "status": "pass",
+  "scope": "C# source bytes and IL method bodies/locals/exception clauses. Whole DLL hashes also contain embedded symbols and source-path metadata.",
+  "builds": {
+    "baseline": {
+      "source_files_checked": 35,
+      "source_differences": [],
+      "original_sha256": "9b8319c0d85ae09dca3df72a440134172e2ac680ec9d9906e441f23437a83b13",
+      "reproduced_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+      "il_audit": {
+        "assembly_a": "{WORK_ROOT}\\build\\baseline\\GRAMM.dll",
+        "assembly_b": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "methods_a": 976,
+        "methods_b": 976,
+        "method_bodies_identical": true,
+        "differences": []
+      }
+    },
+    "candidate": {
+      "source_files_checked": 35,
+      "source_differences": [],
+      "original_sha256": "8b661455dfb4ab844e3b80fa4974f583cf22edac9edf33660e866333ec340f68",
+      "reproduced_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+      "il_audit": {
+        "assembly_a": "{WORK_ROOT}\\build\\candidate\\GRAMM.dll",
+        "assembly_b": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "methods_a": 976,
+        "methods_b": 976,
+        "method_bodies_identical": true,
+        "differences": []
+      }
+    }
+  }
+}

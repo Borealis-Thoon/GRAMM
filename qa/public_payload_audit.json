@@ -1,0 +1,1124 @@
+{
+  "status": "pass",
+  "generated_utc": "2026-10-17T12:29:44.543683+00:00",
+  "excludes": [
+    "qa/public_payload_audit.json",
+    "MANIFEST.json",
+    ".git"
+  ],
+  "payload_file_count": 277,
+  "payload_total_bytes": 28073309,
+  "files": [
+    {
+      "path": "docs/PR_body.md",
+      "bytes": 5133
+    },
+    {
+      "path": "figures/01_stability_temporal_response.png",
+      "bytes": 236526
+    },
+    {
+      "path": "figures/01_stability_temporal_response.svg",
+      "bytes": 42284
+    },
+    {
+      "path": "figures/03_gral_ground_response.png",
+      "bytes": 193599
+    },
+    {
+      "path": "figures/03_gral_ground_response.svg",
+      "bytes": 34852
+    },
+    {
+      "path": "figures/04_gral_water20_ground_plume.png",
+      "bytes": 197262
+    },
+    {
+      "path": "figures/04_gral_water20_ground_plume.svg",
+      "bytes": 69303
+    },
+    {
+      "path": "License.md",
+      "bytes": 35591
+    },
+    {
+      "path": "logs/gramm_candidate_build.log",
+      "bytes": 276
+    },
+    {
+      "path": "logs/public_reproduction.log",
+      "bytes": 8992
+    },
+    {
+      "path": "patches/water-stability-diagnostic.patch",
+      "bytes": 665
+    },
+    {
+      "path": "qa/candidate_method_identity.json",
+      "bytes": 230
+    },
+    {
+      "path": "qa/component/cell_results.csv",
+      "bytes": 16735358
+    },
+    {
+      "path": "qa/component/component_checks.json",
+      "bytes": 14973
+    },
+    {
+      "path": "qa/coupling/diagnostic_build.log",
+      "bytes": 296
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_A/00001-101.csv",
+      "bytes": 113000
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_A/00001-102.csv",
+      "bytes": 115307
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_A/00001-103.csv",
+      "bytes": 94621
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_A/00001-104.csv",
+      "bytes": 95012
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_A/00001-201.csv",
+      "bytes": 113447
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_A/00001-202.csv",
+      "bytes": 115826
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_A/00001-203.csv",
+      "bytes": 94753
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_A/00001-204.csv",
+      "bytes": 95135
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_A/00001-301.csv",
+      "bytes": 113578
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_A/00001-302.csv",
+      "bytes": 116067
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_A/00001-303.csv",
+      "bytes": 94499
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_A/00001-304.csv",
+      "bytes": 95130
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_B/00001-101.csv",
+      "bytes": 115358
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_B/00001-102.csv",
+      "bytes": 119695
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_B/00001-103.csv",
+      "bytes": 94621
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_B/00001-104.csv",
+      "bytes": 95012
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_B/00001-201.csv",
+      "bytes": 115743
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_B/00001-202.csv",
+      "bytes": 120053
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_B/00001-203.csv",
+      "bytes": 94753
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_B/00001-204.csv",
+      "bytes": 95135
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_B/00001-301.csv",
+      "bytes": 115524
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_B/00001-302.csv",
+      "bytes": 120700
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_B/00001-303.csv",
+      "bytes": 94499
+    },
+    {
+      "path": "qa/coupling/fields/cool_dx50_B/00001-304.csv",
+      "bytes": 95130
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00001-101.csv",
+      "bytes": 28832
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00001-102.csv",
+      "bytes": 29555
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00001-103.csv",
+      "bytes": 23778
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00001-104.csv",
+      "bytes": 23904
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00001-201.csv",
+      "bytes": 29119
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00001-202.csv",
+      "bytes": 29845
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00001-203.csv",
+      "bytes": 23823
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00001-204.csv",
+      "bytes": 23933
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00001-301.csv",
+      "bytes": 29184
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00001-302.csv",
+      "bytes": 29828
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00001-303.csv",
+      "bytes": 23827
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00001-304.csv",
+      "bytes": 23964
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00002-101.csv",
+      "bytes": 29020
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00002-102.csv",
+      "bytes": 29806
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00002-103.csv",
+      "bytes": 23880
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00002-104.csv",
+      "bytes": 23901
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00002-201.csv",
+      "bytes": 29190
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00002-202.csv",
+      "bytes": 29972
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00002-203.csv",
+      "bytes": 23847
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00002-204.csv",
+      "bytes": 23932
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00002-301.csv",
+      "bytes": 29023
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00002-302.csv",
+      "bytes": 29778
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00002-303.csv",
+      "bytes": 23873
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00002-304.csv",
+      "bytes": 24021
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00003-101.csv",
+      "bytes": 28898
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00003-102.csv",
+      "bytes": 29515
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00003-103.csv",
+      "bytes": 23754
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00003-104.csv",
+      "bytes": 23984
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00003-201.csv",
+      "bytes": 29215
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00003-202.csv",
+      "bytes": 29734
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00003-203.csv",
+      "bytes": 23788
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00003-204.csv",
+      "bytes": 24005
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00003-301.csv",
+      "bytes": 29107
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00003-302.csv",
+      "bytes": 29636
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00003-303.csv",
+      "bytes": 23754
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_A/00003-304.csv",
+      "bytes": 23920
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00001-101.csv",
+      "bytes": 29547
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00001-102.csv",
+      "bytes": 30595
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00001-103.csv",
+      "bytes": 23778
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00001-104.csv",
+      "bytes": 23904
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00001-201.csv",
+      "bytes": 29655
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00001-202.csv",
+      "bytes": 30923
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00001-203.csv",
+      "bytes": 23823
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00001-204.csv",
+      "bytes": 23933
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00001-301.csv",
+      "bytes": 29481
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00001-302.csv",
+      "bytes": 30983
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00001-303.csv",
+      "bytes": 23827
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00001-304.csv",
+      "bytes": 23964
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00002-101.csv",
+      "bytes": 29733
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00002-102.csv",
+      "bytes": 30912
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00002-103.csv",
+      "bytes": 23880
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00002-104.csv",
+      "bytes": 23901
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00002-201.csv",
+      "bytes": 29770
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00002-202.csv",
+      "bytes": 31134
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00002-203.csv",
+      "bytes": 23847
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00002-204.csv",
+      "bytes": 23932
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00002-301.csv",
+      "bytes": 29672
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00002-302.csv",
+      "bytes": 30976
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00002-303.csv",
+      "bytes": 23873
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00002-304.csv",
+      "bytes": 24021
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00003-101.csv",
+      "bytes": 29592
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00003-102.csv",
+      "bytes": 30562
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00003-103.csv",
+      "bytes": 23754
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00003-104.csv",
+      "bytes": 23984
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00003-201.csv",
+      "bytes": 29955
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00003-202.csv",
+      "bytes": 30971
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00003-203.csv",
+      "bytes": 23788
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00003-204.csv",
+      "bytes": 24005
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00003-301.csv",
+      "bytes": 29682
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00003-302.csv",
+      "bytes": 30517
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00003-303.csv",
+      "bytes": 23754
+    },
+    {
+      "path": "qa/coupling/fields/cool_main_B/00003-304.csv",
+      "bytes": 23920
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_A/00001-101.csv",
+      "bytes": 27480
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_A/00001-102.csv",
+      "bytes": 28084
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_A/00001-103.csv",
+      "bytes": 23635
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_A/00001-104.csv",
+      "bytes": 23658
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_A/00001-201.csv",
+      "bytes": 27804
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_A/00001-202.csv",
+      "bytes": 28404
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_A/00001-203.csv",
+      "bytes": 23606
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_A/00001-204.csv",
+      "bytes": 23739
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_A/00001-301.csv",
+      "bytes": 27768
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_A/00001-302.csv",
+      "bytes": 28216
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_A/00001-303.csv",
+      "bytes": 23630
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_A/00001-304.csv",
+      "bytes": 23712
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_B/00001-101.csv",
+      "bytes": 28217
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_B/00001-102.csv",
+      "bytes": 28802
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_B/00001-103.csv",
+      "bytes": 23635
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_B/00001-104.csv",
+      "bytes": 23658
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_B/00001-201.csv",
+      "bytes": 28357
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_B/00001-202.csv",
+      "bytes": 29131
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_B/00001-203.csv",
+      "bytes": 23606
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_B/00001-204.csv",
+      "bytes": 23739
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_B/00001-301.csv",
+      "bytes": 28026
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_B/00001-302.csv",
+      "bytes": 29193
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_B/00001-303.csv",
+      "bytes": 23630
+    },
+    {
+      "path": "qa/coupling/fields/cool_rate100_B/00001-304.csv",
+      "bytes": 23712
+    },
+    {
+      "path": "qa/coupling/fields/land_control_A/00001-101.csv",
+      "bytes": 28964
+    },
+    {
+      "path": "qa/coupling/fields/land_control_A/00001-102.csv",
+      "bytes": 29074
+    },
+    {
+      "path": "qa/coupling/fields/land_control_A/00001-103.csv",
+      "bytes": 23795
+    },
+    {
+      "path": "qa/coupling/fields/land_control_A/00001-104.csv",
+      "bytes": 23932
+    },
+    {
+      "path": "qa/coupling/fields/land_control_A/00001-201.csv",
+      "bytes": 29148
+    },
+    {
+      "path": "qa/coupling/fields/land_control_A/00001-202.csv",
+      "bytes": 29307
+    },
+    {
+      "path": "qa/coupling/fields/land_control_A/00001-203.csv",
+      "bytes": 23850
+    },
+    {
+      "path": "qa/coupling/fields/land_control_A/00001-204.csv",
+      "bytes": 23914
+    },
+    {
+      "path": "qa/coupling/fields/land_control_A/00001-301.csv",
+      "bytes": 29113
+    },
+    {
+      "path": "qa/coupling/fields/land_control_A/00001-302.csv",
+      "bytes": 29570
+    },
+    {
+      "path": "qa/coupling/fields/land_control_A/00001-303.csv",
+      "bytes": 23806
+    },
+    {
+      "path": "qa/coupling/fields/land_control_A/00001-304.csv",
+      "bytes": 23948
+    },
+    {
+      "path": "qa/coupling/fields/land_control_B/00001-101.csv",
+      "bytes": 28964
+    },
+    {
+      "path": "qa/coupling/fields/land_control_B/00001-102.csv",
+      "bytes": 29074
+    },
+    {
+      "path": "qa/coupling/fields/land_control_B/00001-103.csv",
+      "bytes": 23795
+    },
+    {
+      "path": "qa/coupling/fields/land_control_B/00001-104.csv",
+      "bytes": 23932
+    },
+    {
+      "path": "qa/coupling/fields/land_control_B/00001-201.csv",
+      "bytes": 29148
+    },
+    {
+      "path": "qa/coupling/fields/land_control_B/00001-202.csv",
+      "bytes": 29307
+    },
+    {
+      "path": "qa/coupling/fields/land_control_B/00001-203.csv",
+      "bytes": 23850
+    },
+    {
+      "path": "qa/coupling/fields/land_control_B/00001-204.csv",
+      "bytes": 23914
+    },
+    {
+      "path": "qa/coupling/fields/land_control_B/00001-301.csv",
+      "bytes": 29113
+    },
+    {
+      "path": "qa/coupling/fields/land_control_B/00001-302.csv",
+      "bytes": 29570
+    },
+    {
+      "path": "qa/coupling/fields/land_control_B/00001-303.csv",
+      "bytes": 23806
+    },
+    {
+      "path": "qa/coupling/fields/land_control_B/00001-304.csv",
+      "bytes": 23948
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_A/00001-101.csv",
+      "bytes": 27502
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_A/00001-102.csv",
+      "bytes": 28505
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_A/00001-103.csv",
+      "bytes": 23529
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_A/00001-104.csv",
+      "bytes": 23623
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_A/00001-201.csv",
+      "bytes": 27942
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_A/00001-202.csv",
+      "bytes": 28913
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_A/00001-203.csv",
+      "bytes": 23601
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_A/00001-204.csv",
+      "bytes": 23741
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_A/00001-301.csv",
+      "bytes": 27904
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_A/00001-302.csv",
+      "bytes": 28964
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_A/00001-303.csv",
+      "bytes": 23584
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_A/00001-304.csv",
+      "bytes": 23786
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_B/00001-101.csv",
+      "bytes": 27502
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_B/00001-102.csv",
+      "bytes": 28505
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_B/00001-103.csv",
+      "bytes": 23529
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_B/00001-104.csv",
+      "bytes": 23623
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_B/00001-201.csv",
+      "bytes": 27942
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_B/00001-202.csv",
+      "bytes": 28913
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_B/00001-203.csv",
+      "bytes": 23601
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_B/00001-204.csv",
+      "bytes": 23741
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_B/00001-301.csv",
+      "bytes": 27904
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_B/00001-302.csv",
+      "bytes": 28964
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_B/00001-303.csv",
+      "bytes": 23584
+    },
+    {
+      "path": "qa/coupling/fields/neutral_control_B/00001-304.csv",
+      "bytes": 23786
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_A/00001-101.csv",
+      "bytes": 28881
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_A/00001-102.csv",
+      "bytes": 29564
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_A/00001-103.csv",
+      "bytes": 23763
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_A/00001-104.csv",
+      "bytes": 23884
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_A/00001-201.csv",
+      "bytes": 29087
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_A/00001-202.csv",
+      "bytes": 29817
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_A/00001-203.csv",
+      "bytes": 23802
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_A/00001-204.csv",
+      "bytes": 23975
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_A/00001-301.csv",
+      "bytes": 29149
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_A/00001-302.csv",
+      "bytes": 29866
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_A/00001-303.csv",
+      "bytes": 23816
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_A/00001-304.csv",
+      "bytes": 23938
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_B/00001-101.csv",
+      "bytes": 28881
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_B/00001-102.csv",
+      "bytes": 29564
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_B/00001-103.csv",
+      "bytes": 23763
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_B/00001-104.csv",
+      "bytes": 23884
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_B/00001-201.csv",
+      "bytes": 29087
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_B/00001-202.csv",
+      "bytes": 29817
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_B/00001-203.csv",
+      "bytes": 23802
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_B/00001-204.csv",
+      "bytes": 23975
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_B/00001-301.csv",
+      "bytes": 29149
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_B/00001-302.csv",
+      "bytes": 29866
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_B/00001-303.csv",
+      "bytes": 23816
+    },
+    {
+      "path": "qa/coupling/fields/warm_control_B/00001-304.csv",
+      "bytes": 23938
+    },
+    {
+      "path": "qa/coupling/imported_meteo_A.csv",
+      "bytes": 22202
+    },
+    {
+      "path": "qa/coupling/imported_meteo_B.csv",
+      "bytes": 22614
+    },
+    {
+      "path": "qa/coupling/integrity.json",
+      "bytes": 37262
+    },
+    {
+      "path": "qa/coupling/repeat.json",
+      "bytes": 30245
+    },
+    {
+      "path": "qa/coupling/summary.json",
+      "bytes": 167078
+    },
+    {
+      "path": "qa/coupling/validation.json",
+      "bytes": 78124
+    },
+    {
+      "path": "qa/figures/01_stability_temporal_response.csv",
+      "bytes": 2478
+    },
+    {
+      "path": "qa/figures/03_gral_ground_response.csv",
+      "bytes": 1849
+    },
+    {
+      "path": "qa/figures/coupling_figure_checks.json",
+      "bytes": 1766
+    },
+    {
+      "path": "qa/figures/figure_checks.json",
+      "bytes": 1032
+    },
+    {
+      "path": "qa/humanize_en/pr_final.json",
+      "bytes": 807
+    },
+    {
+      "path": "qa/humanize_en/pr_source.json",
+      "bytes": 807
+    },
+    {
+      "path": "qa/humanize_en/readme_final.json",
+      "bytes": 516
+    },
+    {
+      "path": "qa/humanize_en/readme_source.json",
+      "bytes": 516
+    },
+    {
+      "path": "qa/humanize_en/review.json",
+      "bytes": 1136
+    },
+    {
+      "path": "qa/native/native_matrix_results.json",
+      "bytes": 175614
+    },
+    {
+      "path": "qa/native/native_matrix_summary.csv",
+      "bytes": 972
+    },
+    {
+      "path": "qa/native/representative_cool_day_cells.csv",
+      "bytes": 16533
+    },
+    {
+      "path": "qa/native_followup/assembly_identity_audit.json",
+      "bytes": 1392
+    },
+    {
+      "path": "qa/native_followup/gate_status_validation.json",
+      "bytes": 917
+    },
+    {
+      "path": "qa/native_followup/native_followup_pairwise.csv",
+      "bytes": 15991
+    },
+    {
+      "path": "qa/native_followup/native_followup_results.json",
+      "bytes": 224916
+    },
+    {
+      "path": "qa/native_followup/native_followup_summary.csv",
+      "bytes": 890
+    },
+    {
+      "path": "qa/native_followup/reanalysis/native_matrix_results.json",
+      "bytes": 178569
+    },
+    {
+      "path": "qa/patch_counts.json",
+      "bytes": 111
+    },
+    {
+      "path": "qa/provenance.json",
+      "bytes": 579
+    },
+    {
+      "path": "qa/public_final_audit.json",
+      "bytes": 2507
+    },
+    {
+      "path": "qa/public_path_privacy.json",
+      "bytes": 1126
+    },
+    {
+      "path": "qa/public_reproduction/component/component_checks.json",
+      "bytes": 14973
+    },
+    {
+      "path": "qa/public_reproduction/concentration_identity.json",
+      "bytes": 1462
+    },
+    {
+      "path": "qa/public_reproduction/coupling/integrity.json",
+      "bytes": 43719
+    },
+    {
+      "path": "qa/public_reproduction/coupling/repeat.json",
+      "bytes": 30257
+    },
+    {
+      "path": "qa/public_reproduction/coupling/summary.json",
+      "bytes": 167185
+    },
+    {
+      "path": "qa/public_reproduction/coupling/validation.json",
+      "bytes": 78124
+    },
+    {
+      "path": "qa/public_reproduction/native/native_matrix_results.json",
+      "bytes": 176700
+    },
+    {
+      "path": "qa/public_reproduction/native/native_matrix_summary.csv",
+      "bytes": 972
+    },
+    {
+      "path": "qa/public_reproduction/temporal/temporal_checks.json",
+      "bytes": 434669
+    },
+    {
+      "path": "qa/reproduction/component_checks.json",
+      "bytes": 14973
+    },
+    {
+      "path": "qa/reproduction/native_matrix_results.json",
+      "bytes": 178314
+    },
+    {
+      "path": "qa/reproduction/native_matrix_summary.csv",
+      "bytes": 972
+    },
+    {
+      "path": "qa/temporal/execution.log",
+      "bytes": 798
+    },
+    {
+      "path": "qa/temporal/strict_build.log",
+      "bytes": 313
+    },
+    {
+      "path": "qa/temporal/temporal_cell_results.csv",
+      "bytes": 828707
+    },
+    {
+      "path": "qa/temporal/temporal_checks.json",
+      "bytes": 434669
+    },
+    {
+      "path": "README.md",
+      "bytes": 4215
+    },
+    {
+      "path": "reproduce.ps1",
+      "bytes": 5093
+    },
+    {
+      "path": "requirements-figures.txt",
+      "bytes": 34
+    },
+    {
+      "path": "tests/component/ComponentCheck.csproj",
+      "bytes": 263
+    },
+    {
+      "path": "tests/component/Program.cs",
+      "bytes": 16955
+    },
+    {
+      "path": "tests/component/run_component.ps1",
+      "bytes": 955
+    },
+    {
+      "path": "tests/coupling/diagnostic.py",
+      "bytes": 2407
+    },
+    {
+      "path": "tests/coupling/final_audit.py",
+      "bytes": 1449
+    },
+    {
+      "path": "tests/coupling/run_coupling.py",
+      "bytes": 6825
+    },
+    {
+      "path": "tests/coupling/template/in.dat",
+      "bytes": 103
+    },
+    {
+      "path": "tests/coupling/template/micro_vert_layers.txt",
+      "bytes": 3
+    },
+    {
+      "path": "tests/coupling/verify.py",
+      "bytes": 3830
+    },
+    {
+      "path": "tests/figures/build_coupling_figures.py",
+      "bytes": 7495
+    },
+    {
+      "path": "tests/figures/build_stability_figures.py",
+      "bytes": 4938
+    },
+    {
+      "path": "tests/native/assembly_audit/assembly_audit.csproj",
+      "bytes": 212
+    },
+    {
+      "path": "tests/native/assembly_audit/Program.cs",
+      "bytes": 1486
+    },
+    {
+      "path": "tests/native/audit_assembly_identity.py",
+      "bytes": 2010
+    },
+    {
+      "path": "tests/native/fixture.py",
+      "bytes": 2731
+    },
+    {
+      "path": "tests/native/geometry_fixture.py",
+      "bytes": 6311
+    },
+    {
+      "path": "tests/native/native_console_runner.py",
+      "bytes": 5338
+    },
+    {
+      "path": "tests/native/run_followup.py",
+      "bytes": 5795
+    },
+    {
+      "path": "tests/native/run_matrix.py",
+      "bytes": 14397
+    },
+    {
+      "path": "tests/native/validate_gate.py",
+      "bytes": 2121
+    },
+    {
+      "path": "tests/temporal/Program.cs",
+      "bytes": 17425
+    },
+    {
+      "path": "tests/temporal/run_temporal.ps1",
+      "bytes": 1112
+    },
+    {
+      "path": "tests/temporal/TemporalCheck.csproj",
+      "bytes": 263
+    }
+  ],
+  "forbidden_payloads": [],
+  "author_specific_path_hits": 0,
+  "private_paper_data": false
+}

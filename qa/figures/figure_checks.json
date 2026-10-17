@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "source_inputs": [
+    {
+      "path": "qa\\temporal\\temporal_checks.json",
+      "sha256": "77847d65ae97150a721acfeee4e97a84102d2ea380831eed648c272b8ab48e16"
+    },
+    {
+      "path": "qa\\temporal\\temporal_cell_results.csv",
+      "sha256": "ad88c819b822e7438d9e5e46abefa258ffcdf66d207006659fda0d982c4d8a21"
+    }
+  ],
+  "assertions": {
+    "temporal_csv_matches_audit_hash": true,
+    "representative_water_sequence_matches_audit": true,
+    "initial_AKLA_1_6_same_selected_interior_sequence": true
+  },
+  "figures": [
+    {
+      "path": "figures\\01_stability_temporal_response.png",
+      "sha256": "f05e23980f9222472d92aff7c1f50bd512afa469c794cc1e88b6a85008969e85"
+    },
+    {
+      "path": "figures\\01_stability_temporal_response.svg",
+      "sha256": "cddc6fc32bbcf4b903d0a8a711c87ade01529a61c2af1ae344c67617c38a2fbf"
+    }
+  ],
+  "private_data_required": false,
+  "visual_review": "pass: rendered PNGs inspected after final label edits; no clipping or overlap"
+}

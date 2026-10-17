@@ -1,0 +1,530 @@
+{
+  "status": "pass",
+  "method": "production GRAMM_2001.Program.Prandtl_calculate via isolated AssemblyLoadContext reflection",
+  "baseline_dll_sha256": "9b8319c0d85ae09dca3df72a440134172e2ac680ec9d9906e441f23437a83b13",
+  "candidate_dll_sha256": "4d00cf6575186954bd8375f25d717b62904f40c2f0366f0b6782f2b63c2ec7d5",
+  "candidate_prandtl_sha256": "29708dac6b2e63ea5bd1d8366550cbf52631f9d5a38839c444967a597dc2f22b",
+  "harness_dll_sha256": "40cd17b5cf2a9700c450b47c740b7edabebeaae46106e2736d63c56e8f4919c5",
+  "harness_source_sha256": "63581665f982b4935cb37fa01fe00f0a4d792789d9ed7f1ffb7f9df4055d0cf3",
+  "unique_cell_scenarios": 11088,
+  "executed_cell_scenarios": 99792,
+  "changed_classes": 13680,
+  "unchanged_classes": 86112,
+  "oracle_checks": 199584,
+  "representative_checks": 10,
+  "bitwise_field_comparisons": 63,
+  "fields": [
+    "OL",
+    "UST",
+    "USTV",
+    "TST",
+    "XWQ",
+    "RITSCH",
+    "WQU"
+  ],
+  "stable_water_daytime_groups": 1980,
+  "clamp_counts": {
+    "positive_5": 9240,
+    "negative_5": 9240,
+    "positive_1000": 22176,
+    "negative_1000": 11088
+  },
+  "maximum_parallelism_levels": [
+    1,
+    2,
+    8
+  ],
+  "parallelism_control": {
+    "runtime": "10.0.12",
+    "first_two_phases": "reflection: Parallel.s_defaultParallelOptions.MaxDegreeOfParallelism",
+    "last_phase": "production Program.pOptions.MaxDegreeOfParallelism",
+    "private_field_type_asserted": true,
+    "setting_asserted": true,
+    "previous_default_restored_in_finally": true,
+    "actual_running_threads_measured": false
+  },
+  "vertical_geometries": 3,
+  "baseline_classes": {
+    "7": 2916,
+    "6": 5832,
+    "5": 2916,
+    "4": 38880,
+    "2": 21384,
+    "3": 14256,
+    "1": 13608
+  },
+  "candidate_classes": {
+    "7": 2916,
+    "6": 5832,
+    "5": 2916,
+    "4": 52560,
+    "2": 15444,
+    "3": 10296,
+    "1": 9828
+  },
+  "class_transitions": {
+    "7->7": 2916,
+    "6->6": 5832,
+    "5->5": 2916,
+    "4->4": 38880,
+    "2->2": 15444,
+    "3->3": 10296,
+    "1->1": 9828,
+    "2->4": 5940,
+    "3->4": 3960,
+    "1->4": 3780
+  },
+  "csv_sha256": "7af3a5f540d093c4281fd083153bd129b451131d44af88f8456aee9f7a5d5171",
+  "output_hashes": [
+    {
+      "geometry": 0,
+      "threads": 1,
+      "field": "OL",
+      "bytes": 47840,
+      "sha256": "871e3497467d907a33d0d7e3ae5bf60aa5e56bec633c206175b2bfd6217ca6ba"
+    },
+    {
+      "geometry": 0,
+      "threads": 1,
+      "field": "UST",
+      "bytes": 95680,
+      "sha256": "a3533e84510871f239e4581e6004853ab9c73bce578ef59d8e355cb8256c90a7"
+    },
+    {
+      "geometry": 0,
+      "threads": 1,
+      "field": "USTV",
+      "bytes": 95680,
+      "sha256": "b4b45531209cbdd21a54cdd56f1788ff2e06870ddb0c89c8cde99ae48ca1364c"
+    },
+    {
+      "geometry": 0,
+      "threads": 1,
+      "field": "TST",
+      "bytes": 95680,
+      "sha256": "903c5be1a10b515c6cda12fbf1e45969e1d813e0bd84c57a3b38e3ecbd17e325"
+    },
+    {
+      "geometry": 0,
+      "threads": 1,
+      "field": "XWQ",
+      "bytes": 47840,
+      "sha256": "b686fc09344af0520020704ae5354d6c4f1c6e0263ec0c0bd7136528388ff233"
+    },
+    {
+      "geometry": 0,
+      "threads": 1,
+      "field": "RITSCH",
+      "bytes": 382720,
+      "sha256": "76ee7433eec46e8ea3558775cc85032a9b458b48a1b1ce02be2b04d6f14130ef"
+    },
+    {
+      "geometry": 0,
+      "threads": 1,
+      "field": "WQU",
+      "bytes": 95680,
+      "sha256": "9a1d4e01e74e8023e867b948af88f62c4468d7b85e9f3cbadb5220061f13605d"
+    },
+    {
+      "geometry": 0,
+      "threads": 2,
+      "field": "OL",
+      "bytes": 47840,
+      "sha256": "871e3497467d907a33d0d7e3ae5bf60aa5e56bec633c206175b2bfd6217ca6ba"
+    },
+    {
+      "geometry": 0,
+      "threads": 2,
+      "field": "UST",
+      "bytes": 95680,
+      "sha256": "a3533e84510871f239e4581e6004853ab9c73bce578ef59d8e355cb8256c90a7"
+    },
+    {
+      "geometry": 0,
+      "threads": 2,
+      "field": "USTV",
+      "bytes": 95680,
+      "sha256": "b4b45531209cbdd21a54cdd56f1788ff2e06870ddb0c89c8cde99ae48ca1364c"
+    },
+    {
+      "geometry": 0,
+      "threads": 2,
+      "field": "TST",
+      "bytes": 95680,
+      "sha256": "903c5be1a10b515c6cda12fbf1e45969e1d813e0bd84c57a3b38e3ecbd17e325"
+    },
+    {
+      "geometry": 0,
+      "threads": 2,
+      "field": "XWQ",
+      "bytes": 47840,
+      "sha256": "b686fc09344af0520020704ae5354d6c4f1c6e0263ec0c0bd7136528388ff233"
+    },
+    {
+      "geometry": 0,
+      "threads": 2,
+      "field": "RITSCH",
+      "bytes": 382720,
+      "sha256": "76ee7433eec46e8ea3558775cc85032a9b458b48a1b1ce02be2b04d6f14130ef"
+    },
+    {
+      "geometry": 0,
+      "threads": 2,
+      "field": "WQU",
+      "bytes": 95680,
+      "sha256": "9a1d4e01e74e8023e867b948af88f62c4468d7b85e9f3cbadb5220061f13605d"
+    },
+    {
+      "geometry": 0,
+      "threads": 8,
+      "field": "OL",
+      "bytes": 47840,
+      "sha256": "871e3497467d907a33d0d7e3ae5bf60aa5e56bec633c206175b2bfd6217ca6ba"
+    },
+    {
+      "geometry": 0,
+      "threads": 8,
+      "field": "UST",
+      "bytes": 95680,
+      "sha256": "a3533e84510871f239e4581e6004853ab9c73bce578ef59d8e355cb8256c90a7"
+    },
+    {
+      "geometry": 0,
+      "threads": 8,
+      "field": "USTV",
+      "bytes": 95680,
+      "sha256": "b4b45531209cbdd21a54cdd56f1788ff2e06870ddb0c89c8cde99ae48ca1364c"
+    },
+    {
+      "geometry": 0,
+      "threads": 8,
+      "field": "TST",
+      "bytes": 95680,
+      "sha256": "903c5be1a10b515c6cda12fbf1e45969e1d813e0bd84c57a3b38e3ecbd17e325"
+    },
+    {
+      "geometry": 0,
+      "threads": 8,
+      "field": "XWQ",
+      "bytes": 47840,
+      "sha256": "b686fc09344af0520020704ae5354d6c4f1c6e0263ec0c0bd7136528388ff233"
+    },
+    {
+      "geometry": 0,
+      "threads": 8,
+      "field": "RITSCH",
+      "bytes": 382720,
+      "sha256": "76ee7433eec46e8ea3558775cc85032a9b458b48a1b1ce02be2b04d6f14130ef"
+    },
+    {
+      "geometry": 0,
+      "threads": 8,
+      "field": "WQU",
+      "bytes": 95680,
+      "sha256": "9a1d4e01e74e8023e867b948af88f62c4468d7b85e9f3cbadb5220061f13605d"
+    },
+    {
+      "geometry": 1,
+      "threads": 1,
+      "field": "OL",
+      "bytes": 47840,
+      "sha256": "b17afdd653106718911dc25c128e314564e2b8d0262acc53c8f089f8b0f02f3a"
+    },
+    {
+      "geometry": 1,
+      "threads": 1,
+      "field": "UST",
+      "bytes": 95680,
+      "sha256": "a6e04972f5b94c582a8ebe78d8f92876d750fbf8a7f1c1b4f2bc62a7d4af36ff"
+    },
+    {
+      "geometry": 1,
+      "threads": 1,
+      "field": "USTV",
+      "bytes": 95680,
+      "sha256": "1dfb27b53a9d3a29d4d5bfe5c45308bb561fba73b9a2a3ba61f55554cda600e2"
+    },
+    {
+      "geometry": 1,
+      "threads": 1,
+      "field": "TST",
+      "bytes": 95680,
+      "sha256": "2e72e5a4823123e24552278d61b915f5549086b21d137e05dc22d9fcee8dc636"
+    },
+    {
+      "geometry": 1,
+      "threads": 1,
+      "field": "XWQ",
+      "bytes": 47840,
+      "sha256": "81cf51fc955b225be5762c0a24eb2312cee9f2ddd4ac77c13ccd098c88a62074"
+    },
+    {
+      "geometry": 1,
+      "threads": 1,
+      "field": "RITSCH",
+      "bytes": 478400,
+      "sha256": "807d4dc98887ec6ed3468fbb98a69f9f2df4a87226e4206449f01ca66b4e8e9b"
+    },
+    {
+      "geometry": 1,
+      "threads": 1,
+      "field": "WQU",
+      "bytes": 95680,
+      "sha256": "17173032a2ed140a8a6497266b3624ab7352cb3d2a318d2385937abd7cbcd77b"
+    },
+    {
+      "geometry": 1,
+      "threads": 2,
+      "field": "OL",
+      "bytes": 47840,
+      "sha256": "b17afdd653106718911dc25c128e314564e2b8d0262acc53c8f089f8b0f02f3a"
+    },
+    {
+      "geometry": 1,
+      "threads": 2,
+      "field": "UST",
+      "bytes": 95680,
+      "sha256": "a6e04972f5b94c582a8ebe78d8f92876d750fbf8a7f1c1b4f2bc62a7d4af36ff"
+    },
+    {
+      "geometry": 1,
+      "threads": 2,
+      "field": "USTV",
+      "bytes": 95680,
+      "sha256": "1dfb27b53a9d3a29d4d5bfe5c45308bb561fba73b9a2a3ba61f55554cda600e2"
+    },
+    {
+      "geometry": 1,
+      "threads": 2,
+      "field": "TST",
+      "bytes": 95680,
+      "sha256": "2e72e5a4823123e24552278d61b915f5549086b21d137e05dc22d9fcee8dc636"
+    },
+    {
+      "geometry": 1,
+      "threads": 2,
+      "field": "XWQ",
+      "bytes": 47840,
+      "sha256": "81cf51fc955b225be5762c0a24eb2312cee9f2ddd4ac77c13ccd098c88a62074"
+    },
+    {
+      "geometry": 1,
+      "threads": 2,
+      "field": "RITSCH",
+      "bytes": 478400,
+      "sha256": "807d4dc98887ec6ed3468fbb98a69f9f2df4a87226e4206449f01ca66b4e8e9b"
+    },
+    {
+      "geometry": 1,
+      "threads": 2,
+      "field": "WQU",
+      "bytes": 95680,
+      "sha256": "17173032a2ed140a8a6497266b3624ab7352cb3d2a318d2385937abd7cbcd77b"
+    },
+    {
+      "geometry": 1,
+      "threads": 8,
+      "field": "OL",
+      "bytes": 47840,
+      "sha256": "b17afdd653106718911dc25c128e314564e2b8d0262acc53c8f089f8b0f02f3a"
+    },
+    {
+      "geometry": 1,
+      "threads": 8,
+      "field": "UST",
+      "bytes": 95680,
+      "sha256": "a6e04972f5b94c582a8ebe78d8f92876d750fbf8a7f1c1b4f2bc62a7d4af36ff"
+    },
+    {
+      "geometry": 1,
+      "threads": 8,
+      "field": "USTV",
+      "bytes": 95680,
+      "sha256": "1dfb27b53a9d3a29d4d5bfe5c45308bb561fba73b9a2a3ba61f55554cda600e2"
+    },
+    {
+      "geometry": 1,
+      "threads": 8,
+      "field": "TST",
+      "bytes": 95680,
+      "sha256": "2e72e5a4823123e24552278d61b915f5549086b21d137e05dc22d9fcee8dc636"
+    },
+    {
+      "geometry": 1,
+      "threads": 8,
+      "field": "XWQ",
+      "bytes": 47840,
+      "sha256": "81cf51fc955b225be5762c0a24eb2312cee9f2ddd4ac77c13ccd098c88a62074"
+    },
+    {
+      "geometry": 1,
+      "threads": 8,
+      "field": "RITSCH",
+      "bytes": 478400,
+      "sha256": "807d4dc98887ec6ed3468fbb98a69f9f2df4a87226e4206449f01ca66b4e8e9b"
+    },
+    {
+      "geometry": 1,
+      "threads": 8,
+      "field": "WQU",
+      "bytes": 95680,
+      "sha256": "17173032a2ed140a8a6497266b3624ab7352cb3d2a318d2385937abd7cbcd77b"
+    },
+    {
+      "geometry": 2,
+      "threads": 1,
+      "field": "OL",
+      "bytes": 47840,
+      "sha256": "2dc926fdf0dfb75e0fd241a51756b78aacc51c3e584cf5696bbc5c21d2b023fb"
+    },
+    {
+      "geometry": 2,
+      "threads": 1,
+      "field": "UST",
+      "bytes": 95680,
+      "sha256": "aedf6902a602e8fbf255111cb72d267698735caad16952a6af1973a659018475"
+    },
+    {
+      "geometry": 2,
+      "threads": 1,
+      "field": "USTV",
+      "bytes": 95680,
+      "sha256": "7575fa1366d68891266c75431c273d6b13b34a9b94c49fed5e8bc189b7618590"
+    },
+    {
+      "geometry": 2,
+      "threads": 1,
+      "field": "TST",
+      "bytes": 95680,
+      "sha256": "21e88e9912732067aec5584aeb23fcbd70f2dab7d6944f4d751b2ee6bceb92f5"
+    },
+    {
+      "geometry": 2,
+      "threads": 1,
+      "field": "XWQ",
+      "bytes": 47840,
+      "sha256": "2071f89ae5289660a8e06d2e1af3bae507b7167a8c3d559f2faf1ef2b4341d49"
+    },
+    {
+      "geometry": 2,
+      "threads": 1,
+      "field": "RITSCH",
+      "bytes": 478400,
+      "sha256": "1666f09150f15482b1c26235b4c14381ecaa2eab89a050d572610c61e8ade6f5"
+    },
+    {
+      "geometry": 2,
+      "threads": 1,
+      "field": "WQU",
+      "bytes": 95680,
+      "sha256": "6c467e31262308f7dfd4dd8d527e37d6a650ec9c117c70c72e3e06803100fe23"
+    },
+    {
+      "geometry": 2,
+      "threads": 2,
+      "field": "OL",
+      "bytes": 47840,
+      "sha256": "2dc926fdf0dfb75e0fd241a51756b78aacc51c3e584cf5696bbc5c21d2b023fb"
+    },
+    {
+      "geometry": 2,
+      "threads": 2,
+      "field": "UST",
+      "bytes": 95680,
+      "sha256": "aedf6902a602e8fbf255111cb72d267698735caad16952a6af1973a659018475"
+    },
+    {
+      "geometry": 2,
+      "threads": 2,
+      "field": "USTV",
+      "bytes": 95680,
+      "sha256": "7575fa1366d68891266c75431c273d6b13b34a9b94c49fed5e8bc189b7618590"
+    },
+    {
+      "geometry": 2,
+      "threads": 2,
+      "field": "TST",
+      "bytes": 95680,
+      "sha256": "21e88e9912732067aec5584aeb23fcbd70f2dab7d6944f4d751b2ee6bceb92f5"
+    },
+    {
+      "geometry": 2,
+      "threads": 2,
+      "field": "XWQ",
+      "bytes": 47840,
+      "sha256": "2071f89ae5289660a8e06d2e1af3bae507b7167a8c3d559f2faf1ef2b4341d49"
+    },
+    {
+      "geometry": 2,
+      "threads": 2,
+      "field": "RITSCH",
+      "bytes": 478400,
+      "sha256": "1666f09150f15482b1c26235b4c14381ecaa2eab89a050d572610c61e8ade6f5"
+    },
+    {
+      "geometry": 2,
+      "threads": 2,
+      "field": "WQU",
+      "bytes": 95680,
+      "sha256": "6c467e31262308f7dfd4dd8d527e37d6a650ec9c117c70c72e3e06803100fe23"
+    },
+    {
+      "geometry": 2,
+      "threads": 8,
+      "field": "OL",
+      "bytes": 47840,
+      "sha256": "2dc926fdf0dfb75e0fd241a51756b78aacc51c3e584cf5696bbc5c21d2b023fb"
+    },
+    {
+      "geometry": 2,
+      "threads": 8,
+      "field": "UST",
+      "bytes": 95680,
+      "sha256": "aedf6902a602e8fbf255111cb72d267698735caad16952a6af1973a659018475"
+    },
+    {
+      "geometry": 2,
+      "threads": 8,
+      "field": "USTV",
+      "bytes": 95680,
+      "sha256": "7575fa1366d68891266c75431c273d6b13b34a9b94c49fed5e8bc189b7618590"
+    },
+    {
+      "geometry": 2,
+      "threads": 8,
+      "field": "TST",
+      "bytes": 95680,
+      "sha256": "21e88e9912732067aec5584aeb23fcbd70f2dab7d6944f4d751b2ee6bceb92f5"
+    },
+    {
+      "geometry": 2,
+      "threads": 8,
+      "field": "XWQ",
+      "bytes": 47840,
+      "sha256": "2071f89ae5289660a8e06d2e1af3bae507b7167a8c3d559f2faf1ef2b4341d49"
+    },
+    {
+      "geometry": 2,
+      "threads": 8,
+      "field": "RITSCH",
+      "bytes": 478400,
+      "sha256": "1666f09150f15482b1c26235b4c14381ecaa2eab89a050d572610c61e8ade6f5"
+    },
+    {
+      "geometry": 2,
+      "threads": 8,
+      "field": "WQU",
+      "bytes": 95680,
+      "sha256": "6c467e31262308f7dfd4dd8d527e37d6a650ec9c117c70c72e3e06803100fe23"
+    }
+  ],
+  "limits": [
+    "synthetic initialized production arrays; no full-domain forecast or timestep integration",
+    "FW is an existing water marker, not validated land-sea geography",
+    "maximum parallelism 1/2/8 is configured; actual simultaneously running worker threads are not measured",
+    "the first two optionsless Parallel.ForEach phases are capped by reflection into .NET 10 private Parallel.s_defaultParallelOptions; field type and value are asserted and the previous value is restored in finally; this is a runtime-specific test mechanism",
+    "this corrected run supersedes the earlier unsupported claim that an outer ConcurrentExclusiveSchedulerPair capped the optionsless loops",
+    "zero TST produces infinity in raw OL then existing production clamp yields positive 1000",
+    "NaN inputs excluded as invalid physics"
+  ]
+}

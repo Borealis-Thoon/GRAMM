@@ -1,0 +1,10 @@
+name,mode,comparison_count,wnd_nonidentical_comparisons,wnd_different_values_min,wnd_different_values_max,wnd_max_abs_raw_delta,class_expected_mismatches,changed_land_cells,ust_all_identical,ol_all_identical,other_physical_all_identical
+cool_day_40x32x20_500m_t2,baseline_repeat,15,5,0,3,1,0,0,True,True,True
+cool_day_40x32x20_500m_t2,candidate_repeat,15,8,0,1,1,0,0,True,True,True
+cool_day_40x32x20_500m_t2,cross_build,36,16,0,3,1,0,0,True,True,True
+warm_day_40x32x20_500m_t8,baseline_repeat,15,9,0,3,1,0,0,True,True,True
+warm_day_40x32x20_500m_t8,candidate_repeat,15,5,0,2,1,0,0,True,True,True
+warm_day_40x32x20_500m_t8,cross_build,36,16,0,4,1,0,0,True,True,True
+land_day_40x32x20_500m_t2,baseline_repeat,15,12,0,5,1,0,0,True,True,True
+land_day_40x32x20_500m_t2,candidate_repeat,15,9,0,3,1,0,0,True,True,True
+land_day_40x32x20_500m_t2,cross_build,36,24,0,4,1,0,0,True,True,True

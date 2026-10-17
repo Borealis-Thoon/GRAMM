@@ -1,0 +1,40 @@
+{
+  "status": "pass",
+  "gate_probes": [
+    {
+      "name": "all_exact",
+      "expected": "pass",
+      "observed": "pass"
+    },
+    {
+      "name": "crossbuild_wind_only",
+      "expected": "review_required",
+      "observed": "review_required"
+    },
+    {
+      "name": "samebuild_wind_only",
+      "expected": "review_required",
+      "observed": "review_required"
+    },
+    {
+      "name": "class_guardrail_damage",
+      "expected": "fail",
+      "observed": "fail"
+    },
+    {
+      "name": "nonwind_physics_damage",
+      "expected": "fail",
+      "observed": "fail"
+    },
+    {
+      "name": "samebuild_nonwind_damage",
+      "expected": "fail",
+      "observed": "fail"
+    }
+  ],
+  "existing_failed_results_preserved": true,
+  "reanalysis_exit_code": 2,
+  "reanalysis_status": "review_required",
+  "reanalysis_native_run_count": 34,
+  "fresh_solver_runs": 0
+}

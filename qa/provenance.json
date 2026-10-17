@@ -1,0 +1,18 @@
+{
+  "gramm_base": "a6fc7a3fd4d48ee057706daef09539caccfaf9bd",
+  "gramm_candidate": "d6a98e4bbe0255795cb83ecef502e440c2f6b59b",
+  "gral_base": "cd540abf4eda380e5669a891911323351d789e86",
+  "production_scope": {
+    "files": [
+      "src/PRANDTL.cs"
+    ],
+    "added_lines": 6,
+    "deleted_lines": 0,
+    "added_characters_lf": 316
+  },
+  "native_total_executions": 138,
+  "gral_total_official_executions": 26,
+  "gral_total_diagnostic_executions": 4,
+  "known_review": "strict native wind identity remains review_required",
+  "public_data": "synthetic only"
+}

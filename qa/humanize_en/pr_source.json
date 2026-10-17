@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "advisory_only": true,
+  "requires_semantic_review": true,
+  "requires_paragraph_review": true,
+  "requires_llm_paragraph_review": true,
+  "notice": "Advisory candidates require semantic context review. Preserve factual negation and necessary contrasts.",
+  "paragraph_review": "Even with zero candidates, read each paragraph to assess repetition, structure, rhythm, translationese and dry subject-verb prose.",
+  "finding_count": 1,
+  "findings": [
+    {
+      "line": 9,
+      "column": 1,
+      "start": 1574,
+      "end": 1592,
+      "code": "FRAGMENT_HEADINGS",
+      "reason": "At least three short headings occur; review whether fragmentation obscures paragraph development.",
+      "excerpt": "### Effect in GRAL"
+    }
+  ]
+}

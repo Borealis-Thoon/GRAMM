@@ -1,0 +1,175 @@
+Python 3.12.14
+10.0.401
+Cloning into 'PUBLIC_REPRODUCTION\work\upstream'...
+HEAD is now at a6fc7a3 Merge pull request #27 from Borealis-Thoon/codex/remove-unused-build-fields
+Preparing worktree (detached HEAD a6fc7a3)
+HEAD is now at a6fc7a3 Merge pull request #27 from Borealis-Thoon/codex/remove-unused-build-fields
+
+.NET 10.0을(를) 시작합니다.
+---------------------
+SDK 버전: 10.0.401
+
+----------------
+ASP.NET Core HTTPS 개발 인증서를 설치했습니다.
+인증서를 신뢰하려면 'dotnet dev-certs https --trust'를 실행하세요.
+HTTPS에 관한 자세한 정보: https://aka.ms/dotnet-https
+
+----------------
+첫 번째 앱 작성: https://aka.ms/dotnet-hello-world
+새로운 기능 확인: https://aka.ms/dotnet-whats-new
+설명서 살펴보기: https://aka.ms/dotnet-docs
+GitHub에서 문제 보고 및 소스 찾기: https://github.com/dotnet/core
+사용 가능한 명령을 보려면 'dotnet --help'를 사용하거나 https://aka.ms/dotnet-cli를 방문하세요.
+--------------------------------------------------------------------------------------
+워크로드를 확인하는 동안 문제가 발생했습니다. 자세한 내용을 확인하려면 "dotnet workload update"를 실행하세요.
+  복원할 프로젝트를 확인하는 중...
+  PUBLIC_REPRODUCTION\work\upstream\src\GRAMM.csproj을(를) 42밀리초 동안 복원했습니다.
+  GRAMM -> PUBLIC_REPRODUCTION\build\baseline\GRAMM.dll
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:01.45
+  복원할 프로젝트를 확인하는 중...
+  PUBLIC_REPRODUCTION\work\candidate\src\GRAMM.csproj을(를) 43밀리초 동안 복원했습니다.
+  GRAMM -> PUBLIC_REPRODUCTION\build\candidate\GRAMM.dll
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:01.44
+  복원할 프로젝트를 확인하는 중...
+  PUBLIC_REPRODUCTION\tests\component\ComponentCheck.csproj을(를) 42밀리초 동안 복원했습니다.
+  ComponentCheck -> PUBLIC_REPRODUCTION\tests\component\bin\Release\net10.0\ComponentCheck.dll
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:00.87
+PASS geometry=0 threads=1 cells=11088
+PASS geometry=0 threads=2 cells=11088
+PASS geometry=0 threads=8 cells=11088
+PASS geometry=1 threads=1 cells=11088
+PASS geometry=1 threads=2 cells=11088
+PASS geometry=1 threads=8 cells=11088
+PASS geometry=2 threads=1 cells=11088
+PASS geometry=2 threads=2 cells=11088
+PASS geometry=2 threads=8 cells=11088
+PASS total=99792 changed=13680 oracle=199584 fields=63
+[RUN] cool_day_24x20x16_250m_t1 baseline rep0 1.08s positiveOLwater=198 unstable=198
+[RUN] cool_day_24x20x16_250m_t1 candidate rep0 1.09s positiveOLwater=198 unstable=0
+[RUN] cool_day_24x20x16_250m_t2 baseline rep0 1.02s positiveOLwater=198 unstable=198
+[RUN] cool_day_24x20x16_250m_t2 candidate rep0 1.01s positiveOLwater=198 unstable=0
+[RUN] cool_day_24x20x16_250m_t8 baseline rep0 0.99s positiveOLwater=198 unstable=198
+[RUN] cool_day_24x20x16_250m_t8 candidate rep0 0.98s positiveOLwater=198 unstable=0
+[RUN] warm_day_24x20x16_250m_t8 baseline rep0 0.99s positiveOLwater=0 unstable=0
+[RUN] warm_day_24x20x16_250m_t8 candidate rep0 1.01s positiveOLwater=0 unstable=0
+[RUN] cool_night_24x20x16_250m_t1 baseline rep0 1.30s positiveOLwater=198 unstable=0
+[RUN] cool_night_24x20x16_250m_t1 candidate rep0 1.29s positiveOLwater=198 unstable=0
+[RUN] land_day_24x20x16_250m_t2 baseline rep0 1.02s positiveOLwater=0 unstable=0
+[RUN] land_day_24x20x16_250m_t2 candidate rep0 1.01s positiveOLwater=0 unstable=0
+[RUN] strong_neutral_24x20x16_250m_t8 baseline rep0 0.70s positiveOLwater=198 unstable=0
+[RUN] strong_neutral_24x20x16_250m_t8 candidate rep0 0.71s positiveOLwater=198 unstable=0
+[RUN] cool_day_40x32x20_500m_t1 baseline rep0 2.40s positiveOLwater=570 unstable=570
+[RUN] cool_day_40x32x20_500m_t1 candidate rep0 2.51s positiveOLwater=570 unstable=0
+[RUN] cool_day_40x32x20_500m_t2 baseline rep0 2.00s positiveOLwater=570 unstable=570
+[RUN] cool_day_40x32x20_500m_t2 candidate rep0 2.07s positiveOLwater=570 unstable=0
+[RUN] cool_day_40x32x20_500m_t8 baseline rep0 1.84s positiveOLwater=570 unstable=570
+[RUN] cool_day_40x32x20_500m_t8 candidate rep0 1.84s positiveOLwater=570 unstable=0
+[RUN] warm_day_40x32x20_500m_t8 baseline rep0 1.84s positiveOLwater=0 unstable=0
+[RUN] warm_day_40x32x20_500m_t8 candidate rep0 1.90s positiveOLwater=0 unstable=0
+[RUN] cool_night_40x32x20_500m_t1 baseline rep0 3.00s positiveOLwater=570 unstable=0
+[RUN] cool_night_40x32x20_500m_t1 candidate rep0 2.97s positiveOLwater=570 unstable=0
+[RUN] land_day_40x32x20_500m_t2 baseline rep0 1.95s positiveOLwater=0 unstable=0
+[RUN] land_day_40x32x20_500m_t2 candidate rep0 1.94s positiveOLwater=0 unstable=0
+[RUN] strong_neutral_40x32x20_500m_t8 baseline rep0 1.03s positiveOLwater=570 unstable=0
+[RUN] strong_neutral_40x32x20_500m_t8 candidate rep0 1.00s positiveOLwater=570 unstable=0
+[RUN] cool_day_24x20x16_250m_t1 baseline rep1 1.09s positiveOLwater=198 unstable=198
+[RUN] cool_day_24x20x16_250m_t1 candidate rep1 1.11s positiveOLwater=198 unstable=0
+[RUN] cool_day_24x20x16_250m_t8 baseline rep1 1.04s positiveOLwater=198 unstable=198
+[RUN] cool_day_24x20x16_250m_t8 candidate rep1 0.99s positiveOLwater=198 unstable=0
+[RUN] land_day_24x20x16_250m_t2 baseline rep1 1.04s positiveOLwater=0 unstable=0
+[RUN] land_day_24x20x16_250m_t2 candidate rep1 1.03s positiveOLwater=0 unstable=0
+{
+  "status": "review_required",
+  "scientific_guardrails_pass": true,
+  "nonwind_physics_bitwise_identical": true,
+  "review_reasons": [
+    "Wind output is not bitwise identical; numeric equivalence has not been accepted. Same-build variability must be reviewed."
+  ],
+  "land_classes_unchanged": true,
+  "same_build_repeats_bitwise_identical": true,
+  "parallelism_semantics": "Max_Proc.txt requested limits 1/2/8; these are not measured actual thread counts. PRANDTL ForEach does not pass pOptions.",
+  "baseline_clamp_formula_exact_match": true,
+  "native_process_elapsed_sum_seconds": 48.78108719999727,
+  "scope": "synthetic short integration; native build regression, not production meteorology validation",
+  "native_matrix_cases": 14,
+  "native_run_count": 34,
+  "analysis_and_new_execution_elapsed_seconds": 49.90234820000114,
+  "candidate_positive_ol_water_unstable_violations": 0,
+  "bitwise_physics_equivalence": false,
+  "comparison_tolerance": "none; all observed differences reported exactly",
+  "ol_encoding": "AUSGABE: Int16 round(clamp(OL * 10)); internal PRANDTL |OL| >= 5 and <=1000 m",
+  "tsf_note": "No .tsf writer exists in this engine source; no .tsf produced. Compare .wnd/.ust/.obl plus steady-state/roughness/radiation geometry cache outputs.",
+  "mask_orientation": "landuse input index j*nx+i -> AUSGABE index i*ny+j; 1-based internal indices"
+}
+review_required: inspect saved wind-output differences in qa/native; classification and non-wind checks passed.
+  복원할 프로젝트를 확인하는 중...
+  PUBLIC_REPRODUCTION\tests\temporal\TemporalCheck.csproj을(를) 44밀리초 동안 복원했습니다.
+  TemporalCheck -> PUBLIC_REPRODUCTION\tests\temporal\bin\Release\net10.0\TemporalCheck.dll
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:00.85
+PASS geometry=0 threads=1 initial_AKLA=1
+PASS geometry=0 threads=1 initial_AKLA=6
+PASS geometry=0 threads=2 initial_AKLA=1
+PASS geometry=0 threads=2 initial_AKLA=6
+PASS geometry=0 threads=8 initial_AKLA=1
+PASS geometry=0 threads=8 initial_AKLA=6
+PASS geometry=1 threads=1 initial_AKLA=1
+PASS geometry=1 threads=1 initial_AKLA=6
+PASS geometry=1 threads=2 initial_AKLA=1
+PASS geometry=1 threads=2 initial_AKLA=6
+PASS geometry=1 threads=8 initial_AKLA=1
+PASS geometry=1 threads=8 initial_AKLA=6
+PASS geometry=2 threads=1 initial_AKLA=1
+PASS geometry=2 threads=1 initial_AKLA=6
+PASS geometry=2 threads=2 initial_AKLA=1
+PASS geometry=2 threads=2 initial_AKLA=6
+PASS geometry=2 threads=8 initial_AKLA=1
+PASS geometry=2 threads=8 initial_AKLA=6
+PASS states=8064 calls=504 checks=140988
+Cloning into 'PUBLIC_REPRODUCTION\work\gral'...
+HEAD is now at cd540ab Create overloads for Vector512<float> (untested at the moment)
+  복원할 프로젝트를 확인하는 중...
+  PUBLIC_REPRODUCTION\work\gral\src\GRAL.csproj을(를) 45밀리초 동안 복원했습니다.
+  GRAL -> PUBLIC_REPRODUCTION\build\gral\GRAL.dll
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:01.22
+cool_main_A 28.91 36
+cool_main_B 44.19 36
+cool_main_A_repeat 28.61 36
+cool_dx50_A 11.19 12
+cool_dx50_B 15.88 12
+cool_rate100_A 1.2 12
+cool_rate100_B 1.69 12
+warm_control_A 9.33 12
+warm_control_B 9.67 12
+neutral_control_A 26.08 12
+neutral_control_B 26.19 12
+land_control_A 9.75 12
+land_control_B 9.75 12
+diagnostic done
+PASS 6 cases 198 changed cells
+pass 222.42199999998775 228 13
+[REVIEW_REQUIRED] PUBLIC_REPRODUCTION

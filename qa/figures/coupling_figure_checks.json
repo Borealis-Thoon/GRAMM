@@ -1,0 +1,48 @@
+{
+  "status": "pass",
+  "source_inputs": [
+    {
+      "path": "qa\\coupling\\summary.json",
+      "sha256": "4d780179292523a2bd380a3aac2015c466540a4b1c9576166c5b3d3e40e6851c"
+    },
+    {
+      "path": "qa\\coupling\\validation.json",
+      "sha256": "c7bf7a2c43e1c8d742da346536c07e8d26d0b19821a425bd0ab7127b691fcfed"
+    },
+    {
+      "path": "qa\\coupling\\fields\\cool_main_A\\00001-102.csv",
+      "sha256": "718ec90d17da7d3693d732a74730835d5b043b942503a7329434d7d95345cb83"
+    },
+    {
+      "path": "qa\\coupling\\fields\\cool_main_B\\00001-102.csv",
+      "sha256": "a41a43fdca7f1152dabfc50abf0272b8f0e7f92a9f602f428ff4d511232ba17a"
+    }
+  ],
+  "summary_sha256_at_read": "4d780179292523a2bd380a3aac2015c466540a4b1c9576166c5b3d3e40e6851c",
+  "summary_unchanged_during_plot": true,
+  "assertions": {
+    "12_ground_seed_source_comparisons": true,
+    "percentage_recalculation": true,
+    "csv_field_max_matches_summary": true,
+    "map_fields_finite_and_equal_shape": true
+  },
+  "figures": [
+    {
+      "path": "figures\\03_gral_ground_response.png",
+      "sha256": "b1fdc338490d8161469ce3fef26b94925c41dec205d91355753a173ab9670b66"
+    },
+    {
+      "path": "figures\\03_gral_ground_response.svg",
+      "sha256": "7d642fbf5bfd7523f368415170abe84c126af42f5c5033dad373dee879d82452"
+    },
+    {
+      "path": "figures\\04_gral_water20_ground_plume.png",
+      "sha256": "7397dccabd0a2023672db16bed1ce2f273c3381ed1a464ff83c5950299c1cd01"
+    },
+    {
+      "path": "figures\\04_gral_water20_ground_plume.svg",
+      "sha256": "755a25042d069e49b3085e80c59ef1072c5406123465f6c156edaeac0e9cc658"
+    }
+  ],
+  "visual_review": "pass: rendered PNGs inspected after final label edits; no clipping or overlap"
+}

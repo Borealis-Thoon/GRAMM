@@ -1,0 +1,15 @@
+name,baseline_unstable_positive_ol_water_cells,candidate_unstable_positive_ol_water_cells,baseline_formula_expected_mismatches,changed_class_cells,changed_class_fraction,changed_water_cells,changed_land_cells,changed_water_positive_baseline_ol_cells
+cool_day_24x20x16_250m_t1,198,0,0,198,0.4125,198,0,198
+cool_day_24x20x16_250m_t2,198,0,0,198,0.4125,198,0,198
+cool_day_24x20x16_250m_t8,198,0,0,198,0.4125,198,0,198
+warm_day_24x20x16_250m_t8,0,0,0,0,0.0,0,0,0
+cool_night_24x20x16_250m_t1,0,0,0,0,0.0,0,0,0
+land_day_24x20x16_250m_t2,0,0,0,0,0.0,0,0,0
+strong_neutral_24x20x16_250m_t8,0,0,0,0,0.0,0,0,0
+cool_day_40x32x20_500m_t1,570,0,0,570,0.4453125,570,0,570
+cool_day_40x32x20_500m_t2,570,0,0,570,0.4453125,570,0,570
+cool_day_40x32x20_500m_t8,570,0,0,570,0.4453125,570,0,570
+warm_day_40x32x20_500m_t8,0,0,0,0,0.0,0,0,0
+cool_night_40x32x20_500m_t1,0,0,0,0,0.0,0,0,0
+land_day_40x32x20_500m_t2,0,0,0,0,0.0,0,0,0
+strong_neutral_40x32x20_500m_t8,0,0,0,0,0.0,0,0,0

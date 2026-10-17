@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "author_specific_path_hits": [],
+  "private_research_inputs_included": false,
+  "normalized_file_count": 16,
+  "normalized_files": [
+    "logs/gramm_candidate_build.log",
+    "logs/public_reproduction.log",
+    "qa/candidate_method_identity.json",
+    "qa/public_payload_audit.json",
+    "qa/component/component_checks.json",
+    "qa/coupling/diagnostic_build.log",
+    "qa/coupling/repeat.json",
+    "qa/coupling/summary.json",
+    "qa/public_reproduction/concentration_identity.json",
+    "qa/temporal/strict_build.log",
+    "qa/temporal/temporal_checks.json",
+    "qa/public_reproduction/component/component_checks.json",
+    "qa/public_reproduction/coupling/repeat.json",
+    "qa/public_reproduction/coupling/summary.json",
+    "qa/public_reproduction/native/native_matrix_results.json",
+    "qa/public_reproduction/temporal/temporal_checks.json"
+  ],
+  "path_placeholders": [
+    "RUN_ROOT",
+    "INITIAL_RUN",
+    "PUBLIC_REPRODUCTION"
+  ],
+  "numerical_values_unchanged": true,
+  "numeric_json_values_compared": 13843,
+  "concentration_csvs_byte_compared": 192
+}

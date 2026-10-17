@@ -1,0 +1,19 @@
+{
+  "skill": "humanize-kit:humanizer",
+  "mode": "Embedded",
+  "source_sha256": "872bde0a61be78966932cf9d8514c84057ee03f17bf89445af547006c3e5f7a6",
+  "final_sha256": "2b81bab750652c8a6b81fb7b979d5140178fbfe40d656708b762646a0d96d536",
+  "change_rate_sequence_matcher": 0.016097206355800142,
+  "paragraph_review": "completed",
+  "revisions": [
+    "Replaced inferred tracking-time mechanism with the measured total runtime statement.",
+    "Described the visible ground-level peak shift without inferring first surface contact."
+  ],
+  "retained": [
+    "Three headings separate physical mechanism, quantitative validation and contributor checklist.",
+    "The wind review_required result and observation-validation qualification constrain material claims."
+  ],
+  "numbers_conditions_links_fidelity": "checked against source and coupling summary; source and final numerical claims unchanged",
+  "readme_review": "source/final scan plus paragraph review; no style-only changes needed",
+  "evidence_update": "Added completed clean-public reproduction counts and 192/192 payload identity; verified from recorded JSON."
+}

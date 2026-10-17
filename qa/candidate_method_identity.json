@@ -1,0 +1,8 @@
+{
+  "assembly_a": "INITIAL_RUN\\build\\candidate\\GRAMM.dll",
+  "assembly_b": "RUN_ROOT\\build\\gramm_candidate\\GRAMM.dll",
+  "methods_a": 976,
+  "methods_b": 976,
+  "method_bodies_identical": true,
+  "differences": []
+}

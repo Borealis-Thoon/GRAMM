@@ -1,0 +1,5107 @@
+{
+  "status": "review_required",
+  "scientific_guardrails_pass": true,
+  "nonwind_physics_bitwise_identical": true,
+  "review_reasons": [
+    "Wind output is not bitwise identical; numeric equivalence has not been accepted. Same-build variability must be reviewed."
+  ],
+  "land_classes_unchanged": true,
+  "same_build_repeats_bitwise_identical": true,
+  "parallelism_semantics": "Max_Proc.txt requested limits 1/2/8; these are not measured actual thread counts. PRANDTL ForEach does not pass pOptions.",
+  "baseline_clamp_formula_exact_match": true,
+  "native_process_elapsed_sum_seconds": 48.352640700006305,
+  "scope": "synthetic short integration; native build regression, not production meteorology validation",
+  "native_matrix_cases": 14,
+  "native_run_count": 34,
+  "analysis_and_new_execution_elapsed_seconds": 0.2547335000017483,
+  "candidate_positive_ol_water_unstable_violations": 0,
+  "bitwise_physics_equivalence": false,
+  "comparison_tolerance": "none; all observed differences reported exactly",
+  "ol_encoding": "AUSGABE: Int16 round(clamp(OL * 10)); internal PRANDTL |OL| >= 5 and <=1000 m",
+  "tsf_note": "No .tsf writer exists in this engine source; no .tsf produced. Compare .wnd/.ust/.obl plus steady-state/roughness/radiation geometry cache outputs.",
+  "mask_orientation": "landuse input index j*nx+i -> AUSGABE index i*ny+j; 1-based internal indices",
+  "runs": [
+    {
+      "name": "cool_day_24x20x16_250m_t1",
+      "build": "baseline",
+      "repeat": 0,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "cool_day",
+        "threads": 1,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.0897381999966456,
+        "pid": 6140,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "assembly_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_day_24x20x16_250m_t1\\baseline",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 412,
+            "sha256": "2f767c4b420852b0feba262710fe4fd272cded59f5cd6ba3406dc4d34334107c"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+          }
+        ],
+        "lifetime_seconds": 1.0836463,
+        "process_cpu_seconds": 1.140625,
+        "peak_working_set_bytes": 77619200
+      },
+      "class_counts": {
+        "2": 480
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "95f4d562a761015e9d2444a2cf2baab37d3a972faf50d4128c717986d4782b92",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+      },
+      "water_cells": 240,
+      "interior_water_positive_ol_cells": 198,
+      "interior_water_positive_ol_unstable_cells": 198,
+      "ol_raw_min": -50,
+      "ol_raw_max": 105,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -9,
+      "wind_raw_max": 403,
+      "normalized_last_progress_seconds": 348.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "122f322df0c5e2f7e063bdd09457700d1ecb1c26530d2938c5ee42ac9d37f7eb"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "dd965e4a4d1f461de16db94580c93dd5d70f63e063384a703dc68155b5ec528a"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "45fe7fa26e5fe6aabb828d56115227d6f0fe93cde25b7389db89ea77791606db"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2790,
+          "sha256": "e38fec31dda81d0e6a461674bc7987e8af166ff47f6d902517c95c8809f2239f"
+        }
+      }
+    },
+    {
+      "name": "cool_day_24x20x16_250m_t1",
+      "build": "candidate",
+      "repeat": 0,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "cool_day",
+        "threads": 1,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.0833206000024802,
+        "pid": 57660,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "assembly_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_day_24x20x16_250m_t1\\candidate",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 417,
+            "sha256": "b81135cae870f51de42b8a5a714cd289d7ea2f294a0d9290f67e3999f829f1ee"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+          }
+        ],
+        "lifetime_seconds": 1.0766282,
+        "process_cpu_seconds": 1.203125,
+        "peak_working_set_bytes": 78151680
+      },
+      "class_counts": {
+        "2": 282,
+        "4": 198
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "95f4d562a761015e9d2444a2cf2baab37d3a972faf50d4128c717986d4782b92",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+      },
+      "water_cells": 240,
+      "interior_water_positive_ol_cells": 198,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -50,
+      "ol_raw_max": 105,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -9,
+      "wind_raw_max": 403,
+      "normalized_last_progress_seconds": 348.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "122f322df0c5e2f7e063bdd09457700d1ecb1c26530d2938c5ee42ac9d37f7eb"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "dd965e4a4d1f461de16db94580c93dd5d70f63e063384a703dc68155b5ec528a"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "6a3e5b5163663a1a2c940f9b0608d632d4ab9d645a38ea45f3557ff53d77d2d7"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2790,
+          "sha256": "e38fec31dda81d0e6a461674bc7987e8af166ff47f6d902517c95c8809f2239f"
+        }
+      }
+    },
+    {
+      "name": "cool_day_24x20x16_250m_t2",
+      "build": "baseline",
+      "repeat": 0,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "cool_day",
+        "threads": 2,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.9963959000015166,
+        "pid": 57704,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "assembly_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_day_24x20x16_250m_t2\\baseline",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 412,
+            "sha256": "0ea4404598c43a0d49c38ee90f4d721c5f48b540b499953e551a87164fa8c6c0"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+          }
+        ],
+        "lifetime_seconds": 0.9900385,
+        "process_cpu_seconds": 1.125,
+        "peak_working_set_bytes": 79089664
+      },
+      "class_counts": {
+        "2": 480
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "95f4d562a761015e9d2444a2cf2baab37d3a972faf50d4128c717986d4782b92",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "df4e26a04a444901b95afef44e4a96cfae34690fff2ad2c66389c70079cdff2b"
+      },
+      "water_cells": 240,
+      "interior_water_positive_ol_cells": 198,
+      "interior_water_positive_ol_unstable_cells": 198,
+      "ol_raw_min": -50,
+      "ol_raw_max": 105,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -9,
+      "wind_raw_max": 403,
+      "normalized_last_progress_seconds": 348.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "122f322df0c5e2f7e063bdd09457700d1ecb1c26530d2938c5ee42ac9d37f7eb"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "dd965e4a4d1f461de16db94580c93dd5d70f63e063384a703dc68155b5ec528a"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "45fe7fa26e5fe6aabb828d56115227d6f0fe93cde25b7389db89ea77791606db"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2790,
+          "sha256": "e38fec31dda81d0e6a461674bc7987e8af166ff47f6d902517c95c8809f2239f"
+        }
+      }
+    },
+    {
+      "name": "cool_day_24x20x16_250m_t2",
+      "build": "candidate",
+      "repeat": 0,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "cool_day",
+        "threads": 2,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.0232209000023431,
+        "pid": 54416,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "assembly_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_day_24x20x16_250m_t2\\candidate",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 417,
+            "sha256": "b85f2fbf8c818e2017e618a75f27dfc58a7d10aeba648a650302f05f025503e9"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+          }
+        ],
+        "lifetime_seconds": 1.0172328,
+        "process_cpu_seconds": 1.4375,
+        "peak_working_set_bytes": 78876672
+      },
+      "class_counts": {
+        "2": 282,
+        "4": 198
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "95f4d562a761015e9d2444a2cf2baab37d3a972faf50d4128c717986d4782b92",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "df4e26a04a444901b95afef44e4a96cfae34690fff2ad2c66389c70079cdff2b"
+      },
+      "water_cells": 240,
+      "interior_water_positive_ol_cells": 198,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -50,
+      "ol_raw_max": 105,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -9,
+      "wind_raw_max": 403,
+      "normalized_last_progress_seconds": 348.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "122f322df0c5e2f7e063bdd09457700d1ecb1c26530d2938c5ee42ac9d37f7eb"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "dd965e4a4d1f461de16db94580c93dd5d70f63e063384a703dc68155b5ec528a"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "6a3e5b5163663a1a2c940f9b0608d632d4ab9d645a38ea45f3557ff53d77d2d7"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2790,
+          "sha256": "e38fec31dda81d0e6a461674bc7987e8af166ff47f6d902517c95c8809f2239f"
+        }
+      }
+    },
+    {
+      "name": "cool_day_24x20x16_250m_t8",
+      "build": "baseline",
+      "repeat": 0,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "cool_day",
+        "threads": 8,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.9893996999999217,
+        "pid": 46124,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "assembly_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_day_24x20x16_250m_t8\\baseline",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 412,
+            "sha256": "5e38123be6123e92906a8b56d301021993db9b4aef135534c0835a1772eb29be"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+          }
+        ],
+        "lifetime_seconds": 0.9826759,
+        "process_cpu_seconds": 1.265625,
+        "peak_working_set_bytes": 81162240
+      },
+      "class_counts": {
+        "2": 480
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "95f4d562a761015e9d2444a2cf2baab37d3a972faf50d4128c717986d4782b92",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "e0c18a6a8d48da87994c100bbb324c758d413e95f0fa5135bd0738a692b4d56f"
+      },
+      "water_cells": 240,
+      "interior_water_positive_ol_cells": 198,
+      "interior_water_positive_ol_unstable_cells": 198,
+      "ol_raw_min": -50,
+      "ol_raw_max": 105,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -9,
+      "wind_raw_max": 403,
+      "normalized_last_progress_seconds": 348.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "122f322df0c5e2f7e063bdd09457700d1ecb1c26530d2938c5ee42ac9d37f7eb"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "dd965e4a4d1f461de16db94580c93dd5d70f63e063384a703dc68155b5ec528a"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "45fe7fa26e5fe6aabb828d56115227d6f0fe93cde25b7389db89ea77791606db"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2790,
+          "sha256": "e38fec31dda81d0e6a461674bc7987e8af166ff47f6d902517c95c8809f2239f"
+        }
+      }
+    },
+    {
+      "name": "cool_day_24x20x16_250m_t8",
+      "build": "candidate",
+      "repeat": 0,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "cool_day",
+        "threads": 8,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.9694549999985611,
+        "pid": 57592,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "assembly_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_day_24x20x16_250m_t8\\candidate",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 417,
+            "sha256": "20a12f70eaf8f7e2f940f1084d1a7af6039b822c6d6b9d628a3b90f01d0c5eac"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+          }
+        ],
+        "lifetime_seconds": 0.9632316,
+        "process_cpu_seconds": 1.21875,
+        "peak_working_set_bytes": 81854464
+      },
+      "class_counts": {
+        "2": 282,
+        "4": 198
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "95f4d562a761015e9d2444a2cf2baab37d3a972faf50d4128c717986d4782b92",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "e0c18a6a8d48da87994c100bbb324c758d413e95f0fa5135bd0738a692b4d56f"
+      },
+      "water_cells": 240,
+      "interior_water_positive_ol_cells": 198,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -50,
+      "ol_raw_max": 105,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -9,
+      "wind_raw_max": 403,
+      "normalized_last_progress_seconds": 348.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "122f322df0c5e2f7e063bdd09457700d1ecb1c26530d2938c5ee42ac9d37f7eb"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "dd965e4a4d1f461de16db94580c93dd5d70f63e063384a703dc68155b5ec528a"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "6a3e5b5163663a1a2c940f9b0608d632d4ab9d645a38ea45f3557ff53d77d2d7"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2790,
+          "sha256": "e38fec31dda81d0e6a461674bc7987e8af166ff47f6d902517c95c8809f2239f"
+        }
+      }
+    },
+    {
+      "name": "warm_day_24x20x16_250m_t8",
+      "build": "baseline",
+      "repeat": 0,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "warm_day",
+        "threads": 8,
+        "sc": 2,
+        "wind": 2,
+        "delta": 8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.9730976999999257,
+        "pid": 45088,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "assembly_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\warm_day_24x20x16_250m_t8\\baseline",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 413,
+            "sha256": "7a172533a83865b4afeec691d2e9e3c057770fe63bc14d70233bd8e041be62de"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "ae2896f37749f0f0bb3929e93c87f18bd9ce99b68c350a3dcee4c3debe1f02b9"
+          }
+        ],
+        "lifetime_seconds": 0.9667626,
+        "process_cpu_seconds": 1.328125,
+        "peak_working_set_bytes": 81612800
+      },
+      "class_counts": {
+        "2": 480
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1df4f9192bdf143ba8b69843931664e28626f4163b3c643d63339525322c6f47",
+        "landuse.asc": "95f4d562a761015e9d2444a2cf2baab37d3a972faf50d4128c717986d4782b92",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "e0c18a6a8d48da87994c100bbb324c758d413e95f0fa5135bd0738a692b4d56f"
+      },
+      "water_cells": 240,
+      "interior_water_positive_ol_cells": 0,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -115,
+      "ol_raw_max": 100,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -9,
+      "wind_raw_max": 403,
+      "normalized_last_progress_seconds": 348.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "122f322df0c5e2f7e063bdd09457700d1ecb1c26530d2938c5ee42ac9d37f7eb"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "dde85cedcd58f63f7b46f5a9a35c5f166a88d03de2bc605bba1bb01dc9f96d30"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "45fe7fa26e5fe6aabb828d56115227d6f0fe93cde25b7389db89ea77791606db"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "ae2896f37749f0f0bb3929e93c87f18bd9ce99b68c350a3dcee4c3debe1f02b9"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2790,
+          "sha256": "e38fec31dda81d0e6a461674bc7987e8af166ff47f6d902517c95c8809f2239f"
+        }
+      }
+    },
+    {
+      "name": "warm_day_24x20x16_250m_t8",
+      "build": "candidate",
+      "repeat": 0,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "warm_day",
+        "threads": 8,
+        "sc": 2,
+        "wind": 2,
+        "delta": 8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.9685727000032784,
+        "pid": 58344,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "assembly_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\warm_day_24x20x16_250m_t8\\candidate",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 413,
+            "sha256": "5fc408eb6d554ddf4892f999a73c09bb2afccc98cd84c681ae51f5bb2007d458"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "ae2896f37749f0f0bb3929e93c87f18bd9ce99b68c350a3dcee4c3debe1f02b9"
+          }
+        ],
+        "lifetime_seconds": 0.9623602,
+        "process_cpu_seconds": 1.265625,
+        "peak_working_set_bytes": 81629184
+      },
+      "class_counts": {
+        "2": 480
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1df4f9192bdf143ba8b69843931664e28626f4163b3c643d63339525322c6f47",
+        "landuse.asc": "95f4d562a761015e9d2444a2cf2baab37d3a972faf50d4128c717986d4782b92",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "e0c18a6a8d48da87994c100bbb324c758d413e95f0fa5135bd0738a692b4d56f"
+      },
+      "water_cells": 240,
+      "interior_water_positive_ol_cells": 0,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -115,
+      "ol_raw_max": 100,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -9,
+      "wind_raw_max": 403,
+      "normalized_last_progress_seconds": 348.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "122f322df0c5e2f7e063bdd09457700d1ecb1c26530d2938c5ee42ac9d37f7eb"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "dde85cedcd58f63f7b46f5a9a35c5f166a88d03de2bc605bba1bb01dc9f96d30"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "45fe7fa26e5fe6aabb828d56115227d6f0fe93cde25b7389db89ea77791606db"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "ae2896f37749f0f0bb3929e93c87f18bd9ce99b68c350a3dcee4c3debe1f02b9"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2790,
+          "sha256": "e38fec31dda81d0e6a461674bc7987e8af166ff47f6d902517c95c8809f2239f"
+        }
+      }
+    },
+    {
+      "name": "cool_night_24x20x16_250m_t1",
+      "build": "baseline",
+      "repeat": 0,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "cool_night",
+        "threads": 1,
+        "sc": 6,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.2635826000005181,
+        "pid": 38208,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "assembly_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_night_24x20x16_250m_t1\\baseline",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 443,
+            "sha256": "54054c44a8fdf2aa4f772f747e8de66a790c7b73de7c486fc0d28fefa5964a29"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "4699ddf93ced68e2295244a7e5ad4440f9aeb8812f981175c0a7ebbc6fdd9e50"
+          }
+        ],
+        "lifetime_seconds": 1.257355,
+        "process_cpu_seconds": 1.4375,
+        "peak_working_set_bytes": 83488768
+      },
+      "class_counts": {
+        "6": 480
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "131ffd040bf7bfdbaa65e98151f168133df6ada1ed2728ec2c7458540ad5a02d",
+        "landuse.asc": "95f4d562a761015e9d2444a2cf2baab37d3a972faf50d4128c717986d4782b92",
+        "meteopgt.all": "39109127963d41c9bb601e481794bd2889c094da5c1cb09112e0bd60dab7b508",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+      },
+      "water_cells": 240,
+      "interior_water_positive_ol_cells": 198,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": 100,
+      "ol_raw_max": 193,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -8,
+      "wind_raw_max": 1094,
+      "normalized_last_progress_seconds": 329.0,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "122f322df0c5e2f7e063bdd09457700d1ecb1c26530d2938c5ee42ac9d37f7eb"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "f7c44a81d2aae4edaee81f8f68d01de5af5d7d48b33a2df78583f58e0eefe448"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "7fbdc2a6dff52cfebdfbd23233b330e49aec2643e2929d14040c0046947c3d58"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "4699ddf93ced68e2295244a7e5ad4440f9aeb8812f981175c0a7ebbc6fdd9e50"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2790,
+          "sha256": "e38fec31dda81d0e6a461674bc7987e8af166ff47f6d902517c95c8809f2239f"
+        }
+      }
+    },
+    {
+      "name": "cool_night_24x20x16_250m_t1",
+      "build": "candidate",
+      "repeat": 0,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "cool_night",
+        "threads": 1,
+        "sc": 6,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.259220899999491,
+        "pid": 34908,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "assembly_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_night_24x20x16_250m_t1\\candidate",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 443,
+            "sha256": "6ba27973c44557ec2f17e162b7c0e276d86d05804d32947c25f5acc9a560988b"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "4699ddf93ced68e2295244a7e5ad4440f9aeb8812f981175c0a7ebbc6fdd9e50"
+          }
+        ],
+        "lifetime_seconds": 1.2526044,
+        "process_cpu_seconds": 1.453125,
+        "peak_working_set_bytes": 83230720
+      },
+      "class_counts": {
+        "6": 480
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "131ffd040bf7bfdbaa65e98151f168133df6ada1ed2728ec2c7458540ad5a02d",
+        "landuse.asc": "95f4d562a761015e9d2444a2cf2baab37d3a972faf50d4128c717986d4782b92",
+        "meteopgt.all": "39109127963d41c9bb601e481794bd2889c094da5c1cb09112e0bd60dab7b508",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+      },
+      "water_cells": 240,
+      "interior_water_positive_ol_cells": 198,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": 100,
+      "ol_raw_max": 193,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -8,
+      "wind_raw_max": 1094,
+      "normalized_last_progress_seconds": 329.0,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "122f322df0c5e2f7e063bdd09457700d1ecb1c26530d2938c5ee42ac9d37f7eb"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "f7c44a81d2aae4edaee81f8f68d01de5af5d7d48b33a2df78583f58e0eefe448"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "7fbdc2a6dff52cfebdfbd23233b330e49aec2643e2929d14040c0046947c3d58"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "4699ddf93ced68e2295244a7e5ad4440f9aeb8812f981175c0a7ebbc6fdd9e50"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2790,
+          "sha256": "e38fec31dda81d0e6a461674bc7987e8af166ff47f6d902517c95c8809f2239f"
+        }
+      }
+    },
+    {
+      "name": "land_day_24x20x16_250m_t2",
+      "build": "baseline",
+      "repeat": 0,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "land_day",
+        "threads": 2,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": false
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.9915672999995877,
+        "pid": 51396,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "assembly_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\land_day_24x20x16_250m_t2\\baseline",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 420,
+            "sha256": "7a461fe903a4131bfe24c027ceff0bad353d72043059752c2c8f8e81db47a80a"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "7ddcc0e9f9ddc64529726b2490a5f6945da04e29dec224b2a13ef51b27a0dd94"
+          }
+        ],
+        "lifetime_seconds": 0.9855638,
+        "process_cpu_seconds": 1.296875,
+        "peak_working_set_bytes": 78987264
+      },
+      "class_counts": {
+        "2": 480
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "3c7d7d6646c719b6209e89bc1220f16a774922cc481234f1259a9af6597e1536",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "df4e26a04a444901b95afef44e4a96cfae34690fff2ad2c66389c70079cdff2b"
+      },
+      "water_cells": 0,
+      "interior_water_positive_ol_cells": 0,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -50,
+      "ol_raw_max": 100,
+      "ust_raw_min": 150,
+      "ust_raw_max": 157,
+      "wind_raw_min": -8,
+      "wind_raw_max": 403,
+      "normalized_last_progress_seconds": 353.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "52b29979a72cd0a85826610e69d4dd4b34bb08fc7d7eb1fe2cfc09eb8f0a8d2e"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "b280b2b3a52d1c38f6f1b797fc6ad3c49705375c1bff865ccb1969c5e13bb1e4"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "45fe7fa26e5fe6aabb828d56115227d6f0fe93cde25b7389db89ea77791606db"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "7ddcc0e9f9ddc64529726b2490a5f6945da04e29dec224b2a13ef51b27a0dd94"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2070,
+          "sha256": "e807180d5026471244ad57dcdfdb9e9da3a4488b0aa55ea04141c96b611bd56c"
+        }
+      }
+    },
+    {
+      "name": "land_day_24x20x16_250m_t2",
+      "build": "candidate",
+      "repeat": 0,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "land_day",
+        "threads": 2,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": false
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.9904953000004753,
+        "pid": 47256,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "assembly_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\land_day_24x20x16_250m_t2\\candidate",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 420,
+            "sha256": "bd55d7e06de5a1f5296b545ae47a497742f771a2ba58dc9292c553e360ec7a95"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "7ddcc0e9f9ddc64529726b2490a5f6945da04e29dec224b2a13ef51b27a0dd94"
+          }
+        ],
+        "lifetime_seconds": 0.9845837,
+        "process_cpu_seconds": 1.203125,
+        "peak_working_set_bytes": 79409152
+      },
+      "class_counts": {
+        "2": 480
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "3c7d7d6646c719b6209e89bc1220f16a774922cc481234f1259a9af6597e1536",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "df4e26a04a444901b95afef44e4a96cfae34690fff2ad2c66389c70079cdff2b"
+      },
+      "water_cells": 0,
+      "interior_water_positive_ol_cells": 0,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -50,
+      "ol_raw_max": 100,
+      "ust_raw_min": 150,
+      "ust_raw_max": 157,
+      "wind_raw_min": -8,
+      "wind_raw_max": 403,
+      "normalized_last_progress_seconds": 353.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "52b29979a72cd0a85826610e69d4dd4b34bb08fc7d7eb1fe2cfc09eb8f0a8d2e"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "b280b2b3a52d1c38f6f1b797fc6ad3c49705375c1bff865ccb1969c5e13bb1e4"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "45fe7fa26e5fe6aabb828d56115227d6f0fe93cde25b7389db89ea77791606db"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "7ddcc0e9f9ddc64529726b2490a5f6945da04e29dec224b2a13ef51b27a0dd94"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2070,
+          "sha256": "e807180d5026471244ad57dcdfdb9e9da3a4488b0aa55ea04141c96b611bd56c"
+        }
+      }
+    },
+    {
+      "name": "strong_neutral_24x20x16_250m_t8",
+      "build": "baseline",
+      "repeat": 0,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "strong_neutral",
+        "threads": 8,
+        "sc": 4,
+        "wind": 8,
+        "delta": -0.3,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.6728187000007892,
+        "pid": 33064,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "assembly_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\strong_neutral_24x20x16_250m_t8\\baseline",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 552,
+            "sha256": "bc0603782d4eb343e3ea596127707378817581f798d7e3712a421afc1020a202"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "8f326e33a0c89d93c93cdce400e985cb2821381a8a48d4f775d7f4da3700a885"
+          }
+        ],
+        "lifetime_seconds": 0.6671989,
+        "process_cpu_seconds": 0.734375,
+        "peak_working_set_bytes": 71397376
+      },
+      "class_counts": {
+        "4": 480
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "f2256f6dd054acc214204889cbf453ddc0d79f8ae3e41628b934a1b404408732",
+        "landuse.asc": "95f4d562a761015e9d2444a2cf2baab37d3a972faf50d4128c717986d4782b92",
+        "meteopgt.all": "679fc8f55eeb7fa2b1f4c463bac3d59249a54761bfc2da1b8474fe15ebd10547",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "e0c18a6a8d48da87994c100bbb324c758d413e95f0fa5135bd0738a692b4d56f"
+      },
+      "water_cells": 240,
+      "interior_water_positive_ol_cells": 198,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -451,
+      "ol_raw_max": 10000,
+      "ust_raw_min": 150,
+      "ust_raw_max": 609,
+      "wind_raw_min": -4,
+      "wind_raw_max": 1849,
+      "normalized_last_progress_seconds": 344.11764705882354,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "19ee763f2d2715947e7d54ece4f61d2ba7fd5cdc4fb6e704b0c5f6d351ccba15"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "9d8e4ff1158627c03d1fbebdd04c73a4b84f6f943aa8d7af2a2ca667f73fc6e7"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "8f326e33a0c89d93c93cdce400e985cb2821381a8a48d4f775d7f4da3700a885"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2790,
+          "sha256": "e38fec31dda81d0e6a461674bc7987e8af166ff47f6d902517c95c8809f2239f"
+        }
+      }
+    },
+    {
+      "name": "strong_neutral_24x20x16_250m_t8",
+      "build": "candidate",
+      "repeat": 0,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "strong_neutral",
+        "threads": 8,
+        "sc": 4,
+        "wind": 8,
+        "delta": -0.3,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.6802095999992162,
+        "pid": 51712,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "assembly_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\strong_neutral_24x20x16_250m_t8\\candidate",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 552,
+            "sha256": "47178c682493f16c4538850160ed52ea4d079ca38b66495381c9bc8a0a801f7d"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "8f326e33a0c89d93c93cdce400e985cb2821381a8a48d4f775d7f4da3700a885"
+          }
+        ],
+        "lifetime_seconds": 0.6744697,
+        "process_cpu_seconds": 0.765625,
+        "peak_working_set_bytes": 71593984
+      },
+      "class_counts": {
+        "4": 480
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "f2256f6dd054acc214204889cbf453ddc0d79f8ae3e41628b934a1b404408732",
+        "landuse.asc": "95f4d562a761015e9d2444a2cf2baab37d3a972faf50d4128c717986d4782b92",
+        "meteopgt.all": "679fc8f55eeb7fa2b1f4c463bac3d59249a54761bfc2da1b8474fe15ebd10547",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "e0c18a6a8d48da87994c100bbb324c758d413e95f0fa5135bd0738a692b4d56f"
+      },
+      "water_cells": 240,
+      "interior_water_positive_ol_cells": 198,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -451,
+      "ol_raw_max": 10000,
+      "ust_raw_min": 150,
+      "ust_raw_max": 609,
+      "wind_raw_min": -4,
+      "wind_raw_max": 1849,
+      "normalized_last_progress_seconds": 344.11764705882354,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "19ee763f2d2715947e7d54ece4f61d2ba7fd5cdc4fb6e704b0c5f6d351ccba15"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "9d8e4ff1158627c03d1fbebdd04c73a4b84f6f943aa8d7af2a2ca667f73fc6e7"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "8f326e33a0c89d93c93cdce400e985cb2821381a8a48d4f775d7f4da3700a885"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2790,
+          "sha256": "e38fec31dda81d0e6a461674bc7987e8af166ff47f6d902517c95c8809f2239f"
+        }
+      }
+    },
+    {
+      "name": "cool_day_40x32x20_500m_t1",
+      "build": "baseline",
+      "repeat": 0,
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "cool_day",
+        "threads": 1,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 2.4223248999987845,
+        "pid": 53660,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "assembly_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_day_40x32x20_500m_t1\\baseline",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 455,
+            "sha256": "041982fc7307c89cc5a6a8f6dfb216d0e85439c876f0778bba703b4846317c93"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 153620,
+            "sha256": "75351db2d1847bd3f49d140484150ac00cc2409b0289e046008bda5012a37451"
+          }
+        ],
+        "lifetime_seconds": 2.4150553,
+        "process_cpu_seconds": 2.546875,
+        "peak_working_set_bytes": 101163008
+      },
+      "class_counts": {
+        "2": 1280
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "21f942f5403c3fbf12a416e6d69bd6b4cf248ec50e6c762be2e217845e0e9ec9",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "eb87f3c04e24c74d753edf4dd4a94fce97999af79d6d46a4c89a737edfbe55a2",
+        "GRAMM.geb": "aa39bbcfe0387bf31df8c84627e17243980fdbf2e378b3d1377f5480f3b9e497",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+      },
+      "water_cells": 640,
+      "interior_water_positive_ol_cells": 570,
+      "interior_water_positive_ol_unstable_cells": 570,
+      "ol_raw_min": -50,
+      "ol_raw_max": 105,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -5,
+      "wind_raw_max": 397,
+      "normalized_last_progress_seconds": 343.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 2580,
+          "sha256": "3a3ba519d2a3d7fc74c200a724dd19ce98662966dffd30f07b6d210ad22e8f7d"
+        },
+        "00001.obl": {
+          "bytes": 2580,
+          "sha256": "3aff0092cbda58e0f7e932967765779b7e1a93be41cf7dd62ac3a279f857e721"
+        },
+        "00001.scl": {
+          "bytes": 2580,
+          "sha256": "82e3dc448eeb70fcaee3eff4c881b9c181f70105da8ae679198b5d529ddef61b"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 153620,
+          "sha256": "75351db2d1847bd3f49d140484150ac00cc2409b0289e046008bda5012a37451"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 2737,
+          "sha256": "6f307795d75433e3b6cb5e68187cc0fa1ce536f76004cfc42e67bf4ff20a60db"
+        },
+        "albeq.dat": {
+          "bytes": 30724,
+          "sha256": "ced978309f9224ef2f79cd68d5880d4bb2d42c65ca25c9cd44143d33c54d4138"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 7214,
+          "sha256": "176c3d0a9eaf071c58c541dab40125d0d73194f690e4145b0aa7b07cf13727c8"
+        }
+      }
+    },
+    {
+      "name": "cool_day_40x32x20_500m_t1",
+      "build": "candidate",
+      "repeat": 0,
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "cool_day",
+        "threads": 1,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 2.374453000000358,
+        "pid": 33772,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "assembly_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_day_40x32x20_500m_t1\\candidate",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 461,
+            "sha256": "9158e8c4190d5f2b70ddadb7a069371f6fe595902bc8f8630024a0a51aa36d5e"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 153620,
+            "sha256": "75351db2d1847bd3f49d140484150ac00cc2409b0289e046008bda5012a37451"
+          }
+        ],
+        "lifetime_seconds": 2.3672544,
+        "process_cpu_seconds": 2.609375,
+        "peak_working_set_bytes": 101441536
+      },
+      "class_counts": {
+        "2": 710,
+        "4": 570
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "21f942f5403c3fbf12a416e6d69bd6b4cf248ec50e6c762be2e217845e0e9ec9",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "eb87f3c04e24c74d753edf4dd4a94fce97999af79d6d46a4c89a737edfbe55a2",
+        "GRAMM.geb": "aa39bbcfe0387bf31df8c84627e17243980fdbf2e378b3d1377f5480f3b9e497",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+      },
+      "water_cells": 640,
+      "interior_water_positive_ol_cells": 570,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -50,
+      "ol_raw_max": 105,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -5,
+      "wind_raw_max": 397,
+      "normalized_last_progress_seconds": 343.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 2580,
+          "sha256": "3a3ba519d2a3d7fc74c200a724dd19ce98662966dffd30f07b6d210ad22e8f7d"
+        },
+        "00001.obl": {
+          "bytes": 2580,
+          "sha256": "3aff0092cbda58e0f7e932967765779b7e1a93be41cf7dd62ac3a279f857e721"
+        },
+        "00001.scl": {
+          "bytes": 2580,
+          "sha256": "40eaa184080029a5308e25887c60aa0a6b80b7bc27060329bf8402a828843d50"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 153620,
+          "sha256": "75351db2d1847bd3f49d140484150ac00cc2409b0289e046008bda5012a37451"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 2737,
+          "sha256": "6f307795d75433e3b6cb5e68187cc0fa1ce536f76004cfc42e67bf4ff20a60db"
+        },
+        "albeq.dat": {
+          "bytes": 30724,
+          "sha256": "ced978309f9224ef2f79cd68d5880d4bb2d42c65ca25c9cd44143d33c54d4138"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 7214,
+          "sha256": "176c3d0a9eaf071c58c541dab40125d0d73194f690e4145b0aa7b07cf13727c8"
+        }
+      }
+    },
+    {
+      "name": "cool_day_40x32x20_500m_t2",
+      "build": "baseline",
+      "repeat": 0,
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "cool_day",
+        "threads": 2,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.9474908000011055,
+        "pid": 21608,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "assembly_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_day_40x32x20_500m_t2\\baseline",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 455,
+            "sha256": "8dfa2dd7052e7ec77df963c2ae3fd54171786601cb12479e0e5e0a245fcfc548"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 153620,
+            "sha256": "e2e21076d25d0b4758405f36e01807e0c380127c1bf40c1a2365f0c24d838c6e"
+          }
+        ],
+        "lifetime_seconds": 1.9402576,
+        "process_cpu_seconds": 2.640625,
+        "peak_working_set_bytes": 103510016
+      },
+      "class_counts": {
+        "2": 1280
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "21f942f5403c3fbf12a416e6d69bd6b4cf248ec50e6c762be2e217845e0e9ec9",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "eb87f3c04e24c74d753edf4dd4a94fce97999af79d6d46a4c89a737edfbe55a2",
+        "GRAMM.geb": "aa39bbcfe0387bf31df8c84627e17243980fdbf2e378b3d1377f5480f3b9e497",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "df4e26a04a444901b95afef44e4a96cfae34690fff2ad2c66389c70079cdff2b"
+      },
+      "water_cells": 640,
+      "interior_water_positive_ol_cells": 570,
+      "interior_water_positive_ol_unstable_cells": 570,
+      "ol_raw_min": -50,
+      "ol_raw_max": 105,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -5,
+      "wind_raw_max": 397,
+      "normalized_last_progress_seconds": 343.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 2580,
+          "sha256": "3a3ba519d2a3d7fc74c200a724dd19ce98662966dffd30f07b6d210ad22e8f7d"
+        },
+        "00001.obl": {
+          "bytes": 2580,
+          "sha256": "3aff0092cbda58e0f7e932967765779b7e1a93be41cf7dd62ac3a279f857e721"
+        },
+        "00001.scl": {
+          "bytes": 2580,
+          "sha256": "82e3dc448eeb70fcaee3eff4c881b9c181f70105da8ae679198b5d529ddef61b"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 153620,
+          "sha256": "e2e21076d25d0b4758405f36e01807e0c380127c1bf40c1a2365f0c24d838c6e"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 2737,
+          "sha256": "6f307795d75433e3b6cb5e68187cc0fa1ce536f76004cfc42e67bf4ff20a60db"
+        },
+        "albeq.dat": {
+          "bytes": 30724,
+          "sha256": "ced978309f9224ef2f79cd68d5880d4bb2d42c65ca25c9cd44143d33c54d4138"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 7214,
+          "sha256": "176c3d0a9eaf071c58c541dab40125d0d73194f690e4145b0aa7b07cf13727c8"
+        }
+      }
+    },
+    {
+      "name": "cool_day_40x32x20_500m_t2",
+      "build": "candidate",
+      "repeat": 0,
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "cool_day",
+        "threads": 2,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.9809762000004412,
+        "pid": 16156,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "assembly_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_day_40x32x20_500m_t2\\candidate",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 461,
+            "sha256": "5117acbc8da865eace2627a3c5a5df793f3a3c7c701d2d8f1533849694e4411e"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 153620,
+            "sha256": "580a35bb2bab5e75b38c6319c05dd65f1e773c0743440ff5226eb0721a9559c2"
+          }
+        ],
+        "lifetime_seconds": 1.9738159,
+        "process_cpu_seconds": 2.765625,
+        "peak_working_set_bytes": 103084032
+      },
+      "class_counts": {
+        "2": 710,
+        "4": 570
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "21f942f5403c3fbf12a416e6d69bd6b4cf248ec50e6c762be2e217845e0e9ec9",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "eb87f3c04e24c74d753edf4dd4a94fce97999af79d6d46a4c89a737edfbe55a2",
+        "GRAMM.geb": "aa39bbcfe0387bf31df8c84627e17243980fdbf2e378b3d1377f5480f3b9e497",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "df4e26a04a444901b95afef44e4a96cfae34690fff2ad2c66389c70079cdff2b"
+      },
+      "water_cells": 640,
+      "interior_water_positive_ol_cells": 570,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -50,
+      "ol_raw_max": 105,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -5,
+      "wind_raw_max": 397,
+      "normalized_last_progress_seconds": 343.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 2580,
+          "sha256": "3a3ba519d2a3d7fc74c200a724dd19ce98662966dffd30f07b6d210ad22e8f7d"
+        },
+        "00001.obl": {
+          "bytes": 2580,
+          "sha256": "3aff0092cbda58e0f7e932967765779b7e1a93be41cf7dd62ac3a279f857e721"
+        },
+        "00001.scl": {
+          "bytes": 2580,
+          "sha256": "40eaa184080029a5308e25887c60aa0a6b80b7bc27060329bf8402a828843d50"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 153620,
+          "sha256": "580a35bb2bab5e75b38c6319c05dd65f1e773c0743440ff5226eb0721a9559c2"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 2737,
+          "sha256": "6f307795d75433e3b6cb5e68187cc0fa1ce536f76004cfc42e67bf4ff20a60db"
+        },
+        "albeq.dat": {
+          "bytes": 30724,
+          "sha256": "ced978309f9224ef2f79cd68d5880d4bb2d42c65ca25c9cd44143d33c54d4138"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 7214,
+          "sha256": "176c3d0a9eaf071c58c541dab40125d0d73194f690e4145b0aa7b07cf13727c8"
+        }
+      }
+    },
+    {
+      "name": "cool_day_40x32x20_500m_t8",
+      "build": "baseline",
+      "repeat": 0,
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "cool_day",
+        "threads": 8,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.8249140999978408,
+        "pid": 52532,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "assembly_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_day_40x32x20_500m_t8\\baseline",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 455,
+            "sha256": "2a85bed729d70b98bccb2e788f859d6ef5a65be9fb6ea7b46720b5f0e6c19d58"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 153620,
+            "sha256": "e2e21076d25d0b4758405f36e01807e0c380127c1bf40c1a2365f0c24d838c6e"
+          }
+        ],
+        "lifetime_seconds": 1.8176572,
+        "process_cpu_seconds": 3.71875,
+        "peak_working_set_bytes": 103550976
+      },
+      "class_counts": {
+        "2": 1280
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "21f942f5403c3fbf12a416e6d69bd6b4cf248ec50e6c762be2e217845e0e9ec9",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "eb87f3c04e24c74d753edf4dd4a94fce97999af79d6d46a4c89a737edfbe55a2",
+        "GRAMM.geb": "aa39bbcfe0387bf31df8c84627e17243980fdbf2e378b3d1377f5480f3b9e497",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "e0c18a6a8d48da87994c100bbb324c758d413e95f0fa5135bd0738a692b4d56f"
+      },
+      "water_cells": 640,
+      "interior_water_positive_ol_cells": 570,
+      "interior_water_positive_ol_unstable_cells": 570,
+      "ol_raw_min": -50,
+      "ol_raw_max": 105,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -5,
+      "wind_raw_max": 397,
+      "normalized_last_progress_seconds": 343.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 2580,
+          "sha256": "3a3ba519d2a3d7fc74c200a724dd19ce98662966dffd30f07b6d210ad22e8f7d"
+        },
+        "00001.obl": {
+          "bytes": 2580,
+          "sha256": "3aff0092cbda58e0f7e932967765779b7e1a93be41cf7dd62ac3a279f857e721"
+        },
+        "00001.scl": {
+          "bytes": 2580,
+          "sha256": "82e3dc448eeb70fcaee3eff4c881b9c181f70105da8ae679198b5d529ddef61b"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 153620,
+          "sha256": "e2e21076d25d0b4758405f36e01807e0c380127c1bf40c1a2365f0c24d838c6e"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 2737,
+          "sha256": "6f307795d75433e3b6cb5e68187cc0fa1ce536f76004cfc42e67bf4ff20a60db"
+        },
+        "albeq.dat": {
+          "bytes": 30724,
+          "sha256": "ced978309f9224ef2f79cd68d5880d4bb2d42c65ca25c9cd44143d33c54d4138"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 7214,
+          "sha256": "176c3d0a9eaf071c58c541dab40125d0d73194f690e4145b0aa7b07cf13727c8"
+        }
+      }
+    },
+    {
+      "name": "cool_day_40x32x20_500m_t8",
+      "build": "candidate",
+      "repeat": 0,
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "cool_day",
+        "threads": 8,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.8444635000014387,
+        "pid": 22336,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "assembly_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_day_40x32x20_500m_t8\\candidate",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 461,
+            "sha256": "2308d5f8dc59c7b7bf4aee7ba7040e99b2a728fefb199b10f653f48df8a66378"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 153620,
+            "sha256": "e2e21076d25d0b4758405f36e01807e0c380127c1bf40c1a2365f0c24d838c6e"
+          }
+        ],
+        "lifetime_seconds": 1.8369146,
+        "process_cpu_seconds": 3.625,
+        "peak_working_set_bytes": 103370752
+      },
+      "class_counts": {
+        "2": 710,
+        "4": 570
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "21f942f5403c3fbf12a416e6d69bd6b4cf248ec50e6c762be2e217845e0e9ec9",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "eb87f3c04e24c74d753edf4dd4a94fce97999af79d6d46a4c89a737edfbe55a2",
+        "GRAMM.geb": "aa39bbcfe0387bf31df8c84627e17243980fdbf2e378b3d1377f5480f3b9e497",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "e0c18a6a8d48da87994c100bbb324c758d413e95f0fa5135bd0738a692b4d56f"
+      },
+      "water_cells": 640,
+      "interior_water_positive_ol_cells": 570,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -50,
+      "ol_raw_max": 105,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -5,
+      "wind_raw_max": 397,
+      "normalized_last_progress_seconds": 343.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 2580,
+          "sha256": "3a3ba519d2a3d7fc74c200a724dd19ce98662966dffd30f07b6d210ad22e8f7d"
+        },
+        "00001.obl": {
+          "bytes": 2580,
+          "sha256": "3aff0092cbda58e0f7e932967765779b7e1a93be41cf7dd62ac3a279f857e721"
+        },
+        "00001.scl": {
+          "bytes": 2580,
+          "sha256": "40eaa184080029a5308e25887c60aa0a6b80b7bc27060329bf8402a828843d50"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 153620,
+          "sha256": "e2e21076d25d0b4758405f36e01807e0c380127c1bf40c1a2365f0c24d838c6e"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 2737,
+          "sha256": "6f307795d75433e3b6cb5e68187cc0fa1ce536f76004cfc42e67bf4ff20a60db"
+        },
+        "albeq.dat": {
+          "bytes": 30724,
+          "sha256": "ced978309f9224ef2f79cd68d5880d4bb2d42c65ca25c9cd44143d33c54d4138"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 7214,
+          "sha256": "176c3d0a9eaf071c58c541dab40125d0d73194f690e4145b0aa7b07cf13727c8"
+        }
+      }
+    },
+    {
+      "name": "warm_day_40x32x20_500m_t8",
+      "build": "baseline",
+      "repeat": 0,
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "warm_day",
+        "threads": 8,
+        "sc": 2,
+        "wind": 2,
+        "delta": 8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.8941034999988915,
+        "pid": 49572,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "assembly_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\warm_day_40x32x20_500m_t8\\baseline",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 456,
+            "sha256": "7b444e594cde2392b5e1aeca181be5ce8028a23778c10adb55ffa6fc2de847ce"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 153620,
+            "sha256": "f3ba53d22e8b15a26503393134ae16b9fc9d1150c651c783a001249984925592"
+          }
+        ],
+        "lifetime_seconds": 1.8864044,
+        "process_cpu_seconds": 3.046875,
+        "peak_working_set_bytes": 103739392
+      },
+      "class_counts": {
+        "2": 1280
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1df4f9192bdf143ba8b69843931664e28626f4163b3c643d63339525322c6f47",
+        "landuse.asc": "21f942f5403c3fbf12a416e6d69bd6b4cf248ec50e6c762be2e217845e0e9ec9",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "eb87f3c04e24c74d753edf4dd4a94fce97999af79d6d46a4c89a737edfbe55a2",
+        "GRAMM.geb": "aa39bbcfe0387bf31df8c84627e17243980fdbf2e378b3d1377f5480f3b9e497",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "e0c18a6a8d48da87994c100bbb324c758d413e95f0fa5135bd0738a692b4d56f"
+      },
+      "water_cells": 640,
+      "interior_water_positive_ol_cells": 0,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -114,
+      "ol_raw_max": 100,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -5,
+      "wind_raw_max": 397,
+      "normalized_last_progress_seconds": 343.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 2580,
+          "sha256": "3a3ba519d2a3d7fc74c200a724dd19ce98662966dffd30f07b6d210ad22e8f7d"
+        },
+        "00001.obl": {
+          "bytes": 2580,
+          "sha256": "1f6363d1e0eda56067d6cd1bcf65f9ea115b0958465346f6a2508115e804a719"
+        },
+        "00001.scl": {
+          "bytes": 2580,
+          "sha256": "82e3dc448eeb70fcaee3eff4c881b9c181f70105da8ae679198b5d529ddef61b"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 153620,
+          "sha256": "f3ba53d22e8b15a26503393134ae16b9fc9d1150c651c783a001249984925592"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 2737,
+          "sha256": "6f307795d75433e3b6cb5e68187cc0fa1ce536f76004cfc42e67bf4ff20a60db"
+        },
+        "albeq.dat": {
+          "bytes": 30724,
+          "sha256": "ced978309f9224ef2f79cd68d5880d4bb2d42c65ca25c9cd44143d33c54d4138"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 7214,
+          "sha256": "176c3d0a9eaf071c58c541dab40125d0d73194f690e4145b0aa7b07cf13727c8"
+        }
+      }
+    },
+    {
+      "name": "warm_day_40x32x20_500m_t8",
+      "build": "candidate",
+      "repeat": 0,
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "warm_day",
+        "threads": 8,
+        "sc": 2,
+        "wind": 2,
+        "delta": 8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.9121465000025637,
+        "pid": 44444,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "assembly_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\warm_day_40x32x20_500m_t8\\candidate",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 456,
+            "sha256": "2d13bec4128d7a5f7461052c9099e75244185e4aaba3d03b289743ccd8deb62f"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 153620,
+            "sha256": "cbefbc5f63639a608a13eb0e828d0a8845a8ba8f7cb294351cf036cdfc575e06"
+          }
+        ],
+        "lifetime_seconds": 1.9047464,
+        "process_cpu_seconds": 3.5625,
+        "peak_working_set_bytes": 103538688
+      },
+      "class_counts": {
+        "2": 1280
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1df4f9192bdf143ba8b69843931664e28626f4163b3c643d63339525322c6f47",
+        "landuse.asc": "21f942f5403c3fbf12a416e6d69bd6b4cf248ec50e6c762be2e217845e0e9ec9",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "eb87f3c04e24c74d753edf4dd4a94fce97999af79d6d46a4c89a737edfbe55a2",
+        "GRAMM.geb": "aa39bbcfe0387bf31df8c84627e17243980fdbf2e378b3d1377f5480f3b9e497",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "e0c18a6a8d48da87994c100bbb324c758d413e95f0fa5135bd0738a692b4d56f"
+      },
+      "water_cells": 640,
+      "interior_water_positive_ol_cells": 0,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -114,
+      "ol_raw_max": 100,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -5,
+      "wind_raw_max": 397,
+      "normalized_last_progress_seconds": 343.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 2580,
+          "sha256": "3a3ba519d2a3d7fc74c200a724dd19ce98662966dffd30f07b6d210ad22e8f7d"
+        },
+        "00001.obl": {
+          "bytes": 2580,
+          "sha256": "1f6363d1e0eda56067d6cd1bcf65f9ea115b0958465346f6a2508115e804a719"
+        },
+        "00001.scl": {
+          "bytes": 2580,
+          "sha256": "82e3dc448eeb70fcaee3eff4c881b9c181f70105da8ae679198b5d529ddef61b"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 153620,
+          "sha256": "cbefbc5f63639a608a13eb0e828d0a8845a8ba8f7cb294351cf036cdfc575e06"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 2737,
+          "sha256": "6f307795d75433e3b6cb5e68187cc0fa1ce536f76004cfc42e67bf4ff20a60db"
+        },
+        "albeq.dat": {
+          "bytes": 30724,
+          "sha256": "ced978309f9224ef2f79cd68d5880d4bb2d42c65ca25c9cd44143d33c54d4138"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 7214,
+          "sha256": "176c3d0a9eaf071c58c541dab40125d0d73194f690e4145b0aa7b07cf13727c8"
+        }
+      }
+    },
+    {
+      "name": "cool_night_40x32x20_500m_t1",
+      "build": "baseline",
+      "repeat": 0,
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "cool_night",
+        "threads": 1,
+        "sc": 6,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 2.9519111000008706,
+        "pid": 26664,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "assembly_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_night_40x32x20_500m_t1\\baseline",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 480,
+            "sha256": "9599fcb2df56dcdb356119a23080b909cd64cefd04d390a1fdb0c527d2029867"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 153620,
+            "sha256": "4a4f6a61d61d55001e6f24d7b7dd955d4643eddd82fef923e9c26f4fcc520b5d"
+          }
+        ],
+        "lifetime_seconds": 2.9445606,
+        "process_cpu_seconds": 3.390625,
+        "peak_working_set_bytes": 102203392
+      },
+      "class_counts": {
+        "6": 1280
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "131ffd040bf7bfdbaa65e98151f168133df6ada1ed2728ec2c7458540ad5a02d",
+        "landuse.asc": "21f942f5403c3fbf12a416e6d69bd6b4cf248ec50e6c762be2e217845e0e9ec9",
+        "meteopgt.all": "39109127963d41c9bb601e481794bd2889c094da5c1cb09112e0bd60dab7b508",
+        "ggeom.asc": "eb87f3c04e24c74d753edf4dd4a94fce97999af79d6d46a4c89a737edfbe55a2",
+        "GRAMM.geb": "aa39bbcfe0387bf31df8c84627e17243980fdbf2e378b3d1377f5480f3b9e497",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+      },
+      "water_cells": 640,
+      "interior_water_positive_ol_cells": 570,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": 100,
+      "ol_raw_max": 195,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -4,
+      "wind_raw_max": 1057,
+      "normalized_last_progress_seconds": 339.0,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 2580,
+          "sha256": "3a3ba519d2a3d7fc74c200a724dd19ce98662966dffd30f07b6d210ad22e8f7d"
+        },
+        "00001.obl": {
+          "bytes": 2580,
+          "sha256": "714866d1d774250f62f9bbee2716656d06a2c0fe5309de3efdaeb03159ae19ac"
+        },
+        "00001.scl": {
+          "bytes": 2580,
+          "sha256": "e062d593fcb3f962fae47d20fb5d026ccf8d734b7737c6da36a5b5753b1cc085"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 153620,
+          "sha256": "4a4f6a61d61d55001e6f24d7b7dd955d4643eddd82fef923e9c26f4fcc520b5d"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 2737,
+          "sha256": "6f307795d75433e3b6cb5e68187cc0fa1ce536f76004cfc42e67bf4ff20a60db"
+        },
+        "albeq.dat": {
+          "bytes": 30724,
+          "sha256": "ced978309f9224ef2f79cd68d5880d4bb2d42c65ca25c9cd44143d33c54d4138"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 7214,
+          "sha256": "176c3d0a9eaf071c58c541dab40125d0d73194f690e4145b0aa7b07cf13727c8"
+        }
+      }
+    },
+    {
+      "name": "cool_night_40x32x20_500m_t1",
+      "build": "candidate",
+      "repeat": 0,
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "cool_night",
+        "threads": 1,
+        "sc": 6,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 2.952293099999224,
+        "pid": 59256,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "assembly_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_night_40x32x20_500m_t1\\candidate",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 480,
+            "sha256": "fda8fa2c300e7a2f3e1411c74c1da0505f1e22721d3b31c97693da31ad52e1db"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 153620,
+            "sha256": "4a4f6a61d61d55001e6f24d7b7dd955d4643eddd82fef923e9c26f4fcc520b5d"
+          }
+        ],
+        "lifetime_seconds": 2.9447232,
+        "process_cpu_seconds": 3.328125,
+        "peak_working_set_bytes": 103469056
+      },
+      "class_counts": {
+        "6": 1280
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "131ffd040bf7bfdbaa65e98151f168133df6ada1ed2728ec2c7458540ad5a02d",
+        "landuse.asc": "21f942f5403c3fbf12a416e6d69bd6b4cf248ec50e6c762be2e217845e0e9ec9",
+        "meteopgt.all": "39109127963d41c9bb601e481794bd2889c094da5c1cb09112e0bd60dab7b508",
+        "ggeom.asc": "eb87f3c04e24c74d753edf4dd4a94fce97999af79d6d46a4c89a737edfbe55a2",
+        "GRAMM.geb": "aa39bbcfe0387bf31df8c84627e17243980fdbf2e378b3d1377f5480f3b9e497",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+      },
+      "water_cells": 640,
+      "interior_water_positive_ol_cells": 570,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": 100,
+      "ol_raw_max": 195,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -4,
+      "wind_raw_max": 1057,
+      "normalized_last_progress_seconds": 339.0,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 2580,
+          "sha256": "3a3ba519d2a3d7fc74c200a724dd19ce98662966dffd30f07b6d210ad22e8f7d"
+        },
+        "00001.obl": {
+          "bytes": 2580,
+          "sha256": "714866d1d774250f62f9bbee2716656d06a2c0fe5309de3efdaeb03159ae19ac"
+        },
+        "00001.scl": {
+          "bytes": 2580,
+          "sha256": "e062d593fcb3f962fae47d20fb5d026ccf8d734b7737c6da36a5b5753b1cc085"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 153620,
+          "sha256": "4a4f6a61d61d55001e6f24d7b7dd955d4643eddd82fef923e9c26f4fcc520b5d"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 2737,
+          "sha256": "6f307795d75433e3b6cb5e68187cc0fa1ce536f76004cfc42e67bf4ff20a60db"
+        },
+        "albeq.dat": {
+          "bytes": 30724,
+          "sha256": "ced978309f9224ef2f79cd68d5880d4bb2d42c65ca25c9cd44143d33c54d4138"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 7214,
+          "sha256": "176c3d0a9eaf071c58c541dab40125d0d73194f690e4145b0aa7b07cf13727c8"
+        }
+      }
+    },
+    {
+      "name": "land_day_40x32x20_500m_t2",
+      "build": "baseline",
+      "repeat": 0,
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "land_day",
+        "threads": 2,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": false
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 2.033918500001164,
+        "pid": 3304,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "assembly_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\land_day_40x32x20_500m_t2\\baseline",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 453,
+            "sha256": "7163a346b99e8141a3a6924a4aad24edfa4865d5ea55d7606b0a5c9507a13598"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 153620,
+            "sha256": "3b47ce7bdabc1691085912b5a4acd3095c805e1653ba32d4946776db58974f7e"
+          }
+        ],
+        "lifetime_seconds": 2.0251595,
+        "process_cpu_seconds": 3.125,
+        "peak_working_set_bytes": 103124992
+      },
+      "class_counts": {
+        "2": 1280
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "4b6c0f1a4bb21d8b4fc3672a826ec8a1e585b5d04fd36d8d067deff944a3af4e",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "eb87f3c04e24c74d753edf4dd4a94fce97999af79d6d46a4c89a737edfbe55a2",
+        "GRAMM.geb": "aa39bbcfe0387bf31df8c84627e17243980fdbf2e378b3d1377f5480f3b9e497",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "df4e26a04a444901b95afef44e4a96cfae34690fff2ad2c66389c70079cdff2b"
+      },
+      "water_cells": 0,
+      "interior_water_positive_ol_cells": 0,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -50,
+      "ol_raw_max": 100,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -4,
+      "wind_raw_max": 397,
+      "normalized_last_progress_seconds": 348.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 2580,
+          "sha256": "3a3ba519d2a3d7fc74c200a724dd19ce98662966dffd30f07b6d210ad22e8f7d"
+        },
+        "00001.obl": {
+          "bytes": 2580,
+          "sha256": "8e0f5af30bce88239f2448c198d36c8e616a50e9810d7fff3c30288df6243294"
+        },
+        "00001.scl": {
+          "bytes": 2580,
+          "sha256": "82e3dc448eeb70fcaee3eff4c881b9c181f70105da8ae679198b5d529ddef61b"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 153620,
+          "sha256": "3b47ce7bdabc1691085912b5a4acd3095c805e1653ba32d4946776db58974f7e"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 2737,
+          "sha256": "6f307795d75433e3b6cb5e68187cc0fa1ce536f76004cfc42e67bf4ff20a60db"
+        },
+        "albeq.dat": {
+          "bytes": 30724,
+          "sha256": "ced978309f9224ef2f79cd68d5880d4bb2d42c65ca25c9cd44143d33c54d4138"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 5294,
+          "sha256": "d018141684b5f4ff9bb34b06c64295b2a1cc77e2ed7a96b1c1c7bafc483dfa81"
+        }
+      }
+    },
+    {
+      "name": "land_day_40x32x20_500m_t2",
+      "build": "candidate",
+      "repeat": 0,
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "land_day",
+        "threads": 2,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": false
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.9951546999982384,
+        "pid": 22732,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "assembly_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\land_day_40x32x20_500m_t2\\candidate",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 453,
+            "sha256": "36f9b4915d98fa85a5e81495d377f4aa46251d9969161483193980a675fe5eff"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 153620,
+            "sha256": "f55269261780d1424dad8605e07649539a362521c6e2d5b2fa60575530d33021"
+          }
+        ],
+        "lifetime_seconds": 1.9874319,
+        "process_cpu_seconds": 2.71875,
+        "peak_working_set_bytes": 102518784
+      },
+      "class_counts": {
+        "2": 1280
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "4b6c0f1a4bb21d8b4fc3672a826ec8a1e585b5d04fd36d8d067deff944a3af4e",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "eb87f3c04e24c74d753edf4dd4a94fce97999af79d6d46a4c89a737edfbe55a2",
+        "GRAMM.geb": "aa39bbcfe0387bf31df8c84627e17243980fdbf2e378b3d1377f5480f3b9e497",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "df4e26a04a444901b95afef44e4a96cfae34690fff2ad2c66389c70079cdff2b"
+      },
+      "water_cells": 0,
+      "interior_water_positive_ol_cells": 0,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -50,
+      "ol_raw_max": 100,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -4,
+      "wind_raw_max": 397,
+      "normalized_last_progress_seconds": 348.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 2580,
+          "sha256": "3a3ba519d2a3d7fc74c200a724dd19ce98662966dffd30f07b6d210ad22e8f7d"
+        },
+        "00001.obl": {
+          "bytes": 2580,
+          "sha256": "8e0f5af30bce88239f2448c198d36c8e616a50e9810d7fff3c30288df6243294"
+        },
+        "00001.scl": {
+          "bytes": 2580,
+          "sha256": "82e3dc448eeb70fcaee3eff4c881b9c181f70105da8ae679198b5d529ddef61b"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 153620,
+          "sha256": "f55269261780d1424dad8605e07649539a362521c6e2d5b2fa60575530d33021"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 2737,
+          "sha256": "6f307795d75433e3b6cb5e68187cc0fa1ce536f76004cfc42e67bf4ff20a60db"
+        },
+        "albeq.dat": {
+          "bytes": 30724,
+          "sha256": "ced978309f9224ef2f79cd68d5880d4bb2d42c65ca25c9cd44143d33c54d4138"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 5294,
+          "sha256": "d018141684b5f4ff9bb34b06c64295b2a1cc77e2ed7a96b1c1c7bafc483dfa81"
+        }
+      }
+    },
+    {
+      "name": "strong_neutral_40x32x20_500m_t8",
+      "build": "baseline",
+      "repeat": 0,
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "strong_neutral",
+        "threads": 8,
+        "sc": 4,
+        "wind": 8,
+        "delta": -0.3,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.9718167000028188,
+        "pid": 54144,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "assembly_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\strong_neutral_40x32x20_500m_t8\\baseline",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 564,
+            "sha256": "fc9f15873e6b403a84e9f9f677f4180dea637a3ca3bc599f1623f899d3e2d3d1"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 153620,
+            "sha256": "533f8513029dd8feaed7a251c08b9d6f977af3d1523461e4a60c8f175b368311"
+          }
+        ],
+        "lifetime_seconds": 0.9649192,
+        "process_cpu_seconds": 1.4375,
+        "peak_working_set_bytes": 93421568
+      },
+      "class_counts": {
+        "4": 1280
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "f2256f6dd054acc214204889cbf453ddc0d79f8ae3e41628b934a1b404408732",
+        "landuse.asc": "21f942f5403c3fbf12a416e6d69bd6b4cf248ec50e6c762be2e217845e0e9ec9",
+        "meteopgt.all": "679fc8f55eeb7fa2b1f4c463bac3d59249a54761bfc2da1b8474fe15ebd10547",
+        "ggeom.asc": "eb87f3c04e24c74d753edf4dd4a94fce97999af79d6d46a4c89a737edfbe55a2",
+        "GRAMM.geb": "aa39bbcfe0387bf31df8c84627e17243980fdbf2e378b3d1377f5480f3b9e497",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "e0c18a6a8d48da87994c100bbb324c758d413e95f0fa5135bd0738a692b4d56f"
+      },
+      "water_cells": 640,
+      "interior_water_positive_ol_cells": 570,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -435,
+      "ol_raw_max": 10000,
+      "ust_raw_min": 150,
+      "ust_raw_max": 596,
+      "wind_raw_min": -3,
+      "wind_raw_max": 1817,
+      "normalized_last_progress_seconds": 344.11764705882354,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 2580,
+          "sha256": "055850fb5d2dac498c001d4f4d5008c425ce43cdc1ab5a7a5c03782c62ebe4f3"
+        },
+        "00001.obl": {
+          "bytes": 2580,
+          "sha256": "1f20f200a2a1b7bd2b790aa56526a26e4ff1016db639ea26702b2711d3a87ae4"
+        },
+        "00001.scl": {
+          "bytes": 2580,
+          "sha256": "b1a689bc0ba95cf4443fc2b6a127a53c2830969753f40ff10d30defa4f42c7f4"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 153620,
+          "sha256": "533f8513029dd8feaed7a251c08b9d6f977af3d1523461e4a60c8f175b368311"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 2737,
+          "sha256": "6f307795d75433e3b6cb5e68187cc0fa1ce536f76004cfc42e67bf4ff20a60db"
+        },
+        "albeq.dat": {
+          "bytes": 30724,
+          "sha256": "ced978309f9224ef2f79cd68d5880d4bb2d42c65ca25c9cd44143d33c54d4138"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 7214,
+          "sha256": "176c3d0a9eaf071c58c541dab40125d0d73194f690e4145b0aa7b07cf13727c8"
+        }
+      }
+    },
+    {
+      "name": "strong_neutral_40x32x20_500m_t8",
+      "build": "candidate",
+      "repeat": 0,
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "strong_neutral",
+        "threads": 8,
+        "sc": 4,
+        "wind": 8,
+        "delta": -0.3,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.9678576000005705,
+        "pid": 52908,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "assembly_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\strong_neutral_40x32x20_500m_t8\\candidate",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 564,
+            "sha256": "0e16d181825da90c2e2c0225c1d38e41a759786877f0d82b52e003bcea00f64e"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 153620,
+            "sha256": "533f8513029dd8feaed7a251c08b9d6f977af3d1523461e4a60c8f175b368311"
+          }
+        ],
+        "lifetime_seconds": 0.9606074,
+        "process_cpu_seconds": 1.3125,
+        "peak_working_set_bytes": 93159424
+      },
+      "class_counts": {
+        "4": 1280
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "f2256f6dd054acc214204889cbf453ddc0d79f8ae3e41628b934a1b404408732",
+        "landuse.asc": "21f942f5403c3fbf12a416e6d69bd6b4cf248ec50e6c762be2e217845e0e9ec9",
+        "meteopgt.all": "679fc8f55eeb7fa2b1f4c463bac3d59249a54761bfc2da1b8474fe15ebd10547",
+        "ggeom.asc": "eb87f3c04e24c74d753edf4dd4a94fce97999af79d6d46a4c89a737edfbe55a2",
+        "GRAMM.geb": "aa39bbcfe0387bf31df8c84627e17243980fdbf2e378b3d1377f5480f3b9e497",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "e0c18a6a8d48da87994c100bbb324c758d413e95f0fa5135bd0738a692b4d56f"
+      },
+      "water_cells": 640,
+      "interior_water_positive_ol_cells": 570,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -435,
+      "ol_raw_max": 10000,
+      "ust_raw_min": 150,
+      "ust_raw_max": 596,
+      "wind_raw_min": -3,
+      "wind_raw_max": 1817,
+      "normalized_last_progress_seconds": 344.11764705882354,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 2580,
+          "sha256": "055850fb5d2dac498c001d4f4d5008c425ce43cdc1ab5a7a5c03782c62ebe4f3"
+        },
+        "00001.obl": {
+          "bytes": 2580,
+          "sha256": "1f20f200a2a1b7bd2b790aa56526a26e4ff1016db639ea26702b2711d3a87ae4"
+        },
+        "00001.scl": {
+          "bytes": 2580,
+          "sha256": "b1a689bc0ba95cf4443fc2b6a127a53c2830969753f40ff10d30defa4f42c7f4"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 153620,
+          "sha256": "533f8513029dd8feaed7a251c08b9d6f977af3d1523461e4a60c8f175b368311"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 2737,
+          "sha256": "6f307795d75433e3b6cb5e68187cc0fa1ce536f76004cfc42e67bf4ff20a60db"
+        },
+        "albeq.dat": {
+          "bytes": 30724,
+          "sha256": "ced978309f9224ef2f79cd68d5880d4bb2d42c65ca25c9cd44143d33c54d4138"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 7214,
+          "sha256": "176c3d0a9eaf071c58c541dab40125d0d73194f690e4145b0aa7b07cf13727c8"
+        }
+      }
+    },
+    {
+      "name": "cool_day_24x20x16_250m_t1",
+      "build": "baseline",
+      "repeat": 1,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "cool_day",
+        "threads": 1,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.0806818999990355,
+        "pid": 50020,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "assembly_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_day_24x20x16_250m_t1\\baseline_repeat1",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 412,
+            "sha256": "26a70386ac93f0d0e865759e2b9ae67cfdafbdefc12c660d23a085bee5fdd8f7"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+          }
+        ],
+        "lifetime_seconds": 1.0747805,
+        "process_cpu_seconds": 1.09375,
+        "peak_working_set_bytes": 78401536
+      },
+      "class_counts": {
+        "2": 480
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "95f4d562a761015e9d2444a2cf2baab37d3a972faf50d4128c717986d4782b92",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+      },
+      "water_cells": 240,
+      "interior_water_positive_ol_cells": 198,
+      "interior_water_positive_ol_unstable_cells": 198,
+      "ol_raw_min": -50,
+      "ol_raw_max": 105,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -9,
+      "wind_raw_max": 403,
+      "normalized_last_progress_seconds": 348.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "122f322df0c5e2f7e063bdd09457700d1ecb1c26530d2938c5ee42ac9d37f7eb"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "dd965e4a4d1f461de16db94580c93dd5d70f63e063384a703dc68155b5ec528a"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "45fe7fa26e5fe6aabb828d56115227d6f0fe93cde25b7389db89ea77791606db"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2790,
+          "sha256": "e38fec31dda81d0e6a461674bc7987e8af166ff47f6d902517c95c8809f2239f"
+        }
+      }
+    },
+    {
+      "name": "cool_day_24x20x16_250m_t1",
+      "build": "candidate",
+      "repeat": 1,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "cool_day",
+        "threads": 1,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.0844434999999066,
+        "pid": 51416,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "assembly_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_day_24x20x16_250m_t1\\candidate_repeat1",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 417,
+            "sha256": "25fbe5b9cf2727426137d243a3e13fb49e24057a2eff5ee5543b58e8cfbfcdcd"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+          }
+        ],
+        "lifetime_seconds": 1.0784444,
+        "process_cpu_seconds": 1.265625,
+        "peak_working_set_bytes": 78766080
+      },
+      "class_counts": {
+        "2": 282,
+        "4": 198
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "95f4d562a761015e9d2444a2cf2baab37d3a972faf50d4128c717986d4782b92",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+      },
+      "water_cells": 240,
+      "interior_water_positive_ol_cells": 198,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -50,
+      "ol_raw_max": 105,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -9,
+      "wind_raw_max": 403,
+      "normalized_last_progress_seconds": 348.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "122f322df0c5e2f7e063bdd09457700d1ecb1c26530d2938c5ee42ac9d37f7eb"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "dd965e4a4d1f461de16db94580c93dd5d70f63e063384a703dc68155b5ec528a"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "6a3e5b5163663a1a2c940f9b0608d632d4ab9d645a38ea45f3557ff53d77d2d7"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2790,
+          "sha256": "e38fec31dda81d0e6a461674bc7987e8af166ff47f6d902517c95c8809f2239f"
+        }
+      }
+    },
+    {
+      "name": "cool_day_24x20x16_250m_t8",
+      "build": "baseline",
+      "repeat": 1,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "cool_day",
+        "threads": 8,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.0366788999999699,
+        "pid": 45328,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "assembly_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_day_24x20x16_250m_t8\\baseline_repeat1",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 412,
+            "sha256": "69c775b489abf5be9dd80d48f49d554f03ab8cd7a60a61f290d07d2fbb8e61a8"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+          }
+        ],
+        "lifetime_seconds": 1.0302329,
+        "process_cpu_seconds": 1.34375,
+        "peak_working_set_bytes": 82141184
+      },
+      "class_counts": {
+        "2": 480
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "95f4d562a761015e9d2444a2cf2baab37d3a972faf50d4128c717986d4782b92",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "e0c18a6a8d48da87994c100bbb324c758d413e95f0fa5135bd0738a692b4d56f"
+      },
+      "water_cells": 240,
+      "interior_water_positive_ol_cells": 198,
+      "interior_water_positive_ol_unstable_cells": 198,
+      "ol_raw_min": -50,
+      "ol_raw_max": 105,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -9,
+      "wind_raw_max": 403,
+      "normalized_last_progress_seconds": 348.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "122f322df0c5e2f7e063bdd09457700d1ecb1c26530d2938c5ee42ac9d37f7eb"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "dd965e4a4d1f461de16db94580c93dd5d70f63e063384a703dc68155b5ec528a"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "45fe7fa26e5fe6aabb828d56115227d6f0fe93cde25b7389db89ea77791606db"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2790,
+          "sha256": "e38fec31dda81d0e6a461674bc7987e8af166ff47f6d902517c95c8809f2239f"
+        }
+      }
+    },
+    {
+      "name": "cool_day_24x20x16_250m_t8",
+      "build": "candidate",
+      "repeat": 1,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "cool_day",
+        "threads": 8,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.005799599999591,
+        "pid": 57276,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "assembly_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\cool_day_24x20x16_250m_t8\\candidate_repeat1",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 417,
+            "sha256": "98e38b3f762ea2611a0a3a96d324605a1ed1f7fe500f3a88e11413c8c5e70011"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+          }
+        ],
+        "lifetime_seconds": 0.9994422,
+        "process_cpu_seconds": 1.4375,
+        "peak_working_set_bytes": 81985536
+      },
+      "class_counts": {
+        "2": 282,
+        "4": 198
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "95f4d562a761015e9d2444a2cf2baab37d3a972faf50d4128c717986d4782b92",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "e0c18a6a8d48da87994c100bbb324c758d413e95f0fa5135bd0738a692b4d56f"
+      },
+      "water_cells": 240,
+      "interior_water_positive_ol_cells": 198,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -50,
+      "ol_raw_max": 105,
+      "ust_raw_min": 150,
+      "ust_raw_max": 150,
+      "wind_raw_min": -9,
+      "wind_raw_max": 403,
+      "normalized_last_progress_seconds": 348.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "122f322df0c5e2f7e063bdd09457700d1ecb1c26530d2938c5ee42ac9d37f7eb"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "dd965e4a4d1f461de16db94580c93dd5d70f63e063384a703dc68155b5ec528a"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "6a3e5b5163663a1a2c940f9b0608d632d4ab9d645a38ea45f3557ff53d77d2d7"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "20a02a479bd0b02fd64d3a605cbe84bab119ce8543559f41e48fcace090ffc3d"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2790,
+          "sha256": "e38fec31dda81d0e6a461674bc7987e8af166ff47f6d902517c95c8809f2239f"
+        }
+      }
+    },
+    {
+      "name": "land_day_24x20x16_250m_t2",
+      "build": "baseline",
+      "repeat": 1,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "land_day",
+        "threads": 2,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": false
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.0657046000014816,
+        "pid": 49752,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+        "assembly_sha256": "fd8e4575a8528993c25498a5f18ec526584d187af5127729c821e177829d6330",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\land_day_24x20x16_250m_t2\\baseline_repeat1",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\baseline\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 420,
+            "sha256": "bdf7d6d2362c219396550db04a023b3cc1e05311367751907cc4d69e9c99348b"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "7ddcc0e9f9ddc64529726b2490a5f6945da04e29dec224b2a13ef51b27a0dd94"
+          }
+        ],
+        "lifetime_seconds": 1.0597377,
+        "process_cpu_seconds": 1.25,
+        "peak_working_set_bytes": 78647296
+      },
+      "class_counts": {
+        "2": 480
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "3c7d7d6646c719b6209e89bc1220f16a774922cc481234f1259a9af6597e1536",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "df4e26a04a444901b95afef44e4a96cfae34690fff2ad2c66389c70079cdff2b"
+      },
+      "water_cells": 0,
+      "interior_water_positive_ol_cells": 0,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -50,
+      "ol_raw_max": 100,
+      "ust_raw_min": 150,
+      "ust_raw_max": 157,
+      "wind_raw_min": -8,
+      "wind_raw_max": 403,
+      "normalized_last_progress_seconds": 353.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "52b29979a72cd0a85826610e69d4dd4b34bb08fc7d7eb1fe2cfc09eb8f0a8d2e"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "b280b2b3a52d1c38f6f1b797fc6ad3c49705375c1bff865ccb1969c5e13bb1e4"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "45fe7fa26e5fe6aabb828d56115227d6f0fe93cde25b7389db89ea77791606db"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "7ddcc0e9f9ddc64529726b2490a5f6945da04e29dec224b2a13ef51b27a0dd94"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2070,
+          "sha256": "e807180d5026471244ad57dcdfdb9e9da3a4488b0aa55ea04141c96b611bd56c"
+        }
+      }
+    },
+    {
+      "name": "land_day_24x20x16_250m_t2",
+      "build": "candidate",
+      "repeat": 1,
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "land_day",
+        "threads": 2,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": false
+      },
+      "run": {
+        "status": "pass",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.05441289999726,
+        "pid": 53600,
+        "assembly": "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+        "assembly_sha256": "a7005f9f5dbdffc9a769807d2ed299769020a02f59d87b5bcafee1fd1f1efe03",
+        "case": "{WORK_ROOT}\\work\\reproduce_clean_01\\runs\\native\\land_day_24x20x16_250m_t2\\candidate_repeat1",
+        "command": [
+          "C:\\Program Files\\dotnet\\dotnet.exe",
+          "{WORK_ROOT}\\work\\reproduce_clean_01\\build\\candidate\\GRAMM.dll",
+          "1",
+          "1"
+        ],
+        "hidden_console": true,
+        "redirected_standard_handles": false,
+        "outputs": [
+          {
+            "name": "00001.scl",
+            "bytes": 420,
+            "sha256": "bdf7d6d2362c219396550db04a023b3cc1e05311367751907cc4d69e9c99348b"
+          },
+          {
+            "name": "00001.wnd",
+            "bytes": 46100,
+            "sha256": "7ddcc0e9f9ddc64529726b2490a5f6945da04e29dec224b2a13ef51b27a0dd94"
+          }
+        ],
+        "lifetime_seconds": 1.0473025,
+        "process_cpu_seconds": 1.34375,
+        "peak_working_set_bytes": 78827520
+      },
+      "class_counts": {
+        "2": 480
+      },
+      "input_sha256": {
+        "IIN.dat": "4379f2bc01cdcdbe2e91a6ea39a494113368209f57e793ef0205cd79343e5426",
+        "CustomInit.txt": "1700680f4bac0b15430a3ba2fc343e5ae14a6653eb4fe47d36c39a49ebccb56f",
+        "landuse.asc": "3c7d7d6646c719b6209e89bc1220f16a774922cc481234f1259a9af6597e1536",
+        "meteopgt.all": "f8cff3af49cb4b2599fddba9b2fb14e5c73c6d10b289968199d84028eaf6988c",
+        "ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+        "GRAMM.geb": "7411ebffbafbcd294e9b95523b799f69a76323d9630ecf7d0c1cb07f3b3bf986",
+        "GRAMMin.dat": "b36b33c309c554e98914181df6ef85eb625cec9a73fa1d7762ce6790fa0496fc",
+        "Max_Proc.txt": "df4e26a04a444901b95afef44e4a96cfae34690fff2ad2c66389c70079cdff2b"
+      },
+      "water_cells": 0,
+      "interior_water_positive_ol_cells": 0,
+      "interior_water_positive_ol_unstable_cells": 0,
+      "ol_raw_min": -50,
+      "ol_raw_max": 100,
+      "ust_raw_min": 150,
+      "ust_raw_max": 157,
+      "wind_raw_min": -8,
+      "wind_raw_max": 403,
+      "normalized_last_progress_seconds": 353.5,
+      "expected_input_duration_seconds": 360,
+      "steady_state_grid_valid": true,
+      "tsf_available": false,
+      "log_valid": true,
+      "problem_report_empty": true,
+      "zip_members": {
+        "00001.ust": {
+          "bytes": 980,
+          "sha256": "52b29979a72cd0a85826610e69d4dd4b34bb08fc7d7eb1fe2cfc09eb8f0a8d2e"
+        },
+        "00001.obl": {
+          "bytes": 980,
+          "sha256": "b280b2b3a52d1c38f6f1b797fc6ad3c49705375c1bff865ccb1969c5e13bb1e4"
+        },
+        "00001.scl": {
+          "bytes": 980,
+          "sha256": "45fe7fa26e5fe6aabb828d56115227d6f0fe93cde25b7389db89ea77791606db"
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "bytes": 46100,
+          "sha256": "7ddcc0e9f9ddc64529726b2490a5f6945da04e29dec224b2a13ef51b27a0dd94"
+        },
+        "00001_steady_state.txt": {
+          "bytes": 1113,
+          "sha256": "a4dae3c7972db955fe987952f17cf575b2a4220af81cac16b2c7c419bb879769"
+        },
+        "albeq.dat": {
+          "bytes": 11524,
+          "sha256": "024f8413047564738f2a826a07e4d1521dc7b8a0a1bbdb06f5caff54f7cad449"
+        },
+        "RoughnessUsed.txt": {
+          "bytes": 2070,
+          "sha256": "e807180d5026471244ad57dcdfdb9e9da3a4488b0aa55ea04141c96b611bd56c"
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "name": "cool_day_24x20x16_250m_t1",
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "cool_day",
+        "threads": 1,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "comparison_mode": "baseline_to_candidate_patch",
+      "baseline_formula_expected_mismatches": 0,
+      "changed_class_cells": 198,
+      "changed_class_fraction": 0.4125,
+      "baseline_unstable_positive_ol_water_cells": 198,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 198,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 198,
+      "class_transitions": [
+        {
+          "from": 2,
+          "to": 4,
+          "count": 198
+        }
+      ],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": false,
+          "different_cells": 198,
+          "max_abs_raw_delta": 2
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": true,
+          "bytes_a": 46100,
+          "bytes_b": 46100,
+          "different_values": 0,
+          "max_abs_raw_delta": 0,
+          "rms_raw_delta": 0.0,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 1113,
+          "bytes_b": 1113
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 2790,
+          "bytes_b": 2790
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 11524,
+          "bytes_b": 11524
+        }
+      }
+    },
+    {
+      "name": "cool_day_24x20x16_250m_t2",
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "cool_day",
+        "threads": 2,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "comparison_mode": "baseline_to_candidate_patch",
+      "baseline_formula_expected_mismatches": 0,
+      "changed_class_cells": 198,
+      "changed_class_fraction": 0.4125,
+      "baseline_unstable_positive_ol_water_cells": 198,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 198,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 198,
+      "class_transitions": [
+        {
+          "from": 2,
+          "to": 4,
+          "count": 198
+        }
+      ],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": false,
+          "different_cells": 198,
+          "max_abs_raw_delta": 2
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": true,
+          "bytes_a": 46100,
+          "bytes_b": 46100,
+          "different_values": 0,
+          "max_abs_raw_delta": 0,
+          "rms_raw_delta": 0.0,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 1113,
+          "bytes_b": 1113
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 2790,
+          "bytes_b": 2790
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 11524,
+          "bytes_b": 11524
+        }
+      }
+    },
+    {
+      "name": "cool_day_24x20x16_250m_t8",
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "cool_day",
+        "threads": 8,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "comparison_mode": "baseline_to_candidate_patch",
+      "baseline_formula_expected_mismatches": 0,
+      "changed_class_cells": 198,
+      "changed_class_fraction": 0.4125,
+      "baseline_unstable_positive_ol_water_cells": 198,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 198,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 198,
+      "class_transitions": [
+        {
+          "from": 2,
+          "to": 4,
+          "count": 198
+        }
+      ],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": false,
+          "different_cells": 198,
+          "max_abs_raw_delta": 2
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": true,
+          "bytes_a": 46100,
+          "bytes_b": 46100,
+          "different_values": 0,
+          "max_abs_raw_delta": 0,
+          "rms_raw_delta": 0.0,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 1113,
+          "bytes_b": 1113
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 2790,
+          "bytes_b": 2790
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 11524,
+          "bytes_b": 11524
+        }
+      }
+    },
+    {
+      "name": "warm_day_24x20x16_250m_t8",
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "warm_day",
+        "threads": 8,
+        "sc": 2,
+        "wind": 2,
+        "delta": 8,
+        "coast": true
+      },
+      "comparison_mode": "baseline_to_candidate_patch",
+      "baseline_formula_expected_mismatches": 0,
+      "changed_class_cells": 0,
+      "changed_class_fraction": 0.0,
+      "baseline_unstable_positive_ol_water_cells": 0,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 0,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 0,
+      "class_transitions": [],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": true,
+          "bytes_a": 46100,
+          "bytes_b": 46100,
+          "different_values": 0,
+          "max_abs_raw_delta": 0,
+          "rms_raw_delta": 0.0,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 1113,
+          "bytes_b": 1113
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 2790,
+          "bytes_b": 2790
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 11524,
+          "bytes_b": 11524
+        }
+      }
+    },
+    {
+      "name": "cool_night_24x20x16_250m_t1",
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "cool_night",
+        "threads": 1,
+        "sc": 6,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "comparison_mode": "baseline_to_candidate_patch",
+      "baseline_formula_expected_mismatches": 0,
+      "changed_class_cells": 0,
+      "changed_class_fraction": 0.0,
+      "baseline_unstable_positive_ol_water_cells": 0,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 0,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 0,
+      "class_transitions": [],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": true,
+          "bytes_a": 46100,
+          "bytes_b": 46100,
+          "different_values": 0,
+          "max_abs_raw_delta": 0,
+          "rms_raw_delta": 0.0,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 1113,
+          "bytes_b": 1113
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 2790,
+          "bytes_b": 2790
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 11524,
+          "bytes_b": 11524
+        }
+      }
+    },
+    {
+      "name": "land_day_24x20x16_250m_t2",
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "land_day",
+        "threads": 2,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": false
+      },
+      "comparison_mode": "baseline_to_candidate_patch",
+      "baseline_formula_expected_mismatches": 0,
+      "changed_class_cells": 0,
+      "changed_class_fraction": 0.0,
+      "baseline_unstable_positive_ol_water_cells": 0,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 0,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 0,
+      "class_transitions": [],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": true,
+          "bytes_a": 46100,
+          "bytes_b": 46100,
+          "different_values": 0,
+          "max_abs_raw_delta": 0,
+          "rms_raw_delta": 0.0,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 1113,
+          "bytes_b": 1113
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 2070,
+          "bytes_b": 2070
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 11524,
+          "bytes_b": 11524
+        }
+      }
+    },
+    {
+      "name": "strong_neutral_24x20x16_250m_t8",
+      "configuration": {
+        "nx": 24,
+        "ny": 20,
+        "nz": 16,
+        "dx": 250,
+        "kind": "strong_neutral",
+        "threads": 8,
+        "sc": 4,
+        "wind": 8,
+        "delta": -0.3,
+        "coast": true
+      },
+      "comparison_mode": "baseline_to_candidate_patch",
+      "baseline_formula_expected_mismatches": 0,
+      "changed_class_cells": 0,
+      "changed_class_fraction": 0.0,
+      "baseline_unstable_positive_ol_water_cells": 0,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 0,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 0,
+      "class_transitions": [],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": true,
+          "bytes_a": 46100,
+          "bytes_b": 46100,
+          "different_values": 0,
+          "max_abs_raw_delta": 0,
+          "rms_raw_delta": 0.0,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 1113,
+          "bytes_b": 1113
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 2790,
+          "bytes_b": 2790
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 11524,
+          "bytes_b": 11524
+        }
+      }
+    },
+    {
+      "name": "cool_day_40x32x20_500m_t1",
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "cool_day",
+        "threads": 1,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "comparison_mode": "baseline_to_candidate_patch",
+      "baseline_formula_expected_mismatches": 0,
+      "changed_class_cells": 570,
+      "changed_class_fraction": 0.4453125,
+      "baseline_unstable_positive_ol_water_cells": 570,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 570,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 570,
+      "class_transitions": [
+        {
+          "from": 2,
+          "to": 4,
+          "count": 570
+        }
+      ],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": false,
+          "different_cells": 570,
+          "max_abs_raw_delta": 2
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": true,
+          "bytes_a": 153620,
+          "bytes_b": 153620,
+          "different_values": 0,
+          "max_abs_raw_delta": 0,
+          "rms_raw_delta": 0.0,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 2737,
+          "bytes_b": 2737
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 7214,
+          "bytes_b": 7214
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 30724,
+          "bytes_b": 30724
+        }
+      }
+    },
+    {
+      "name": "cool_day_40x32x20_500m_t2",
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "cool_day",
+        "threads": 2,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "comparison_mode": "baseline_to_candidate_patch",
+      "baseline_formula_expected_mismatches": 0,
+      "changed_class_cells": 570,
+      "changed_class_fraction": 0.4453125,
+      "baseline_unstable_positive_ol_water_cells": 570,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 570,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 570,
+      "class_transitions": [
+        {
+          "from": 2,
+          "to": 4,
+          "count": 570
+        }
+      ],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": false,
+          "different_cells": 570,
+          "max_abs_raw_delta": 2
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": false,
+          "bytes_a": 153620,
+          "bytes_b": 153620,
+          "different_values": 1,
+          "max_abs_raw_delta": 1,
+          "rms_raw_delta": 0.0036084391824351613,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 2737,
+          "bytes_b": 2737
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 7214,
+          "bytes_b": 7214
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 30724,
+          "bytes_b": 30724
+        }
+      }
+    },
+    {
+      "name": "cool_day_40x32x20_500m_t8",
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "cool_day",
+        "threads": 8,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "comparison_mode": "baseline_to_candidate_patch",
+      "baseline_formula_expected_mismatches": 0,
+      "changed_class_cells": 570,
+      "changed_class_fraction": 0.4453125,
+      "baseline_unstable_positive_ol_water_cells": 570,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 570,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 570,
+      "class_transitions": [
+        {
+          "from": 2,
+          "to": 4,
+          "count": 570
+        }
+      ],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": false,
+          "different_cells": 570,
+          "max_abs_raw_delta": 2
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": true,
+          "bytes_a": 153620,
+          "bytes_b": 153620,
+          "different_values": 0,
+          "max_abs_raw_delta": 0,
+          "rms_raw_delta": 0.0,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 2737,
+          "bytes_b": 2737
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 7214,
+          "bytes_b": 7214
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 30724,
+          "bytes_b": 30724
+        }
+      }
+    },
+    {
+      "name": "warm_day_40x32x20_500m_t8",
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "warm_day",
+        "threads": 8,
+        "sc": 2,
+        "wind": 2,
+        "delta": 8,
+        "coast": true
+      },
+      "comparison_mode": "baseline_to_candidate_patch",
+      "baseline_formula_expected_mismatches": 0,
+      "changed_class_cells": 0,
+      "changed_class_fraction": 0.0,
+      "baseline_unstable_positive_ol_water_cells": 0,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 0,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 0,
+      "class_transitions": [],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": false,
+          "bytes_a": 153620,
+          "bytes_b": 153620,
+          "different_values": 3,
+          "max_abs_raw_delta": 1,
+          "rms_raw_delta": 0.00625,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 2737,
+          "bytes_b": 2737
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 7214,
+          "bytes_b": 7214
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 30724,
+          "bytes_b": 30724
+        }
+      }
+    },
+    {
+      "name": "cool_night_40x32x20_500m_t1",
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "cool_night",
+        "threads": 1,
+        "sc": 6,
+        "wind": 2,
+        "delta": -8,
+        "coast": true
+      },
+      "comparison_mode": "baseline_to_candidate_patch",
+      "baseline_formula_expected_mismatches": 0,
+      "changed_class_cells": 0,
+      "changed_class_fraction": 0.0,
+      "baseline_unstable_positive_ol_water_cells": 0,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 0,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 0,
+      "class_transitions": [],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": true,
+          "bytes_a": 153620,
+          "bytes_b": 153620,
+          "different_values": 0,
+          "max_abs_raw_delta": 0,
+          "rms_raw_delta": 0.0,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 2737,
+          "bytes_b": 2737
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 7214,
+          "bytes_b": 7214
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 30724,
+          "bytes_b": 30724
+        }
+      }
+    },
+    {
+      "name": "land_day_40x32x20_500m_t2",
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "land_day",
+        "threads": 2,
+        "sc": 2,
+        "wind": 2,
+        "delta": -8,
+        "coast": false
+      },
+      "comparison_mode": "baseline_to_candidate_patch",
+      "baseline_formula_expected_mismatches": 0,
+      "changed_class_cells": 0,
+      "changed_class_fraction": 0.0,
+      "baseline_unstable_positive_ol_water_cells": 0,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 0,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 0,
+      "class_transitions": [],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": false,
+          "bytes_a": 153620,
+          "bytes_b": 153620,
+          "different_values": 2,
+          "max_abs_raw_delta": 1,
+          "rms_raw_delta": 0.005103103630798288,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 2737,
+          "bytes_b": 2737
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 5294,
+          "bytes_b": 5294
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 30724,
+          "bytes_b": 30724
+        }
+      }
+    },
+    {
+      "name": "strong_neutral_40x32x20_500m_t8",
+      "configuration": {
+        "nx": 40,
+        "ny": 32,
+        "nz": 20,
+        "dx": 500,
+        "kind": "strong_neutral",
+        "threads": 8,
+        "sc": 4,
+        "wind": 8,
+        "delta": -0.3,
+        "coast": true
+      },
+      "comparison_mode": "baseline_to_candidate_patch",
+      "baseline_formula_expected_mismatches": 0,
+      "changed_class_cells": 0,
+      "changed_class_fraction": 0.0,
+      "baseline_unstable_positive_ol_water_cells": 0,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 0,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 0,
+      "class_transitions": [],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": true,
+          "bytes_a": 153620,
+          "bytes_b": 153620,
+          "different_values": 0,
+          "max_abs_raw_delta": 0,
+          "rms_raw_delta": 0.0,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 2737,
+          "bytes_b": 2737
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 7214,
+          "bytes_b": 7214
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 30724,
+          "bytes_b": 30724
+        }
+      }
+    }
+  ],
+  "same_build_repeats": [
+    {
+      "name": "cool_day_24x20x16_250m_t1",
+      "build": "baseline",
+      "comparison_mode": "same_build_identity",
+      "same_build_expected_class_mismatches": 0,
+      "changed_class_cells": 0,
+      "changed_class_fraction": 0.0,
+      "baseline_unstable_positive_ol_water_cells": 198,
+      "candidate_unstable_positive_ol_water_cells": 198,
+      "changed_water_cells": 0,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 0,
+      "class_transitions": [],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": true,
+          "bytes_a": 46100,
+          "bytes_b": 46100,
+          "different_values": 0,
+          "max_abs_raw_delta": 0,
+          "rms_raw_delta": 0.0,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 1113,
+          "bytes_b": 1113
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 2790,
+          "bytes_b": 2790
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 11524,
+          "bytes_b": 11524
+        }
+      }
+    },
+    {
+      "name": "cool_day_24x20x16_250m_t1",
+      "build": "candidate",
+      "comparison_mode": "same_build_identity",
+      "same_build_expected_class_mismatches": 0,
+      "changed_class_cells": 0,
+      "changed_class_fraction": 0.0,
+      "baseline_unstable_positive_ol_water_cells": 0,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 0,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 0,
+      "class_transitions": [],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": true,
+          "bytes_a": 46100,
+          "bytes_b": 46100,
+          "different_values": 0,
+          "max_abs_raw_delta": 0,
+          "rms_raw_delta": 0.0,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 1113,
+          "bytes_b": 1113
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 2790,
+          "bytes_b": 2790
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 11524,
+          "bytes_b": 11524
+        }
+      }
+    },
+    {
+      "name": "cool_day_24x20x16_250m_t8",
+      "build": "baseline",
+      "comparison_mode": "same_build_identity",
+      "same_build_expected_class_mismatches": 0,
+      "changed_class_cells": 0,
+      "changed_class_fraction": 0.0,
+      "baseline_unstable_positive_ol_water_cells": 198,
+      "candidate_unstable_positive_ol_water_cells": 198,
+      "changed_water_cells": 0,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 0,
+      "class_transitions": [],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": true,
+          "bytes_a": 46100,
+          "bytes_b": 46100,
+          "different_values": 0,
+          "max_abs_raw_delta": 0,
+          "rms_raw_delta": 0.0,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 1113,
+          "bytes_b": 1113
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 2790,
+          "bytes_b": 2790
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 11524,
+          "bytes_b": 11524
+        }
+      }
+    },
+    {
+      "name": "cool_day_24x20x16_250m_t8",
+      "build": "candidate",
+      "comparison_mode": "same_build_identity",
+      "same_build_expected_class_mismatches": 0,
+      "changed_class_cells": 0,
+      "changed_class_fraction": 0.0,
+      "baseline_unstable_positive_ol_water_cells": 0,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 0,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 0,
+      "class_transitions": [],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": true,
+          "bytes_a": 46100,
+          "bytes_b": 46100,
+          "different_values": 0,
+          "max_abs_raw_delta": 0,
+          "rms_raw_delta": 0.0,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 1113,
+          "bytes_b": 1113
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 2790,
+          "bytes_b": 2790
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 11524,
+          "bytes_b": 11524
+        }
+      }
+    },
+    {
+      "name": "land_day_24x20x16_250m_t2",
+      "build": "baseline",
+      "comparison_mode": "same_build_identity",
+      "same_build_expected_class_mismatches": 0,
+      "changed_class_cells": 0,
+      "changed_class_fraction": 0.0,
+      "baseline_unstable_positive_ol_water_cells": 0,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 0,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 0,
+      "class_transitions": [],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": true,
+          "bytes_a": 46100,
+          "bytes_b": 46100,
+          "different_values": 0,
+          "max_abs_raw_delta": 0,
+          "rms_raw_delta": 0.0,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 1113,
+          "bytes_b": 1113
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 2070,
+          "bytes_b": 2070
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 11524,
+          "bytes_b": 11524
+        }
+      }
+    },
+    {
+      "name": "land_day_24x20x16_250m_t2",
+      "build": "candidate",
+      "comparison_mode": "same_build_identity",
+      "same_build_expected_class_mismatches": 0,
+      "changed_class_cells": 0,
+      "changed_class_fraction": 0.0,
+      "baseline_unstable_positive_ol_water_cells": 0,
+      "candidate_unstable_positive_ol_water_cells": 0,
+      "changed_water_cells": 0,
+      "changed_land_cells": 0,
+      "changed_water_positive_baseline_ol_cells": 0,
+      "class_transitions": [],
+      "decoded_zip_members": {
+        ".ust": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".obl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        },
+        ".scl": {
+          "byte_identical": true,
+          "different_cells": 0,
+          "max_abs_raw_delta": 0
+        }
+      },
+      "physical_files": {
+        "00001.wnd": {
+          "byte_identical": true,
+          "bytes_a": 46100,
+          "bytes_b": 46100,
+          "different_values": 0,
+          "max_abs_raw_delta": 0,
+          "rms_raw_delta": 0.0,
+          "scale": "0.01 m/s"
+        },
+        "00001_steady_state.txt": {
+          "byte_identical": true,
+          "bytes_a": 1113,
+          "bytes_b": 1113
+        },
+        "RoughnessUsed.txt": {
+          "byte_identical": true,
+          "bytes_a": 2070,
+          "bytes_b": 2070
+        },
+        "albeq.dat": {
+          "byte_identical": true,
+          "bytes_a": 11524,
+          "bytes_b": 11524
+        }
+      }
+    }
+  ]
+}
